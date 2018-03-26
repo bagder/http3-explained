@@ -15,7 +15,7 @@ a halt while the lost packet needs to be retransmitted and find its way to the
 destination. Since TCP is this "string", it means everything that would come
 after the lost packet needs to wait.
 
-It becomes a TCP head of line block.
+It becomes a TCP-based head of line block!
 
 As the packet loss rate increases, HTTP/2 performs less and less good. At 2%
 packet loss (which is a terrible network quality, mind you), tests have proven
