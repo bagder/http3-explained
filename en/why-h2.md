@@ -15,7 +15,7 @@ work-arounds. Some of which are pretty burdonsome on web developers.
 One of the primary features of HTTP/2 is that it makes use of multiplexing, so
 that many logical streams are sent over the same physical TCP connection. This
 makes a lot of things better and faster. It make congestion control work much
-better, it let's users use TCP much better and thus properly saturate the
+better, it lets users use TCP much better and thus properly saturate the
 bandwidth, makes the TCP connections more long-lived - which is good so that
 they get up to full speed more frequently than before. Header compression
 makes it use less bandwidth.

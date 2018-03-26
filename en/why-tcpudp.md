@@ -13,7 +13,7 @@ entirely been halted because of the perceived difficulties to deploy them for
 real on the Internet. The amount of firewalls, NATs, routers and other
 middle-boxes that exist betweeen users and the servers that only know of and
 let TCP or UDP through is quite simply too many. Introducind another transport
-protocol makes N% of the connections fail because they're being blocked by
+protocol makes N% of the connections fail because they are being blocked by
 boxes that see it not being UDP or TCP and thus evil or wrong somehow. The N%
 failure rate is often deemed too high to be worth the effort.
 
@@ -21,6 +21,6 @@ Additionally, changing things in the transport protocol layer of the network
 stack typically means protocols implemented by operating system kernels.
 Changing operating system kernels is a very slow process that takes its own
 efforts and pushes. In recent years we've seen TCP features get standardized
-by the IETF and yet after many years they're still not widely deployed or used
-because they're not supported widely enough yet.
+by the IETF and yet after many years they are still not widely deployed or
+used because they are not supported widely enough yet.
 
