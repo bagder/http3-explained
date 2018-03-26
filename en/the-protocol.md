@@ -42,7 +42,20 @@ lost, and stream B does not, stream B may continue its tranfers and complete
 while stream A is getting its lost packet retransmitted. This was not possible
 with HTTP/2.
 
-## ‎TLS 1.3
+## Fast handshakes
+
+QUIC offers 0-RTT and 1-RTT connection setups, meaning that at best QUIC needs
+no extra roundtrips at all when setting up a new connection. When there has
+been a previous connection established to a host, subsequent connections are
+fast.
+
+## Early data
+
+QUIC allows a client to include data already in the 0-RTT handshake. This
+allows a client to deliver data to the peer as fast as it possibly can, and
+that then of course allows the server to respond and send data back sooner.
+
+## TLS 1.3
 
 The transport security used in QUIC is using TLS 1.3. The Google version of
 QUIC used a custom approach.
