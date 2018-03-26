@@ -1,8 +1,12 @@
 ## Remember HTTP/2?
 
-The HTTP/2 specification RFC 7540 was published in May 2015 and the protocol
-has since then been implemented and deployed widely across the Internet and
-the world wide web.
+The HTTP/2 specification [RFC 7540](http://httpwg.org/specs/rfc7540.html) was
+published in May 2015 and the protocol has since then been implemented and
+deployed widely across the Internet and the world wide web.
+
+In early 2018, almost 40% of the top-1000 web sites run HTTP/2, around 70% of
+all HTTPS requests Firefox issues get HTTP/2 responses back and all major
+browsers, servers and proxies support it.
 
 HTTP/2 adresses a whole slew of shortcomings in HTTP/1 and with the
 introduction of the second version of HTTP users can stop using a bunch of
