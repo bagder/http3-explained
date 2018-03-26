@@ -7,6 +7,7 @@
     * [Earlier data](why-earlierdata.md)
     * [User space](why-userspace.md)
 * [History](history.md)
+    * [IETF](history-ietf.md)
 * [Protocol features](the-protocol.md)
     * [UDP](feature-udp.md)
     * [Reliable](feature-reliable.md)
