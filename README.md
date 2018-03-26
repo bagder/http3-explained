@@ -1,4 +1,7 @@
-# This is QUIC
-An embryo for an attempted document describing the QUIC protocol, in the same spirit as "http2 explained".
+**This is QUIC** is a collborative effort to document the QUIC protocol. Join
+in and help!
 
-See [SUMMARY](SUMMARY.md) for the TOC in progress.
+Get the Web, PDF, or e-book versions on
+[gitbook.com](https://www.gitbook.com/book/bagder/this-is-quic/details).
+
+The contents get updated automatically on every commit to this git repository.
