@@ -4,8 +4,9 @@
 * How QUIC works
     * Handshake
     * ...
-    * ‎Alt-svc
 * HTTP over QUIC
+    * HTTPS really
+    * Alt-svc
     * Header compression with QCRAM
 * The specifications
     * Transport
