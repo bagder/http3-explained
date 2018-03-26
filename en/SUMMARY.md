@@ -1,6 +1,6 @@
 * [Why QUIC](why-quic.md)
 * [History](history.md)
-* [The protocol](the-protocol.md)
+* [Protocol features](the-protocol.md)
 * How QUIC works
     * Handshake
     * ...

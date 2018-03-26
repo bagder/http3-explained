@@ -1,6 +1,6 @@
-# The QUIC protocol
+# Protocol features
 
-The protocol from a high level.
+The QUIC protocol from a high level.
 
 (Insert schematic picture of the protocol architecture, possibly compared to
 HTTP/2)
