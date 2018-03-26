@@ -20,7 +20,6 @@ failure rate is often deemed too high to be worth the effort.
 Additionally, changing things in the transport protocol layer of the network
 stack typically means protocols implemented by operating system kernels.
 Changing operating system kernels is a very slow process that takes its own
-efforts and pushes. In recent years we've seen TCP features get standardized
+efforts and pushes. In recent years we have seen TCP features get standardized
 by the IETF and yet after many years they are still not widely deployed or
 used because they are not supported widely enough yet.
-
