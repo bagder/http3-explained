@@ -21,12 +21,14 @@
     * [Non-HTTP over QUIC](feature-nonhttp.md)
     * [Congestion control](feature-congestion.md)
 * How QUIC works
-    * Handshake
+    * Connections
+    * Streams
     * ...
 * HTTP over QUIC
-    * HTTPS really
-    * Alt-svc
-    * Header compression with QCRAM
+    * HTTPS:// URLs
+    * Alt-svc header
+    * Header compression
+    * Server push
 * The specifications
     * Transport
     * Recovery
@@ -35,3 +37,4 @@
 * Support
     * Servers
     * Clients
+* QUIC v2
