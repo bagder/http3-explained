@@ -1,9 +1,9 @@
 ## TCP head of line blocking
 
 HTTP/2 however is still done over TCP and even with much fewer TCP connections
-than before. TCP is protocol for reliable transfers and you can basically
-think of it as a string between two machines. What is being put out on the
-network in one end will end up in the other end, in the same order -
+than before. TCP is a protocol for reliable transfers and you can basically
+think of it as an imaginary string between two machines. What is being put out
+on the network in one end will end up in the other end, in the same order -
 eventually. (Or the connection breaks.)
 
 With HTTP/2, typical browsers do tens or hundreds of parallel transfers over
