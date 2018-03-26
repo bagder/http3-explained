@@ -1,4 +1,3 @@
-* [About this book](about.md)
 * [Why QUIC](why-quic.md)
 * [History](history.md)
 * The protocol
