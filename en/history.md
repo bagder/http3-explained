@@ -27,9 +27,12 @@ IETF was about to standardize should be able to transfer other protocols than
 "just" HTTP. Google-QUIC only ever transported HTTP - in practice it
 transported what was effectively HTTP/2 frames, using the HTTP/2 frame syntax.
 
-In order to satisfy this demand, the IETF QUIC has been split in two separate
-layers: the transport QUIC and the "HTTP over QUIC" layer (the latter
-sometimes referred to as "hq").
+It was also stated that IETF-QUIC should base its encryption and security on
+TLS 1.3 instead of the "custom" approach used by Google-QUIC.
+
+In order to satisfy the send-more-than-HTTP demand, the IETF QUIC protocol
+architecture was split in two separate layers: the transport QUIC and the
+"HTTP over QUIC" layer (the latter sometimes referred to as "hq").
 
 This layer split, while it may sound innocuous, has caused the IETF-QUIC to
 differ quite a lot from the original Google-QUIC.
