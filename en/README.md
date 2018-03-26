@@ -20,7 +20,8 @@ This book is created and the work is started by Daniel Stenberg.
 
 ## Home
 
-There's no proper "home page" for this book (project) yet.
+The best "home page" for this book at the moment is the [github project
+page](https://github.com/bagder/this-is-quic)!
 
 ## Help!
 
