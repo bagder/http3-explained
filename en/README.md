@@ -39,4 +39,4 @@ github page.
 ## License
 
 This document and all its contents are licensed under the [Creative Commons
-Attribution 4.0 license](http://creativecommons.org/licenses/by/4.0/).
+Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0w/).
