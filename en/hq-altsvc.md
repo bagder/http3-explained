@@ -3,7 +3,8 @@
 The alternate service (Alt-svc:) header and its corresponding `ALT-SVC` HTTP/2
 frame are not specifically created for QUIC. They're part of an already
 designed and created mechanism for a server to tell a client: *"look, I run
-the same service on THIS HOST using THIS PROTOCOL on THIS PORT"*.
+the same service on THIS HOST using THIS PROTOCOL on THIS PORT"*. See details
+in [RFC 7838](https://tools.ietf.org/html/rfc7838).
 
 A client that receives such an Alt-svc response is then adviced to, if it
 supports and wants to, connect to that given other host in parallel in the
