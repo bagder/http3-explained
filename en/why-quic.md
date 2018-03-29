@@ -10,3 +10,5 @@ users is probably the largest reason and push that initially triggered the
 creation of this protocol.
 
 So why create a new transport protocol and why do it on top of UDP?
+
+![quic logo](../images/QUIC.png)
