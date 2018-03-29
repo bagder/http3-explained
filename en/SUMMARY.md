@@ -24,9 +24,9 @@
     * Connections
     * Streams
     * ...
-* HTTP over QUIC
-    * HTTPS:// URLs
-    * Alt-svc header
+* [HTTP over QUIC](hq.md)
+    * [HTTPS:// URLs](hq-https.md)
+    * [Alt-svc](hq-altsvc.md)
     * Header compression
     * Server push
 * The specifications
