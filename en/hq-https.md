@@ -10,14 +10,15 @@ completely new way of transporting HTTP over the wire, it was still based on
 TLS and TCP like HTTP/1 was. The fact that QUIC is done over UDP changes
 things in a few important aspects.
 
-Legacy, clear-text, `HTTP://` URLs will be left as-is and as we proceed furter
-into a future with more secure transfers they will probably become less
-frequently. Requests to such URLs will not be upgraded to use QUIC. In reality
-they very rarely upgrade to HTTP/2 either, but for other reasons.
+Legacy, clear-text, `HTTP://` URLs will be left as-is and as we proceed
+further into a future with more secure transfers they will probably become
+less frequently used. Requests to such URLs will not be upgraded to use
+QUIC. In reality they very rarely upgrade to HTTP/2 either, but for other
+reasons.
 
-## Inintial connection
+## Initial connection
 
-The first connectioin to a fresh, not preivously visited-before, host for a
+The first connection to a fresh, not preciously visited-before, host for a
 HTTPS:// URL probably has to be done over TCP (possibly in addition to a
 parallel attempt to connect QUIC). The host might be a legacy server without
 QUIC support. A modern client and server would presumably negotiate HTTP/2 in
