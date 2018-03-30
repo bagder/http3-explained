@@ -7,5 +7,5 @@ to spot protocol details, systems learn how protocols behave and over time it
 becomes impossible to change them.
 
 The only truly effective way to "combat" ossification, is to encrypt as much
-as possible of the communcation to prevent middle-boxes to see much of the
+as possible of the communication to prevent middle-boxes to see much of the
 protocol passing through.

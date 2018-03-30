@@ -25,7 +25,7 @@ specification for QUIC version 1 around November 2018.
 
 While the work on IETF-QUIC has progressed, the Google team has incorporated
 details from the IETF version and has started to slowly progress their version
-of the protocol towards what the IETF version might become. Google has keept
+of the protocol towards what the IETF version might become. Google has kept
 up running their version of QUIC in their browser and services.
 
 Most new implementations that are in the works (*link to the the

@@ -11,7 +11,7 @@ that single TCP connection.
 
 If a single packet is dropped, lost, in the network somewhere between two
 endpoints that speak HTTP/2, it means the entire TCP connection is brought to
-a halt while the lost packet needs to be retransmitted and find its way to the
+a halt while the lost packet needs to be re-transmitted and find its way to the
 destination. Since TCP is this "string", it means everything that would come
 after the lost packet needs to wait.
 

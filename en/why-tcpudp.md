@@ -11,8 +11,8 @@ characteristics.
 However, in recent years efforts to create new transport protocols have almost
 entirely been halted because of the perceived difficulties to deploy them for
 real on the Internet. The amount of firewalls, NATs, routers and other
-middle-boxes that exist betweeen users and the servers that only know of and
-let TCP or UDP through is quite simply too many. Introducind another transport
+middle-boxes that exist between users and the servers that only know of and
+let TCP or UDP through is quite simply too many. Introducing another transport
 protocol makes N% of the connections fail because they are being blocked by
 boxes that see it not being UDP or TCP and thus evil or wrong somehow. The N%
 failure rate is often deemed too high to be worth the effort.

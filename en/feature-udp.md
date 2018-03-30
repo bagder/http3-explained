@@ -12,7 +12,7 @@ ports than 53 (used for DNS). Others throttle such data in ways that makes
 QUIC perform worse than TCP based protocols. There's no end to what some
 operators may do.
 
-For the forseeable future, all use of QUIC-based transports will probably have
+For the foreseeable future, all use of QUIC-based transports will probably have
 to be able to gracefully fall-back to another (TCP-based) alternative. Google
 engineers have previously mentioned they've measure a failure rate in the low
 single-digit percentages.

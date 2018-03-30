@@ -8,6 +8,6 @@ them at the sending side!
 For example: stream A and B are transferred from a server to a client. Stream
 A is started first and then stream B. In QUIC, a lost packet would only affect
 the stream(s) to which the lost packet belongs. If stream A gets a packet
-lost, and stream B does not, stream B may continue its tranfers and complete
-while stream A is getting its lost packet retransmitted. This was not possible
+lost, and stream B does not, stream B may continue its transfers and complete
+while stream A is getting its lost packet re-transmitted. This was not possible
 with HTTP/2.
