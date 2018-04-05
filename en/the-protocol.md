@@ -2,6 +2,7 @@
 
 The QUIC protocol from a high level.
 
-(Insert schematic picture of the protocol architecture, possibly compared to
-HTTP/2)
+Illustrated below is the HTTP/2 network stack on the left and the QUIC network
+stack on the right, when used as HTTP transport.
 
+![quic logo](../images/quic-stack.png)
