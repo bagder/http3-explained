@@ -29,3 +29,4 @@ With HTTP/2, the HTTP head of line blocking problem was "fixed". The problem
 that clients had to wait for the request before in the line to finish before
 the next one could go out.
 
+![quic logo](../images/h2-man.jpg)
