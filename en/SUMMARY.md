@@ -8,6 +8,7 @@
     * [User space](why-userspace.md)
 * [History](history.md)
     * [IETF](history-ietf.md)
+    * [Experience from HTTP/2](history-h2.md)
 * [Protocol features](the-protocol.md)
     * [UDP](feature-udp.md)
     * [Reliable](feature-reliable.md)
