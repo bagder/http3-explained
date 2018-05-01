@@ -1,25 +1,28 @@
-## TCP or UDP
+## TCP o UDP
 
-If we can't fix the head of line blocking within TCP, then in theory we should
-be able to make a new transport protocol next to UDP and TCP in the network
-stack. Or perhaps even use
-[SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol)
-which is a transport protocol standardized by the IETF in [RFC
-4960](https://tools.ietf.org/html/rfc4960) with several of the desired
-characteristics.
+Dato che non possiamo completamente mettere fine al bloccaggio ad inizio fila
+all'interno di TCP, forse dovremmo essere in grado di sviluppare un nuovo 
+protocollo di trasporto prossimo a UDO e TCP nello stack di rete. O magari 
+impiegare [SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol)
+che è un protocollo di trasporto standardizzato dalla IETF nella 
+[RFC 4960](https://tools.ietf.org/html/rfc4960) contenente la maggior parte
+delle caratteristiche necessarie allo scopo.
 
-However, in recent years efforts to create new transport protocols have almost
-entirely been halted because of the perceived difficulties to deploy them for
-real on the Internet. The amount of firewalls, NATs, routers and other
-middle-boxes that exist between users and the servers that only know of and
-let TCP or UDP through is quite simply too many. Introducing another transport
-protocol makes N% of the connections fail because they are being blocked by
-boxes that see it not being UDP or TCP and thus evil or wrong somehow. The N%
-failure rate is often deemed too high to be worth the effort.
+Al contrario, nel corso degli ultimi anni, tutti gli sforzi per progettare un
+nuovo protocollo di trasporto sono stati sospesi a causa delle difficoltà
+percepite nel distribuire tali protocolli all'interno di infrastrutture reali.
+La quantità di firewalls, NATs, routers e altri dispositivi di rete che si 
+iterpongono fra l'utente e il server sono semplicemente troppi, e sono a 
+conoscenza dei soli UDP o TCP. Introdurre un altro protocollo di trasporto
+fa si che un determinato tasso di connessioni N% fallisca, in quanto bloccato
+dalle suddette middle-boxes che identificherebbero tale proto come malevolo,
+malformato, nè TCP nè UDP. Un tasso di fallimento N% in ambito internet 
+rappresenta spesso una buona ragione per non intraprendere alcuno sforzo.
 
-Additionally, changing things in the transport protocol layer of the network
-stack typically means protocols implemented by operating system kernels.
-Changing operating system kernels is a very slow process that takes its own
-efforts and pushes. In recent years we have seen TCP features get standardized
-by the IETF and yet after many years they are still not widely deployed or
-used because they are not supported widely enough yet.
+In aggiunta, cambiare le cose a livello di "transport protocol layer" nello
+stack di rete può spesso significare dover mettere mano al kernel del SO.
+Modificare il kernel è un processo che richiede tempi lunghi, grandi sforzi e
+non al riparo da pressioni. In anni recenti, abbiamo visto features di TCP
+diventare standard IETF senza che vi sia stata corrispondenza -ad anni di
+distanza- con il tasso di distribuzione degli stessi, per via della mancanza
+di supporto universale.

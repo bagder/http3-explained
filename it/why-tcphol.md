@@ -1,27 +1,29 @@
-## TCP head of line blocking
+## Bloccaggio ad inizio della coda TCP
 
-HTTP/2 however is still done over TCP and even with much fewer TCP connections
-than before. TCP is a protocol for reliable transfers and you can basically
-think of it as an imaginary string between two machines. What is being put out
-on the network in one end will end up in the other end, in the same order -
-eventually. (Or the connection breaks.)
+HTTP/2 è comunque ancora basato su TCP seppur utilizzi un minor numero di
+connessioni rispetto ai predecessori. Il TCP è un protocollo di trasferimento
+affidabile; lo si può immaginare come una corda immaginaria tesa fra due host.
+Ciò che viene appeso ad un estremo, arriverà all'altro, nello stesso ordine -
+a costo dell'interruzione della connessione.
 
-With HTTP/2, typical browsers do tens or hundreds of parallel transfers over
-that single TCP connection.
+In HTTP/2 il browser avrà la tendenza a soddisfare decine o anche centinaia di
+trasferimenti attraverso la stessa connessione TCP.
 
-If a single packet is dropped, lost, in the network somewhere between two
-endpoints that speak HTTP/2, it means the entire TCP connection is brought to
-a halt while the lost packet needs to be re-transmitted and find its way to the
-destination. Since TCP is this "string", it means everything that would come
-after the lost packet needs to wait.
+Se un singolo pacchetto venisse perso, abbandonato o scartato da qualche parte 
+sulla rete, fra due endopoints che stessero dialogando in HTTP/2, tale dialogo
+verrebbe sospeso fino alla ri-trasmissione e all'arrivo di tale pacchetto a 
+destinazione. Date che il TCP è raffigurato da questa "corda", tutto ciò (tutti
+i dati) che segue (seguono) il pacchetto in sospeso dovrà (dovranno) attendere.
 
-It becomes a TCP-based head of line block!
+Si parla quindi di bloccaggio ad inizio della coda, basato su TCP!
 
-As the packet loss rate increases, HTTP/2 performs less and less good. At 2%
-packet loss (which is a terrible network quality, mind you), tests have proven
-that HTTP/1 users are usually better off - because they typically have six TCP
-connections up to distribute the lost packet over so for each lost packet the
-other connections without loss can still continue.
+Se il tasso di perdita di pacchetti dovesse incrementare, HTTP/2 subirebbe un
+degrado di prestazioni. A 2% di perdita di pacchetti (che comunque rappresenta
+una qualità infima) svariati test hanno dimostrato che gli utenti di HTTP/1 
+ottengono risultati di gran lunga migliori, visto che un tasso di perdita del
+2% distribuito su sei connessioni ha meno influenza che su una sola, 
+permettendo così che certe connessioni continuino senza essere influenzate.
 
-Fixing this issue is not easy, if at all possible, to do with TCP.
+Porre rimedio a tale situazione non sarà semplice -se non impossibile- se si
+continua ad usare il TCP..
 
