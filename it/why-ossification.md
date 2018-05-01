@@ -1,11 +1,13 @@
 ## Ossification
 
-Changes to TCP also suffers from the middle-box problem, in that some of the
-boxes will spot new TCP options and block such connections since they don't
-know what the options are. That is called "protocol ossification". If allowed
-to spot protocol details, systems learn how protocols behave and over time it
-becomes impossible to change them.
+Anche le modifiche al TCP soffrono dei problemi conseguenti alle middle-boxes
+dato che alcune delle nuove opzioni TCP sono interpretate e bloccate dato che
+sconosciute ai più. Questo condizione è detta "ossificazione del protocollo".
+Se viene loro permesso di ispezionare i dettagli di protocollo, il sistema
+impara a riconoscere il comportamento tipico di un protocollo e nel tempo 
+diventerà difficile se non appunto impossibile modificare tali assunzioni.
 
-The only truly effective way to "combat" ossification, is to encrypt as much
-as possible of the communication to prevent middle-boxes to see much of the
-protocol passing through.
+La sola vera ed efficace strategia per il contrasto della "ossificazione" è
+utilizzare in maniera estensiva la cifratura, cosi da impedire ai box
+intermedi di desumere (distinguere) quale protocollo stia passando sotto il
+loro ponte.

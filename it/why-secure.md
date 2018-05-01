@@ -1,10 +1,11 @@
 ## Secure
 
-QUIC is always secure. There is no clear-text version of the protocol so to
-negotiate a QUIC connection means doing cryptography and security with TLS
-1.3. As mentioned above, this prevents ossification as well as other sort of
-blocks and special treatments, as well as making sure QUIC has all the secure
-properties of HTTPS that web users have come to expect and want.
+QUIC è sempre sicuro. Non esiste alcuna versione clear-text del protocollo,
+così che l'aver negoziato QUIC implica l'impiego di crittografia e sicurezza
+TLS 1.3. Come detto in precedenza, tale pratica impedisce l'ossificazione
+ed ogni altra sorta di blocco o trattamento speciale, olre ad assicurarsi che
+QUIC abbia tutte le proprietà di sicurezza HTTPS che gli utilizzatori web si
+attendono e desiderano.
 
-There is only a few initial handshake packets that are sent in the clear,
-before the encryption protocols have been negotiated.
+Solo una piccola parte dei primi pacchetti della negoziazione iniziale sono
+trasmessi in chiaro, prima che il protocollo di cifratura venga negoziato.
