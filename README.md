@@ -1,5 +1,5 @@
-**This is QUIC** is a collborative effort to document the QUIC protocol. Join
-in and help!
+**HTTP/3 explained** is a collborative effort to document the HTTP/3 and the
+QUIC protocols. Join in and help!
 
 Get the Web, PDF, or e-book versions on
 [gitbook.com](https://www.gitbook.com/book/bagder/this-is-quic/details).
