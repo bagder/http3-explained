@@ -6,4 +6,4 @@ Get the Web, PDF, or e-book versions on
 
 The contents get updated automatically on every commit to this git repository.
 
-![this is quic](cover_small.jpg)
+![HTTP/3 explained cover](cover_small.jpg)

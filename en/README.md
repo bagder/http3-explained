@@ -1,8 +1,8 @@
-# This is QUIC
+# HTTP/3 explained
 
 This book effort was started for real in March 2018. The plan is to document
-the QUIC protocol. Why, how it works, protocol details, the implementations
-and more.
+HTTP/3 and its underlying protocol: QUIC. Why, how they work, protocol
+details, the implementations and more.
 
 The book is entirely free at no cost and is meant to be a collaborative effort
 involving anyone and everyone who wants to help out!
@@ -21,7 +21,7 @@ This book is created and the work is started by Daniel Stenberg.
 ## Home
 
 The best "home page" for this book at the moment is the [github project
-page](https://github.com/bagder/this-is-quic)!
+page](https://github.com/bagder/http3-explained)!
 
 ## Help!
 
@@ -32,8 +32,8 @@ please send us a refreshed version of the affected paragraph and we will make
 amended versions. We will give proper credits to everyone who helps out! I
 hope to make this document better over time.
 
-Preferably, you submit [errors](https://github.com/bagder/this-is-quic/issues)
-or [pull requests](https://github.com/bagder/this-is-quic/pulls) on the book's
+Preferably, you submit [errors](https://github.com/bagder/http3-explained/issues)
+or [pull requests](https://github.com/bagder/http3-explained/pulls) on the book's
 github page.
 
 ## License
