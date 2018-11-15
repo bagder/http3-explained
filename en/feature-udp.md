@@ -3,7 +3,8 @@
 QUIC is a transfer protocol implemented in user-space on top of UDP. If you
 watch your network traffic casually, you will see QUIC appear as UDP packets.
 
-HTTP-over-QUIC will default to using UDP port 443.
+Based on UDP it also then uses UDP port numbers to identify specific servers
+on a given machine.
 
 ## Will it work?
 
@@ -13,9 +14,9 @@ QUIC perform worse than TCP based protocols. There's no end to what some
 operators may do.
 
 For the foreseeable future, all use of QUIC-based transports will probably
-have to be able to gracefully fall-back to another (TCP-based)
-alternative. Google engineers have previously mentioned measured failure rates
-in the low single-digit percentages.
+have to be able to gracefully fall-back to another (TCP-based) alternative.
+Google engineers have previously mentioned measured failure rates in the low
+single-digit percentages.
 
 ## Will it improve?
 
