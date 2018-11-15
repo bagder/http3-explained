@@ -12,8 +12,9 @@ background - using the specified protocol - and if it successful switch its
 operations over to that instead of the initial connection.
 
 If the initial connection uses HTTP/2 or even HTTP/1, the server can respond
-and tell the client that it can connect back and try QUIC. It could be to the
-same host or to another that knows how to serve that origin. The information
-given in such an Alt-svc response has a expiry timer so clients will cache
-information that for a period to make subsequent connections and requests go
-directly to the alternative using the suggested protocol.
+and tell the client that it can connect back and try HTTP/3. It could be to
+the same host or to another one that knows how to serve that origin. The
+information given in such an Alt-svc response has an expiry timer making
+clients will information that for a period of time so that subsequent
+connections and requests can go directly to the alternative host using the
+suggested alternative protocol.
