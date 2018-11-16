@@ -21,8 +21,8 @@
     * [HTTP over QUIC](feature-http.md)
     * [Non-HTTP over QUIC](feature-nonhttp.md)
     * [Congestion control](feature-congestion.md)
-* How QUIC works
-    * Connections
+* [How QUIC works](quic.md)
+    * [Connections](quic-connections.md)
     * Streams
     * ...
 * [HTTP/3](h3.md)
