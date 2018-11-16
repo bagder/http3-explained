@@ -25,8 +25,8 @@ An HTTP server includes an `Alt-Svc:` header in its response:
 
     Alt-Svc: h3=":50781"
 
-This indicates that HTTP/3 wis available on UDP port 50781 at the same
-hostname that was used to get this response.
+This indicates that HTTP/3 is available on UDP port 50781 at the same hostname
+that was used to get this response.
 
 A client can then attempt to setup a QUIC connection to that destination and
 if successful, continue communicating with the origin like that instead of the
