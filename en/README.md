@@ -1,8 +1,8 @@
 # HTTP/3 explained
 
-This book effort was started for real in March 2018. The plan is to document
-HTTP/3 and its underlying protocol: QUIC. Why, how they work, protocol
-details, the implementations and more.
+This book effort was started in March 2018. The plan is to document HTTP/3 and
+its underlying protocol: QUIC. Why, how they work, protocol details, the
+implementations and more.
 
 The book is entirely free at no cost and is meant to be a collaborative effort
 involving anyone and everyone who wants to help out!
