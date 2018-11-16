@@ -20,8 +20,8 @@ This book is created and the work is started by Daniel Stenberg.
 
 ## Home
 
-The best "home page" for this book at the moment is the [github project
-page](https://github.com/bagder/http3-explained)!
+The home page for this book is found at
+[daniel.haxx.se/http3-explained](https://daniel.haxx.se/http3-explained).
 
 ## Help!
 
