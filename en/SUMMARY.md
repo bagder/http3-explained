@@ -25,6 +25,7 @@
     * [Connections](quic-connections.md)
     * [Connections use TLS](quic-tls.md)
     * [Streams](quic-streams.md)
+    * [0-RTT](quic-0rtt.md)
 * [HTTP/3](h3.md)
     * [HTTPS:// URLs](h3-https.md)
     * [Bootstrap with Alt-svc](h3-altsvc.md)
