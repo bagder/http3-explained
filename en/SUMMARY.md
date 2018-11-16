@@ -23,6 +23,7 @@
     * [Congestion control](feature-congestion.md)
 * [How QUIC works](quic.md)
     * [Connections](quic-connections.md)
+    * [Connections use TLS](quic-tls.md)
     * Streams
     * ...
 * [HTTP/3](h3.md)
@@ -30,11 +31,7 @@
     * [Alt-svc](h3-altsvc.md)
     * Header compression
     * Server push
-* The specifications
-    * Transport
-    * Recovery
-    * TLS
-    * HTTP
+* [The specifications](specs.md)
 * Support
     * Servers
     * Clients
