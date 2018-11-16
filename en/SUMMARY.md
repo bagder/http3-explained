@@ -24,13 +24,14 @@
 * [How QUIC works](quic.md)
     * [Connections](quic-connections.md)
     * [Connections use TLS](quic-tls.md)
-    * Streams
-    * ...
+    * [Streams](quic-streams.md)
 * [HTTP/3](h3.md)
     * [HTTPS:// URLs](h3-https.md)
-    * [Alt-svc](h3-altsvc.md)
+    * [Bootstrap with Alt-svc](h3-altsvc.md)
     * Header compression
+    * Prioritization
     * Server push
+* Common criticism
 * [The specifications](specs.md)
 * Support
     * Servers
