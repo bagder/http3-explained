@@ -20,3 +20,15 @@ for a QUIC connection to be delivered to the wrong endpoint.
 
 By taking advantage of the connection ID, connections can thus migrate between
 IP addresses and network interfaces in ways TCP never could.
+
+## Port numbers
+
+QUIC is modeled on top of UDP so there's a 16 bit port number field to use to
+differentiate incoming connection attempts with.
+
+## Version negotiation
+
+An QUIC connection request originating from a client will tell the server
+which QUIC protocol version it wants to speak, and the server will respond
+with a list of supported versions for the client to select from when going
+forward.
