@@ -39,7 +39,4 @@
     * Servers
     * Clients
     * Kernels and CPU load
-* QUIC v2
-    * Forward Error Correction
-    * Multipath
-    * Non-HTTP adaptions
+* [QUIC v2](quic-v2.md)
