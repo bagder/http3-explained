@@ -29,6 +29,7 @@
 * [HTTP/3](h3.md)
     * [HTTPS:// URLs](h3-https.md)
     * [Bootstrap with Alt-svc](h3-altsvc.md)
+    * QUIC streams and HTTP/3
     * Header compression
     * Prioritization
     * Server push
