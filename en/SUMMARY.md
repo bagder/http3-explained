@@ -32,7 +32,7 @@
     * Header compression
     * Prioritization
     * Server push
-* Common criticism
+* [Common criticism](criticism.md)
 * [The specifications](specs.md)
 * Support
     * Servers
