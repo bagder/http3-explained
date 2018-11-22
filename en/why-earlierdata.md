@@ -6,6 +6,9 @@ negotiate and setup a new connection. Compare with the 3-way handshake of TCP.
 In addition to that, QUIC offers "early data" support from the get go which is
 done to allow more data and it is used more easily than TCP Fast Open.
 
+With the stream concept, another logical connection to the same host can be
+done at once without having to wait for the existing one to end first.
+
 ## TCP Fast Open is problematic
 
 TCP Fast Open was published as [RFC 7413](https://tools.ietf.org/html/rfc7413)

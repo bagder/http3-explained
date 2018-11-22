@@ -8,3 +8,12 @@ development very frequently.
 There's really nothing that prevents this protocol from being implemented and
 offered by operating system kernels in a future, should someone find that a
 good idea.
+
+### Many implementations
+
+One obvious effect of implementing a new transport protocol that primarily
+lives in user-space is that we see many independent implementations and we can
+look forward to applications running with this rather big and complicated
+tranport protocol stack in them going forward and different applications using
+different not only HTTP/3 but also QUIC stacks. It will for sure bring new
+challanges.
