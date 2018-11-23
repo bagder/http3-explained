@@ -34,7 +34,7 @@
     * Server push
 * [Common criticism](criticism.md)
 * [The specifications](specs.md)
-* Support
+* [Status](status.md)
     * Servers
     * Clients
     * Kernels and CPU load
