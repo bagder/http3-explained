@@ -9,7 +9,7 @@ There are two basic types of stream in QUIC:
  - Bidirectional streams allow for data to be sent in both directions.
 
 Either type of stream can be created by either endpoint, can concurrently send
-data interleaved with other streams, and can be cancelled.
+data interleaved with other streams, and can be canceled.
 
 To send data over a QUIC connection, one or more streams are used.
 

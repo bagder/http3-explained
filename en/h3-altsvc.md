@@ -6,7 +6,7 @@ already designed and created mechanism for a server to tell a client: *"look,
 I run the same service on THIS HOST using THIS PROTOCOL on THIS PORT"*. See
 details in [RFC 7838](https://tools.ietf.org/html/rfc7838).
 
-A client that receives such an Alt-svc response is then adviced to, if it
+A client that receives such an Alt-svc response is then advised to, if it
 supports and wants to, connect to that given other host in parallel in the
 background - using the specified protocol - and if it successful switch its
 operations over to that instead of the initial connection.
@@ -25,7 +25,7 @@ An HTTP server includes an `Alt-Svc:` header in its response:
 
     Alt-Svc: h3=":50781"
 
-This indicates that HTTP/3 is available on UDP port 50781 at the same hostname
+This indicates that HTTP/3 is available on UDP port 50781 at the same host name
 that was used to get this response.
 
 A client can then attempt to setup a QUIC connection to that destination and

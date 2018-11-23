@@ -8,9 +8,9 @@ In early 2018, almost 40% of the top-1000 web sites run HTTP/2, around 70% of
 all HTTPS requests Firefox issues get HTTP/2 responses back and all major
 browsers, servers and proxies support it.
 
-HTTP/2 adresses a whole slew of shortcomings in HTTP/1 and with the
+HTTP/2 addresses a whole slew of shortcomings in HTTP/1 and with the
 introduction of the second version of HTTP users can stop using a bunch of
-work-arounds. Some of which are pretty burdonsome on web developers.
+work-arounds. Some of which are pretty burdensome on web developers.
 
 One of the primary features of HTTP/2 is that it makes use of multiplexing, so
 that many logical streams are sent over the same physical TCP connection. This

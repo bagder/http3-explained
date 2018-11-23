@@ -14,4 +14,4 @@ and push that initially triggered the creation of this new transport protocol.
 
 So why create a new transport protocol and why do it on top of UDP?
 
-![quic logo](../images/QUIC.png)
+![QUIC logo](../images/QUIC.png)

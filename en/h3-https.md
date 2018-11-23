@@ -21,7 +21,7 @@ but for other reasons.
 The first connection to a fresh, not preciously visited-before, host for a
 HTTPS:// URL probably has to be done over TCP (possibly in addition to a
 parallel attempt to connect QUIC). The host might be a legacy server without
-QUIC support or there might be a middle box inbetween setting up obstacles to
+QUIC support or there might be a middle box in between setting up obstacles to
 succeed with a QUIC connection.
 
 A modern client and server would presumably negotiate HTTP/2 in the first

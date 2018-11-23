@@ -22,7 +22,7 @@ or nginx.
 ## Clients
 
 None of the larger browser vendors have yet shipped any version, at any state,
-that can run the IETF version of quic or HTTP/3.
+that can run the IETF version of QUIC or HTTP/3.
 
 Google Chrome has shipped with a working implementation of Google's own QUIC
 version since many years, but that doesn't interop with the official QUIC
@@ -41,7 +41,7 @@ Some explanations for this include
   this.
 
 - TCP and TLS offloading to hardware exist, but that's much rarer for UDP and 
-  basicly non-existing for QUIC.
+  basically non-existing for QUIC.
 
 There are reasons to believe that performance and CPU requirements will
 improve over time.

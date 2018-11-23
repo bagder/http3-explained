@@ -5,11 +5,11 @@
 A lot of enterprises, operators and organizations block or rate-limit UDP
 traffic outside of port 53 (used for DNS) since it has in recent days mostly
 been abused for attacks. In particular, some of the existing UDP protocols and
-popular server implementations for them have been vulnerable for amplication
+popular server implementations for them have been vulnerable for amplification
 attacks where one attacker can make a huge amount of outgoing traffic to
 target innocent victims.
 
-QUIC has built-in mitigation against amplication attacks by requiring that the
+QUIC has built-in mitigation against amplification attacks by requiring that the
 initial packet must be at least 1200 bytes and by restriction in the protocol
 that says that a server MUST NOT send more than three times that in response
 without receiving a packet from the client in response.
@@ -21,7 +21,7 @@ how this will develop and how much of this is simply the result of UDP
 transfer performance not having been in developers' focus very much for many
 years.
 
-For most clients, this "slowness" is probably never even noticable.
+For most clients, this "slowness" is probably never even noticeable.
 
 ## QUIC takes too much CPU
 
@@ -38,9 +38,9 @@ No it isn't. Google brought the initial spec to the IETF after having proved,
 on a large Internet-wide scale, that deploying this style of protocol over UDP
 actually works and performs well.
 
-Since then, individuals from a large number of companies and organisations
+Since then, individuals from a large number of companies and organizations
 have worked in the vendor-neutral organization IETF to put together a standard
-tranport protocol out of it. In that work, Google employees have of course
+transport protocol out of it. In that work, Google employees have of course
 been participating, but so have employees from a large number of other
 companies that are interested in furthering the state of transport protocols
 on the Internet, including Mozilla, Fastly, Cloudflare, Akamai, Microsoft,

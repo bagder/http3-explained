@@ -9,7 +9,7 @@ people on the path between two QUIC endpoints to be able to measure latency.
 
 The opponents to this feature don't like the potential information leak.
 
-## Spinnig a bit
+## Spinning a bit
 
 Both endpoints, the client and the server, maintain a spin value, 0 or 1, for
 each QUIC connection, and they set the spin bit on packets it sends for that
@@ -20,6 +20,6 @@ for as long as one round trip lasts and then it toggles the value. The effect
 is then a pulse of ones and zeroes in that bitfield that observers can
 monitor.
 
-This measureing only works when the sender is neither application nor flow
+This measuring only works when the sender is neither application nor flow
 control limited and packet reordering over the network can also make the data
 noisy.

@@ -10,7 +10,7 @@ involving anyone and everyone who wants to help out!
 ## Prerequisites
 
 A reader of this book is presumed to have a basic understanding of TCP/IP
-networking, the fundmentals of HTTP and the web. For further insights and
+networking, the fundamentals of HTTP and the web. For further insights and
 specifics about HTTP/2 we recommend first reading up the details in [http2
 explained](https://daniel.haxx.se/http2/).
 

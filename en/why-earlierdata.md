@@ -20,5 +20,5 @@ problems even today in 2018. The TCP stack implementors have had issues and so
 have applications trying to take advantage of this feature - both in knowing
 in which OS version to try to activate it but also in figuring out how to
 gracefully back down and deal when problems arise. Several networks have been
-identified to interfer with TFO traffic and they have thus actively ruined
+identified to interfere with TFO traffic and they have thus actively ruined
 such TCP handshakes.

@@ -17,7 +17,7 @@ Forward error correction (FEC) is a method of obtaining error control in data
 transmission in which the transmitter sends redundant data and the receiver
 recognizes only the portion of the data that contains no apparent errors.
 
-Google expiremented with this in their original QUIC work but it was
+Google experimented with this in their original QUIC work but it was
 subsequently removed again since the experiments didn't turn out well. This
 feature is subject for discussion for QUIC v2 but probably takes for someone
 to prove that it actually can be a useful addition without too much penalty.
