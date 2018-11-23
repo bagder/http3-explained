@@ -4,7 +4,7 @@
     * [TCP or UDP](why-tcpudp.md)
     * [Ossification](why-ossification.md)
     * [Secure](why-secure.md)
-    * [Earlier data](why-earlierdata.md)
+    * [Reduced latency](why-latency.md)
     * [User space](why-userspace.md)
 * [History](history.md)
     * [IETF](history-ietf.md)
