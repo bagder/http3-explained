@@ -20,8 +20,9 @@ The work group did however soon decide that in order to get the proper focus
 and ability to deliver QUIC version 1 on time, it would focus on delivering
 HTTP, leaving non-HTTP transports to later work.
 
-At the time of this writing (March 2018), the plan is to ship the final
-specification for QUIC version 1 around November 2018.
+In March 2018 when we started working on this book, the plan was to ship the
+final specification for QUIC version 1 in November 2018. It was later
+postponed to July 2019.
 
 While the work on IETF-QUIC has progressed, the Google team has incorporated
 details from the IETF version and has started to slowly progress their version
