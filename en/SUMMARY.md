@@ -5,9 +5,10 @@
     * [Ossification](why-ossification.md)
     * [Secure](why-secure.md)
     * [Reduced latency](why-latency.md)
-* [History](history.md)
-    * [IETF](history-ietf.md)
-    * [Experience from HTTP/2](history-h2.md)
+* [Process](proc.md)
+    * [IETF](proc-ietf.md)
+    * [Experience from HTTP/2](proc-h2.md)
+    * [Status](proc-status.md)
 * [Protocol features](the-protocol.md)
     * [UDP](feature-udp.md)
     * [Reliable](feature-reliable.md)
@@ -34,7 +35,6 @@
     * Prioritization
     * Server push
     * [Comparison with HTTP/2](h3-h2.md)
-* [Status](status.md)
 * [Common criticism](criticism.md)
 * [The specifications](specs.md)
 * [QUIC v2](quic-v2.md)
