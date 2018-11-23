@@ -30,6 +30,11 @@ maximize resource usage and increase redundancy.
 The SCTP proponents of the world like to mention that SCTP already features
 multipath and so does modern TCP.
 
+## Unreliable data
+
+It has been discussed to offer "unreliable" streams as an option, that would
+then allow QUIC to also replace UDP-style applications.
+
 ## Non-HTTP adaptions
 
 DNS over QUIC was one of the early mentioned non-HTTP protocols that just
