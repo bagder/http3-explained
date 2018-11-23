@@ -30,8 +30,6 @@ The home page for this book is found at
 
 ## Help!
 
-Feel free to "grab" a whole section and write it for us.
-
 If you find mistakes, omissions, errors or blatant lies in this document,
 please send us a refreshed version of the affected paragraph and we will make
 amended versions. We will give proper credits to everyone who helps out! I
