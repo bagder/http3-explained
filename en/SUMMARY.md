@@ -32,6 +32,7 @@
     * Header compression
     * Prioritization
     * Server push
+    * Comparison with HTTP/2
 * [Status](status.md)
 * [Common criticism](criticism.md)
 * [The specifications](specs.md)
