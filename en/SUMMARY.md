@@ -32,10 +32,7 @@
     * Header compression
     * Prioritization
     * Server push
+* [Status](status.md)
 * [Common criticism](criticism.md)
 * [The specifications](specs.md)
-* [Status](status.md)
-    * Servers
-    * Clients
-    * Kernels and CPU load
 * [QUIC v2](quic-v2.md)
