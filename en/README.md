@@ -16,7 +16,12 @@ explained](https://daniel.haxx.se/http2/).
 
 ## Author
 
-This book is created and the work is started by Daniel Stenberg.
+This book is created and the work is started by [Daniel
+Stenberg](https://daniel.haxx.se/). Daniel is the founder and lead developer
+of [curl](https://curl.haxx.se/), the world's most widely used HTTP client
+software. Daniel has worked with and on HTTP and internet protocols for over
+two decades and is the author of [http2
+explained](https://daniel.haxx.se/http2/).
 
 ## Home
 
