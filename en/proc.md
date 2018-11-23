@@ -1,4 +1,4 @@
-# History
+# Process
 
 The initial QUIC protocol was designed by Jim Roskind at Google and was
 initially implemented in 2012, announced publicly to the world in 2013 when
