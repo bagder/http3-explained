@@ -6,7 +6,7 @@ of the core protocol have been postponed and are now planned to instead get
 done in a subsequent QUIC version. QUIC version 2 or beyond.
 
 The author of this document does however have a rather faulty crystal ball so
-we can't tell for sure exactly what features that will or will not appear in
+we can not tell for sure exactly what features that will or will not appear in
 version 2. We can however mention some of the features and things that
 explicitly have been removed from the v1 work to be "worked on later" and that
 then possibly might appear in a version 2.
@@ -18,7 +18,7 @@ transmission in which the transmitter sends redundant data and the receiver
 recognizes only the portion of the data that contains no apparent errors.
 
 Google experimented with this in their original QUIC work but it was
-subsequently removed again since the experiments didn't turn out well. This
+subsequently removed again since the experiments did not turn out well. This
 feature is subject for discussion for QUIC v2 but probably takes for someone
 to prove that it actually can be a useful addition without too much penalty.
 
@@ -39,5 +39,5 @@ then allow QUIC to also replace UDP-style applications.
 
 DNS over QUIC was one of the early mentioned non-HTTP protocols that just
 might get some attention once QUIC v1 and HTTP/3 ship. But with a new
-transport like this having been brought on to the world I can't imagine that
+transport like this having been brought on to the world I cannot imagine that
 it will stop there...

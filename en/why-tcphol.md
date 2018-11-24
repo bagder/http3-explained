@@ -35,7 +35,7 @@ Fixing this issue is not easy, if at all possible, to do with TCP.
 
 ## Independent streams avoids the block
 
-With QUIC there's still a connection setup between the two end-points that
+With QUIC there is still a connection setup between the two end-points that
 makes the connection secure and the data delivery reliable.
 
 ![a QUIC chain between two computers](../images/tcp-chain.png)

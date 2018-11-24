@@ -7,7 +7,7 @@ concerns a single bit: the Spin Bit.
 The proponents of this bit insists that there is a need for operators and
 people on the path between two QUIC endpoints to be able to measure latency.
 
-The opponents to this feature don't like the potential information leak.
+The opponents to this feature do not like the potential information leak.
 
 ## Spinning a bit
 

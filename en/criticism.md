@@ -34,7 +34,7 @@ much and how much this extra CPU usage will hurt deployers.
 
 ## This is just Google
 
-No it isn't. Google brought the initial spec to the IETF after having proved,
+No it is not. Google brought the initial spec to the IETF after having proved,
 on a large Internet-wide scale, that deploying this style of protocol over UDP
 actually works and performs well.
 

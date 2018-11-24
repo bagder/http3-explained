@@ -2,7 +2,7 @@
 
 HTTP/3 will be performed using `HTTPS://` URLs. The world is full of these
 URLs and it has been deemed impractical and downright unreasonable to
-introduce another URL scheme for the new protocol. Much like HTTP/2 didn't
+introduce another URL scheme for the new protocol. Much like HTTP/2 did not
 need a new scheme, neither will HTTP/3.
 
 The added complexity in the HTTP/3 situation is however that where HTTP/2 was

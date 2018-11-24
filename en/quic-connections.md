@@ -15,7 +15,7 @@ independently selected by endpoints; each endpoint selects the connection IDs
 that its peer uses.
 
 The primary function of these connection IDs is to ensure that changes in
-addressing at lower protocol layers (UDP, IP, and below) don't cause packets
+addressing at lower protocol layers (UDP, IP, and below) do not cause packets
 for a QUIC connection to be delivered to the wrong endpoint. 
 
 By taking advantage of the connection ID, connections can thus migrate between

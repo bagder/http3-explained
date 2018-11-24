@@ -32,12 +32,12 @@ even existing implementations doing it over UDP.
 This was not deemed good enough as a QUIC alternative due to several reasons,
 including...
 
- - SCTP doesn't fix the head-of-line-blocking problem for streams
+ - SCTP does not fix the head-of-line-blocking problem for streams
  - SCTP requires the number of streams to be decided at connection setup
  - SCTP does not have a solid TLS/security story
  - SCTP has a 4-way handshake, QUIC offers 0-RTT
  - QUIC is a bytestream like TCP, SCTP is message-based
- - QUIC can move between IP addresses as SCTP can't
+ - QUIC can move between IP addresses as SCTP can not
 
 For more details on the differences, the [A Comparison between SCTP and
 QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00)

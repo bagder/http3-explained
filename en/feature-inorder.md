@@ -13,7 +13,7 @@ while stream A is getting its lost packet re-transmitted. This was not possible
 with HTTP/2.
 
 Illustrated here with one yellow and one blue stream sent between two QUIC
-end-points over a single connection. They're independent and may arrive in a
+end-points over a single connection. They are independent and may arrive in a
 different order, but each stream is reliably delivered in-order.
 
 ![two QUIC streams between two computers](../images/quic-chain-streams.png)

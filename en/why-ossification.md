@@ -17,26 +17,26 @@ to spy on the passing traffic and more.
 
 In order to perform their duties these boxes must know about networking and
 the protocols that are monitored or modified by them. They run software for
-this purpose. Software that isn't always upgraded very frequently.
+this purpose. Software that is not always upgraded very frequently.
 
 While they are glue components that keep the Internet together they are also
 often not keeping up with the latest technology. The middle of the network
-typically doesn't move as fast as the edges, as the clients and the servers of
+typically does not move as fast as the edges, as the clients and the servers of
 the world.
 
 All network protocols that these boxes might want to inspect and have ideas
 about what is okay and what is not then have this problem: these boxes were
 deployed a while ago when the protocols had a feature set of that
-time. Introducing new features or changes in behavior that weren't known
+time. Introducing new features or changes in behavior that were not known
 before, risks ending up considered bad or illegal by such boxes. Such traffic
-may very well just be dropped or delayed to the degree that users really don't
+may very well just be dropped or delayed to the degree that users really do not
 want to use those features.
 
 That is called "protocol ossification".
 
 Changes to TCP also suffers from ossification: some boxes between a client and
 the remote server will spot unknown new TCP options and block such connections
-since they don't know what the options are. If allowed to detect protocol
+since they do not know what the options are. If allowed to detect protocol
 details, systems learn how protocols typically behave and over time it becomes
 impossible to change them.
 
