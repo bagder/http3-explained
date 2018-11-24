@@ -11,9 +11,9 @@ These boxes serve many different specific purposes but I think we can say that
 universally they are put there because someone thinks they must be there to
 make things work.
 
-Middle-boxes routes IP packages between networks, they block malicious
-traffic, they do NAT (Network Address Translation), they improve performance,
-some try to spy on the passing traffic and more.
+Middle-boxes route IP packages between networks, they block malicious traffic,
+they do NAT (Network Address Translation), they improve performance, some try
+to spy on the passing traffic and more.
 
 In order to perform their duties these boxes must know about networking and
 the protocols that are monitored or modified by them. They run software for
