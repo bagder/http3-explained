@@ -3,7 +3,7 @@
 The QUIC working group has worked fiercely since late 2016 on specifying the
 protocols and the plan is now to have it done by July 2019.
 
-As of November 2018, there still hasn't been any larger interop tests with
+As of November 2018, there still has not been any larger interop tests with
 HTTP/3 - only with the existing two implementations and none of them are done
 by a browser or a popular open server software.
 
@@ -25,8 +25,31 @@ None of the larger browser vendors have yet shipped any version, at any state,
 that can run the IETF version of QUIC or HTTP/3.
 
 Google Chrome has shipped with a working implementation of Google's own QUIC
-version since many years, but that doesn't interop with the official QUIC
+version since many years, but that does not interop with the official QUIC
 protocol and its HTTP implementation is very different than HTTP/3.
+
+## Implementation Obstacles
+
+QUIC decided to use TLS 1.3 as the foundation for the crypto and security
+layer to avoid inventing something new and instead lean on a trustworthy and
+existing protocol. However, while doing this, the working group also decided
+that to really streamline the use of TLS in QUIC, it should only use "TLS
+messages" and not "TLS records" for the protocol.
+
+This might sound like an innocuous change, but this has actually caused a
+significant hurdle for many QUIC stack implementors. Existing TLS libraries
+that support TLS 1.3 simply do not have APIs enough to expose this
+functionality and allow QUIC to access it. While several QUIC implementors
+come from larger organizations who work on their own TLS stack in parallel,
+this is not true for everyone.
+
+The dominant open source heavyweight OpenSSL for example, does not have any
+API for this and has not expressed any desire to provide any such anytime soon
+(as of November 2018).
+
+This will eventually also lead to deployment obstacles since QUIC stacks will
+need to either base themselves on other TLS libraries, use a separate patched
+OpenSSL build or require an update to a future OpenSSL version.
 
 ## Kernels and CPU load
 
