@@ -1,6 +1,6 @@
 # The specifications
 
-Here's a collection of the latest official drafts for the various parts and
+Here is a collection of the latest official drafts for the various parts and
 components of QUIC and HTTP/3.
 
 ## Invariants

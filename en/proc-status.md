@@ -40,7 +40,7 @@ Some explanations for this include
   is, since it has not traditionally been used for high speed transfers like
   this.
 
-- TCP and TLS offloading to hardware exist, but that's much rarer for UDP and 
+- TCP and TLS offloading to hardware exist, but that is much rarer for UDP and 
   basically non-existing for QUIC.
 
 There are reasons to believe that performance and CPU requirements will

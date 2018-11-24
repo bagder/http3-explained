@@ -10,7 +10,7 @@ on a given machine.
 
 There are enterprises and other network setups that block UDP traffic on other
 ports than 53 (used for DNS). Others throttle such data in ways that makes
-QUIC perform worse than TCP based protocols. There's no end to what some
+QUIC perform worse than TCP based protocols. There is no end to what some
 operators may do.
 
 For the foreseeable future, all use of QUIC-based transports will probably

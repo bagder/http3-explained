@@ -23,7 +23,7 @@ IP addresses and network interfaces in ways TCP never could.
 
 ## Port numbers
 
-QUIC is modeled on top of UDP so there's a 16 bit port number field to use to
+QUIC is modeled on top of UDP so there is a 16 bit port number field to use to
 differentiate incoming connection attempts with.
 
 ## Version negotiation

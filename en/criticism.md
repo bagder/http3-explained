@@ -48,7 +48,7 @@ Facebook and Apple.
 
 ## This is too small of an improvement
 
-That's not really a critique but an opinion. Maybe it is, and maybe it is too
+That is not really a critique but an opinion. Maybe it is, and maybe it is too
 little of an improvement so close in time since HTTP/2 was shipped.
 
 HTTP/3 is likely to perform much better in packet loss-ridden networks, it
