@@ -7,9 +7,10 @@ As of November 2018, there still has not been any larger interop tests with
 HTTP/3 - only with the existing two implementations and none of them are done
 by a browser or a popular open server software.
 
-There are fifteen or so different QUIC implementations listed in the working
-groups wiki pages, but far from all of them can interop on the latest spec
-draft revisions.
+There are fifteen or so different [QUIC implementations
+listed](https://github.com/curl/curl/wiki/QUIC-implementation) in the QUIC
+working groups' wiki pages, but far from all of them can interop on the latest
+spec draft revisions.
 
 Implementing QUIC is not easy and the protocol has kept moving and changing
 even up to this date.
