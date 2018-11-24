@@ -31,7 +31,7 @@
     * [HTTPS:// URLs](h3-https.md)
     * [Bootstrap with Alt-svc](h3-altsvc.md)
     * [QUIC streams and HTTP/3](h3-streams.md)
-    * Prioritization
+    * [Prioritization](h3-prio.md)
     * Server push
     * [Comparison with HTTP/2](h3-h2.md)
 * [Common criticism](criticism.md)
