@@ -1,7 +1,7 @@
 # HTTP/3 Server push
 
-HTTP/3 server push is similar to what is described in HTTP/2 (RFC 7540), but
-uses different mechanisms.
+HTTP/3 server push is similar to what is described in HTTP/2 ([RFC
+7540](https://httpwg.org/specs/rfc7540.html)), but uses different mechanisms.
 
 A server push is effectively the response to a request that the client never
 sent!

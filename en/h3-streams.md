@@ -35,8 +35,9 @@ frame, a series of DATA frames and possibly a trailing HEADERS frame.
 ## QPACK headers
 
 The HEADERS frames contain HTTP headers compressed using the QPACK algorithm.
-QPACK is similar in style to the HTTP/2 compression called HPACK (RFC 7541),
-but modified to work with streams delivered out of order.
+QPACK is similar in style to the HTTP/2 compression called HPACK ([RFC
+7541](https://httpwg.org/specs/rfc7541.html)), but modified to work with
+streams delivered out of order.
 
 QPACK itself uses two additional unidirectional QUIC streams between the two
 end-points. They are used to carry dynamic table information in either

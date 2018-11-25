@@ -16,7 +16,7 @@
     * [In Order](feature-inorder.md)
     * [Fast handshakes](feature-handshakes.md)
     * [Early data](feature-earlydata.md)
-    * [TLS](feature-tls.md)
+    * [TLS 1.3](feature-tls.md)
     * [Transport and application](feature-trans-app.md)
     * [HTTP over QUIC](feature-http.md)
     * [Non-HTTP over QUIC](feature-nonhttp.md)
