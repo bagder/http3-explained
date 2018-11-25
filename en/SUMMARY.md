@@ -26,6 +26,7 @@
     * [0-RTT](quic-0rtt.md)
     * [Spin Bit](quic-spinbit.md)
     * [User space](quic-userspace.md)
+    * [API](quic-api.md)
 * [HTTP/3](h3.md)
     * [HTTPS:// URLs](h3-https.md)
     * [Bootstrap with Alt-svc](h3-altsvc.md)
