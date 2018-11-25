@@ -11,15 +11,15 @@ them. In HTTP/3 the client even sets a limit for how many pushes it accepts
 but informing the server what the max push stream ID is. Going over that limit
 will cause a connection error.
 
-If the server deems it likely that the server wants an extra resource that it
-hasn't asked for but ought to have anyway, it can send the client a
-`PUSH_PROMISE` to the client (over the request stream) showing how the request
-looks like that the push is sending a response to, and then send the response
-over a new stream.
+If the server deems it likely that the client wants an extra resource that it
+hasn't asked for but ought to have anyway, it can send a `PUSH_PROMISE` frame
+(over the request stream) showing how the request looks like that the push is
+a response to, and then send that actual response over a new stream.
 
-But even when pushes have been said to be acceptable by the client, each
-individual pushed stream can still be canceled at any time if the client
-deems that suitable. It then sends a `CANCEL_PUSH` frame to the server.
+But even when pushes have been said to be acceptable by the client
+before-hand, each individual pushed stream can still be canceled at any time
+if the client deems that suitable. It then sends a `CANCEL_PUSH` frame to the
+server.
 
 ## Problematic
 
