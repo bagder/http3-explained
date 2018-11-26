@@ -3,11 +3,6 @@
 Thanks for considering to translate or help out with the translation of this
 document.
 
-First: **DO NOT START YET** There is no point to waste a lot of time and
-effort on translating the document until it has reached a certain maturity
-level. That level is not achieved yet. Translating the document now is a waste
-of time!
-
 ## Format
 
 We only use markdown for text.
