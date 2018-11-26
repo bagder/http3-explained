@@ -11,4 +11,4 @@ to version 2 from version 1 (about 16 years).
 With HTTP/2, users and software stacks got used to the idea that HTTP can no
 longer be assumed to be done with a text-based protocol in a serial manner.
 
-QUIC-over-HTTP was renamed to HTTP/3 in November 2018.
+HTTP-over-QUIC was renamed to HTTP/3 in November 2018.
