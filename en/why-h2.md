@@ -1,6 +1,6 @@
 ## Remember HTTP/2?
 
-The HTTP/2 specification [RFC 7540](http://httpwg.org/specs/rfc7540.html) was
+The HTTP/2 specification [RFC 7540](https://httpwg.org/specs/rfc7540.html) was
 published in May 2015 and the protocol has since then been implemented and
 deployed widely across the Internet and the world wide web.
 
