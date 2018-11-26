@@ -1,9 +1,9 @@
 # Ossification
 
 The internet is a network of networks. There is equipment setup on the
-Internet in many difference places a long the way to make sure this network of
+Internet in many different places along the way to make sure this network of
 network works as it is supposed to. These devices, the boxes that are placed
-distributed out in the network are what we sometimes refer to as middle-boxes.
+distributed out in the network, are what we sometimes refer to as middle-boxes.
 Boxes that sit somewhere between the end-points that are the two primary
 parties involved in a traditional network data transfer.
 
