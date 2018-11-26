@@ -1,4 +1,4 @@
-**HTTP/3 explained** is a collborative effort to document the HTTP/3 and the
+**HTTP/3 explained** is a collaborative effort to document the HTTP/3 and the
 QUIC protocols. Join in and help!
 
 Get the Web, PDF, or e-book versions on
