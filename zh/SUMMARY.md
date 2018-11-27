@@ -10,7 +10,7 @@
     * [HTTP/2的经验](proc-h2.md)
     * [标准化进展情况](proc-status.md)
 * [协议特点](the-protocol.md)
-    * [UDP](feature-udp.md)
+    * [基于UDP](feature-udp.md)
     * [可靠性](feature-reliable.md)
     * [数据流](feature-streams.md)
     * [有序交付](feature-inorder.md)
