@@ -12,6 +12,8 @@
 
 本书作者是 [Daniel Stenberg](https://daniel.haxx.se/)。Daniel是世界最流行的HTTP客户端软件 [curl](https://curl.haxx.se/) 的创造者与牵头开发者。Daniel在HTTP与互联网协议中有20余年的开发经验，他还是 [HTTP/2详解](https://daniel.haxx.se/http2/) 的作者。
 
+译者：[Yi Bai](https://github.com/yi-bai)
+
 ## 主页
 
 本书主页是 [daniel.haxx.se/http3-explained](https://daniel.haxx.se/http3-explained) 。
