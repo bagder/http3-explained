@@ -48,7 +48,7 @@ peer that receives the setting.
 
 ## Sending and Receiving Data
 
-Endpoints uses streams to send and receive data. That is after all their
+Endpoints use streams to send and receive data. That is after all their
 ultimate purpose. Streams are an ordered byte-stream abstraction. Separate
 streams are however not necessarily delivered in the original order.
 
