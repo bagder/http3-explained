@@ -1,6 +1,6 @@
 ## 回顾HTTP/2
 
-HTTP/2协议规范（[RFC 7540](http://httpwg.org/specs/rfc7540.html)）于2015年5月发表，从那之后，它被广泛地在Internet和WWW上实现。
+HTTP/2协议规范（[RFC 7540](https://httpwg.org/specs/rfc7540.html)）于2015年5月发表，从那之后，它被广泛地在Internet和WWW上实现。
 
 2018年初，前1000大网站中约40%实现了HTTP/2协议，在Firefox发出的HTTPS请求中，近70%的请求由HTTP/2回复。主流的浏览器、服务器、代理均支持了HTTP/2。
 
