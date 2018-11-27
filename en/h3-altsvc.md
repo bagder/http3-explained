@@ -14,10 +14,10 @@ operations over to that instead of the initial connection.
 If the initial connection uses HTTP/2 or even HTTP/1, the server can respond
 and tell the client that it can connect back and try HTTP/3. It could be to
 the same host or to another one that knows how to serve that origin. The
-information given in such an Alt-svc response has an expiry timer making
-clients will information that for a period of time so that subsequent
-connections and requests can go directly to the alternative host using the
-suggested alternative protocol.
+information given in such an Alt-svc response has an expiry timer, making
+clients able to direct subsequent connections and requests directly to the
+alternative host using the suggested alternative protocol, for a certain
+period of time.
 
 ## Example
 
