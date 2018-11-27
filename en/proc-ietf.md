@@ -29,6 +29,6 @@ details from the IETF version and has started to slowly progress their version
 of the protocol towards what the IETF version might become. Google has kept
 up running their version of QUIC in their browser and services.
 
-Most new implementations that are in the works (*link to the the
-implementations*) have decided to focus on the IETF version and are not
-compatible with the Google version.
+[Most new implementations that are in the
+works](https://github.com/quicwg/base-drafts/wiki/Implementations) have decided
+to focus on the IETF version and are not compatible with the Google version.
