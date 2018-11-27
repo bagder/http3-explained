@@ -11,6 +11,6 @@ A dependent stream should only be allocated resources if either all of the
 streams that it depends on are closed or it is not possible to make progress
 on them.
 
-A stream weigth is value between 1 and 256 and it is specified that streams
+A stream weight is value between 1 and 256 and it is specified that streams
 with the same parent **should** be allocated resources proportionally based on
 their weight.

@@ -8,12 +8,12 @@ sent!
 
 Server pushes are only allowed to happen if the client side has agreed to
 them. In HTTP/3 the client even sets a limit for how many pushes it accepts
-but informing the server what the max push stream ID is. Going over that limit
+by informing the server what the max push stream ID is. Going over that limit
 will cause a connection error.
 
 If the server deems it likely that the client wants an extra resource that it
 hasn't asked for but ought to have anyway, it can send a `PUSH_PROMISE` frame
-(over the request stream) showing how the request looks like that the push is
+(over the request stream) showing what the request looks like that the push is
 a response to, and then send that actual response over a new stream.
 
 But even when pushes have been said to be acceptable by the client

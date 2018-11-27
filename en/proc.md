@@ -14,7 +14,7 @@ fairly quickly and over time they proved the concept to work reliably for a
 vast portion of users.
 
 In June 2015, the first internet draft for QUIC was sent to the IETF for
-standardization, but it it took until late 2016 for a QUIC working group to
+standardization, but it took until late 2016 for a QUIC working group to
 get approved and started. But then it took off immediately with a high degree
 of interest from many parties.
 

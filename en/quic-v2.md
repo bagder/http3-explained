@@ -6,7 +6,7 @@ of the core protocol have been postponed and are now planned to instead get
 done in a subsequent QUIC version. QUIC version 2 or beyond.
 
 The author of this document does however have a rather faulty crystal ball so
-we can not tell for sure exactly what features that will or will not appear in
+we can not tell for sure exactly what features will or will not appear in
 version 2. We can however mention some of the features and things that
 explicitly have been removed from the v1 work to be "worked on later" and that
 then possibly might appear in a version 2.
