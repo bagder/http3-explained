@@ -35,5 +35,5 @@
     * [服务器端推送](h3-push.md)
     * [与HTTP/2的比较](h3-h2.md)
 * [常见批评](criticism.md)
-* [继续标准](specs.md)
+* [技术标准](specs.md)
 * [QUIC v2](quic-v2.md)
