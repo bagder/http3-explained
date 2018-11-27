@@ -25,8 +25,7 @@ of the previous *six*. In fact, connection coalescing and "desharding"
 techniques used with HTTP/2 may actually even reduce the number of connections
 much more than so.
 
-With HTTP/2, the HTTP head of line blocking problem was "fixed". The problem
-that clients had to wait for the request before in the line to finish before
-the next one could go out.
+HTTP/2 fixed the HTTP head of line blocking problem, where clients had to wait
+for the first request in line to finish before the next one could go out.
 
 ![http2 man](../images/h2-man.jpg)
