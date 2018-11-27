@@ -18,11 +18,11 @@ but for other reasons.
 
 ## Initial connection
 
-The first connection to a fresh, not previously visited-before, host for a
+The first connection to a fresh, not previously visited host for a
 HTTPS:// URL probably has to be done over TCP (possibly in addition to a
-parallel attempt to connect QUIC). The host might be a legacy server without
-QUIC support or there might be a middle box in between setting up obstacles to
-succeed with a QUIC connection.
+parallel attempt to connect via QUIC). The host might be a legacy server without
+QUIC support or there might be a middle box in between setting up obstacles
+preventing a QUIC connection from succeeding.
 
 A modern client and server would presumably negotiate HTTP/2 in the first
 handshake. When the connection has been setup and the server responds to a

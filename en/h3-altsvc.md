@@ -8,7 +8,7 @@ details in [RFC 7838](https://tools.ietf.org/html/rfc7838).
 
 A client that receives such an Alt-svc response is then advised to, if it
 supports and wants to, connect to that given other host in parallel in the
-background - using the specified protocol - and if it successful switch its
+background - using the specified protocol - and if it is successful switch its
 operations over to that instead of the initial connection.
 
 If the initial connection uses HTTP/2 or even HTTP/1, the server can respond

@@ -1,8 +1,8 @@
 # Ossification
 
-The internet is a network of networks. There is equipment setup on the
+The internet is a network of networks. There is equipment set up on the
 Internet in many different places along the way to make sure this network of
-network works as it is supposed to. These devices, the boxes that are placed
+networks works as it is supposed to. These devices, the boxes that are
 distributed out in the network, are what we sometimes refer to as middle-boxes.
 Boxes that sit somewhere between the end-points that are the two primary
 parties involved in a traditional network data transfer.
@@ -41,5 +41,5 @@ details, systems learn how protocols typically behave and over time it becomes
 impossible to change them.
 
 The only truly effective way to "combat" ossification, is to encrypt as much
-as possible of the communication to prevent middle-boxes to see much of the
+as possible of the communication to prevent middle-boxes from seeing much of the
 protocol passing through.
