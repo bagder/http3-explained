@@ -24,7 +24,7 @@
     * [使用TLS的连接](quic-tls.md)
     * [数据流](quic-streams.md)
     * [0-RTT](quic-0rtt.md)
-    * [旋转比特位](quic-spinbit.md)
+    * [翻转比特位](quic-spinbit.md)
     * [用户空间实现](quic-userspace.md)
     * [API](quic-api.md)
 * [HTTP/3](h3.md)
