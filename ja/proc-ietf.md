@@ -6,7 +6,7 @@ IETFによってプロトコルの標準化が始まり、QUICワーキンググ
 
 send-more-than-HTTPという要求を満たすため、IETF QUICプロトコルのアーキテクチャは2つの異なるレイヤーに分割されました。"transport QUIC"レイヤーと"HTTP over QUIC"レイヤーです。(HTTP over QUICレイヤーは"hq"と呼ばれることがあります)
 
-このレイヤー分割は、一見無害のようにも見えるが、IETF-QUICとGoogle-QUICで大きな差分を生み出しました。
+このレイヤー分割は、一見無害のようにも見えますが、IETF-QUICとGoogle-QUICで大きな差分を生み出しました。
 
 ワーキンググループはQUICの最初のバージョンを適切なフォーカスで予定通りに提供するために、HTTPにフォーカスし、HTTPで無いものは後に回すことにしました。
 
