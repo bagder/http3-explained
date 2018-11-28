@@ -1,34 +1,17 @@
 ## IETF
 
-When the protocol standardization was taken to the IETF and a quic work group
-was created, there were initial decisions made that the QUIC protocol that the
-IETF was about to standardize should be able to transfer other protocols than
-"just" HTTP. Google-QUIC only ever transported HTTP - in practice it
-transported what was effectively HTTP/2 frames, using the HTTP/2 frame syntax.
+IETFによってプロトコルの標準化が始まり、QUICワーキンググループが発足した当初から、IETFはQUICはHTTP"だけ"ではなく、他のプロトコルにも適用し標準化しようと決定しました。Google-QUICはHTTPだけを対象にしていましたが、実際はHTTP/2のフレーム構文を利用し、HTTP/2でも効果的に動作していました。
 
-It was also stated that IETF-QUIC should base its encryption and security on
-TLS 1.3 instead of the "custom" approach used by Google-QUIC.
+また、IETF-QUICではGoogleが"カスタム"した手法ではなく、TLS 1.3に基づいた暗号化とセキュリティを取り入れることにしました。
 
-In order to satisfy the send-more-than-HTTP demand, the IETF QUIC protocol
-architecture was split in two separate layers: the transport QUIC and the
-"HTTP over QUIC" layer (the latter sometimes referred to as "hq").
+send-more-than-HTTPという要求を満たすため、IETF QUICプロトコルのアーキテクチャは2つの異なるレイヤーに分割されました。"transport QUIC"レイヤーと"HTTP over QUIC"レイヤーです。(HTTP over QUICレイヤーは"hq"と呼ばれることがあります)
 
-This layer split, while it may sound innocuous, has caused the IETF-QUIC to
-differ quite a lot from the original Google-QUIC.
+このレイヤー分割は、一見無害のようにも見えるが、IETF-QUICとGoogle-QUICで大きな差分を生み出しました。
 
-The work group did however soon decide that in order to get the proper focus
-and ability to deliver QUIC version 1 on time, it would focus on delivering
-HTTP, leaving non-HTTP transports to later work.
+ワーキンググループはQUICの最初のバージョンを適切なフォーカスで予定通りに提供するために、HTTPにフォーカスし、HTTPで無いものは後に回すことにしました。
 
-In March 2018 when we started working on this book, the plan was to ship the
-final specification for QUIC version 1 in November 2018. It was later
-postponed to July 2019.
+私達がこの本を書き始めた2018年3月にはQUICバージョン1の仕様の最終盤は2018年11月にリリースされることになっていましたが、現在は延期されて2019年7月となっています。
 
-While the work on IETF-QUIC has progressed, the Google team has incorporated
-details from the IETF version and has started to slowly progress their version
-of the protocol towards what the IETF version might become. Google has kept
-up running their version of QUIC in their browser and services.
+IETF-QUICの作業が進みに連れ、GoogleチームはIETF版から詳細を組み込み、ゆっくりとIETF版が目指しているものをGoogle版にも取り入れ始めました。GoogleはGoogle版のQUICをGoogleのブラウザとサービスで動かし続けました。
 
-[Most new implementations that are in the
-works](https://github.com/quicwg/base-drafts/wiki/Implementations) have decided
-to focus on the IETF version and are not compatible with the Google version.
+[最新の実装](https://github.com/quicwg/base-drafts/wiki/Implementations)ではIETFバージョンにフォーカスしGoogleバージョンとの互換性はありません。
