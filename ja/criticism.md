@@ -1,27 +1,26 @@
-# Criticism
+# 反対意見
 
-## UDP will never work
+## UDPが使えない
 
-A lot of enterprises, operators and organizations block or rate-limit UDP
-traffic outside of port 53 (used for DNS) since it has in recent days mostly
-been abused for attacks. In particular, some of the existing UDP protocols and
-popular server implementations for them have been vulnerable for amplification
-attacks where one attacker can make a huge amount of outgoing traffic to
-target innocent victims.
+大企業、運用者、組織はUDPを使った53番ポート（主にDNSとして利用されている）
+の外部通信をブロックしていたり、帯域制限をかけている。この利用制限の理由は、攻撃に
+悪用されがちだからだ。なぜなら、攻撃者がDNSを利用し、ターゲットに対して大規模な
+外部トラフィックを生み出すことが可能であるためだ。そのために、既存のUDPプロトコルや
+UDPで頻繁に用いられるサーバー上の実装はDNSアンプ攻撃に対して脆弱である。
 
-QUIC has built-in mitigation against amplification attacks by requiring that the
-initial packet must be at least 1200 bytes and by restriction in the protocol
-that says that a server MUST NOT send more than three times that in response
-without receiving a packet from the client in response.
+これに対して、QUICではアンプ攻撃に対して軽減する方法が備わっている。サーバーから受け取る
+最初のパケットは最低でも1,200バイトを要求するとともに、クライアントレスポンスのパケットを
+受け取っていない場合では、クライアントサーバーは3回以上のそれをレスポンスを送ってはならない、
+とプロトコル上で明記されている。
 
-## UDP is slow in kernels
+## UDPはカーネル内で遅い
 
-This seems to be the truth, at least today in 2018. We can of course not tell
-how this will develop and how much of this is simply the result of UDP
-transfer performance not having been in developers' focus very much for many
-years.
+UDPがカーネル内で遅い点は正しいのように思われる、少なくとも2018年では。ただし、
+この関して明確な理由を主張することができない。なぜなら、カーネルでの遅さは
+どのように発生しているのか、どれだけUDPの転送パフォーマンスによる遅さなのかは、
+開発者にとってはここ数年間はあまり興味がないからだ。
 
-For most clients, this "slowness" is probably never even noticeable.
+そのために、ほとんどのクライアントでは、この「遅さ」は気づくことはないだろう。
 
 ## QUIC takes too much CPU
 
