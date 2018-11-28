@@ -1,45 +1,36 @@
-# HTTP/3 explained
+# 詳解HTTP/3
 
-This book effort was started in March 2018. The plan is to document HTTP/3 and
-its underlying protocol: QUIC. Why, how they work, protocol details, the
-implementations and more.
+この本の試みは2018年3月に始まりました。HTTP/3と、その根本にあるプロトコルであるQUICを文書化することがその目的です。
+どうして、どのようにして動作するのか、プロトコルの詳細、その実装など。
 
-The book is entirely free at no cost and is meant to be a collaborative effort
-involving anyone and everyone who wants to help out!
+この本は完全に無償で提供され、援助したいと考えるすべての人を巻き込んだ共同作品です。
 
-## Prerequisites
+## 前提条件
 
-A reader of this book is presumed to have a basic understanding of TCP/IP
-networking, the fundamentals of HTTP and the web. For further insights and
-specifics about HTTP/2 we recommend first reading up the details in [http2
-explained](https://daniel.haxx.se/http2/).
+この本の読者は、TCP/IPネットワーキングの基礎や、HTTP、Webの基本を理解しているものとみなされます。
+HTTP/2に関する詳細や特徴については、[http2 explained](https://daniel.haxx.se/http2/)を最初に読むことを推奨しています。
 
-## Author
+## 著者
 
-This book is created and the work is started by [Daniel
-Stenberg](https://daniel.haxx.se/). Daniel is the founder and lead developer
-of [curl](https://curl.haxx.se/), the world's most widely used HTTP client
-software. Daniel has worked with and on HTTP and internet protocols for over
-two decades and is the author of [http2
-explained](https://daniel.haxx.se/http2/).
+この本は[Daniel Stenberg](https://daniel.haxx.se/)によって作成されました。
+Danielは、HTTPクライアントソフトウェアとして世界中で最も幅広く使われている[curl](https://curl.haxx.se/)の作者でありリードデベロッパーです。
+Danielは20年以上にわたりHTTPやインターネットのプロトコルに関して取り組んでおり、[http2 explained](https://daniel.haxx.se/http2/)の著者です。
 
-## Home
+訳者: [inductor](https://github.com/inductor)
 
-The home page for this book is found at
-[daniel.haxx.se/http3-explained](https://daniel.haxx.se/http3-explained).
+## ホームページ
 
-## Help!
+この本のホームページは[daniel.haxx.se/http3-explained](https://daniel.haxx.se/http3-explained)にあります。
 
-If you find mistakes, omissions, errors or blatant lies in this document,
-please send us a refreshed version of the affected paragraph and we will make
-amended versions. We will give proper credits to everyone who helps out! I
-hope to make this document better over time.
+## ヘルプ！
 
-Preferably, you submit [errors](https://github.com/bagder/http3-explained/issues)
-or [pull requests](https://github.com/bagder/http3-explained/pulls) on the book's
-github page.
+本文書に関する誤字脱字やあからさまな間違いを見つけた場合は、修正した状態の文書を送っていただければ、改訂版を作成します。
+助けていただいたすべての方に、適切なクレジットを提供します！時間をかけてこの文書を良くしていければと思っています。
+
+よろしければ、[誤字の指摘](https://github.com/bagder/http3-explained/issues)
+または[プルリクエスト](https://github.com/bagder/http3-explained/pulls)を本のGitHubページに送ってください。
 
 ## License
 
-This document and all its contents are licensed under the [Creative Commons
-Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0w/).
+この文書およびすべてのコンテンツは、[Creative Commons
+Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0w/)のライセンスにて使用許諾されています。
