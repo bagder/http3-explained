@@ -1,6 +1,5 @@
 # The specifications(仕様)
-Here is a collection of the latest official drafts for the various parts and
-components of QUIC and HTTP/3. (ここでは最新のQUICやHTTP/3の構成に関するドラフトをまとめています。)
+ここではQUICやHTTP/3の構成に関する最新のドラフトをまとめています。
 
 ## Invariants
 
