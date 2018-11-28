@@ -22,14 +22,13 @@ UDPがカーネル内で遅い点は正しいのように思われる、少な�
 
 そのために、ほとんどのクライアントでは、この「遅さ」は気づくことはないだろう。
 
-## QUIC takes too much CPU
+## QUICはCPU使用量が高すぎる
 
-Similar to the "UDP is slow" remark above, this is partly because the TCP and
-TLS usage of the world has had a longer time to mature, improve and get
-hardware assistance.
+先述の「UDPは遅い」と同様であるが、CPU使用量が高すぎる点に関してもあまり当てはまらない。
+なぜならTCPとTLSを利用する際にはハードウェアレベルでのアシストがあるまでに進化し、熟成している。
 
-There are reasons to expect this to improve over time. The question is by how
-much and how much this extra CPU usage will hurt deployers.
+もちろん、時間を経るごとに、こういった改善が見込める。問題は利用者がどれだけ
+余剰なCPU使用の増加を気にしなければならないかだ。
 
 ## This is just Google
 
