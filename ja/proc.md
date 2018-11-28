@@ -1,23 +1,12 @@
 # Process
 
-The initial QUIC protocol was designed by Jim Roskind at Google and was
-initially implemented in 2012, announced publicly to the world in 2013 when
-Google's experimentation broadened.
+最初のQUICプロトコルはGoogleのJim Roskindによって設計され、最初の実装は2012年に行われました。2013年にGoogleの実験として世界中に公開されました。
 
-Back then, QUIC was still claimed to be an acronym for "Quick UDP Internet
-Connections", but that has been dropped since then.
+当時はQUICは"Quick UDP Internet Connections"の略語だとされていましたが、そのときからこのように言われなくなりました。
 
-Google implemented the protocol and subsequently deployed it both in their
-widely used browser (Chrome) and in their widely used server-side services
-(Google search, gmail, youtube and more). They iterated protocol versions
-fairly quickly and over time they proved the concept to work reliably for a
-vast portion of users.
+Googleはプロトコルを実装し、それに続いて広く使われているGoogle製のブラウザ(Chrome)と、広く使われているGoogleのサーバサイドのサービス(Google検索、gmail, youtube などなど)に実装しました。彼ら非常に早くプロトコルを改善し、このプロトコルが大量のユーザでも信頼性が高く動作することを証明しました。
 
-In June 2015, the first internet draft for QUIC was sent to the IETF for
-standardization, but it took until late 2016 for a QUIC working group to
-get approved and started. But then it took off immediately with a high degree
-of interest from many parties.
 
-In 2017, numbers quoted by QUIC engineers at Google mentioned that around 7%
-of *all* Internet traffic were already using this protocol. The Google version
-of the protocol that is.
+2015年5月に最初のQUICのドラフトが標準化のためにIETFに提出されましたが、QUICワーキンググループが承認されスタートするのは2016年後半までかかりました。しかし、多くの人々から注目を集めQUICワーキンググループは早急に立ち上がりました。
+
+2017年にはGoogleのQUICエンジニアが *全ての* インターネットトラフィックの約7%がすでにGoogle版のQUICプロトコルを利用していると報告されました。
