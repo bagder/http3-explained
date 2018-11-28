@@ -1,5 +1,3 @@
 ## Non-HTTP over QUIC
 
-The work on sending other protocols than HTTP over QUIC has been postponed to
-be worked on after QUIC version 1 has shipped.
-
+HTTP over QUIC以外の送信プロトコに関する機能は、QUIC v1が実装された後に取り組まれる予定です。
