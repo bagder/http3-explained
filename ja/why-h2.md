@@ -1,31 +1,23 @@
-## Remember HTTP/2?
+## HTTP/2、覚えていますか？
 
-The HTTP/2 specification [RFC 7540](https://httpwg.org/specs/rfc7540.html) was
-published in May 2015 and the protocol has since then been implemented and
-deployed widely across the Internet and the world wide web.
+HTTP/2の仕様、[RFC 7540](https://httpwg.org/specs/rfc7540.html)は2015年の5月に公開され、インターネット及びWebに広く展開・実装されてきました。
 
-In early 2018, almost 40% of the top-1000 web sites run HTTP/2, around 70% of
-all HTTPS requests Firefox issues get HTTP/2 responses back and all major
-browsers, servers and proxies support it.
+2018年はじめには、世界トップ1000のウェブサイトのうちほぼ40%がHTTP/2で動作しており、
+Firefoxが発行するgetレスポンスのうちおよそ70%のHTTPSリクエストをHTTP/2が占め、
+すべての主要なブラウザやサーバー、プロキシがHTTP/2をサポートしています。
 
-HTTP/2 addresses a whole slew of shortcomings in HTTP/1 and with the
-introduction of the second version of HTTP users can stop using a bunch of
-work-arounds. Some of which are pretty burdensome on web developers.
+HTTP/2はHTTP/1におけるおびただしい数の欠点に対処しており、
+導入によってHTTPユーザーが抱える多くの回避策を使わなくてすむようになります。
 
-One of the primary features of HTTP/2 is that it makes use of multiplexing, so
-that many logical streams are sent over the same physical TCP connection. This
-makes a lot of things better and faster. It make congestion control work much
-better, it lets users use TCP much better and thus properly saturate the
-bandwidth, makes the TCP connections more long-lived - which is good so that
-they get up to full speed more frequently than before. Header compression
-makes it use less bandwidth.
+HTTP/2の主要な特徴の一つには、多重化があり、論理的な複数のストリームを物理的に単一なTCP通信で転送することができます。
+輻輳制御の動作が飛躍的に向上し、ユーザーがTCPをより効率的に使うことができるため、
+帯域幅を適切に飽和させ、TCPコネクションをより長く持たせるようになります。
+結果として、以前よりもより頻繁に最高速の通信に達することができます。
+ヘッダー圧縮により帯域幅をより小さくできます。
 
-With HTTP/2, browsers typically use *one* TCP connection to each host instead
-of the previous *six*. In fact, connection coalescing and "desharding"
-techniques used with HTTP/2 may actually even reduce the number of connections
-much more than so.
+HTTP/2によって、ブラウザは、原則以前は6本だったのがホストごとに*単一の*TCPコネクションを使うようになります。
+実際、HTTP/2で使われているコネクションの統合と「デシャーディング」技術はそれよりもさらに接続数を減らすことがあります。
 
-HTTP/2 fixed the HTTP head of line blocking problem, where clients had to wait
-for the first request in line to finish before the next one could go out.
+HTTP/2はHTTPにおけるHoL(Head of Line)ブロッキング問題(クライアントは、次のリクエストを走らせるために既存のリクエストのデータを取得し終わるまで待たなければならない問題)を解消しています。
 
 ![http2 man](../images/h2-man.jpg)
