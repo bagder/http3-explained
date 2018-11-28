@@ -22,7 +22,6 @@ Danielは20年以上にわたりHTTPやインターネットのプロトコル�
 - [MATTENN](https://github.com/MATTENN)
 - [hidesuke](https://github.com/hidesuke)
 
-
 ## ホームページ
 
 この本のホームページは [daniel.haxx.se/http3-explained](https://daniel.haxx.se/http3-explained) にあります。
