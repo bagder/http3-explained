@@ -17,7 +17,7 @@ UDPで頻繁に用いられるサーバー上の実装はDNSアンプ攻撃に�
 
 UDPがカーネル内で遅い点は正しいのように思われる、少なくとも2018年では。ただし、
 この関して明確な理由を主張することができない。なぜなら、カーネルでの遅さは
-どのように発生しているのか、どれだけUDPの転送パフォーマンスによる遅さなのかは、
+どのように発生しているのか、どれだけUDPの転送パフォーマンスによる遅さであるかは、
 開発者にとってはここ数年間はあまり興味がないからだ。
 
 そのために、ほとんどのクライアントでは、この「遅さ」は気づくことはないだろう。
@@ -30,19 +30,17 @@ UDPがカーネル内で遅い点は正しいのように思われる、少な�
 もちろん、時間を経るごとに、こういった改善が見込める。問題は利用者がどれだけ
 余剰なCPU使用の増加を気にしなければならないかだ。
 
-## This is just Google
+## これはGoogleの規格でしょ？
 
-No it is not. Google brought the initial spec to the IETF after having proved,
-on a large Internet-wide scale, that deploying this style of protocol over UDP
-actually works and performs well.
+これはGoogleの規格でない。Googleは広大なインターネット規模でUDPを用いたQUIC同様の規格が
+正しく動き、良いパフォーマンスであることを確認してから、最初の仕様をIETFに送っただけに
+すぎない。
 
-Since then, individuals from a large number of companies and organizations
-have worked in the vendor-neutral organization IETF to put together a standard
-transport protocol out of it. In that work, Google employees have of course
-been participating, but so have employees from a large number of other
-companies that are interested in furthering the state of transport protocols
-on the Internet, including Mozilla, Fastly, Cloudflare, Akamai, Microsoft,
-Facebook and Apple.
+その時から、会社や組織から参加している個人もGoogleのUDPを用いたHTTP規格から離れた
+トランスポート・プロトコルの規格をまとめるためにベンダー・ニュートラルなIETFで
+働いている。ここにもちろんGoogleの従業員も参加しているが、Mozilla, Fastly, Cloudflare,
+Akamai, Microsoft, Facebook, Appleといった会社から参加している人が大多数を占め、
+インターネットのトランスポート・プロトコルをまとめている。
 
 ## This is too small of an improvement
 
