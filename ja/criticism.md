@@ -42,13 +42,14 @@ UDPがカーネル内で遅い点は正しいのように思われる、少な�
 Akamai, Microsoft, Facebook, Appleといった会社から参加している人が大多数を占め、
 インターネットのトランスポート・プロトコルをまとめている。
 
-## This is too small of an improvement
 
-That is not really a critique but an opinion. Maybe it is, and maybe it is too
-little of an improvement so close in time since HTTP/2 was shipped.
+## 改善にしては小さすぎないか？
 
-HTTP/3 is likely to perform much better in packet loss-ridden networks, it
-offers faster handshakes so it will improve latency both as perceived and
-actual. But is that enough of benefits to motivate people to deploy HTTP/3
-support on their servers and for their services? Time and future performance
-measurements will surely tell!
+これは適切な批判ではなく、意見だと思う。多分その通りで、HTTP/2がリリースされた時には
+これによる改善自体がわずかなので、HTTP/2にはこの改善案を取り下げることにしました。
+
+HTTP/3においてはパケットロスが頻繁にあるネットワーク上で適切に機能し、ハンドシェークも
+素早く行えるので、数字上でも体感でもレイテンシは改善すると見込まれる。これだけでも利用者が
+HTTP/3を採用するだけの十分なメリットがあるとは思いませんか？　近い将来、使ってみると
+採用するだけの十分な理由があると頷けるだろう。
+
