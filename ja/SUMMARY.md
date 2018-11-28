@@ -1,5 +1,5 @@
-* [Why QUIC](why-quic.md)
-    * [Remember HTTP/2](why-h2.md)
+* [なぜQUICなのか](why-quic.md)
+    * [HTTP/2、覚えていますか？](why-h2.md)
     * [TCP head of line blocking](why-tcphol.md)
     * [TCP or UDP](why-tcpudp.md)
     * [Ossification](why-ossification.md)
