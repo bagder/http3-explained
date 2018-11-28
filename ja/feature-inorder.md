@@ -1,19 +1,21 @@
-## ‎In order delivery
+## 到着順序の保証
 
-QUIC guarantees in-order delivery of streams, but not between-streams. This
-means that each stream will send data and maintain data order, but each stream
-may reach the destination in a different order than what the application sent
-them at the sending side!
+QUICはストリーム内での到着順序を保証しますが、ストリーム間の順序を保証しません。
+これは、ストリームは送信したデータの順序を維持しますが、
+各ストリームが宛先に到達する順序は
+アプリケーションがそれらを送信したときとは異なるものになり得ることを意味します!
 
-For example: stream A and B are transferred from a server to a client. Stream
-A is started first and then stream B. In QUIC, a lost packet would only affect
-the stream(s) to which the lost packet belongs. If stream A gets a packet
-lost, and stream B does not, stream B may continue its transfers and complete
-while stream A is getting its lost packet re-transmitted. This was not possible
-with HTTP/2.
+たとえば: ストリームAとBはサーバからクライアントに転送されました。
+ストリームAは最初に開始され、ストリームBはそれに続きました。
+QUICでは、パケットの損失はそのパケットが属する（単独もしくは複数の）ストリーム
+にのみ影響を及ぼします。
+ストリームAでパケット損失が発生し、ストリームBでは発生しなかった場合、
+ストリームAがパケットの再送を行っている間に、ストリームBは転送を継続し、
+先に完了するかもしれません。これはHTTP/2では不可能でした。
 
-Illustrated here with one yellow and one blue stream sent between two QUIC
-end-points over a single connection. They are independent and may arrive in a
-different order, but each stream is reliably delivered in-order.
+ここに、2つのQUICエンドポイントが1つのコネクションを介して
+黄色のストリームと青色のストリームの転送を行う様子を示す図があります。
+それぞれのストリームは独立しており、異なる順序で到達する可能性がありますが、
+いずれのストリームも自身の信頼性と到達順序を保証します。
 
 ![two QUIC streams between two computers](../images/quic-chain-streams.png)

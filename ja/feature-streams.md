@@ -1,18 +1,20 @@
-## ‎Multiple streams within connections
+## コネクションは複数のストリームを扱う
 
-Similar to SCTP, SSH and HTTP/2, QUIC features separate logical streams within
-the physical connections. A number of parallel streams that can transfer data
-simultaneously over a single connection without affecting the other streams.
+SCTP、SSH、HTTP/2と似たように、QUICは単一の物理的なコネクションで
+別々の論理的なストリームを扱えるという特徴があります。
+複数の並列ストリームは、それぞれ単一のコネクションで接続しているかのように
+他のストリームに影響を与えずにデータを転送できます。
 
-A connection is a negotiated setup between two end-points similar to how a TCP
-connection works. A QUIC connection is made to a UDP port and IP address, but
-once established the connection is associated by its "connection ID".
+QUICコネクションは、TCPコネクションと似たような仕組みで、
+2つのエンドポイント間でのネゴシエーションを経て確立します。
+QUICコネクションはUDPポートとIPアドレスで構成されますが、
+一旦コネクションが確立すると、それは自身が持つ「コネクションID」により関連付けられます。
 
-Over an established connection, either side can create streams and send data
-to the other end. Streams are delivered in-order and they are reliable, but
-different streams may be delivered out-of-order.
+確立済みのコネクションを使って、どちら側もストリームを作成して相手にデータを送信できます。
+ストリームのデータは到着順序が保証され、また信頼性があります。
+しかし、異なるストリーム間では到着順序は保証されません。
 
-QUIC offers flow control on both connection and streams.
+QUICはコネクションとストリームの両方においてフロー制御を提供します。
 
-See further details in [connections](quic-connections.md) and
-[streams](quic-streams.md) sections
+詳細は[コネクション](quic-connections.md)節と
+[ストリーム](quic-streams.md)節で確認できます。
