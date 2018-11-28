@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8-stretch
+      - image: node:8-alpine
     working_directory: ~/repo
     steps:
       - checkout
