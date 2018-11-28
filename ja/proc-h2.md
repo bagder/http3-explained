@@ -1,9 +1,17 @@
 ## Experience from HTTP/2
 
+<<<<<<< HEAD
 HTTP/2の仕様がRFC 7540として公開されたのは2015年5月で、QUICがIETFに最初に提出されるわずか1ヶ月前でした。
+=======
+HTTP/2の仕様がRFC 7540として公開されたのが2015年5月で、QUICがIETFに最初に提出されたののわずか1ヶ月前でした。
+>>>>>>> translate Experience from HTTP/2
 
 HTTP/2では HTTPの改善チームが組織され、HTTP/2を作ったワーキンググループは、新しいHTTPバージョンはHTTPのバージョンが1から2に上がったときよりも早くなるだろうと確信していました。
 
 また、ユーザもソフトウェアスタックも、テキストベースのプロトコルでは限界がきていると考えていました。
 
+<<<<<<< HEAD
 HTTP-over-QUICがHTTP/3と名前が変わったのは2018年11月でした。
+=======
+HTTP-over-QUICがHTTP/3と名前が変わったのは2018年11月でした。
+>>>>>>> translate Experience from HTTP/2
