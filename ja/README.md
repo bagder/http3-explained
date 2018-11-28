@@ -16,7 +16,9 @@ HTTP/2に関する詳細や特徴については、[http2 explained](https://dan
 Danielは、HTTPクライアントソフトウェアとして世界中で最も幅広く使われている[curl](https://curl.haxx.se/)の作者でありリードデベロッパーです。
 Danielは20年以上にわたりHTTPやインターネットのプロトコルに関して取り組んでおり、[http2 explained](https://daniel.haxx.se/http2/)の著者です。
 
-訳者: [inductor](https://github.com/inductor)
+訳者: 
+- [inductor](https://github.com/inductor)
+- [OldBigBuddha](https://github.com/OldBigBuddha)
 
 ## ホームページ
 
