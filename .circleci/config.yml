@@ -1,0 +1,50 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8-alpine
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: 'node dependencies'
+          command: yarn
+      - save_cache:
+          paths:
+            - node_modules
+          key: dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+      - restore_cache:
+          keys:
+            - dependencies-{{ arch }}-{{ .Environment.REVIEWDOG_VERSION }}
+      - run:
+          name: 'mkdir reviewdog'
+          command: test -d /tmp/bin || mkdir /tmp/bin
+      - run:
+          name: 'download reviewdog'
+          command: test -f /tmp/bin/reviewdog || curl -fSL https://github.com/haya14busa/reviewdog/releases/download/${REVIEWDOG_VERSION}/reviewdog_linux_amd64 -o /tmp/bin/reviewdog
+      - run:
+          name: 'add executable'
+          command: test -x /tmp/bin/reviewdog || chmod +x /tmp/bin/reviewdog
+      - save_cache:
+          paths:
+            - /tmp/bin
+          key: dependencies-{{ arch }}-{{ .Environment.REVIEWDOG_VERSION }}
+      - run:
+          name: lint
+          command: |
+            if git diff --name-status origin/master --diff-filter=MA | grep -E ".*.md"; then
+              $(yarn bin)/textlint -c config/.textlintrc $(git diff --name-status origin/master --diff-filter=MA | grep -E ".*.md" | cut -f2)
+            else
+              echo 'nothing to do.'
+            fi
+      - run:
+          name: notification
+          command: test $CIRCLE_PULL_REQUEST && $(yarn bin)/textlint -c config/.textlintrc -f checkstyle $(git diff --name-status origin/master --diff-filter=MA | grep -E ".*.md" | cut -f2) | /tmp/bin/reviewdog -f=checkstyle -name="textlint" -ci="circle-ci"
+          when: on_fail
