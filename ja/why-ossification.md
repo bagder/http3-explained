@@ -1,45 +1,35 @@
-# Ossification
+# 硬直化
 
-The internet is a network of networks. There is equipment set up on the
-Internet in many different places along the way to make sure this network of
-networks works as it is supposed to. These devices, the boxes that are
-distributed out in the network, are what we sometimes refer to as middle-boxes.
-Boxes that sit somewhere between the end-points that are the two primary
-parties involved in a traditional network data transfer.
+インターネットはネットワークのネットワークです。
+このネットワークのネットワークを想定通りに動作させるために、インターネット上の様々な場所に機器が設置されています。
+これらのデバイスはネットワーク上に分散して存在していて、それらを「ミドルボックス」と呼んでいます。
+これらのボックスは、ネットワークデータ転送の主役である、２つのエンドポイントの間の、どこかに存在しています。
 
-These boxes serve many different specific purposes but I think we can say that
-universally they are put there because someone thinks they must be there to
-make things work.
+このボックスは様々な目的で様々な動作をしていますが、至る所に誰かが設置していると言ってよいでしょう。
+彼らは、そこでその動作をさせなければならないと考えています。
 
-Middle-boxes route IP packages between networks, they block malicious traffic,
-they do NAT (Network Address Translation), they improve performance, some try
-to spy on the passing traffic and more.
+「ミドルボックス」はネットワーク間で IP ルーティングを行います。
+また、悪意のあるトラフィックをブロックします。
+さらに、NAT (Network Address Translation) を行ったり、パフォーマンスを向上させます。
+いくつかの機器は、通過するトラフィックを盗み見ようとしたり、他にもいろいろなことを行うでしょう。
 
-In order to perform their duties these boxes must know about networking and
-the protocols that are monitored or modified by them. They run software for
-this purpose. Software that is not always upgraded very frequently.
+「ミドルボックス」は、これらの仕事を行うため、ネットワークのことや、プロトコルのことを知っていなければなりません。
+監視したり干渉したりするためには必須です。
+このために、ボックスの中でソフトウェアを動かしています。
+これらのソフトウェアは頻繁に更新されるとは言い難いものです。
 
-While they are glue components that keep the Internet together they are also
-often not keeping up with the latest technology. The middle of the network
-typically does not move as fast as the edges, as the clients and the servers of
-the world.
+これらはインターネットを保つための「グルー」ですが、最新の技術を保っていることはなかなかありません。
+これらネットワークの内部に存在する典型的な機器は、クライアントやサーバーといった世界の最先端の機器ほどには素早く更新することはできないものなのです。
 
-All network protocols that these boxes might want to inspect and have ideas
-about what is okay and what is not then have this problem: these boxes were
-deployed a while ago when the protocols had a feature set of that
-time. Introducing new features or changes in behavior that were not known
-before, risks ending up considered bad or illegal by such boxes. Such traffic
-may very well just be dropped or delayed to the degree that users really do not
-want to use those features.
+全てのネットワークプロトコルにはこの問題が付いて回ります。
+プロトコルを分析して、何を通過させるか、ブロックするかの判断をするための機器を設置したとすると、その機器は設置した当時の仕様で動作することになります。
+プロトコルに新しい仕様が追加されたり、振る舞いが変わると、このような機器には何か悪いことが起こったとか、不正な操作をしたといった、リスクと見なされることになります。
+このようなトラフィックは、単に捨てられたり、あるいはこの機能を使用したくないと思うほど遅延させられたりします。
 
-That is called "protocol ossification".
+これを「プロトコルの硬直化」と呼んでいます。
 
-Changes to TCP also suffers from ossification: some boxes between a client and
-the remote server will spot unknown new TCP options and block such connections
-since they do not know what the options are. If allowed to detect protocol
-details, systems learn how protocols typically behave and over time it becomes
-impossible to change them.
+TCP も硬直化によって変化が難しい状況にあります。
+新しい TCP オプションを不明なものとしてブロックするような機器が、クライアントとサーバーの間にあるかもしれないのです。
+プロトコルの詳細を分析できると、それを取り巻くシステムは振る舞いを学習していき、やがて変化ができない状態となるのです。
 
-The only truly effective way to "combat" ossification, is to encrypt as much
-as possible of the communication to prevent middle-boxes from seeing much of the
-protocol passing through.
+この硬直化と「戦う」ための真に効果的な唯一の方法は、「ミドルボックス」がプロトコルの中身を見ることができないように、可能な限り通信を暗号化することなのです。
