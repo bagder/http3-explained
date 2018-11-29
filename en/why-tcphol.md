@@ -11,7 +11,7 @@ same order - eventually. (Or the connection breaks.)
 With HTTP/2, typical browsers do tens or hundreds of parallel transfers over
 that single TCP connection.
 
-If a single packet is dropped, lost, in the network somewhere between two
+If a single packet is dropped, or lost in the network somewhere between two
 endpoints that speak HTTP/2, it means the entire TCP connection is brought to
 a halt while the lost packet needs to be re-transmitted and find its way to
 the destination. Since TCP is this "chain", it means that if one link is
