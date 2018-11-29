@@ -18,7 +18,7 @@
     * [TLS 1.3](feature-tls.md)
     * [Transport and application](feature-trans-app.md)
     * [HTTP over QUIC](feature-http.md)
-    * [HTTP以外のプロトコルをQUIC上で動かす](feature-nonhttp.md)
+    * [Non-HTTP over QUIC](feature-nonhttp.md)
 * [How QUIC works](quic.md)
     * [Connections](quic-connections.md)
     * [Connections use TLS](quic-tls.md)
