@@ -1,11 +1,7 @@
 ## TLS 1.3
 
-The transport security used in QUIC is using TLS 1.3 ([RFC
-8446](https://tools.ietf.org/html/rfc8446)) and there are never any unencrypted
-QUIC connections.
+QUICでは転送暗号化のためにTLS 1.3 ([RFC 8446](https://tools.ietf.org/html/rfc8446)) を使用しており、暗号化されていないQUICコネクションは決してありません。
 
-TLS 1.3 has several advantages compared to older TLS versions but a primary
-reason for using it in QUIC is that 1.3 changed the handshake to require fewer
-roundtrips. It reduces protocol latency.
+TLS 1.3には従来のTLSと比較していくつか利点があります。QUICがTLS 1.3を使用する主な理由は、ハンドシェイクを変更してラウンドトリップを少なく済む点です。これによりプロトコルの待ち時間を短縮することができます。
 
-The Google legacy version of QUIC used a custom crypto.
+Googleの従来バージョンのQUICではカスタム暗号を使用していました。
