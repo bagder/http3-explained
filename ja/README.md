@@ -22,6 +22,7 @@ Danielは20年以上にわたりHTTPやインターネットのプロトコル�
 - [ebiiim](https://github.com/ebiiim)
 - [kousukekikuchi1984](https://github.com/kousukekikuchi1984)
 - [MATTENN](https://github.com/MATTENN)
+- [MakTak](https://github.com/take114514)
 
 ## ホームページ
 
