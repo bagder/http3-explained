@@ -8,11 +8,6 @@ QUIC コネクションは2つの QUIC エンドポイント間の1対の対話�
 
 それぞれの接続は1つの接続識別子か接続IDのセットを所有していて、接続を識別するためにそれぞれが使用することができます。接続IDはエンドポイントにより独立して選ばれます。各エンドポイントはピアが使用する接続IDを選択します。
 
-Each connection possesses a set of connection identifiers, or connection IDs,
-each of which can be used to identify the connection. Connection IDs are
-independently selected by endpoints; each endpoint selects the connection IDs
-that its peer uses.
-
 The primary function of these connection IDs is to ensure that changes in
 addressing at lower protocol layers (UDP, IP, and below) do not cause packets
 for a QUIC connection to be delivered to the wrong endpoint. 
