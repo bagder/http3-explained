@@ -1,30 +1,25 @@
 # HTTPS:// URLs
 
-HTTP/3 will be performed using `HTTPS://` URLs. The world is full of these
-URLs and it has been deemed impractical and downright unreasonable to
-introduce another URL scheme for the new protocol. Much like HTTP/2 did not
-need a new scheme, neither will HTTP/3.
+HTTP/3 は `HTTPS://` URL を利用して実行されます。
+世界はすでにこれらの URL で満ち溢れていて、新しいプロトコルのために別の URL スキーム
+を導入することは現実的ではなく、とても無理があると考えられています。
+HTTP/2 が新しいスキームを必要としなかったように HTTP/3 もまた同様です。
 
-The added complexity in the HTTP/3 situation is however that where HTTP/2 was
-a completely new way of transporting HTTP over the wire, it was still based on
-TLS and TCP like HTTP/1 was. The fact that HTTP/3 is done over QUIC changes
-things in a few important aspects.
+HTTP/3 で状況がさらに複雑になったのは、HTTP/2 が完全に新しい方法で HTTP を転送する
+プロトコルであったものの、それがまだ TLS や TCP など HTTP/1 の仕様に基づいていたからです。
+HTTP/3 が QUIC 上で行われるということは、いくつかの重要な側面において物事を変えることになります。
 
-Legacy, clear-text, `HTTP://` URLs will be left as-is and as we proceed
-further into a future with more secure transfers they will probably become
-less and less frequently used. Requests to such URLs will simply not be
-upgraded to use HTTP/3. In reality they very rarely upgrade to HTTP/2 either,
-but for other reasons.
+従来の平文 `HTTP://` URL は現在のまま残りますが、私達が安全な転送へとさらに進んでいくにあたり、
+おそらく徐々に使われなくなっていくでしょう。こうした平文 URL へのリクエストは簡単には HTTP/3
+へアップグレードされません。現実にはその他の理由により HTTP/2 にもごく稀にしかアップグレードされません。
 
-## Initial connection
+## 最初のコネクション
 
-The first connection to a fresh, not previously visited host for a
-HTTPS:// URL probably has to be done over TCP (possibly in addition to a
-parallel attempt to connect via QUIC). The host might be a legacy server without
-QUIC support or there might be a middle box in between setting up obstacles
-preventing a QUIC connection from succeeding.
+以前に訪れたことがない新しい HTTPS:// URL のホストへの最初のコネクションは、
+おそらく TCP 経由で行われる必要があります (加えて QUIC 経由での接続を並行して試みることもあるでしょう) 。
+接続先のホストは QUIC をサポートしないレガシーなサーバかもしれませんし、
+その中間に QUIC 接続の障壁となるミドルボックスが存在するかもしれません。
 
-A modern client and server would presumably negotiate HTTP/2 in the first
-handshake. When the connection has been setup and the server responds to a
-client HTTP request, the server can tell the client about its support of and
-preference for HTTP/3...
+モダンなクライアントやサーバであれば、おそらく最初のハンドシェイクで HTTP/2 をネゴシエートします。
+接続が確立され、サーバがクライアントの HTTP 要求に応答する時に、
+サーバはクライアントに対して自身の HTTP/3 のサポートとその優先度を伝えることができます...
