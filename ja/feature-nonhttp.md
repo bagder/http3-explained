@@ -1,3 +1,3 @@
-## Non-HTTP over QUIC
+## HTTP以外のプロトコルをQUIC上で動かす
 
-HTTP over QUIC以外の送信プロトコに関する機能は、QUIC v1が実装された後に取り組まれる予定です。
+HTTP over QUIC 以外の送信プロトコルに関する機能は、QUIC のバージョン1が実装された後に延期されています。

@@ -20,6 +20,7 @@ Danielは20年以上にわたりHTTPやインターネットのプロトコル�
 - [inductor](https://github.com/inductor)
 - [ebiiim](https://github.com/ebiiim)
 - [MATTENN](https://github.com/MATTENN)
+- [MakTak](https://github.com/take114514)
 - [OldBigBuddha](https://github.com/OldBigBuddha)
 
 ## ホームページ
