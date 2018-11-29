@@ -1,51 +1,40 @@
-## TCP head of line blocking
-
-HTTP/2 is done over TCP and with much fewer TCP connections than when using
-earlier HTTP versions. TCP is a protocol for reliable transfers and you can
-basically think of it as an imaginary chain between two machines. What is
-being put out on the network in one end will end up in the other end, in the
-same order - eventually. (Or the connection breaks.)
+## TCP head of line ブロッキング
+HTTP/2 は TCPを使って動作し、従来のバージョンの HTTP を使用するよりも少ない TCP コネクション数になります。
+TCP は信頼性の高い転送のためのプロトコルで、基本的には2つのマシンの間につながった仮想的な鎖のように考えることができます。
+一方のネットワーク上に出されたデータは、結果的に、もう一方に全く同じ順番で到達します。（または、通信が途切れます。）
 
 ![a TCP chain between two computers](../images/tcp-chain.png)
 
-With HTTP/2, typical browsers do tens or hundreds of parallel transfers over
-that single TCP connection.
+HTTP/2 を使うことで、典型的なブラウザは数十または数百の並列データ転送を単一の TCP コネクション上で行います。
 
-If a single packet is dropped, lost, in the network somewhere between two
-endpoints that speak HTTP/2, it means the entire TCP connection is brought to
-a halt while the lost packet needs to be re-transmitted and find its way to
-the destination. Since TCP is this "chain", it means that if one link is
-suddenly missing, everything that would come after the lost link needs to
-wait.
+HTTP/2 を話す2つのエンドポイント間にあるネットワーク上で一つのパケットがドロップされると、
+それはすなわち、その損失したパケットが再送され、宛先に届けられるまでの間、TCP コネクション全体が停止することを意味します。
+TCP がこの「鎖」であるため、一つの繋がりが突然行方不明になると、それ以降に続くものすべてがその失われたものを待つ必要があります。（要校正）
 
-An illustration using the chain metaphor when sending two streams over this
-connection. A red stream and a green stream:
+2つの別々のストリームを単一コネクションで送信するときに鎖を使って図解したイラスト。
+赤色のストリームと緑色のストリーム:
 
 ![the chain showing links in different colors](../images/tcp-chain-streams.png)
 
-It becomes a TCP-based head of line block!
 
-As the packet loss rate increases, HTTP/2 performs less and less good. At 2%
-packet loss (which is a terrible network quality, mind you), tests have proven
-that HTTP/1 users are usually better off - because they typically have six TCP
-connections up to distribute the lost packet over so for each lost packet the
-other connections without loss can still continue.
+これが、TCP ベースの HoL ブロックになります！
 
-Fixing this issue is not easy, if at all possible, to do with TCP.
+パケットロス率が上がることで、HTTP/2 のパフォーマンスはより悪くなります。
+2%のパケットロス(これはかなりひどいです、念のため。)があるネットワーク環境では、
+大抵の場合において HTTP/1 のほうがパフォーマンスが良くなることをテストが証明しています。
+これは、HTTP/1 では合わせて6つの TCP コネクションを使ってパケットを送信するため、パケットが損失した箇所があっても他のコネクションが止まることはないからです。
 
-## Independent streams avoids the block
+この問題を解消するのは簡単ではありません。TCP を使っている限り。
 
-With QUIC there is still a connection setup between the two end-points that
-makes the connection secure and the data delivery reliable.
+## ブロックを解消するための独立したストリーム
+
+QUIC では、2つのエンドポイントの間に、接続を安全にし、データ配信を信頼できるものにするコネクションのセットアップが依然として存在します。
 
 ![a QUIC chain between two computers](../images/tcp-chain.png)
 
-But when setting up two different streams over this connection, they are
-treated independently so that if any link goes missing for one of the streams,
-only that stream, that particular chain, has to pause and wait for the missing
-link to get retransmitted.
+しかし、このコネクション上で2つの異なるストリームをセットアップする際、それらは独立したものとして扱われるため、
+一つのストリームのある繋がりが損失した場合、そのストリームの、特定のチェインのみが、停止し再送制御を行います。
 
-Illustrated here with one yellow and one blue stream sent between two
-end-points.
+黄色のストリームと青色のストリームがそれぞれ2つのエンドポイント間で通信を行うイラストがこちらです。
 
 ![two QUIC streams between two computers](../images/quic-chain-streams.png)

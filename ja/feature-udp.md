@@ -1,27 +1,27 @@
-## Transfer protocol over UDP
+## UDP上の転送プロトコル
 
-QUIC is a transfer protocol implemented in user-space on top of UDP. If you
-watch your network traffic casually, you will see QUIC appear as UDP packets.
+QUICはUDPのユーザースペースに実装された転送プロトコルです。
+あなたのネットワークトラフィックを軽く確認してみれば、
+QUICはUDPパケットとして現れることでしょう。
 
-Based on UDP it also then uses UDP port numbers to identify specific servers
-on a given machine.
+QUICはまたUDPのポート番号を利用してマシン上の特定のサーバを識別します。
 
-## Will it work?
+## うまく動きますか？
 
-There are enterprises and other network setups that block UDP traffic on other
-ports than 53 (used for DNS). Others throttle such data in ways that makes
-QUIC perform worse than TCP based protocols. There is no end to what some
-operators may do.
+エンタープライズのネットワークなどではポート53(DNSに利用されている)以外の
+UDPトラフィックを止めるように設定していることがあります。
+他にも、制御技術がQUICの性能をTCPを利用したプロトコルよりも悪くすることがあります。
+このような運用者がやるかもしれないことに関する議論には果てがありません。
 
-For the foreseeable future, all use of QUIC-based transports will probably
-have to be able to gracefully fall-back to another (TCP-based) alternative.
-Google engineers have previously mentioned measured failure rates in the low
-single-digit percentages.
+近いうちでは、すべてのQUICをもとにした転送の用途は、
+もう一つの(TCPをもとにした)代替手段に正常に切り替えられる必要があるでしょう。
+これに関して、Googleのエンジニアは計測では失敗率は1桁台前半のパーセンテージだと
+以前に言及しています。
 
-## Will it improve?
+## 良くなりますか？
 
-Chances are that if QUIC proves to be a valuable addition to the Internet
-world, people will want to use it and they will want it to function in their
-networks and then companies may start to reconsider their obstacles. During
-the years the development of QUIC has progressed, the success rate across the
-Internet has increased.
+QUICがインターネットの世界にとって価値のある追加物だと証明されれば、
+人々はそれを使いたいと考え、自分たちのネットワークで機能することを望み、
+企業はそれに対する障害について考え直すでしょう。
+長年にわたりQUICの開発は進んでいるので、
+QUICのインターネットでの成功率は上昇しています。
