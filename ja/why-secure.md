@@ -1,10 +1,7 @@
-## Secure
+## セキュア
 
-QUIC is always secure. There is no clear-text version of the protocol so to
-negotiate a QUIC connection means doing cryptography and security with TLS
-1.3. As mentioned above, this prevents ossification as well as other sort of
-blocks and special treatments, as well as making sure QUIC has all the secure
-properties of HTTPS that web users have come to expect and want.
+QUIC は常にセキュアです。     
+平文でのプロトコルが存在しないので、QUIC コネクションをネゴシエートすることは TLS 1.3 を用いて暗号化とセキュリティを行うことと同義です。    
+上記のように、（拡張性を損なうという意味での）硬直化や他の種類のブロックと特別な処理を防ぐと同様に、QUIC は Web ユーザーが望んでいた HTTPS のセキュアなプロパティを全て備えています。
 
-There is only a few initial handshake packets that are sent in the clear,
-before the encryption protocols have been negotiated.
+暗号化プロトコルがネゴシエートされる前には、平文で送信されるわずかな初期ハンドシェイクパケットがあるのみです。
