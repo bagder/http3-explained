@@ -1,10 +1,8 @@
-# How QUIC works
+# QUIC の仕組み
 
-Without explaining the exact bits and bytes on the wire, this section intends
-to describe how the fundamental building blocks of the QUIC transport protocol
-works. If you want to implement your own QUIC stack, this description should
-give you an understanding but for all the details we refer to the actual IETF
-internet drafts and RFCs.
+ワイヤ上( 伝送路の意) でのビットやバイトに関して詳細な説明はしませんが、
+このセクションでは QUIC トランスポートプロトコルの基本的なビルディングブロックがどのように機能するのかを説明します。
+独自に QUIC スタックを実装する場合でも、この説明によって理解を深めることが出来ますが、詳細については IETF のインターネットドラフトと RFC を参照してください。
 
 1. Setup a [connection](quic-connections.md)
 2. ... that includes [TLS security](quic-tls.md)
