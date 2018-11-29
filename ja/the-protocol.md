@@ -1,8 +1,7 @@
-# Protocol features
+# プロコトルの機能
 
-The QUIC protocol from a high level.
+高レベルからの QUIC プロコトル
 
-Illustrated below is the HTTP/2 network stack on the left and the QUIC network
-stack on the right, when used as HTTP transport.
+下の図は、HTTP トランスポートとして使われる際の HTTP/2 ネットワークスタックを左側に、QUIC ネットワークスタックを右側に示しています。
 
 ![QUIC logo](../images/quic-stack.png)
