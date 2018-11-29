@@ -10,8 +10,7 @@ QUIC コネクションは2つの QUIC エンドポイント間の1対の対話�
 
 これらの接続IDの主な機能は下位のプロコトル層(UDP, IP, 及びそれ以下)でのアドレッシングの変更が QUIC 接続のパケットを間違ったエンドポイントに配信しないようにすることです。
 
-By taking advantage of the connection ID, connections can thus migrate between
-IP addresses and network interfaces in ways TCP never could.
+接続IDの利用することにより、したがってTCPが絶対にできない方法で、IPアドレスとネットワークインターフェースの間で接続を移行することができます。 
 
 ## ポート番号
 
