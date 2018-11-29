@@ -1,14 +1,12 @@
-# Fast handshakes
+# 素早いハンドシェーク
 
-QUIC offers both 0-RTT and 1-RTT connection setups, meaning that at best QUIC
-needs no extra round-trips at all when setting up a new connection. The faster
-of those two, the 0-RTT handshake, only works if there has been a previous
-connection established to a host and a secret from that connection has been
-cached.
+QUIC は 0-RTT と 1-RTT 双方のコネクションセットアップがあり、理想的には新しいコネクションを
+設定する際に追加のやりとりを行う必要がないことを意味しています。
+0-RTT ハンドシェークはこの二つのうちで速い方で、事前にコネクションが確立し、かつ、
+秘密鍵がキャッシュされている状態のときのみ利用することができます。
 
 ## Early data
 
-QUIC allows a client to include data already in the 0-RTT handshake. This
-feature allows a client to deliver data to the peer as fast as it possibly
-can, and that then of course allows the server to respond and send data back
-even sooner.
+QUIC はクライアントが0-RTT ハンドシェークの際にデータを含めることを許可しています。
+この機能により、クライアントは可能な限り速くピアにデータを配信することができます。
+そして、当然のことながら、サーバは応答して、より早くデータを返すことができます。
