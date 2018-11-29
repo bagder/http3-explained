@@ -1,33 +1,30 @@
 # Alt-svc
 
-The alternate service (Alt-svc:) header and its corresponding `ALT-SVC` HTTP/2
-frame are not specifically created for QUIC or HTTP/3. They are part of an
-already designed and created mechanism for a server to tell a client: *"look,
-I run the same service on THIS HOST using THIS PROTOCOL on THIS PORT"*. See
-details in [RFC 7838](https://tools.ietf.org/html/rfc7838).
+Alternate service (Alt-svc:) ヘッダとそれに対応する `ALT-SVC` HTTP/2 フレームは、
+QUIC や HTTP/3 用に設計されたわけではありません。これらはサーバがクライアントに対して
+*「ちなみに私は同じサービスをこのホスト、プロトコル、ポートでも実行していますよ」*
+と伝えるための、既に設計・作成されているメカニズムの一部です。
+詳細は [RFC 7838](https://tools.ietf.org/html/rfc7838) を参照してください。
 
-A client that receives such an Alt-svc response is then advised to, if it
-supports and wants to, connect to that given other host in parallel in the
-background - using the specified protocol - and if it is successful switch its
-operations over to that instead of the initial connection.
+このような Alt-svc 応答を受け取ったクライアントは、クライアントが代替プロトコルを
+サポートしておりかつそれを希望する場合に、指定されたプロトコルで当該ホストへ
+バックグラウンドで並行接続をし、その接続が成功した場合には最初のコネクションの
+代わりにそのプロトコルへと切り替えを行います。
 
-If the initial connection uses HTTP/2 or even HTTP/1, the server can respond
-and tell the client that it can connect back and try HTTP/3. It could be to
-the same host or to another one that knows how to serve that origin. The
-information given in such an Alt-svc response has an expiry timer, making
-clients able to direct subsequent connections and requests directly to the
-alternative host using the suggested alternative protocol, for a certain
-period of time.
+最初の接続が HTTP/2、または HTTP/1 を使用している場合、サーバはクライアントに対して
+HTTP/3 で再接続可能であると伝えることができます。それは同じホストに対してかもしれませんし、
+そのオリジンを提供することが可能な別のホストかもしれません。
+こうした Alt-svc 応答で与えられる情報には、ある特定の期間だけクライアントが提案された
+代替プロトコルを使用して後続の接続および要求を代替ホストに直接指示できるよう、有効期限が設けられます。
 
 ## Example
 
-An HTTP server includes an `Alt-Svc:` header in its response:
+HTTP サーバはレスポンスヘッダに `Alt-Svc:` を含みます:
 
     Alt-Svc: h3=":50781"
 
-This indicates that HTTP/3 is available on UDP port 50781 at the same host name
-that was used to get this response.
+これは HTTP/3 がこのレスポンスをを得るために使われた同じホスト名の UDP ポート 50781 番
+で利用可能であることを示します。
 
-A client can then attempt to setup a QUIC connection to that destination and
-if successful, continue communicating with the origin like that instead of the
-initial HTTP version.
+クライアントはその宛先ホストに対して QUIC 接続の確立を試みることが可能で、成功した場合は
+最初の HTTP バージョンではなく、確立されたその代替接続でオリジンと通信を続けることができます。
