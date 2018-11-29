@@ -22,6 +22,7 @@ Danielは20年以上にわたりHTTPやインターネットのプロトコル�
 - [MATTENN](https://github.com/MATTENN)
 - [MakTak](https://github.com/take114514)
 - [akihirok2k2](https://github.com/akihirok2k2)
+- [OldBigBuddha](https://github.com/OldBigBuddha)
 
 ## ホームページ
 
