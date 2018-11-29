@@ -14,8 +14,7 @@ QUIC コネクションは2つの QUIC エンドポイント間の1対の対話�
 
 ## ポート番号
 
-QUIC is modeled on top of UDP so there is a 16 bit port number field to use to
-differentiate incoming connection attempts with.
+QUIC は UDPの頂点にモデル化されてるので、着信接続の試行を区別するために使用する、16ビットのポート番号フィールドがあります。
 
 ## バージョンネゴシエーション
 
