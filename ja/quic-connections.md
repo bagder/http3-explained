@@ -1,11 +1,8 @@
 # コネクション
 
-A QUIC connection is a single conversation between two QUIC endpoints. QUIC's
-connection establishment combines version negotiation with the cryptographic
-and transport handshakes to reduce connection establishment latency.
+QUIC コネクションは2つの QUIC エンドポイント間の1対の対話です。 QUIC の接続の確立はバージョンネゴシエーションと暗号化および転送ハンドシェイクを組み合わせて、接続確立までの待ち時間を短縮します。
 
-To actually send data over such a connection, one or more streams have to be
-created and used.
+実際にデータをそのような接続に送信するには、1つまたはそれ以上のストリームを作成し、使用する必要があります。
 
 ## 接続ID
 
