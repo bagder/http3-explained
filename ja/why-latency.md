@@ -1,24 +1,20 @@
 # Earlier data
 
-QUIC offers both 0-RTT and 1-RTT handshakes that reduce the time it takes to
-negotiate and setup a new connection. Compare with the 3-way handshake of TCP.
+QUIC は新規コネクションのネゴシエート時間を短縮するため、0-RTT ハンドシェイクと1-RTT ハンドシェイクを提供します。
+TCP における 3-way ハンドシェイクと比較してみてください。
 
-In addition to that, QUIC offers "early data" support from the get go which is
-done to allow more data and it is used more easily than TCP Fast Open.
+加えて、QUIC はより多くのデータを処理するため、最初から "early data" をサポートしており、 TCP Fast Open よりも簡単に利用できます。
 
-With the stream concept, another logical connection to the same host can be
-done at once without having to wait for the existing one to end first.
+既存のコネクションが終了するのを待つことなく同じホストへ別のコネクションを接続できることが、ストリームコンセプトとして挙げられています。
 
-## TCP Fast Open is problematic
 
-TCP Fast Open was published as [RFC 7413](https://tools.ietf.org/html/rfc7413)
-in December 2014 and that specification describes how applications can pass
-data to the server to be delivered already in the first TCP SYN packet.
 
-Actual support for this feature in the wild has taken time and is riddled with
-problems even today in 2018. The TCP stack implementors have had issues and so
-have applications trying to take advantage of this feature - both in knowing
-in which OS version to try to activate it but also in figuring out how to
-gracefully back down and deal when problems arise. Several networks have been
-identified to interfere with TFO traffic and they have thus actively ruined
-such TCP handshakes.
+## TCP Fast Open の問題について
+
+TCP Fast Open は、2014年12月に [RFC 7413](https://tools.ietf.org/html/rfc7413) として公開されました。
+この仕様では、初回の TCP SYN パケットが既に配信されているサーバーに対して、アプリケーションがどのようにデータを渡すのかについて説明しています。
+
+有志によるこの機能のサポートには時間がかかっており、2018年の現在でも問題が発生しています。
+TCP スタックの実装者やアプリケーションがこの機能の利点を利用するためには、OS バージョンに応じた有効化の方法や、問題が発生した際にどのように正常な処理に変移するのか、の両方を理解する必要があります。
+いくつかのネットワークがTFOトラフィックを妨げ TCP ハンドシェイクを台無しにする事が確認されています。
+
