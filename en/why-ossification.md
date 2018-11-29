@@ -34,7 +34,7 @@ want to use those features.
 
 That is called "protocol ossification".
 
-Changes to TCP also suffers from ossification: some boxes between a client and
+Changes to TCP also suffer from ossification: some boxes between a client and
 the remote server will spot unknown new TCP options and block such connections
 since they do not know what the options are. If allowed to detect protocol
 details, systems learn how protocols typically behave and over time it becomes
