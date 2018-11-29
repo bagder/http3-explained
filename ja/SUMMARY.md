@@ -34,6 +34,6 @@
     * [Prioritization](h3-prio.md)
     * [Server push](h3-push.md)
     * [Comparison with HTTP/2](h3-h2.md)
-* [よくある質問](criticism.md)
+* [よくある疑問点](criticism.md)
 * [The specifications](specs.md)
 * [QUIC v2](quic-v2.md)
