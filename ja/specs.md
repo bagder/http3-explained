@@ -1,23 +1,21 @@
-# The specifications
+# The specifications(仕様)
+ここではQUICやHTTP/3の構成に関する最新のドラフトをまとめています。
 
-Here is a collection of the latest official drafts for the various parts and
-components of QUIC and HTTP/3.
+## Invariants(不変事項)
 
-## Invariants
+[Version-Independent Properties of QUIC(バージョンに依存しないQUICの要素)](https://tools.ietf.org/html/draft-ietf-quic-invariants-03)
 
-[Version-Independent Properties of QUIC](https://tools.ietf.org/html/draft-ietf-quic-invariants-03)
+## Transport(トランスポート プロトコル)
 
-## Transport
+[QUIC: A UDP-Based Multiplexed and Secure Transport(QUIC: UDPをベースにした多重でセキュアなトランスポートプロトコル)](https://tools.ietf.org/html/draft-ietf-quic-transport-16)
 
-[QUIC: A UDP-Based Multiplexed and Secure Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-16)
+## Recovery(パケットの修復)
 
-## Recovery
-
-[QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-16)
+[QUIC Loss Detection and Congestion Control(QUICのパケットロスの検知機能と輻輳制御)](https://tools.ietf.org/html/draft-ietf-quic-recovery-16)
 
 ## TLS
 
-[Using Transport Layer Security (TLS) to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-16)
+[Using Transport Layer Security (TLS) to Secure QUIC(TLSを用いたセキュアなQUIC)](https://tools.ietf.org/html/draft-ietf-quic-tls-16)
 
 ## HTTP
 
@@ -25,4 +23,4 @@ components of QUIC and HTTP/3.
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-03)
+[QPACK: Header Compression for HTTP over QUIC(QPACK: HTTP over QUICのためのヘッダー圧縮方法)](https://tools.ietf.org/html/draft-ietf-quic-qpack-03)

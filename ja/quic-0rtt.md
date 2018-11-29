@@ -1,10 +1,6 @@
 # 0-RTT
 
-A client that has had a connection to a server previously may cache certain
-parameters from that and can then subsequently setup a **0-RTT** connection
-with the server and send off data immediately.
+以前にサーバとの接続を持っていたクライアントは特定のパラメータをキャッシュすることがあり、
+その後にサーバとの **0-RTT** 接続を確立して、すぐにデータを送信することができます。
 
-This is of course a way to reduce the time needed for establishing a new
-connection.
-
-
+もちろん、これは新しい接続を確立するのに必要な時間を短縮する方法の1つです。
