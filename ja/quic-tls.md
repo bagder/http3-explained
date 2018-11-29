@@ -1,9 +1,9 @@
-# Connections use TLS
+# TLSを用いた接続
 
-Immediately after the initial packet setting up a connection, the initiator
-send a crypto frame that starts setting up the secure layer handshake. The
-security layer is using TLS 1.3 security.
+接続の設定に利用される最初のパケットが到着すると、すぐにイニシエータは
+セキュアレイヤーハンドウェイクをセットアップを開始する暗号の枠組みを送信します。
+セキュリティレイヤは TLS 1.3 セキュリティが用いられます。
 
-There is no way to opt-out or avoid using TLS for a QUIC connection and the
-protocol makes an effort to do the protocol in a way that makes it hard to
-tamper with for middle-boxes.
+QUIC接続の際にはTLS を使わずに利用しない方法はなく、QUICプロトコルは
+ミドルボックスの改ざんを困難にする方法でプロトコルを実施をするように
+促しています。
