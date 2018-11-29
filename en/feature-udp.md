@@ -26,5 +26,5 @@ single-digit percentages.
 Chances are that if QUIC proves to be a valuable addition to the Internet
 world, people will want to use it and they will want it to function in their
 networks and then companies may start to reconsider their obstacles. During
-the years the development of QUIC has progressed, the success rate across the
-Internet has increased.
+the years the development of QUIC has progressed, the success rate for
+establishing and using QUIC connections across the Internet has increased.
