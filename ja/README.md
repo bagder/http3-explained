@@ -17,10 +17,15 @@ Danielは、HTTPクライアントソフトウェアとして世界中で最も�
 Danielは20年以上にわたりHTTPやインターネットのプロトコルに関して取り組んでおり、 [http2 explained](https://daniel.haxx.se/http2/) の著者です。
 
 訳者:
+
 - [inductor](https://github.com/inductor)
 - [ebiiim](https://github.com/ebiiim)
+- [kousukekikuchi1984](https://github.com/kousukekikuchi1984)
 - [MATTENN](https://github.com/MATTENN)
+- [beagle](https://github.com/beagleworks)
 - [MakTak](https://github.com/take114514)
+- [akihirok2k2](https://github.com/akihirok2k2)
+- [OldBigBuddha](https://github.com/OldBigBuddha)
 - [hidesuke](https://github.com/hidesuke)
 
 ## ホームページ

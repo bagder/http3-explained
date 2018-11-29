@@ -1,58 +1,57 @@
-# Criticism
+# よくある疑問点
 
-## UDP will never work
+## UDPは多くの企業や組織で動くものではない
+多くの企業、運用者、組織は、昨今においてほとんどが攻撃に悪用されるという理由のため、
+ポート53番（DNS に使われる）を使った UDP のトラフィックをブロックするか、あるいは
+利用制限をかけています。
+特に、いくつかの既存 UDP プロトコルや UDP プロトコルを用いた一般的なサーバー上の実装
+はアンプ攻撃に対して脆弱であり続けていて、攻撃者は大量のトラフィックを無関係な
+第三者に送りつけることができます。
 
-A lot of enterprises, operators and organizations block or rate-limit UDP
-traffic outside of port 53 (used for DNS) since it has in recent days mostly
-been abused for attacks. In particular, some of the existing UDP protocols and
-popular server implementations for them have been vulnerable for amplification
-attacks where one attacker can make a huge amount of outgoing traffic to
-target innocent victims.
+QUIC ではアンプ攻撃を軽減する方法が備わっています。サーバーから受け取る
+最初のパケットは最低でも1,200バイトを要求するとともに、クライアントレスポンスのパケットを
+受け取っていない場合では、クライアントサーバーは3回以上のそれをレスポンスを送ってはならない、
+とプロトコル上で明記されています。
 
-QUIC has built-in mitigation against amplification attacks by requiring that the
-initial packet must be at least 1200 bytes and by restriction in the protocol
-that says that a server MUST NOT send more than three times that in response
-without receiving a packet from the client in response.
+## UDP はカーネル内で遅い
 
-## UDP is slow in kernels
+少なくとも2018年においては、 UDP がカーネル内で遅い点は正しいように思われます。
+もちろん、今後どのように発展していくのか、そしてUDPの転送パフォーマンスが
+どのように影響しているのかという観点は開発者の関心から長年外れていたために、
+UDP がカーネル内で遅いと結論づけることはできません。
 
-This seems to be the truth, at least today in 2018. We can of course not tell
-how this will develop and how much of this is simply the result of UDP
-transfer performance not having been in developers' focus very much for many
-years.
+ほとんどのクライアントにとっては、この「遅さ」はほとんど気に気にされないものでしょう。
 
-For most clients, this "slowness" is probably never even noticeable.
+## QUIC は CPU 使用量が高すぎる
 
-## QUIC takes too much CPU
+先述の「UDP は遅い」と同様ですが、これも TCP や TLS の世界的な普及がより成熟したり、
+ハードウェア支援ができるまでに必要な時間をかけているため、CPU 使用量が高すぎる点に
+関してもあまり当てはまりません。
 
-Similar to the "UDP is slow" remark above, this is partly because the TCP and
-TLS usage of the world has had a longer time to mature, improve and get
-hardware assistance.
+もちろん、時間を経るごとに、こういった改善が見込めます。問題は利用者がどれだけ
+余剰な CPU 使用の増加を気にしなければならないかです。
 
-There are reasons to expect this to improve over time. The question is by how
-much and how much this extra CPU usage will hurt deployers.
+## これは Google の規格でしょ？
 
-## This is just Google
+これは Google の規格ではないです。 Google はインターネット規模で UDP を用いた QUIC 同様の規格が
+正しく動き、良いパフォーマンスであることを確認してから、最初の仕様を IETF に送っただけに
+すぎません。
 
-No it is not. Google brought the initial spec to the IETF after having proved,
-on a large Internet-wide scale, that deploying this style of protocol over UDP
-actually works and performs well.
+その時から、会社や組織から参加している個人も Google の UDP を用いた HTTP 規格から離れた
+トランスポート・プロトコルの規格をまとめるためにベンダー・ニュートラルな IETF で
+プロトコルの標準化に取り組んでいます。
+ここにもちろん Google の従業員も参加しているが、Mozilla、Fastly、Cloudflare、
+Akamai、Microsoft、Facebook、Appleといった会社からも参加者がいて、
+インターネットのトランスポート・プロトコルをまとめています。
 
-Since then, individuals from a large number of companies and organizations
-have worked in the vendor-neutral organization IETF to put together a standard
-transport protocol out of it. In that work, Google employees have of course
-been participating, but so have employees from a large number of other
-companies that are interested in furthering the state of transport protocols
-on the Internet, including Mozilla, Fastly, Cloudflare, Akamai, Microsoft,
-Facebook and Apple.
 
-## This is too small of an improvement
+## 改善にしては小さすぎる
 
-That is not really a critique but an opinion. Maybe it is, and maybe it is too
-little of an improvement so close in time since HTTP/2 was shipped.
+これは批判ではなく、意見だと思います。多分その通りで、HTTP/2 がリリースされた時には
+これによる改善自体がわずかなため、HTTP/2 にはこの改善案を取り下げることにしました。
 
-HTTP/3 is likely to perform much better in packet loss-ridden networks, it
-offers faster handshakes so it will improve latency both as perceived and
-actual. But is that enough of benefits to motivate people to deploy HTTP/3
-support on their servers and for their services? Time and future performance
-measurements will surely tell!
+HTTP/3 においてはパケットロスが頻繁にあるネットワーク上で適切に機能し、ハンドシェークも
+素早く行えるため、数字上でも体感でもレイテンシは改善すると見込まれています。これだけでも利用者が
+HTTP/3 を採用するだけの十分なメリットがあるとは思いませんか？　近い将来、使ってみると
+採用するだけの十分な理由があると実感できるはずです。
+
