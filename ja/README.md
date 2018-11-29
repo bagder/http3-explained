@@ -20,8 +20,13 @@ Danielは20年以上にわたりHTTPやインターネットのプロトコル�
 - [inductor](https://github.com/inductor)
 - [ebiiim](https://github.com/ebiiim)
 - [MATTENN](https://github.com/MATTENN)
+<<<<<<< HEAD
 - [MakTak](https://github.com/take114514)
 - [hidesuke](https://github.com/hidesuke)
+=======
+- [hidesuke](https://github.com/hidesuke)
+
+>>>>>>> [README][JA] edit translaters
 
 ## ホームページ
 
