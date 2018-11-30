@@ -40,4 +40,4 @@ then allow QUIC to also replace UDP-style applications.
 DNS over QUIC was one of the early mentioned non-HTTP protocols that just
 might get some attention once QUIC v1 and HTTP/3 ship. But with a new
 transport like this having been brought on to the world I cannot imagine that
-it will stop there...
+it will stop there.

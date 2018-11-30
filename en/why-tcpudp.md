@@ -29,7 +29,7 @@ SCTP is a reliable transport protocol with streams, and for WebRTC there are
 even existing implementations using it over UDP.
 
 This was not deemed good enough as a QUIC alternative due to several reasons,
-including...
+including:
 
  - SCTP does not fix the head-of-line-blocking problem for streams
  - SCTP requires the number of streams to be decided at connection setup

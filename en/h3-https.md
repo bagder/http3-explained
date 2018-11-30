@@ -27,4 +27,4 @@ preventing a QUIC connection from succeeding.
 A modern client and server would presumably negotiate HTTP/2 in the first
 handshake. When the connection has been setup and the server responds to a
 client HTTP request, the server can tell the client about its support of and
-preference for HTTP/3...
+preference for HTTP/3.
