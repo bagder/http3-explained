@@ -17,7 +17,7 @@ TCP がこの「鎖」であるため、一つのつなぎ目が突然欠落す�
 ![the chain showing links in different colors](../images/tcp-chain-streams.png)
 
 
-これが、TCP ベースの HoL ブロックになります！
+これが、TCP ベースの head of line ブロックになります！
 
 パケットロス率が上がることで、HTTP/2 のパフォーマンスはより悪くなります。
 2%のパケットロス(これはかなりひどいです、念のため。)があるネットワーク環境では、
