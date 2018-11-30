@@ -1,4 +1,4 @@
-## User-space
+## ユーザースペース
 
 Implementing a transport protocol in user-space helped driving the development
 and the quick iterations of the protocol since it was "easy" for Google to run
@@ -9,7 +9,7 @@ There is nothing that prevents this protocol from being implemented and
 offered by operating system kernels in a future, should someone find that a
 good idea.
 
-### Many implementations
+### 多数の実装
 
 One obvious effect of implementing a new transport protocol that primarily
 lives in user-space is that we see many independent implementations and we can
