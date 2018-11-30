@@ -1,14 +1,9 @@
-## Experience from HTTP/2
+## HTTP/2 からの経験
 
-The HTTP/2 specification RFC 7540 was published in May 2015, just a month
-before QUIC was brought to IETF for the first time.
+HTTP/2 の仕様が RFC 7540 として公開されたのは2015年5月で、QUIC が IETF に最初に提出されるわずか1ヶ月前でした。
 
-With HTTP/2, the foundation for changing HTTP over the wire was laid out and
-the working group that created HTTP/2 was already of the mindset that this
-would help iterating to new HTTP versions much faster than it had taken to go
-to version 2 from version 1 (about 16 years).
+HTTP/2 では、既存のHTTPを変えようという機運があり、HTTP/2 を作ったワーキンググループは新しい HTTP は、バージョンが1から2に16年かけて上がったときよりも早いものとなるだろうと確信していました。
 
-With HTTP/2, users and software stacks got used to the idea that HTTP can no
-longer be assumed to be done with a text-based protocol in a serial manner.
+HTTP/2 の時点ではソフトウェアスタックもユーザも HTTP が今後もテキストベースのプロトコルのまま、何かができるとは考えないようになってきました。
 
-HTTP-over-QUIC was renamed to HTTP/3 in November 2018.
+HTTP-over-QUIC が HTTP/3と名前が変わったのは2018年11月でした。
