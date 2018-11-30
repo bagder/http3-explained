@@ -1,35 +1,44 @@
-## TCP あるいは UDP
+## TCP or UDP
 
-TCP の head of line ブロッキングを直せないのであれば、
-理論的には新しいトランスポートプロトコルをネットワークスタックの中、
-UDP と TCP の隣に作れるようになるべきです。
-もしくは 最悪 [SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol) を使うべきかもしれません。
-SCTP は [RFC18 4960](https://tools.ietf.org/html/rfc4960) の中で IETF によって標準化されたトランスポートプロトコルで、
-いくつかの期待通りの特徴を持っています。
+If we can't fix the head of line blocking within TCP, then in theory we should
+be able to make a new transport protocol next to UDP and TCP in the network
+stack. Or perhaps even use
+[SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol)
+which is a transport protocol standardized by the IETF in [RFC
+4960](https://tools.ietf.org/html/rfc4960) with several of the desired
+characteristics.
 
-また一方で、近年新規のトランスポートプロトコルを作る取り組みはほとんどすべて停止していました。
-何故ならインターネット上に実際にデプロイすることが難しいと認識されていたからです。
-ファイアーウォールの量、NAT、ルーター、その他 TCP もしくは UDP についてのみ知っている、
-そして許可していユーザーとサーバーの間に存在するミドルボックスはとても多すぎます。
-他のトランスポートプロトコルを導入することは N% のコネクションを失敗させることになります。
-何故なら UDP もしくは TCPではないものは何らかの形で不正もしくは間違っていると捉えるボックスによってブロックされるからです。
-通常 N% の失敗率は努力に対してあまりにも高いとみなされます。
+However, in recent years efforts to create new transport protocols have almost
+entirely been halted because of the perceived difficulties to deploy them for
+real on the Internet. The amount of firewalls, NATs, routers and other
+middle-boxes that exist between users and the servers that only know of and
+let TCP or UDP through is quite simply too many. Introducing another transport
+protocol makes N% of the connections fail because they are being blocked by
+boxes that see it not being UDP or TCP and thus evil or wrong somehow. The N%
+failure rate is often deemed too high to be worth the effort.
 
-加えて、通常ネットワークスタックのトランスポートプロトコルレイヤの中を変更することはオペレーティング・システムのカーネルによって実装されているプロトコルを変更することを意味しています。オペレーティング・システムのカーネルを変更することはとても遅いプロセスで、努力や後押しを必要とします。近年 TCP の特徴は IETF によって標準化されてきました。それにもかかわらず、十分に広くサポートされていないため、多くの年月が経った後も広くデプロイされたり使用されていません。
+Additionally, changing things in the transport protocol layer of the network
+stack typically means protocols implemented by operating system kernels.
+Changing operating system kernels is a very slow process that takes its own
+efforts and pushes. In recent years we have seen TCP features get standardized
+by the IETF and yet after many years they are still not widely deployed or
+used because they are not supported widely enough yet.
 
-## なぜ STCP-over-UDP ではないのか
-SCTP はストリームを用いた信頼性のあるプロトコルで、WebRTC には UDP上で動作する実装さえ存在します。
+## Why not SCTP-over-UDP
 
-これは QUIC に取って代わるものとして十分ではありませんでした。以下を含む幾つかの理由に原因があります。
+SCTP is a reliable transport protocol with streams, and for WebRTC there are
+even existing implementations doing it over UDP.
 
- - SCTP はストリームの head-of-line-blocking 問題を解決しません
- - SCTP はコネクションのセットアップに多数の解決すべきストリームを要求します
- - SCTP は 確かな TLS/security ストーリーを持ちません
- - SCTP は 4-way handshake を使用し、QUIC は 0-RTT を提供します
- - QUIC は TCP 同様バイトストリームです。SCTP はメッセージベースです
- - QUIC は IP アドレス間で移動することができますが、SCTP はできません
+This was not deemed good enough as a QUIC alternative due to several reasons,
+including...
 
-更なる詳細と違いについては、
-[A Comparison between SCTP and
+ - SCTP does not fix the head-of-line-blocking problem for streams
+ - SCTP requires the number of streams to be decided at connection setup
+ - SCTP does not have a solid TLS/security story
+ - SCTP has a 4-way handshake, QUIC offers 0-RTT
+ - QUIC is a bytestream like TCP, SCTP is message-based
+ - QUIC can move between IP addresses as SCTP can not
+
+For more details on the differences, the [A Comparison between SCTP and
 QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00)
- インターネットドラフトが参考になります。
+internet draft is helpful.
