@@ -5,7 +5,7 @@ its underlying protocol: QUIC. Why, how they work, protocol details, the
 implementations and more.
 
 The book is entirely free and is meant to be a collaborative effort
-involving anyone and everyone who wants to help out!
+involving anyone and everyone who wants to help out.
 
 ## Prerequisites
 
@@ -28,11 +28,11 @@ explained](https://daniel.haxx.se/http2/).
 The home page for this book is found at
 [daniel.haxx.se/http3-explained](https://daniel.haxx.se/http3-explained).
 
-## Help!
+## Help out
 
 If you find mistakes, omissions, errors or blatant lies in this document,
 please send us a refreshed version of the affected paragraph and we will make
-amended versions. We will give proper credits to everyone who helps out! I
+amended versions. We will give proper credits to everyone who helps out. I
 hope to make this document better over time.
 
 Preferably, you submit [errors](https://github.com/bagder/http3-explained/issues)
