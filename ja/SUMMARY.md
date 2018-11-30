@@ -19,7 +19,7 @@
     * [Transport and application](feature-trans-app.md)
     * [HTTP over QUIC](feature-http.md)
     * [Non-HTTP over QUIC](feature-nonhttp.md)
-* [How QUIC works](quic.md)
+* [QUIC の仕組み](quic.md)
     * [Connections](quic-connections.md)
     * [接続で TLS を使う](quic-tls.md)
     * [Streams](quic-streams.md)
