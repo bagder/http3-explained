@@ -1,25 +1,15 @@
 # Spin Bit
 
-One of the perhaps longest design discussions within the QUIC working group
-that has been the subject of several hundred mails and hours of discussions
-concerns a single bit: the Spin Bit.
+QUIC ワーキンググループの中でおそらく最も長い間、多数のメールと議論の時間を費やしてきた主題の一つが、単一ビット、つまり Spin Bit です。
 
-The proponents of this bit insist that there is a need for operators and
-people on the path between two QUIC endpoints to be able to measure latency.
+このビットの支持者たちは、2つの QUIC エンドポイント間の経路上に存在するオペレータや人々がレイテンシの観測を出来るようになる必要がある、と主張しています。
 
-The opponents to this feature do not like the potential information leak.
+この機能の反対者たちは、その潜在的な情報漏洩が気に入らないのです。
 
 ## Spinning a bit
 
-Both endpoints, the client and the server, maintain a spin value, 0 or 1, for
-each QUIC connection, and they set the spin bit on packets it sends for that
-connection to the appropriate value.
+クライアントとサーバ、双方のエンドポイントは各 QUIC コネクションごとに0か1のスピン値が保持されており、その QUIC コネクションの通信パケットは、spin bit を適切な値にセットして送信しています。
 
-Both sides then send out packets with that spin bit set to the same value
-for as long as one round trip lasts and then it toggles the value. The effect
-is then a pulse of ones and zeroes in that bitfield that observers can
-monitor.
+両サイドは spin bit が1往復する間は同じ値がセットされたパケットを送り、次の値にトグルします。その影響は、観測者がモニタ可能な形でビットフィールド内の0か1のパルスとして現れます。
 
-This measuring only works when the sender is neither application nor flow
-control limited and packet reordering over the network can also make the data
-noisy.
+この観測は、送信者がアプリケーションやフロー制御による制限を受けていないときにのみ機能し、ネットワーク上のパケットの並び替えはデータを意図しないものにしてしまうことがあります。
