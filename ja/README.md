@@ -19,6 +19,7 @@ Danielは20年以上にわたりHTTPやインターネットのプロトコル�
 訳者:
 - [inductor](https://github.com/inductor)
 - [ebiiim](https://github.com/ebiiim)
+- [peacock](https://github.com/peacock0803sz)
 
 ## ホームページ
 
