@@ -4,7 +4,7 @@ QUIC ワーキング・グループは2016年後半からプロトコルの策�
 
 2018年の11月現在では、いまだ HTTP/3 の大規模な相互運用テストは実施されていません。2つの実装が存在し、いずれについても、ブラウザや主要なサーバソフトウェアにも実装が行われていません。
 
-QUIC ワーキンググループの wiki ページには15個ほどの実装が掲載されています [QUIC implementations listed](https://github.com/curl/curl/wiki/QUIC-implementation)。しかしながら、これらは最新のドラフト版の仕様との互換性はまだありません。
+QUIC ワーキンググループの wiki ページには15個ほどの [QUIC 実装リスト](https://github.com/curl/curl/wiki/QUIC-implementation)が掲載されていますが、いずれの実装も最新版の仕様との互換性はまだありません。
 
 QUIC の実装は簡単ではなく、プロトコルは毎日のように変更され続けています。
 
