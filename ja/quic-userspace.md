@@ -1,19 +1,13 @@
 ## ユーザースペース
 
-Implementing a transport protocol in user-space helped driving the development
-and the quick iterations of the protocol since it was "easy" for Google to run
-it in both ends of their operations and have users take advantage of new
-development very frequently.
+ユーザースペースにおけるトランスポートプロコトルの実装は、 開発の推進と素早いプロコトルのイテレーションを助長しました。それ以来 Google にとって、操作の両端で実行し、ユーザーにとても頻繁に新機能をつかってもらうことは**簡単**でした。
 
-There is nothing that prevents this protocol from being implemented and
-offered by operating system kernels in a future, should someone find that a
-good idea.
+もはやそのプロトコルが、OS のカーネルによって実装、提供され続けることを妨げざるを得ないでしょう。そして将来、誰かが良い案を見つけるべきです。
 
 ### 多数の実装
 
-One obvious effect of implementing a new transport protocol that primarily
-lives in user-space is that we see many independent implementations and we can
-look forward to applications running with this rather big and complicated
-transport protocol stack in them going forward and different applications using
-different not only HTTP/3 but also QUIC stacks. It will for sure bring new
-challenges.
+1つの自明な、 新しいトランスポートプロコトルの実装 影響 主にユーザースペースに住む
+
+One obvious effect of implementing a new transport protocol that primarily lives in user-space 
+
+is that we see many independent implementations and we can look forward to applications running with this rather big and complicated transport protocol stack in them going forward and different applications using different not only HTTP/3 but also QUIC stacks. It will for sure bring new challenges.
