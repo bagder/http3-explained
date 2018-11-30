@@ -13,8 +13,8 @@ HTTP/2 に関する詳細や特徴については、[http2 explained](https://da
 ## 著者
 
 この本は [Daniel Stenberg](https://daniel.haxx.se/) によって作成されました。
-Daniel は、HTTP クライアントソフトウェアとして世界中で最も幅広く使われている [curl](https://curl.haxx.se/) の作者でありリードデベロッパーです。
-Daniel は20年以上にわたり HTTP やインターネットのプロトコルに関して取り組んでおり、 [http2 explained](https://daniel.haxx.se/http2/) の著者です。
+Daniel は、HTTP クライアントソフトウェアとして世界中で最も幅広く使われている [curl](https://curl.haxx.se/) の作者であり、リードデベロッパーです。
+Daniel は20年以上にわたり HTTP やインターネットのプロトコルに関して取り組んでおり、 [http2 explained](https://daniel.haxx.se/http2/) の著者でもあります。
 
 訳者:
 
@@ -37,7 +37,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 助けていただいたすべての方に、適切なクレジットを提供します！ 時間をかけてこの文書を良くしていければと思っています。
 
 よろしければ、[誤字の指摘](https://github.com/bagder/http3-explained/issues)
-または[プルリクエスト](https://github.com/bagder/http3-explained/pulls) を本の GitHub ページに送ってください。
+または[プルリクエスト](https://github.com/bagder/http3-explained/pulls)を本の GitHub ページに送ってください。
 
 ## License
 
