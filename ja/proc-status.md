@@ -1,71 +1,41 @@
-# Status
+# 現在の状況
 
-The QUIC working group has worked fiercely since late 2016 on specifying the
-protocols and the plan is now to have it done by July 2019.
+QUIC ワーキング・グループは2016年後半からプロトコルの策定のために活発に活動し、現在2019年7月までにリリースする予定で動いています。
 
-As of November 2018, there still has not been any larger interop tests with
-HTTP/3 - only with the existing two implementations and none of them are done
-by a browser or a popular open server software.
+2018年の11月現在では、いまだ HTTP/3 の大規模な相互運用テストは実施されていません。2つの実装が存在し、いずれについても、ブラウザや主要なサーバソフトウェアにも実装が行われていません。
 
-There are fifteen or so different [QUIC implementations
-listed](https://github.com/curl/curl/wiki/QUIC-implementation) in the QUIC
-working groups' wiki pages, but far from all of them can interop on the latest
-spec draft revisions.
+QUIC ワーキンググループの wiki ページには15個ほどの [QUIC 実装リスト](https://github.com/curl/curl/wiki/QUIC-implementation)が掲載されていますが、いずれの実装も最新版の仕様との互換性はまだありません。
 
-Implementing QUIC is not easy and the protocol has kept moving and changing
-even up to this date.
+QUIC の実装は簡単ではなく、プロトコルは毎日のように変更され続けています。
 
-## Servers
+## サーバー 
 
-There have been no public statement in terms of support for QUIC from Apache
-or nginx.
+Apache や nginx が QUIC をサポートしたという公式な発表はありません。
 
-## Clients
+## クライアント
 
-None of the larger browser vendors have yet shipped any version, at any state,
-that can run the IETF version of QUIC or HTTP/3.
+IETF バージョンの QUIC や HTTP/3 をサポートしたブラウザをリリースした大規模ベンダはまだありません。
 
-Google Chrome has shipped with a working implementation of Google's own QUIC
-version since many years, but that does not interop with the official QUIC
-protocol and its HTTP implementation is very different than HTTP/3.
+Google Chrome は Google 版の QUIC が動くものが何年も前からリリースされています。しかし、これらは公式な QUIC プロトコルとの互換性はなく、また Chrome の HTTP の実装はHTTP/3 のものとかけ離れています。
 
-## Implementation Obstacles
+## 実装の障害
 
-QUIC decided to use TLS 1.3 as the foundation for the crypto and security
-layer to avoid inventing something new and instead lean on a trustworthy and
-existing protocol. However, while doing this, the working group also decided
-that to really streamline the use of TLS in QUIC, it should only use "TLS
-messages" and not "TLS records" for the protocol.
+QUIC は TLS 1.3 を暗号化とセキュリティのために採用することにしました。これは車輪の再発明を避け、信頼できる既存のプロトコルを利用するためです。しかしながら、これと並行して、QUIC での TLS の利用を本当に効率化することにしました。QUIC では "TLS messages" のみを利用し "TLS records" は利用しないことにしました。
 
-This might sound like an innocuous change, but this has actually caused a
-significant hurdle for many QUIC stack implementors. Existing TLS libraries
-that support TLS 1.3 simply do not have APIs enough to expose this
-functionality and allow QUIC to access it. While several QUIC implementors
-come from larger organizations who work on their own TLS stack in parallel,
-this is not true for everyone.
+これは無害な変更に聞こえますが、この決定は QUIC を実装している人たちにとってとても高いハードルとなりました。既存の TLS 1.3 をサポートしているライブラリにはこれらの機能にアクセスする API が不足しており、QUIC ではアクセスできないのです。一方で多くの QUIC の実装者は大きな組織に所属しており、それぞれがもっている TLS スタックを別々に使用しているため、全員にとって問題とはなっていません。
 
-The dominant open source heavyweight OpenSSL for example, does not have any
-API for this and has not expressed any desire to provide any such anytime soon
-(as of November 2018).
+2018年11月現在、例えば広く使われているオープンソースの OpenSSL では、これらの必要な API は全くなく、また近々で追加するような要望も上がっていません。
 
-This will eventually also lead to deployment obstacles since QUIC stacks will
-need to either base themselves on other TLS libraries, use a separate patched
-OpenSSL build or require an update to a future OpenSSL version.
+これはまたデプロイの障害にもなっています。QUIC スタックはそれぞれの TLS ライブラリが必要で、それぞれパッチをあてた OpenSSL のビルドか将来の OpenSSL のアップデートが必要だからです。
 
-## Kernels and CPU load
+## Kernels と CPU 負荷
 
-Both Google and Facebook have mentioned that their wide scale deployments of
-QUIC require roughly twice the amount of CPU than the same traffic load does
-when serving HTTP/2 over TLS.
+Google と Facebook は QUIC を彼らの膨大なトラフィックに適用した場合、HTTP/2 over TLS に比べ約2倍の CPU が必要になると言っています。
 
-Some explanations for this include
+しかし、下記のような説明が含まれています。
 
-- the UDP parts in primarily Linux is not at all as optimized as the TCP stack
-  is, since it has not traditionally been used for high speed transfers like
-  this.
+- 歴史的に多くの Linux の UDP スタックはこのような高速通信に利用されることを想定していなかったため、TCP スタックに比べて最適化がされていません。
 
-- TCP and TLS offloading to hardware exist, but that is much rarer for UDP and 
-  basically non-existing for QUIC.
+- TCP と TLS の負荷を軽減するハードウェアは存在していますが、UDP のものはほとんどありませんし、基本的に QUIC 向けのものは存在していません。
 
-There are reasons to believe that performance and CPU requirements will
-improve over time.
+このような問題点がありますが、パフォーマンスと CPU の要求が将来的に改善されると信じています。
