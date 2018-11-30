@@ -40,10 +40,10 @@ makes the connection secure and the data delivery reliable.
 
 ![a QUIC chain between two computers](../images/tcp-chain.png)
 
-But when setting up two different streams over this connection, they are
-treated independently so that if any link goes missing for one of the streams,
-only that stream, that particular chain, has to pause and wait for the missing
-link to get retransmitted.
+When setting up two different streams over this connection, they are treated
+independently so that if any link goes missing for one of the streams, only
+that stream, that particular chain, has to pause and wait for the missing link
+to get retransmitted.
 
 Illustrated here with one yellow and one blue stream sent between two
 end-points.

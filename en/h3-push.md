@@ -16,10 +16,9 @@ hasn't asked for but ought to have anyway, it can send a `PUSH_PROMISE` frame
 (over the request stream) showing what the request looks like that the push is
 a response to, and then send that actual response over a new stream.
 
-But even when pushes have been said to be acceptable by the client
-before-hand, each individual pushed stream can still be canceled at any time
-if the client deems that suitable. It then sends a `CANCEL_PUSH` frame to the
-server.
+Even when pushes have been said to be acceptable by the client before-hand,
+each individual pushed stream can still be canceled at any time if the client
+deems that suitable. It then sends a `CANCEL_PUSH` frame to the server.
 
 ## Problematic
 
