@@ -28,6 +28,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [OldBigBuddha](https://github.com/OldBigBuddha)
 - [hidesuke](https://github.com/hidesuke)
 - [ichika](https://github.com/ichika5259)
+- [gim_kondo](https://github.com/gimKondo)
 
 ## ホームページ
 
