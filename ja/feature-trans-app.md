@@ -1,11 +1,9 @@
 ## Transport and application level
 
-The IETF QUIC protocol is a transport protocol, on top of which other
-application protocols can be used. The initial application layer protocol is
-HTTP/3 (h3).
+IETF QUIC プロトコルは、トランスポートプロトコルであり、その上に他のアプリケーションプロトコルを使用することができます。
+最初のアプリケーションレイヤプロトコルは HTTP/3 (h3) です。
 
-The transport-layer does connections and streams.
+トランスポートレイヤはコネクションとストリームを行います。
 
-The legacy Google version of QUIC had transport and HTTP glued together into
-one single do-it-all and was a more special-purpose
-send-http/2-frames-over-udp protocol
+従来の Google 版の QUIC はトランスポートと HTTP が一括で動作するよう一つにまとめられており、
+HTTP/2 フレームを UDP 上で送ることにより特化したプロトコルでした。
