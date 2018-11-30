@@ -21,7 +21,7 @@
     * [Non-HTTP over QUIC](feature-nonhttp.md)
 * [How QUIC works](quic.md)
     * [Connections](quic-connections.md)
-    * [Connections use TLS](quic-tls.md)
+    * [接続で TLS を使う](quic-tls.md)
     * [Streams](quic-streams.md)
     * [0-RTT](quic-0rtt.md)
     * [Spin Bit](quic-spinbit.md)
