@@ -1,33 +1,27 @@
-# HTTP/3 Server push
+# HTTP/3 サーバプッシュ
 
-HTTP/3 server push is similar to what is described in HTTP/2 ([RFC
-7540](https://httpwg.org/specs/rfc7540.html)), but uses different mechanisms.
+HTTP/3 サーバプッシュは HTTP/2 で説明されているもの ([RFC7540](https://httpwg.org/specs/rfc7540.html)) と似ていますが、
+ことなるメカニズムを利用します。
 
-A server push is effectively the response to a request that the client never
-sent!
+サーバプッシュは、クライアントからのリクエストがなくても返すことができるレスポンスです。
 
-Server pushes are only allowed to happen if the client side has agreed to
-them. In HTTP/3 the client even sets a limit for how many pushes it accepts
-by informing the server what the max push stream ID is. Going over that limit
-will cause a connection error.
+サーバプッシュはクライアント側が合意した場合にのみ受け取ることが可能です。
+加えて HTTP/3 では、クライアントがサーバに対してプッシュストリームの最大 ID を通知することで
+プッシュをいくつまで受け入れ可能か制限を設定しています。この制限を超えると、接続エラーとなります。
 
-If the server deems it likely that the client wants an extra resource that it
-hasn't asked for but ought to have anyway, it can send a `PUSH_PROMISE` frame
-(over the request stream) showing what the request looks like that the push is
-a response to, and then send that actual response over a new stream.
+サーバが、クライアントからの要求はなかったが、いずれ必要になる追加のリソースが他にもあると判断する場合、
+レスポンスがプッシュであることを示す `PUSH_PROMISE` フレームをリクエストフレームを通して
+送ることができ、その後実際のレスポンスを新しいストリーム上で送信します。
 
-But even when pushes have been said to be acceptable by the client
-before-hand, each individual pushed stream can still be canceled at any time
-if the client deems that suitable. It then sends a `CANCEL_PUSH` frame to the
-server.
+予めクライアントによってプッシュの受け入れが可能であると通知されている場合であっても、
+それぞれのプッシュストリームはクライアント側の判断によって拒否することができます。
+その際には `CANCEL_PUSH` フレームがサーバへ送信されます。
 
-## Problematic
+## 問題点
 
-Ever since this feature was first discussed in the HTTP/2 development and
-later after the protocol shipped and has been deployed over the Internet, this
-feature has been discussed, disliked and pounded up in countless different
-ways in order to get it to become useful.
+サーバプッシュは HTTP/2 の開発時に当初議論され、プロトコルの策定の後インターネットへと展開された
+にもかかわらず、その有用性について数えきれないほどの議論が行われ、叩かれ嫌われ続けてきました。
 
-Pushing is never "free", since while it saves a half round-trip it still uses
-bandwidth. It is often hard or impossible for the server-side to actually know
-with a high level a certainty if a resource should be pushed or not.
+プッシュは決して "無料" ではありません。ラウンドトリップの半分を削減することができますが、
+それでも帯域を使うことに変わりないからです。サーバ側にとって、リソースが実際にプッシュされるべき
+かどうかをハイレベルで確実に判断することは非常に難しく、おおよそ不可能です。
