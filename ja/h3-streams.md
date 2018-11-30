@@ -1,44 +1,38 @@
-# QUIC streams and HTTP/3
+# QUIC ストリームと HTTP/3
 
-HTTP/3 is made for QUIC so it takes full advantage of QUIC's streams, where
-HTTP/2 had to design its entire stream and multiplexing concept of its own on
-top of TCP.
+HTTP/2 では完全なストリームと多重化のコンセプトを TCP 上で独自に設計する必要がありました。
+一方 HTTP/3 は QUIC 用に作られたので、QUIC のストリームを最大限に活用することができます。
 
-HTTP requests done over HTTP/3 use a specific set of streams.
+HTTP/3 を介して行われる HTTP リクエストはストリームの特定のセットを利用します。
 
-## HTTP/3 frames
+## HTTP/3 フレーム
 
-HTTP/3 means setting up QUIC streams and sending over a set of frames to the
-other end. There's but a small fixed number (eight!) of known frames in
-HTTP/3. The most important ones are probably:
+HTTP/3 はつまり QUIC ストリームを作成し、フレームのセットを通信先の相手へ送信することを意味します。
+HTTP/3 にはいくつかの (8 個！) フレームが存在します。中でも最も重要なものは次のとおりです:
 
-- HEADERS, that sends compressed HTTP headers
-- DATA, sends binary data contents
-- GOAWAY, please shutdown this connection
+- HEADERS 圧縮された HTTP ヘッダを送信
+- DATA バイナリデータを送信
+- GOAWAY この接続をシャットダウンしてください
 
-## HTTP Request
+## HTTP リクエスト
 
-The client sends its HTTP request on a client-initiated *bidirectional* QUIC
-stream.
+クライアントは、自身が開始した *双方向* QUIC ストリーム上で HTTP リクエストを送信します。
 
-A request consists of a single HEADERS frame and might optionally be followed
-by one or two other frames: a series of DATA frames and possibly a final
-HEADERS frame for trailers.
+1 つのリクエストは 1 つの HEADERS フレームで構成され、場合によっては他に 1, 2 つの
+フレームが続きます: 一連の DATA フレーム、またはトレーラー用の 最後の HEADERS
 
-After sending a request, a client closes the stream for sending.
+リクエストを送信した後、クライアントはストリームを閉じます。
 
-## HTTP Response
+## HTTP レスポンス
 
-The server sends back its HTTP response on the bidirectional stream. A HEADERS
-frame, a series of DATA frames and possibly a trailing HEADERS frame.
+サーバは、HTTP レスポンスを双方向ストリーム上で返します。
+一連の DATA フレーム、またはトレーラー HEADERS フレームからなる 1 つの HEADERS フレーム。
 
-## QPACK headers
+## QPACK ヘッダ
 
-The HEADERS frames contain HTTP headers compressed using the QPACK algorithm.
-QPACK is similar in style to the HTTP/2 compression called HPACK ([RFC
-7541](https://httpwg.org/specs/rfc7541.html)), but modified to work with
-streams delivered out of order.
+HEADERS フレームには QPACK アルゴリズムにより圧縮された HTTP ヘッダが含まれています。
+QPACK は HTTP/2 で使われている HPACK 圧縮 ([RFC7541](https://httpwg.org/specs/rfc7541.html)) と似ていますが、
+送信されるストリームの順序に関わらず動作するように変更されています。
 
-QPACK itself uses two additional unidirectional QUIC streams between the two
-end-points. They are used to carry dynamic table information in either
-direction.
+QPACK は エンドポイント間で 2 つの一方向 QUIC ストリームを加えて利用します。
+これらのストリームは動的なテーブル情報をそれぞれ伝えるために使われます。
