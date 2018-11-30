@@ -1,11 +1,9 @@
-# How QUIC works
+# QUIC の仕組み
 
-Without explaining the exact bits and bytes on the wire, this section intends
-to describe how the fundamental building blocks of the QUIC transport protocol
-works. If you want to implement your own QUIC stack, this description should
-give you an understanding but for all the details we refer to the actual IETF
-internet drafts and RFCs.
+ネットワーク上でのビットやバイトに関して詳細な説明はしませんが、
+このセクションでは QUIC トランスポートプロトコルの基本的な要素がどのように機能するのかを説明します。
+独自に QUIC スタックを実装したい場合、この説明はあなたの理解に繋がるはずですが、詳細については IETF のインターネットドラフトと RFC を参照してください。
 
-1. Setup a [connection](quic-connections.md)
-2. ... that includes [TLS security](quic-tls.md)
-3. Then use [streams](quic-streams.md)
+1.  [コネクション](quic-connections.md)をセットアップ
+2.  [TLS セキュリティ](quic-tls.md)を組み込み
+3.  [ストリーム](quic-streams.md)を開始 
