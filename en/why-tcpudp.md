@@ -19,9 +19,9 @@ worth the effort.
 
 Additionally, changing things in the transport protocol layer of the network
 stack typically means protocols implemented by operating system kernels.
-Updating and deploying new operating system kernels is a very slow process
-that requires significant effort. Many TCP improvements standardized by the 
-IETF are not widely deployed or used because they are not broadly supported.
+Updating and deploying new operating system kernels is a slow process that
+requires significant effort. Many TCP improvements standardized by the IETF
+are not widely deployed or used because they are not broadly supported.
 
 ## Why not SCTP-over-UDP
 

@@ -17,7 +17,7 @@ to spy on the passing traffic and more.
 
 In order to perform their duties these boxes must know about networking and
 the protocols that are monitored or modified by them. They run software for
-this purpose. Software that is not always upgraded very frequently.
+this purpose. Software that is not always upgraded frequently.
 
 While they are glue components that keep the Internet together they are also
 often not keeping up with the latest technology. The middle of the network
@@ -29,7 +29,7 @@ about what is okay and what is not then have this problem: these boxes were
 deployed a while ago when the protocols had a feature set of that
 time. Introducing new features or changes in behavior that were not known
 before, risks ending up considered bad or illegal by such boxes. Such traffic
-may very well just be dropped or delayed to the degree that users really do not
+may well just be dropped or delayed to the degree that users really do not
 want to use those features.
 
 That is called "protocol ossification".

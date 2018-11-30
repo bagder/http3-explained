@@ -13,8 +13,8 @@ things in a few important aspects.
 Legacy, clear-text, `HTTP://` URLs will be left as-is and as we proceed
 further into a future with more secure transfers they will probably become
 less and less frequently used. Requests to such URLs will simply not be
-upgraded to use HTTP/3. In reality they very rarely upgrade to HTTP/2 either,
-but for other reasons.
+upgraded to use HTTP/3. In reality they rarely upgrade to HTTP/2 either, but
+for other reasons.
 
 ## Initial connection
 
