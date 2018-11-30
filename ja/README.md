@@ -26,6 +26,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [MakTak](https://github.com/take114514)
 - [akihirok2k2](https://github.com/akihirok2k2)
 - [OldBigBuddha](https://github.com/OldBigBuddha)
+- [hidesuke](https://github.com/hidesuke)
 
 ## ホームページ
 
