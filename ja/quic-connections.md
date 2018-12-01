@@ -1,34 +1,21 @@
-# Connections
+# コネクション
 
-A QUIC connection is a single conversation between two QUIC endpoints. QUIC's
-connection establishment combines version negotiation with the cryptographic
-and transport handshakes to reduce connection establishment latency.
+QUIC コネクションは2つの QUIC エンドポイント間における一対の対話です。QUIC のコネクションの確立は、レイテンシを低減するために、バージョンネゴシエーションと暗号化およびトランスポートハンドシェイクを組み合わせています。
 
-To actually send data over such a connection, one or more streams have to be
-created and used.
+実際にそのようなコネクションを介してデータ送信するには、1つまたはそれ以上のストリームを作成し、使用する必要があります。
 
-## Connection ID
+## 接続 ID
 
-Each connection possesses a set of connection identifiers, or connection IDs,
-each of which can be used to identify the connection. Connection IDs are
-independently selected by endpoints; each endpoint selects the connection IDs
-that its peer uses.
+それぞれの接続は、1つの接続識別子(または接続 ID)のセットを所有していて、接続を識別するためにいずれかのセットを使用することができます。接続 ID はエンドポイントにより独立して選ばれます。各エンドポイントは、ピアが使用する接続 ID を選択します。
 
-The primary function of these connection IDs is to ensure that changes in
-addressing at lower protocol layers (UDP, IP, and below) do not cause packets
-for a QUIC connection to be delivered to the wrong endpoint. 
+これらの接続 ID の主な機能は、下位のプロトコル層(UDP, IP, 及びそれ以下)でのアドレッシングの変更が、QUIC 接続のパケットを間違ったエンドポイントに配信しないようにすることです。
 
-By taking advantage of the connection ID, connections can thus migrate between
-IP addresses and network interfaces in ways TCP never could.
+接続 ID を利用することにより、TCP が絶対にできない方法で、IP アドレスとネットワークインターフェースの間で接続を移行することができます。 
 
-## Port numbers
+## ポート番号
 
-QUIC is modeled on top of UDP so there is a 16 bit port number field to use to
-differentiate incoming connection attempts with.
+QUIC は UDP の上に実装されているので、入接続の試みを区別するために使用する、16ビットのポート番号フィールドがあります。
 
-## Version negotiation
+## バージョンネゴシエーション
 
-An QUIC connection request originating from a client will tell the server
-which QUIC protocol version it wants to speak, and the server will respond
-with a list of supported versions for the client to select from when going
-forward.
+クライアントからの QUIC コネクションリクエストでは、どの QUIC プロトコルバージョンを使用するかサーバーに通知します。サーバーは、クライアントが次に進む際に選択できるように、自身のサポートしているバージョンのリストを返答します。
