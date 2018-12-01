@@ -3,14 +3,14 @@
 The QUIC working group has worked fiercely since late 2016 on specifying the
 protocols and the plan is now to have it done by July 2019.
 
-As of November 2018, there still has not been any larger interop tests with
-HTTP/3 - only with the existing two implementations and none of them are done
-by a browser or a popular open server software.
+As of November 2018, there still has not been any larger interoperability
+tests with HTTP/3 - only with the existing two implementations and none of
+them are done by a browser or a popular open server software.
 
 There are fifteen or so different [QUIC implementations
 listed](https://github.com/curl/curl/wiki/QUIC-implementation) in the QUIC
-working groups' wiki pages, but far from all of them can interop on the latest
-spec draft revisions.
+working groups' wiki pages, but far from all of them can interoperate on the
+latest spec draft revisions.
 
 Implementing QUIC is not easy and the protocol has kept moving and changing
 even up to this date.
@@ -26,8 +26,8 @@ None of the larger browser vendors have yet shipped any version, at any state,
 that can run the IETF version of QUIC or HTTP/3.
 
 Google Chrome has shipped with a working implementation of Google's own QUIC
-version since many years, but that does not interop with the official QUIC
-protocol and its HTTP implementation is very different than HTTP/3.
+version since many years, but that does not interoperate with the official
+QUIC protocol and its HTTP implementation is different than HTTP/3.
 
 ## Implementation Obstacles
 

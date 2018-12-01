@@ -1,7 +1,7 @@
 # HTTP/3 Prioritization
 
 One of the HTTP/3 stream frames is called `PRIORITY`. It is used to set
-priority and dependency on a stream in a way very similar to how it works in
+priority and dependency on a stream in a way similar to how it works in
 HTTP/2.
 
 The frame can set a specific stream to depend on another specific stream and

@@ -11,7 +11,7 @@ same order - eventually. (Or the connection breaks.)
 With HTTP/2, typical browsers do tens or hundreds of parallel transfers over
 that single TCP connection.
 
-If a single packet is dropped, lost, in the network somewhere between two
+If a single packet is dropped, or lost in the network somewhere between two
 endpoints that speak HTTP/2, it means the entire TCP connection is brought to
 a halt while the lost packet needs to be re-transmitted and find its way to
 the destination. Since TCP is this "chain", it means that if one link is
@@ -40,10 +40,10 @@ makes the connection secure and the data delivery reliable.
 
 ![a QUIC chain between two computers](../images/tcp-chain.png)
 
-But when setting up two different streams over this connection, they are
-treated independently so that if any link goes missing for one of the streams,
-only that stream, that particular chain, has to pause and wait for the missing
-link to get retransmitted.
+When setting up two different streams over this connection, they are treated
+independently so that if any link goes missing for one of the streams, only
+that stream, that particular chain, has to pause and wait for the missing link
+to get retransmitted.
 
 Illustrated here with one yellow and one blue stream sent between two
 end-points.
