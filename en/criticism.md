@@ -18,8 +18,7 @@ without receiving a packet from the client in response.
 
 This seems to be the truth, at least today in 2018. We can of course not tell
 how this will develop and how much of this is simply the result of UDP
-transfer performance not having been in developers' focus very much for many
-years.
+transfer performance not having been in developers' focus for many years.
 
 For most clients, this "slowness" is probably never even noticeable.
 

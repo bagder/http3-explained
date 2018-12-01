@@ -6,5 +6,5 @@ negotiate a QUIC connection means doing cryptography and security with TLS
 blocks and special treatments, as well as making sure QUIC has all the secure
 properties of HTTPS that web users have come to expect and want.
 
-There is only a few initial handshake packets that are sent in the clear,
+There are only a few initial handshake packets that are sent in the clear,
 before the encryption protocols have been negotiated.
