@@ -29,6 +29,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [hidesuke](https://github.com/hidesuke)
 - [ichika](https://github.com/ichika5259)
 - [peacock](https://github.com/peacock0803sz)
+- [gim_kondo](https://github.com/gimKondo)
 
 ## ホームページ
 
