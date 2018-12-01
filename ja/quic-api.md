@@ -1,17 +1,13 @@
 # API
 
-One of the success factors for regular TCP and programs using that, is the
-standardized socket API. It has well defined functionality and using this API
-you can move programs between many different operating systems as TCP works
-the same.
+通常の TCP やそれを使うプログラムの成功要因の一つは、標準化されたソケット API です。
+機能は明確に定義されており、その API を利用することで TCP 同様に、同一のプログラムを多くの異なる OS 間で動かすことができます。
 
-QUIC is not there. There is no standard API for QUIC.
+QUIC の場合は違います。QUIC には標準 API はありません。
 
-With QUIC, you need to pick one of the existing library implementations and
-stick with its API. It makes applications "locked in" to a single library to
-some extent. Changing to another library means another API and that might
-involve a lot of work.
+QUIC においては既存のライブラリ実装を一つ選択し、その API を使わなければいけません。
+これによりアプリケーションを、単一のライブラリにある程度まで「ロックイン」することになります。
+別のライブラリへの変更は別の API への変更を意味し、多くの作業が必要になるかもしれません。
 
-Also, since QUIC is typically implemented in user-space, it can't easily just
-extend the socket API or appear similar to how existing TCP and UDP
-functionality do. Using QUIC will mean using another API than the socket API.
+また QUIC は通常はユーザースペースで実装されているため、ソケット API を単に拡張することも、既存の TCP や UDP の機能が行っていることと同じようなことを提供することも簡単ではありません。
+QUIC の使用は、ソケット API とは別の API を使おうとすることを意味します。
