@@ -1,9 +1,9 @@
 # Connections use TLS
 
 Immediately after the initial packet setting up a connection, the initiator
-send a crypto frame that starts setting up the secure layer handshake. The
-security layer is using TLS 1.3 security.
+sends a crypto frame that starts setting up the secure layer handshake. The
+security layer uses TLS 1.3 security.
 
-There is no way to opt-out or avoid using TLS for a QUIC connection and the
-protocol makes an effort to do the protocol in a way that makes it hard to
-tamper with for middle-boxes.
+There is no way to opt-out or avoid using TLS for a QUIC connection. The
+protocol is designed to be hard for middle-boxes to tamper with, in order
+to help prevent ossification of the protocol.
