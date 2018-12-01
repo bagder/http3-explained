@@ -1,67 +1,59 @@
-# Streams
+# ストリーム
 
-Streams in QUIC provide a lightweight, ordered byte-stream abstraction.
+QUIC におけるストリームは軽量で順序付けられたバイトストリームの概念を提供します。
 
-There are two basic types of stream in QUIC:
+QUIC には2種類の基本的なストリームが存在します:
 
- - Unidirectional streams carry data in one direction: from the initiator of the stream to its peer.
+ - イニシエータからピアへデータを1方向に伝送する単方向ストリーム
 
- - Bidirectional streams allow for data to be sent in both directions.
+ - お互いにデータを送ることができる双方向ストリーム
 
-Either type of stream can be created by either endpoint, can concurrently send
-data interleaved with other streams, and can be canceled.
+どちらのエンドポイントも、両方のタイプのストリームを作成でき、
+交互に配置した複数ストリームのデータを並行で送信したり中止したりできます。
 
-To send data over a QUIC connection, one or more streams are used.
+QUIC のコネクションを経由してデータを送る際には、1つ以上のストリームが利用されます。
 
-## Flow control
+## フロー制御
 
-Streams are individually flow controlled, allowing an endpoint to limit memory
-commitment and to apply back pressure.  The creation of streams is also flow
-controlled, with each peer declaring the maximum stream ID it is willing to
-accept at a given time.
+ストリームは各自独立にフロー制御が行われ、エンドポイントがメモリの割当量を制限したり、バックプレッシャー
+をかけたりできるようになっています。
+ストリーム作成も同様にフロー制御が行われ、それぞれのピアが一時的に許可される最大 Stream ID を宣言します。
 
-## Stream Identifiers
+## ストリームの識別名
 
-Streams are identified by an unsigned 62-bit integer, referred to as the
-Stream ID. The least significant two bits of the Stream ID are used to
-identify the type of stream (unidirectional or bidirectional) and the
-initiator of the stream.
+ストリームは 62bit の符号なし整数により識別され、この整数を Stream ID と呼びます。
+Stream ID の最下位 2bit はストリームの種類(単方向もしくは双方向)とストリームのイニシエータの識別に
+利用されます。
 
-The least significant bit (0x1) of the Stream ID identifies the initiator of
-the stream.  Clients initiate even-numbered streams (those with the least
-significant bit set to 0); servers initiate odd-numbered streams (with the bit
-set to 1).
+Stream ID の 最下位 bit (0x1) は ストリームのイニシエータを識別します。
+クライアントは偶数のストリームを開始し(このときの最下位 bit は 0 に設定されます)、
+サーバーは奇数のストリームを開始します(このときの最下位 bit は 1 に設定されます)。
 
-The second least significant bit (0x2) of the Stream ID differentiates between
-unidirectional streams and bidirectional streams.  Unidirectional streams
-always have this bit set to 1 and bidirectional streams have this bit set to
-0.
+Stream ID の最下位 2bit (0x2) は 単方向ストリームと双方向ストリームの両者を区別します。
+単方向ストリームでは常にこの bit は 1 に設定され、双方向ストリームではこの bit は 0 に設定されます。
 
-## Stream concurrency
+## ストリームの並行性
 
-QUIC allows for an arbitrary number of streams to operate concurrently.  An
-endpoint limits the number of concurrently active incoming streams by limiting
-the maximum stream ID.
+QUIC では任意の数のストリームを並行で操作することができます。エンドポイントは最大の Stream ID を
+制限することにより、並行して受信できる有効な入力ストリームの個数を制限できます。
 
-The maximum stream ID is specific to each endpoint and applies only to the
-peer that receives the setting.
+Stream ID の上限はエンドポイント特有で、設定を受け取ったピアにのみ適用されます。
 
-## Sending and Receiving Data
 
-Endpoints use streams to send and receive data. That is after all their
-ultimate purpose. Streams are an ordered byte-stream abstraction. Separate
-streams are however not necessarily delivered in the original order.
+## データの送受信
 
-## Stream Prioritization
+エンドポイントはデータの送受信にストリームを利用します。それがつまるところストリームの究極の目的です。
+ストリームは順序付けられたバイトストリームの概念です。
+別々のストリームは必ずしも元の順序で配信されるとは限りません。
 
-Stream multiplexing has a significant effect on application performance if
-resources allocated to streams are correctly prioritized.  Experience with
-other multiplexed protocols, such as HTTP/2, shows that effective
-prioritization strategies have a significant positive impact on performance.
+## ストリームの優先順位付け
 
-QUIC itself does not provide frames for exchanging prioritization information.
-Instead it relies on receiving priority information from the application that
-uses QUIC. Protocols that use QUIC are able to define any prioritization
-scheme that suits their application semantics.
+ストリームに割り当てられたリソースに正しい優先順位付けがされているのならば、ストリームの多重化は
+アプリケーションのパフォーマンスに莫大な効果を与えます。
+HTTP/2 のような他の多重化されたプロトコルでの経験から言って、効果的な優先順位付けの計画はパフォーマンス
+に莫大なプラスの影響を持ちます。
 
-When HTTP/3 is used over QUIC, the prioritization is done in the HTTP layer.
+QUIC 自身は優先順位付けの情報を交換するフレームを持ちません。そのかわり、QUIC を利用するアプリケーションからの優先順位情報を信頼します。
+QUIC を利用するプロトコルはそのアプリケーションのセマンティクスに合った優先順位付けのスキームを定義することが出来ます。
+
+HTTP/3 に QUIC を利用する場合、HTTP レイヤにおいては優先順位付けは不要です。
