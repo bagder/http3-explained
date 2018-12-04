@@ -11,12 +11,12 @@ SCTP はストリームを用いた信頼性のあるプロトコルで、WebRTC
 
 これは QUIC に取って代わるものとして十分ではありませんでした。以下を含む幾つかの理由に原因があります。
 
- - SCTP はストリームの head-of-line-blocking 問題を解決しません
- - SCTP はコネクションのセットアップ時に決定すべき多数のストリーム数を要求します
- - SCTP は確かな TLS/security レイヤを持ちません
+ - SCTP がストリームの head-of-line-blocking 問題を解決しないこと
+ - SCTP がコネクションのセットアップ時に決定すべき多数のストリーム数を要求しないこと
+ - SCTP が確かな TLS/security レイヤを持たないこと
  - SCTP は 4-way handshake を使用し、QUIC は 0-RTT を提供します
- - QUIC は TCP 同様バイトストリームです。SCTP はメッセージベースです
- - QUIC コネクションは IP アドレス間を移動することができますが、SCTP はできません
+ - QUIC は TCP 同様バイトストリームで、SCTP はメッセージベースであること
+ - QUIC コネクションは IP アドレス間を移動することができ、SCTP はできないこと
 
 更なる詳細と違いについては、[A Comparison between SCTP and
 QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00) インターネットドラフトが参考になります。
