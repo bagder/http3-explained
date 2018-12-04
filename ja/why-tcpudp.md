@@ -14,7 +14,7 @@ SCTP はストリームを用いた信頼性のあるプロトコルで、WebRTC
  - SCTP がストリームの head-of-line-blocking 問題を解決しないこと
  - SCTP がコネクションのセットアップ時に決定すべき多数のストリーム数を要求しないこと
  - SCTP が確かな TLS/security レイヤを持たないこと
- - SCTP は 4-way handshake を使用し、QUIC は 0-RTT を提供します
+ - SCTP は 4-way handshake を使用し、QUIC は 0-RTT を提供すること
  - QUIC は TCP 同様バイトストリームで、SCTP はメッセージベースであること
  - QUIC コネクションは IP アドレス間を移動することができ、SCTP はできないこと
 
