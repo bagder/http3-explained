@@ -31,6 +31,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [peacock](https://github.com/peacock0803sz)
 - [gim_kondo](https://github.com/gimKondo)
 - [hykw](https://github.com/hykw)
+- [misato8310](https://github.com/misato8310)
 
 ## ホームページ
 
