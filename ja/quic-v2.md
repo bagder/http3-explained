@@ -1,43 +1,28 @@
 # QUIC v2
 
-In order to get the most possibly focus on the core QUIC protocol and be able
-to ship it on time, several features that were originally planned to be part
-of the core protocol have been postponed and are now planned to instead get
-done in a subsequent QUIC version. QUIC version 2 or beyond.
+コアの QUIC プロトコルに重点を置き、予定通りリリースできるようにするため、もともとコアプロトコルの一部として計画されていたいくつかの機能の実装が延期されました。延期された機能は QUIC バージョン2もしくはそれ以降のバージョンで実装される予定です。
 
-The author of this document does however have a rather faulty crystal ball so
-we can not tell for sure exactly what features will or will not appear in
-version 2. We can however mention some of the features and things that
-explicitly have been removed from the v1 work to be "worked on later" and that
-then possibly might appear in a version 2.
+しかし、この文書の著者はかなり不完全な水晶玉を持っているため、バージョン2ではどのような機能が実装されるのか正確に予測できません。
 
-## Forward Error Correction
+ただし、v1から明示的に削除された機能や事柄については「今後実装する」とも言えます。それらはバージョン2にて再び実装される可能性があります。
 
-Forward error correction (FEC) is a method of obtaining error control in data
-transmission in which the transmitter sends redundant data and the receiver
-recognizes only the portion of the data that contains no apparent errors.
+## 前方誤り訂正
 
-Google experimented with this in their original QUIC work but it was
-subsequently removed again since the experiments did not turn out well. This
-feature is subject for discussion for QUIC v2 but probably takes for someone
-to prove that it actually can be a useful addition without too much penalty.
+前方誤り訂正(FEC)は、送信機が冗長データを送信し受信機がエラーを含まないデータのみを認識する、データ送信においてエラーを制御する方法です。
 
-## Multipath
+Google はオリジナルの QUIC の動作でこれを実験しましたが、その後実験はうまくいかなかったため再度削除されました。この機能は QUIC v2 の議論の対象となりますが、おそらく誰かが多くのペナルティなしで有用な追加になることを証明する必要があります。
 
-Multipath means that the transport can by itself use multiple network paths to
-maximize resource usage and increase redundancy.
+## マルチパス
 
-The SCTP proponents of the world like to mention that SCTP already features
-multipath and so does modern TCP.
+マルチパスとは、トランスポート自体が複数のネットワーク経路を使用してリソースの使用率を最大化することで、冗長性を高めることを意味します。
 
-## Unreliable data
+世界中の SCTP 支持者達は、SCTP はマルチパスを備えていると主張していますが、現代の TCP もマルチパスを備えています。
 
-It has been discussed to offer "unreliable" streams as an option, that would
-then allow QUIC to also replace UDP-style applications.
+## 信頼できないデータ
 
-## Non-HTTP adaptions
+「信頼できない」ストリームをオプションとして提供することが検討されているため、UDP スタイルのアプリケーションを QUIC へ置き換えることができます。
 
-DNS over QUIC was one of the early mentioned non-HTTP protocols that just
-might get some attention once QUIC v1 and HTTP/3 ship. But with a new
-transport like this having been brought on to the world I cannot imagine that
-it will stop there...
+## HTTP 以外の対応
+
+DNS over QUIC は、QUIC v1 と HTTP/3 がリリースされる際に注目されるかもしれない非 HTTP プロトコルの1つでした。
+しかし、新しいトランスポートが世界中にもたらされれば、他にもこのようなトランスポートが登場するかもしれません…。
