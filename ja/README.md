@@ -33,6 +33,8 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [hykw](https://github.com/hykw)
 - [misato8310](https://github.com/misato8310)
 - [aoi](https://github.com/blux2)
+- [morin_river](https://github.com/cahlchang)
+- [waku-tkd](https://github.com/waku-tkd)
 
 ## ホームページ
 
