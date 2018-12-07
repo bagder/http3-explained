@@ -1,16 +1,12 @@
-# HTTP/3 Prioritization
+# HTTP/3 プライオリティ制御
 
-One of the HTTP/3 stream frames is called `PRIORITY`. It is used to set
-priority and dependency on a stream in a way very similar to how it works in
-HTTP/2.
+HTTP/3 のストリームフレームの1つに `PRIORITY` があります。
+これはストリーム上の優先順位と依存関係を設定するために使われる HTTP/2 と似た方法です。
 
-The frame can set a specific stream to depend on another specific stream and
-it can set a "weight" on a given stream.
+フレームは特定のストリームを他の特定ストリームへと依存させ、"weight" を設定できます。
 
-A dependent stream should only be allocated resources if either all of the
-streams that it depends on are closed or it is not possible to make progress
-on them.
+依存関係にあるストリームは、それらが依存するすべてのストリームのいずれかがクローズされている、
+またはそれ以上処理を進めることができない場合にのみ、リソースが割り当てられるべきです。
 
-A stream weight is value between 1 and 256 and it is specified that streams
-with the same parent **should** be allocated resources proportionally based on
-their weight.
+ストリームの weight 値は 1 から 256 の間で設定可能で、同じ親を持つストリームには
+その weight に比例してリソースが割り当てられる **べきである** と定義されています。
