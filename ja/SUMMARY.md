@@ -1,4 +1,4 @@
-* [なぜQUICなのか](why-quic.md)
+* [なぜ QUIC なのか](why-quic.md)
     * [HTTP/2、覚えていますか？](why-h2.md)
     * [TCP head of line ブロッキング](why-tcphol.md)
     * [TCP か UDP か](why-tcpudp.md)
@@ -35,5 +35,5 @@
     * [Server push](h3-push.md)
     * [HTTP/2 と比較した HTTP/3](h3-h2.md)
 * [よくある疑問点](criticism.md)
-* [The specifications(仕様)](specs.md)
+* [The specifications (仕様)](specs.md)
 * [QUIC v2](quic-v2.md)
