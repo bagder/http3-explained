@@ -1,19 +1,11 @@
-## User-space
+## ユーザー空間
 
-Implementing a transport protocol in user-space helped driving the development
-and the quick iterations of the protocol since it was "easy" for Google to run
-it in both ends of their operations and have users take advantage of new
-development very frequently.
+ユーザー空間にトランスポートプロトコルを実装することで、プロトコルの開発サイクルを速めることができます。これは、クライアントとサーバー OS のカーネルをアップデートすることなくプロトコルの更新を比較的簡単に行えるためです。
 
-There is nothing that prevents this protocol from being implemented and
-offered by operating system kernels in a future, should someone find that a
-good idea.
+技術的には、QUIC 固有の仕組みをユーザー空間ではなくカーネル空間にて実装することも可能です。一部の開発者にとってはそのほうが都合が良いこともあるでしょう。
 
-### Many implementations
+### 多数の実装
 
-One obvious effect of implementing a new transport protocol that primarily
-lives in user-space is that we see many independent implementations and we can
-look forward to applications running with this rather big and complicated
-transport protocol stack in them going forward and different applications using
-different not only HTTP/3 but also QUIC stacks. It will for sure bring new
-challenges.
+ユーザースペースに新しいトランスポートプロトコルを実装する明らかな効果は、独立した実装を多数期待できることです。
+
+将来、種々のアプリケーションは異なる HTTP/3 や QUIC の実装を取り込むことが(最上層に実装することも)起こりうるでしょう。
