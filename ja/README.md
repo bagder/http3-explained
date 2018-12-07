@@ -32,6 +32,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [gim_kondo](https://github.com/gimKondo)
 - [hykw](https://github.com/hykw)
 - [misato8310](https://github.com/misato8310)
+- [aoi](https://github.com/blux2)
 
 ## ホームページ
 
