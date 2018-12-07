@@ -35,6 +35,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [aoi](https://github.com/blux2)
 - [morin_river](https://github.com/cahlchang)
 - [waku-tkd](https://github.com/waku-tkd)
+- [smaeda-ks](https://github.com/smaeda-ks)
 
 ## ホームページ
 
