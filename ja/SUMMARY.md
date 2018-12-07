@@ -14,7 +14,7 @@
     * [高信頼性のデータ転送](feature-reliable.md)
     * [コネクションは複数のストリームを扱う](feature-streams.md)
     * [到着順序の保証](feature-inorder.md)
-    * [素早いハンドシェーク](feature-handshakes.md)
+    * [素早いハンドシェイク](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
     * [トランスポートとアプリケーションレベル](feature-trans-app.md)
     * [HTTP over QUIC](feature-http.md)
