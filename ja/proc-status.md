@@ -16,7 +16,7 @@ Apache や nginx が QUIC をサポートしたという公式な発表はあり
 
 IETF バージョンの QUIC や HTTP/3 をサポートしたブラウザをリリースした大規模ベンダはまだありません。
 
-Google Chrome は Google 版の QUIC が動くものが何年も前からリリースされています。しかし、これらは公式な QUIC プロトコルとの互換性はなく、また Chrome の HTTP の実装は HTTP/3 のものとかけ離れています。
+Google Chrome は Google 版の QUIC が動くものが何年も前からリリースされています。しかし、これらは公式な QUIC プロトコルとの互換性はなく、また Chrome の HTTP の実装は HTTP/3 とは異なります。
 
 ## 実装の障害
 
