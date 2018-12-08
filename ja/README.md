@@ -1,4 +1,4 @@
-# 詳解HTTP/3
+# 詳解 HTTP/3
 
 この本の試みは2018年3月に始まりました。HTTP/3 と、その根幹のプロトコルである QUIC を文書化することがその目的です。
 どうして、どのようにして動作するのか、プロトコルの詳細、その実装など。
@@ -35,6 +35,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 - [aoi](https://github.com/blux2)
 - [morin_river](https://github.com/cahlchang)
 - [waku-tkd](https://github.com/waku-tkd)
+- [smaeda-ks](https://github.com/smaeda-ks)
 
 ## ホームページ
 
