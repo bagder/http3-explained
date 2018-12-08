@@ -16,5 +16,5 @@ QUIC コネクションは UDP ポートと IP アドレスで構成されます
 
 QUIC はコネクションとストリームの両方においてフロー制御を提供します。
 
-詳細は[コネクション](quic-connections.md)節と
-[ストリーム](quic-streams.md)節で確認できます。
+詳細は [コネクション](quic-connections.md) 節と
+[ストリーム](quic-streams.md) 節で確認できます。
