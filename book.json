@@ -2,7 +2,7 @@
     "gitbook": ">=2.0.0",
     "title": "HTTP/3 Explained",
     "pdf": {
-        "fontSize": 14
+        "fontSize": 14,
         "fontFamily": "IPAGothic"
     }
 }
