@@ -14,4 +14,4 @@ HTTP 以外のプロトコルにも適用したいという要求を満たすた
 
 IETF-QUIC の作業が進むに連れ、Google チームは IETF 版から詳細を組み込み、ゆっくりと IETF 版が目指しているものを Google 版にも取り入れ始めました。Google は Google 版の QUIC を Google のブラウザとサービスで動かし続けました。
 
-[最新の実装](https://github.com/quicwg/base-drafts/wiki/Implementations)では IETF バージョンにフォーカスし Google バージョンとの互換性はありません。
+[最新の実装](https://github.com/quicwg/base-drafts/wiki/Implementations) では IETF バージョンにフォーカスし Google バージョンとの互換性はありません。

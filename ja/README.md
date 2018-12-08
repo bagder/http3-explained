@@ -47,7 +47,7 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 助けていただいたすべての方に、適切なクレジットを提供します！ 時間をかけてこの文書を良くしていければと思っています。
 
 よろしければ、[誤字の指摘](https://github.com/bagder/http3-explained/issues)
-または[プルリクエスト](https://github.com/bagder/http3-explained/pulls)を本の GitHub ページに送ってください。
+または [プルリクエスト](https://github.com/bagder/http3-explained/pulls) を本の GitHub ページに送ってください。
 
 ## License
 
