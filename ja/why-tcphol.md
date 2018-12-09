@@ -1,4 +1,4 @@
-## TCP head of line ブロッキング
+## TCP head-of-line ブロッキング
 
 HTTP/2 は TCP を使って動作し、従来のバージョンの HTTP を使用するよりも少ない TCP コネクション数になります。
 TCP は信頼性の高い転送のためのプロトコルで、基本的には2つのマシンの間につながった仮想的な鎖のように考えることができます。
@@ -18,7 +18,7 @@ TCP がこの「鎖」であるため、一つのつなぎ目が突然欠落す�
 ![the chain showing links in different colors](../images/tcp-chain-streams.png)
 
 
-これが、TCP ベースの head of line ブロックになります！
+これが、TCP ベースの head-of-line ブロックになります！
 
 パケットロス率が上がることで、HTTP/2 のパフォーマンスはより悪くなります。
 2 %のパケットロス (これはかなりひどいです、念のため。) があるネットワーク環境では、
