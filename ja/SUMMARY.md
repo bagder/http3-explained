@@ -1,6 +1,6 @@
 * [なぜ QUIC なのか](why-quic.md)
     * [HTTP/2、覚えていますか？](why-h2.md)
-    * [TCP head of line ブロッキング](why-tcphol.md)
+    * [TCP head-of-line ブロッキング](why-tcphol.md)
     * [TCP か UDP か](why-tcpudp.md)
     * [硬直化](why-ossification.md)
     * [セキュア](why-secure.md)
