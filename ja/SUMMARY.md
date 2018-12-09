@@ -9,7 +9,7 @@
     * [IETF](proc-ietf.md)
     * [HTTP/2 からの経験](proc-h2.md)
     * [現在の状況](proc-status.md)
-* [プロコトルの機能](the-protocol.md)
+* [プロトコルの機能](the-protocol.md)
     * [UDP 上の転送プロトコル](feature-udp.md)
     * [高信頼性のデータ転送](feature-reliable.md)
     * [コネクションは複数のストリームを扱う](feature-streams.md)
