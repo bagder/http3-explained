@@ -12,6 +12,7 @@ HTTP 以外のプロトコルにも適用したいという要求を満たすた
 
 私達がこの本を書き始めた2018年3月には QUIC バージョン1の仕様の最終版は2018年11月にリリースされることになっていましたが、現在は延期されて2019年7月となっています。
 
-IETF-QUIC の作業が進むに連れ、Google チームは IETF 版から詳細を組み込み、ゆっくりと IETF 版が目指しているものを Google 版にも取り入れ始めました。Google は Google 版の QUIC を Google のブラウザとサービスで動かし続けました。
+IETF-QUIC の作業が進むに連れ Google チームは IETF 版から詳細を取り込み、IETF 版が目指している QUIC
+バージョンにプロトコルを近づけています。Google は Google 版の QUIC を 彼らのブラウザやサービスで引き続き運用しています。
 
-[最新の実装](https://github.com/quicwg/base-drafts/wiki/Implementations) では IETF バージョンにフォーカスし Google バージョンとの互換性はありません。
+[開発中の新しい実装のほとんど](https://github.com/quicwg/base-drafts/wiki/Implementations) は IETF バージョンにフォーカスすると決めており、Google バージョンとの互換性はありません。
