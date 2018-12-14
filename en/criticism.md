@@ -28,8 +28,8 @@ Similar to the "UDP is slow" remark above, this is partly because the TCP and
 TLS usage of the world has had a longer time to mature, improve and get
 hardware assistance.
 
-There are reasons to expect this to improve over time. The question is by how
-much and how much this extra CPU usage will hurt deployers.
+There are reasons to expect this to improve over time. The question is how much
+this extra CPU usage will hurt deployers.
 
 ## This is just Google
 
