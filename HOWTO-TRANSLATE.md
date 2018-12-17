@@ -39,10 +39,10 @@ and more.
 
 ### Main translators
 - zh(中文)
-[yi-bai](https://github.com/yi-bai)
+  - [yi-bai](https://github.com/yi-bai)
 
 - ja(日本語)
-[inductor](https://github.com/inductor)
+  - [inductor](https://github.com/inductor)
 
 ## Commit messages
 
