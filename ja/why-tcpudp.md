@@ -18,5 +18,4 @@ SCTP はストリームを用いた信頼性のあるプロトコルで、WebRTC
  - QUIC は TCP 同様バイトストリームで、SCTP はメッセージベースであること
  - QUIC コネクションは IP アドレス間を移動することができ、SCTP はできないこと
 
-更なる詳細と違いについては、[A Comparison between SCTP and
-QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00) インターネットドラフトが参考になります。
+更なる詳細と違いについては、[A Comparison between SCTP and QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00) インターネットドラフトが参考になります。
