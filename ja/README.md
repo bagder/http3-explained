@@ -43,12 +43,11 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 ## ヘルプ！
 
 本文書に関する誤字脱字やあからさまな間違いを見つけた場合は、修正した状態の文書を送っていただければ、改訂版を作成します。
+
 助けていただいたすべての方に、適切なクレジットを提供します！ 時間をかけてこの文書を良くしていければと思っています。
 
-よろしければ、[誤字の指摘](https://github.com/bagder/http3-explained/issues)
-または [プルリクエスト](https://github.com/bagder/http3-explained/pulls) を本の GitHub ページに送ってください。
+よろしければ、[誤字の指摘](https://github.com/bagder/http3-explained/issues) または [プルリクエスト](https://github.com/bagder/http3-explained/pulls) を本の GitHub ページに送ってください。
 
 ## License
 
-この文書およびすべてのコンテンツは、[Creative Commons
-Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0w/) のライセンスにて使用許諾されています。
+この文書およびすべてのコンテンツは、[Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0w/) のライセンスにて使用許諾されています。
