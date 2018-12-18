@@ -34,5 +34,4 @@ incoming connections.
 
 An QUIC connection request originating from a client will tell the server
 which QUIC protocol version it wants to speak, and the server will respond
-with a list of supported versions for the client to select from when going
-forward.
+with a list of supported versions for the client to select from.
