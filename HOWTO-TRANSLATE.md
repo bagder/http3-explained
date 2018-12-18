@@ -37,6 +37,13 @@ The main translator will be offered push rights to the repository and he/she
 can push updates to his/hers translation at any time or merge pull requests
 and more.
 
+### Main translators
+- zh(中文)
+  - [yi-bai](https://github.com/yi-bai)
+
+- ja(日本語)
+  - [inductor](https://github.com/inductor)
+
 ## Commit messages
 
 When committing changes, we use the following commit message format
