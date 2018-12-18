@@ -1,33 +1,35 @@
 ## IETF
 
-The QUIC working group that was established to standardize the protocol within
-the IETF quickly decided that the QUIC protocol should be able to transfer 
-other protocols than "just" HTTP. Google-QUIC only ever transported HTTP - 
-in practice it transported what was effectively HTTP/2 frames, using the 
-HTTP/2 frame syntax.
+Le groupe de travail QUIC mis en place pour standardiser le protocole au sein de
+l'IETF a rapidement décidé que le protocole QUIC devait pouvoir transférer des
+protocoles autres que "simplement" HTTP. Google-QUIC ne transportait jamais que
+HTTP - en pratique, il transportait ce qui était en réalité des trames HTTP/2, en
+utilisant la syntaxe HTTP/2.
 
-It was also stated that IETF-QUIC should base its encryption and security on
-TLS 1.3 instead of the "custom" approach used by Google-QUIC.
+Il a également été indiqué que l'IETF-QUIC devrait baser son cryptage et sa
+sécurité sur TLS 1.3 au lieu de l'approche "personnalisée" utilisée par Google-QUIC.
 
-In order to satisfy the send-more-than-HTTP demand, the IETF QUIC protocol
-architecture was split in two separate layers: the transport QUIC and the
-"HTTP over QUIC" layer (the latter sometimes referred to as "hq").
+Afin de satisfaire la demande d'envoi-plus-que-HTTP, l'architecture de protocole
+IETF QUIC a été scindée en deux couches distinctes: la couche de transport QUIC et
+la couche "HTTP sur QUIC" (cette dernière parfois appelée "hq").
 
-This layer split, while it may sound innocuous, has caused the IETF-QUIC to
-differ quite a lot from the original Google-QUIC.
+Cette division de couche, bien que cela puisse paraître inoffensif, a entraîné une
+grande différence entre l'IETF-QUIC et l'original de Google-QUIC.
 
-The working group did however soon decide that in order to get the proper focus
-and ability to deliver QUIC version 1 on time, it would focus on delivering
-HTTP, leaving non-HTTP transports to later work.
+Cependant, le groupe de travail a rapidement décidé que pour se concentrer
+correctement et délivrer la version 1 de QUIC à temps, il se concentrerait sur la
+livraison de HTTP, laissant les transports non-HTTP à un travail ultérieur.
 
-In March 2018 when we started working on this book, the plan was to ship the
-final specification for QUIC version 1 in November 2018; this was later
-postponed to July 2019.
+En mars 2018, lorsque nous avons commencé à travailler sur ce livre, le plan était
+d'expédier la spécification finale de la version 1 de QUIC en novembre 2018; cela a
+ensuite été reporté à juillet 2019.
 
-While the work on IETF-QUIC has progressed, the Google team has incorporated
-details from the IETF version and has started to slowly progress their version
-of the protocol towards what the IETF version might become. Google has continued
-using their version of QUIC in their browser and services.
+Alors que les travaux sur l’IETF-QUIC ont progressé, l’équipe de Google a incorporé
+les détails de la version de l’IETF et a commencé à faire progresser lentement sa
+version du protocole vers ce que pourrait devenir la version de l’IETF. Google a
+continué d'utiliser sa version de QUIC dans son navigateur et ses services.
 
-[Most new implementations under development](https://github.com/quicwg/base-drafts/wiki/Implementations)
-have decided to focus on the IETF version and are not compatible with the Google version.
+[La plupart des nouvelles implémentations en cours de
+développement](https://github.com/quicwg/base-drafts/wiki/Implementations)
+ont décidé de se concentrer sur la version de l'IETF et ne sont pas compatibles
+avec la version de Google.

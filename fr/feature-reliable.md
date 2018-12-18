@@ -1,8 +1,9 @@
-## ‎Reliable data transfers
+## Transferts de données fiables
 
-While UDP is not a reliable transport, QUIC adds a layer on top of UDP that
-introduces reliability. It offers re-transmissions of packets, congestion
-control, pacing and the other features otherwise present in TCP.
+Bien qu'UDP ne soit pas un transport fiable, QUIC ajoute une couche au-dessus d'UDP
+qui introduit la fiabilité. Il offre la retransmission de paquets, le contrôle de
+congestion, la stimulation et les autres fonctionnalités présentes par ailleurs
+dans TCP.
 
-Data sent over QUIC from one end-point will appear in the other end sooner or
-later, as long as the connection is maintained.
+Les données envoyées sur QUIC depuis un point de terminaison apparaîtront dans
+l'autre tôt ou tard, tant que la connexion est maintenue.

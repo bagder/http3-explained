@@ -1,38 +1,39 @@
-# Connections
+# Connexions
 
-A QUIC connection is a single conversation between two QUIC endpoints. QUIC's
-connection establishment combines version negotiation with the cryptographic
-and transport handshakes to reduce connection establishment latency.
+Une connexion QUIC est une conversation unique entre deux terminaisons QUIC.
+L’établissement de la connexion QUIC associe la négociation de la version à la
+négociation cryptographique et du handshake de transfert afin de réduire le temps
+d’attente de l’établissement de la connexion.
 
-To actually send data over such a connection, one or more streams have to be
-created and used.
+Pour envoyer des données via une telle connexion, un ou plusieurs flux doivent être
+créés et utilisés.
 
-## Connection ID
+## ID de connexion
 
-Each connection possesses a set of connection identifiers, or connection IDs,
-each of which can be used to identify the connection. Connection IDs are
-independently selected by endpoints; each endpoint selects the connection IDs
-that its peer uses.
+Chaque connexion possède un ensemble d'identifiants de connexion, ou d'IDs de
+connection, chacun d'entre eux pouvant être utilisé pour identifier la connexion.
+Les IDs de connexion sont sélectionnés indépendamment par les terminaisons; chaque
+terminaison sélectionne les identifiants de connexion que son pair utilise.
 
-The primary function of these connection IDs is to ensure that changes in
-addressing at lower protocol layers (UDP, IP, and below) do not cause packets
-for a QUIC connection to be delivered to the wrong endpoint. 
+La fonction principale de ces IDs de connexion est de garantir que les changements
+d’adressage au niveau des couches inférieures du protocole (UDP, IP et au-dessous)
+n’entraînent pas la transmission des paquets d’une connexion QUIC à la mauvaise
+terminaison.
 
-By taking advantage of the connection ID, connections can thus migrate between
-IP addresses and network interfaces in ways TCP never could. For instance, 
-migration allows an in-progress download to move from a cellular network connection
-to a faster wifi connection when the user moves their device into a location 
-offering wifi. Similarly, the download can proceed over the cellular connection
-if wifi becomes unavailable.
+En tirant parti de l'ID de connexion, les connexions peuvent ainsi migrer entre les
+adresses IP et les interfaces réseau d'une manière que TCP n'aurais jamais pu. Par
+exemple, la migration permet à un téléchargement en cours de passer d'une connexion
+réseau cellulaire à une connexion wifi plus rapide lorsque l'utilisateur déplace
+son appareil dans un emplacement proposant le wifi. De même, le téléchargement peut
+s'effectuer par la connexion cellulaire si le wifi devient indisponible.
 
-## Port numbers
+## Numéro de port
 
-QUIC is built atop UDP, so a 16 bit port number field is used to differentiate
-incoming connections.
+QUIC est construit sur UDP, donc un champ de numéro de port de 16 bits est utilisé
+pour différencier les connexions entrantes.
 
-## Version negotiation
+## Négociation de version
 
-An QUIC connection request originating from a client will tell the server
-which QUIC protocol version it wants to speak, and the server will respond
-with a list of supported versions for the client to select from when going
-forward.
+Une demande de connexion QUIC émanant d'un client indiquera au serveur la version
+du protocole QUIC qu'il souhaite utiliser, et le serveur répondra avec une liste
+des versions prises en charge que le client pourra sélectionner.

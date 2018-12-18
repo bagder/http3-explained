@@ -1,11 +1,11 @@
-## Transport and application level
+## Niveau de transport et d'application
 
-The IETF QUIC protocol is a transport protocol, on top of which other
-application protocols can be used. The initial application layer protocol is
-HTTP/3 (h3).
+Le protocole IETF QUIC est un protocole de transport sur lequel d'autres protocoles
+d'application peuvent être utilisés. Le protocole de couche d'application initial
+est HTTP/3 (h3).
 
-The transport layer supports connections and streams.
+La couche de transport prend en charge les connexions et les flux.
 
-The legacy Google version of QUIC had transport and HTTP glued together into
-one single do-it-all and was a more special-purpose
-send-http/2-frames-over-udp protocol
+L'ancienne version de QUIC de Google regroupait le transport et le protocole HTTP
+dans un même fait-tout et constituait un protocole send-http/2-frames-over-udp plus
+spécifique.

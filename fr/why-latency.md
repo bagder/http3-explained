@@ -1,24 +1,28 @@
-# Earlier data
+# Données antérieures
 
-QUIC offers both 0-RTT and 1-RTT handshakes that reduce the time it takes to
-negotiate and setup a new connection. Compare with the 3-way handshake of TCP.
+QUIC offre à la fois des handshakes 0-RTT et 1-RTT qui réduisent le temps
+nécessaire pour négocier et établir une nouvelle connexion. Comparez avec le
+handshake à 3 voies du TCP.
 
-In addition to that, QUIC offers "early data" support from the get go which is
-done to allow more data and it is used more easily than TCP Fast Open.
+En plus de ça, QUIC offre une prise en charge des "données antérieures" dès le
+départ, ce qui est fait pour autoriser plus de données et est utilisé plus
+facilement que TCP Fast Open.
 
-With the stream concept, another logical connection to the same host can be
-done at once without having to wait for the existing one to end first.
+Avec le concept de flux, vous pouvez établir une autre connexion logique avec le
+même hôte sans avoir à d'abord attendre la fin de la connexion existante.
 
-## TCP Fast Open is problematic
+## TCP Fast Open est problématique
 
-TCP Fast Open was published as [RFC 7413](https://tools.ietf.org/html/rfc7413)
-in December 2014 and that specification describes how applications can pass
-data to the server to be delivered already in the first TCP SYN packet.
+TCP Fast Open a été publié en décembre 2014 en tant que la [RFC
+7413](https://tools.ietf.org/html/rfc7413) et cette spécification explique comment
+les applications peuvent transmettre des données au serveur afin qu'elles soient
+déjà livrées dans le premier paquet TCP SYN.
 
-Actual support for this feature in the wild has taken time and is riddled with
-problems even today in 2018. The TCP stack implementors have had issues and so
-have applications trying to take advantage of this feature - both in knowing
-in which OS version to try to activate it but also in figuring out how to
-gracefully back down and deal when problems arise. Several networks have been
-identified to interfere with TFO traffic and they have thus actively ruined
-such TCP handshakes.
+La prise en charge effective de cette fonctionnalité a pris du temps et pose encore
+de nombreux problèmes, même aujourd'hui en 2018. Les responsables de la mise en
+œuvre de la stack TCP ont rencontré des problèmes, tout comme les applications qui
+ont essayé de tirer parti de cette fonctionnalité, en sachant dans quelle version
+d'OS essayer pour l'activer mais également pour savoir comment revenir en arrière
+avec élégance et régler les problèmes qui surviennent. Plusieurs réseaux ont été
+identifiés pour interférer avec le trafic TFO et ont donc activement ruiné de
+telles handshakes TCP.

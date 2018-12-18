@@ -1,11 +1,11 @@
-# How QUIC works
+# Comment QUIC fonctionne
 
-Without explaining the exact bits and bytes on the wire, this section describes how
-the fundamental building blocks of the QUIC transport protocol work. If you want to
-implement your own QUIC stack, this description should give you a general
-understanding, but for all the details, refer to the actual IETF Internet Drafts
-and RFCs.
+Sans expliquer les bits et les octets exacts sur le réseau, cette section décrit le
+fonctionnement des blocs de construction fondamentaux du protocole de transport
+QUIC. Si vous souhaitez implémenter votre propre stack QUIC, cette description doit
+vous donner une compréhension générale, mais pour tous les détails, référez-vous
+aux actuel brouillons internets et RFCs de l'IETF.
 
-1. Set up a [connection](quic-connections.md)
-2. ... that includes [TLS security](quic-tls.md)
-3. Then use [streams](quic-streams.md)
+1. Configurez une [connexion](quic-connections.md)
+2. ... ce qui inclut la [sécurité TLS](quic-tls.md)
+3. Puis utilisez [les flux](quic-streams.md)

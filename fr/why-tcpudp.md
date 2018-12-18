@@ -1,21 +1,23 @@
-## TCP or UDP
+## TCP ou UDP
 
-If we can't fix head-of-line blocking within TCP, then in theory we should
-be able to make a new transport protocol next to UDP and TCP in the network
-stack. Or perhaps even use
-[SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol)
-which is a transport protocol standardized by the IETF in [RFC
-4960](https://tools.ietf.org/html/rfc4960) with several of the desired
-characteristics.
+Si nous ne pouvons pas résoudre le blocage de la tête de ligne dans TCP, nous
+devrions théoriquement pouvoir créer un nouveau protocole de transport à côté de
+UDP et TCP dans la stack réseau. Ou peut-être même utilisez-vous
+[SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol) qui est
+un protocole de transport normalisé par l'IETF dans la [RFC
+4960](https://tools.ietf.org/html/rfc4960) avec plusieurs des caractéristiques
+souhaitées.
 
-However, in recent years efforts to create new transport protocols have almost
-entirely been halted because of the difficulties in deploying them on the Internet. 
-Deployment of new protocols is hampered by many firewalls, NATs, routers and other 
-middle-boxes that only allow TCP or UDP are deployed between users and the servers 
-they need to reach. Introducing another transport protocol makes N% of the connections
-fail because they are being blocked by boxes that see it not being UDP or TCP and 
-thus evil or wrong somehow. The N% failure rate is often deemed too high to be 
-worth the effort.
+Cependant, au cours des dernières années, les efforts pour créer de nouveaux
+protocoles de transport ont été presque complètement arrêtés en raison de la
+difficulté de les déployer sur Internet. Le déploiement de nouveaux protocoles est
+entravé par de nombreux pare-feu, NATs, routeurs et autres boîtes centrales qui
+autorisent uniquement le protocole TCP ou UDP sont déployés entre les utilisateurs
+et les serveurs qu’ils doivent atteindre. L'introduction d'un autre protocole de
+transport provoque l'échec de N% des connexions car elles sont bloquées par des
+boîtes ne la voyant pas comme étant UDP ou TCP et donc malfaisantes ou erronés
+d'une manière ou d'une autre. Le taux d'échec de N% est souvent jugé trop élevé
+pour en valoir la peine.
 
 Additionally, changing things in the transport protocol layer of the network
 stack typically means protocols implemented by operating system kernels.
@@ -23,7 +25,14 @@ Updating and deploying new operating system kernels is a slow process that
 requires significant effort. Many TCP improvements standardized by the IETF
 are not widely deployed or used because they are not broadly supported.
 
-## Why not SCTP-over-UDP
+De plus, les modifications apportées à la couche de protocole de transport de la
+stack réseau impliquent généralement des protocoles implémentés par les noyaux de
+système d'exploitation. La mise à jour et le déploiement de nouveaux noyaux de
+système d'exploitation est un processus lent qui nécessite des efforts importants.
+De nombreuses améliorations TCP normalisées par l'IETF ne sont pas beaucoup
+déployées ou utilisées car elles ne sont pas énormément prises en charge.
+
+## Pourquoi pas SCTP sur UDP
 
 SCTP is a reliable transport protocol with streams, and for WebRTC there are
 even existing implementations using it over UDP.
@@ -38,5 +47,19 @@ including:
  - QUIC is a bytestream like TCP, SCTP is message-based
  - QUIC connections can migrate between IP addresses but SCTP cannot
 
-For more details on the differences, see [A Comparison between SCTP and
+SCTP est un protocole de transport fiable avec des flux, et pour WebRTC, il existe
+même des implémentations existantes qui l'utilisent via UDP.
+
+Cela n’a pas été jugé suffisant comme alternative à QUIC pour plusieurs raisons,
+notamment:
+
+ - SCTP ne résout pas le problème de blocage de tête de ligne pour les flux
+ - SCTP exige que le nombre de flux soit déterminé lors de l'établissement de la
+   connexion
+ - SCTP n'a pas un solide concept TLS/de sécurité
+ - SCTP a un handshake à 4 voies, QUIC offre 0-RTT
+ - QUIC est un flux par octet comme TCP, SCTP est basé sur des messages
+ - Les connexions QUIC peuvent migrer entre les adresses IP, mais SCTP ne peut pas
+
+Pour plus de détails sur les différences, voir [A Comparison between SCTP and
 QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00).

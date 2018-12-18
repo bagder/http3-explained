@@ -1,25 +1,27 @@
 # Spin Bit
 
-One of the perhaps longest design discussions within the QUIC working group
-that has been the subject of several hundred mails and hours of discussions
-concerns a single bit: the Spin Bit.
+Peut-être l'une des discussions de conception les plus longues au sein du groupe de
+travail QUIC, qui a fait l'objet de plusieurs centaines de mails et d'heures de
+discussions, concerne un seul bit: le Spin Bit.
 
-The proponents of this bit insist that there is a need for operators and
-people on the path between two QUIC endpoints to be able to measure latency.
+Les partisans de ce bit insistent sur le fait qu'il est nécessaire que les
+opérateurs et les personnes se trouvant entre deux terminaisons QUIC puissent
+mesurer le temps de latence.
 
-The opponents to this feature do not like the potential information leak.
+Les opposants à cette fonctionnalité n'aiment pas la potentielle fuite
+d'informations.
 
-## Spinning a bit
+## Faire tourner un bit
 
-Both endpoints, the client and the server, maintain a spin value, 0 or 1, for
-each QUIC connection, and they set the spin bit on packets it sends for that
-connection to the appropriate value.
+Les deux points de terminaison, le client et le serveur, conservent une valeur de
+rotation, 0 ou 1, pour chaque connexion QUIC, et définissent le bit de rotation sur
+les paquets qu'il envoie pour cette connexion sur la valeur appropriée.
 
-Both sides then send out packets with that spin bit set to the same value
-for as long as one round trip lasts and then it toggles the value. The effect
-is then a pulse of ones and zeroes in that bitfield that observers can
-monitor.
+Les deux côtés envoient ensuite des paquets avec ce bit de rotation défini sur la
+même valeur pendant toute la durée d'un aller-retour, puis la valeur est modifiée.
+L'effet est alors une impulsion de uns et de zéros dans ce champ binaire que les
+observateurs peuvent surveiller.
 
-This measuring only works when the sender is neither application nor flow
-control limited and packet reordering over the network can also make the data
-noisy.
+Cette mesure ne fonctionne que lorsque l'expéditeur n'est ni limité par
+l'application ni par le contrôle de flux, la réorganisation des paquets sur le
+réseau peut également rendre les données tumultueuses.

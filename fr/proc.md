@@ -1,23 +1,23 @@
-# Process
+# La procédure
 
-The initial QUIC protocol was designed by Jim Roskind at Google and was
-initially implemented in 2012, announced publicly to the world in 2013 when
-Google's experimentation broadened.
+Le protocole QUIC originel a été conçu par Jim Roskind chez Google et a été
+initialement mis en œuvre en 2012, puis annoncé publiquement au monde en 2013
+lorsque l'expérimentation de Google s'est élargie.
 
-Back then, QUIC was still claimed to be an acronym for "Quick UDP Internet
-Connections", but that has been dropped since then.
+À l'époque, il était toujours prétendu que QUIC était l'acronyme de "Quick UDP
+Internet Connections", mais il a été abandonné depuis.
 
-Google implemented the protocol and subsequently deployed it both in their
-widely used browser (Chrome) and in their widely used server-side services
-(Google search, gmail, youtube and more). They iterated protocol versions
-fairly quickly and over time they proved the concept to work reliably for a
-vast portion of users.
+Google a mis en œuvre le protocole et l'a ensuite déployé à la fois dans son
+navigateur beaucoup utilisé (Chrome) et dans ses services côté serveur beaucoup
+utilisés (Google search, gmail, youtube, etc...). Ils ont répété les versions du
+protocole assez rapidement et, avec le temps, ils ont prouvé que le concept
+fonctionnait de manière fiable pour une grande partie des utilisateurs.
 
-In June 2015, the first internet draft for QUIC was sent to the IETF for
-standardization, but it took until late 2016 for a QUIC working group to
-get approved and started. But then it took off immediately with a high degree
-of interest from many parties.
+En juin 2015, le premier brouillon Internet pour QUIC a été envoyé à l'IETF pour
+une standardisation, mais il a fallu attendre la fin de l'année 2016 pour qu'un
+groupe de travail QUIC soit approuvé et lancé. Mais ensuite, il a immédiatement
+décollé avec beaucoup d'intérêt de la part de nombreux partis.
 
-In 2017, numbers quoted by QUIC engineers at Google mentioned that around 7%
-of *all* Internet traffic were already using this protocol. The Google version
-of the protocol that is.
+En 2017, des chiffres cités par les ingénieurs de QUIC chez Google ont indiqué
+qu'environ 7% de *tout* le trafic Internet utilisait déjà ce protocole. La version
+de Google du protocole.

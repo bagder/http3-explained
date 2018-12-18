@@ -1,17 +1,19 @@
-# Why QUIC
+# Pourquoi QUIC
 
-QUIC is a name, not an acronym. It is pronounced exactly like the English word
+QUIC est un nom, pas un acronyme. Il se prononce exactement comme le mot anglais
 "quick".
 
-QUIC is in many ways what could be seen as a way of doing a new reliable and
-secure transport protocol that is suitable for a protocol like HTTP and that
-can address some of the known shortcomings of doing HTTP/2 over TCP and
-TLS. The logical next step in the web transport evolution.
+QUIC est à bien des égards ce qui pourrait être perçu comme un moyen de créer un
+nouveau protocole de transport fiable et sécurisé, adapté à un protocole comme HTTP
+et pouvant résoudre certains des inconvénients connus de HTTP/2 sur TCP et TLS. La
+prochaine étape logique dans l'évolution du transport Web.
 
-QUIC is not limited to just transporting HTTP. The desire to make the web and
-data in general delivered faster to end users is probably the largest reason
-and push that initially triggered the creation of this new transport protocol.
+QUIC n'est pas limité au seul transport de HTTP. La volonté de rendre le web et les
+données en général plus rapides aux utilisateurs finaux est probablement la raison
+principale et la poussée qui a initialement déclenché la création de ce nouveau
+protocole de transport.
 
-So why create a new transport protocol and why do it on top of UDP?
+Alors pourquoi créer un nouveau protocole de transport et pourquoi le faire par
+dessus UDP?
 
 ![QUIC logo](../images/QUIC.png)

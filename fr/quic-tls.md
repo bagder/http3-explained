@@ -1,9 +1,9 @@
 # Connections use TLS
 
-Immediately after the initial packet setting up a connection, the initiator
-sends a crypto frame that starts setting up the secure layer handshake. The
-security layer uses TLS 1.3 security.
+Immédiatement après le paquet initial établissant une connexion, l'initiateur envoie
+une trame de cryptage qui commence à établir le handshake de couche sécurisée. La
+couche de sécurité utilise la sécurité TLS 1.3.
 
-There is no way to opt-out or avoid using TLS for a QUIC connection. The
-protocol is designed to be hard for middle-boxes to tamper with, in order
-to help prevent ossification of the protocol.
+Il n'y a aucun moyen de vous désabonner ou d'éviter d'utiliser TLS pour une
+connexion QUIC. Le protocole est conçu pour être difficile à altérer par des boîtes
+intermédiaires, afin de prévenir l'ossification du protocole.

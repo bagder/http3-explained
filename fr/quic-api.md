@@ -1,17 +1,18 @@
 # API
 
-One of the success factors for regular TCP and programs using that, is the
-standardized socket API. It has well defined functionality and using this API
-you can move programs between many different operating systems as TCP works
-the same.
+L’un des facteurs de succès du TCP classique et des programmes qui l’utilisent est
+l’API de socket standardisé. Il a des fonctionnalités bien définies et à l'aide de
+cette API, vous pouvez déplacer des programmes entre de nombreux systèmes
+d'exploitation différents, car TCP fonctionne de la même manière.
 
-QUIC is not there. There is no standard API for QUIC.
+QUIC n'est pas là. Il n'y a pas d'API standard pour QUIC.
 
-With QUIC, you need to pick one of the existing library implementations and
-stick with its API. It makes applications "locked in" to a single library to
-some extent. Changing to another library means another API and that might
-involve a lot of work.
+Avec QUIC, vous devez choisir l’une des implémentations de bibliothèque existantes
+et s'en tenir à son API. Cela rend les applications "verrouillées" à une
+seule bibliothèque dans une certaine mesure. Le passage à une autre bibliothèque
+signifie une autre API, ce qui peut nécessiter beaucoup de travail.
 
-Also, since QUIC is typically implemented in user-space, it can't easily just
-extend the socket API or appear similar to how existing TCP and UDP
-functionality do. Using QUIC will mean using another API than the socket API.
+De plus, étant donné que QUIC est généralement implémenté dans l'espace utilisateur,
+il ne peut pas simplement enrichir l'API de socket ou sembler similaire à la
+fonctionnalité existante des protocoles TCP et UDP. L'utilisation de QUIC signifie
+l'utilisation d'une autre API que l'API socket.

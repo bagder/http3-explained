@@ -1,51 +1,53 @@
-## TCP head of line blocking
+## Blocage de tête de ligne TCP
 
-HTTP/2 is done over TCP and with much fewer TCP connections than when using
-earlier HTTP versions. TCP is a protocol for reliable transfers and you can
-basically think of it as an imaginary chain between two machines. What is
-being put out on the network in one end will end up in the other end, in the
-same order - eventually. (Or the connection breaks.)
+HTTP/2 est réalisé sur TCP et avec beaucoup moins de connexions TCP que lors de
+l'utilisation de versions HTTP antérieures. TCP est un protocole pour des
+transferts fiables et vous pouvez le considérer comme une chaîne imaginaire entre
+deux machines. Ce qui est mis sur le réseau d'un côté finira par se retrouver à
+l'autre bout, dans le même ordre - à terme. (Ou la connexion est rompue.)
 
-![a TCP chain between two computers](../images/tcp-chain.png)
+![une chaîne TCP entre deux ordinateurs](../images/tcp-chain.png)
 
-With HTTP/2, typical browsers do tens or hundreds of parallel transfers over
-that single TCP connection.
+Avec HTTP/2, les navigateurs classiques effectuent des dizaines, voire des
+centaines de transferts parallèles sur cette seule connexion TCP.
 
-If a single packet is dropped, or lost in the network somewhere between two
-endpoints that speak HTTP/2, it means the entire TCP connection is brought to
-a halt while the lost packet needs to be re-transmitted and find its way to
-the destination. Since TCP is this "chain", it means that if one link is
-suddenly missing, everything that would come after the lost link needs to
-wait.
+Si un seul paquet est abandonné ou perdu sur le réseau quelque part entre deux
+terminaisons qui parlent HTTP/2, cela signifie que toute la connexion TCP est
+interrompue et que le paquet perdu doit être retransmis et doit retrouver son
+chemin jusqu'à la destination. Puisque TCP est cette "chaîne", cela signifie que si
+un lien manque soudainement, tout ce qui viendrait après le lien perdu doit
+attendre.
 
-An illustration using the chain metaphor when sending two streams over this
-connection. A red stream and a green stream:
+Illustration utilisant la métaphore de la chaîne lors de l'envoi de deux flux sur
+cette connexion. Un flux rouge et un flux vert:
 
-![the chain showing links in different colors](../images/tcp-chain-streams.png)
+![la chaîne montrant des liens de différentes
+couleurs](../images/tcp-chain-streams.png)
 
-It becomes a TCP-based head of line block!
+Cela devient un bloc de début de ligne basé sur TCP!
 
-As the packet loss rate increases, HTTP/2 performs less and less good. At 2%
-packet loss (which is a terrible network quality, mind you), tests have proven
-that HTTP/1 users are usually better off - because they typically have six TCP
-connections up to distribute the lost packet over so for each lost packet the
-other connections without loss can still continue.
+À mesure que le taux de perte de paquets augmente, HTTP/2 est de moins en moins
+performant. Avec 2% de perte de paquets (ce qui est une qualité de réseau
+épouvantable, remarquez-vous bien), des tests ont montré que les utilisateurs de
+HTTP/1 sont généralement mieux lotis - car ils disposent généralement de six
+connexions TCP pour répartir le paquet perdu donc pour chaque paquet perdu, les
+autres connexions sans perte peuvent toujours continuer.
 
-Fixing this issue is not easy, if at all possible, to do with TCP.
+Résoudre ce problème n’est pas facile, et si tout de même possible, à faire avec
+TCP.
 
-## Independent streams avoids the block
+## Les flux indépendants évitent le blocage
 
-With QUIC there is still a connection setup between the two end-points that
-makes the connection secure and the data delivery reliable.
+Avec QUIC, il existe toujours une connexion configurée entre les deux terminaisons
+qui sécurise la connexion et la livraison des données.
 
-![a QUIC chain between two computers](../images/tcp-chain.png)
+![une chaîne QUIC entre deux ordinateurs](../images/tcp-chain.png)
 
-When setting up two different streams over this connection, they are treated
-independently so that if any link goes missing for one of the streams, only
-that stream, that particular chain, has to pause and wait for the missing link
-to get retransmitted.
+Lors de la configuration de deux flux différents sur cette connexion, ils sont
+traités indépendamment. Ainsi, si un lien manque à l'un des flux, seul ce flux,
+cette chaîne particulière, doit s'interrompre et attend que le lien manquant soit
+retransmis.
 
-Illustrated here with one yellow and one blue stream sent between two
-end-points.
+Illustré ici avec un flux jaune et un flux bleu envoyés entre deux terminaisons.
 
-![two QUIC streams between two computers](../images/quic-chain-streams.png)
+![deux flux QUIC entre deux ordinateurs](../images/quic-chain-streams.png)

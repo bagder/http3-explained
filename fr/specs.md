@@ -1,7 +1,7 @@
-# The specifications
+# Les spécifications
 
-Here is a collection of the latest official drafts for the various parts and
-components of QUIC and HTTP/3.
+Voici un recueil des dernières versions officielles des différentes parties et
+composants de QUIC et de HTTP/3.
 
 ## Invariants
 
@@ -11,7 +11,7 @@ components of QUIC and HTTP/3.
 
 [QUIC: A UDP-Based Multiplexed and Secure Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-16)
 
-## Recovery
+## Récupération
 
 [QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-16)
 

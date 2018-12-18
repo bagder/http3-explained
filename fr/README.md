@@ -1,45 +1,45 @@
-# HTTP/3 explained
+# HTTP/3 expliqué
 
-This book effort was started in March 2018. The plan is to document HTTP/3 and
-its underlying protocol: QUIC. Why, how they work, protocol details, the
-implementations and more.
+Ce livre a été lancé en mars 2018. Il est prévu de documenter HTTP/3 et son
+protocole sous-jacent: QUIC. Pourquoi, comment fonctionnent-ils, les détails du
+protocole, les implémentations et plus.
 
-The book is entirely free and is meant to be a collaborative effort
-involving anyone and everyone who wants to help out.
+Le livre est entièrement gratuit et se veut être un effort de collaboration
+impliquant tous ceux qui veulent aider.
 
-## Prerequisites
+## Prérequis
 
-A reader of this book is presumed to have a basic understanding of TCP/IP
-networking, the fundamentals of HTTP and the web. For further insights and
-specifics about HTTP/2 we recommend first reading up the details in [http2
-explained](https://daniel.haxx.se/http2/).
+Un lecteur de ce livre est censé avoir une compréhension de base du réseau TCP/IP,
+des principes fondamentaux de HTTP et du Web. Pour plus d'informations et de
+détails sur HTTP/2, nous vous recommandons tout d'abord de lire les détails dans
+[http2 expliqué](https://daniel.haxx.se/http2/).
 
-## Author
+## Auteur
 
-This book is created and the work is started by [Daniel
-Stenberg](https://daniel.haxx.se/). Daniel is the founder and lead developer
-of [curl](https://curl.haxx.se/), the world's most widely used HTTP client
-software. Daniel has worked with and on HTTP and internet protocols for over
-two decades and is the author of [http2
-explained](https://daniel.haxx.se/http2/).
+Ce livre est créé et le travail est démarré par [Daniel
+Stenberg](https://daniel.haxx.se/). Daniel est le fondateur et le développeur
+principal de [curl](https://curl.haxx.se/), le client HTTP le plus utilisé au
+monde. Daniel travaille avec et sur les protocoles HTTP et Internet depuis plus de
+deux décennies et est l'auteur de [http2 expliqué](https://daniel.haxx.se/http2/).
 
-## Home
+## Accueil
 
-The home page for this book is found at
+La page d'accueil de ce livre se trouve à l'adresse
 [daniel.haxx.se/http3-explained](https://daniel.haxx.se/http3-explained).
 
-## Help out
+## Contribuer
 
-If you find mistakes, omissions, errors or blatant lies in this document,
-please send us a refreshed version of the affected paragraph and we will make
-amended versions. We will give proper credits to everyone who helps out. I
-hope to make this document better over time.
+Si vous trouvez des fautes, des omissions, des erreurs ou des mensonges flagrants
+dans ce document, veuillez nous envoyer une version mise à jour du paragraphe
+concerné et nous en ferons des versions corrigés. Nous allons donner des crédits
+appropriés à tous ceux qui aident. J'espère améliorer ce document avec le temps.
 
-Preferably, you submit [errors](https://github.com/bagder/http3-explained/issues)
-or [pull requests](https://github.com/bagder/http3-explained/pulls) on the book's
-github page.
+De préférence, vous soumettez [des
+erreurs](https://github.com/bagder/http3-explained/issues) ou des [demandes de
+tirage](https://github.com/bagder/http3-explained/pulls) sur la page github du
+livre.
 
-## License
+## Licence
 
-This document and all its contents are licensed under the [Creative Commons
-Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0w/).
+Ce document et tout son contenu sont sous licencés sous la [licence Creative Commons
+Attribution 4.0](https://creativecommons.org/licenses/by/4.0w/).

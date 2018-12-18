@@ -1,32 +1,35 @@
-# HTTP/3 Server push
+# HTTP/3 push serveur
 
-HTTP/3 server push is similar to what is described in HTTP/2 ([RFC
-7540](https://httpwg.org/specs/rfc7540.html)), but uses different mechanisms.
+Un serveur push HTTP/3 est similaire à ce qui est décrit dans HTTP/2 ([RFC
+7540](https://httpwg.org/specs/rfc7540.html)), mais utilise des mécanismes
+différents.
 
-A server push is effectively the response to a request that the client never
-sent!
+Un serveur push est en réalité la réponse à une requête que le client n'a jamais
+envoyée!
 
-Server pushes are only allowed to happen if the client side has agreed to
-them. In HTTP/3 the client even sets a limit for how many pushes it accepts
-by informing the server what the max push stream ID is. Going over that limit
-will cause a connection error.
+Les push serveur ne sont autorisés que si le côté client les a acceptés. Dans
+HTTP/3, le client définit même une limite pour le nombre de push qu'il accepte en
+informant le serveur de l'ID de flux de push maximal. Dépasser cette limite
+entraînera une erreur de connexion.
 
-If the server deems it likely that the client wants an extra resource that it
-hasn't asked for but ought to have anyway, it can send a `PUSH_PROMISE` frame
-(over the request stream) showing what the request looks like that the push is
-a response to, and then send that actual response over a new stream.
+Si le serveur estime probable que le client souhaite une ressource supplémentaire
+qu'il n'a pas demandée mais qu'il devrait avoir de toute façon, il peut envoyer une
+trame `PUSH_PROMISE` (sur le flux de la requête) indiquant à quoi ressemble la
+requête dont la réponse est destinée, puis envoyer cette réponse réelle sur un
+nouveau flux.
 
-Even when pushes have been said to be acceptable by the client before-hand,
-each individual pushed stream can still be canceled at any time if the client
-deems that suitable. It then sends a `CANCEL_PUSH` frame to the server.
+Même si les envois ont au préalable été déclarés acceptables par le client, chaque
+flux envoyé individuellement peut toujours être annulé à tout moment si le client
+le juge approprié. Il envoie ensuite une trame `CANCEL_PUSH` au serveur.
 
-## Problematic
+## Problématique
 
-Ever since this feature was first discussed in the HTTP/2 development and
-later after the protocol shipped and has been deployed over the Internet, this
-feature has been discussed, disliked and pounded up in countless different
-ways in order to get it to become useful.
+Depuis que cette fonctionnalité a été abordée pour la première fois dans le
+développement de HTTP/2 et ensuite plus tard, après que le protocole ai été livré
+et déployé sur Internet, cette fonctionnalité a été discutée, détestée et
+perfectionnée de nombreuses différentes manières afin de la rendre utile.
 
-Pushing is never "free", since while it saves a half round-trip it still uses
-bandwidth. It is often hard or impossible for the server-side to actually know
-with a high level a certainty if a resource should be pushed or not.
+Un envoi n’est jamais "gratuit", car même s’il enregistre un demi aller-retour, il
+utilise toujours de la bande passante. Il est souvent difficile ou impossible pour
+le côté serveur de savoir avec un niveau élevé de certitude si une ressource doit
+être envoyée ou non.

@@ -1,6 +1,6 @@
 # 0-RTT
 
-To reduce the time required to establish a new connection, a client that has previously
-connected to a server may cache certain parameters from that connection and subsequently 
-set up a **0-RTT** connection with the server. This allows the client to send data immediately,
-without waiting for a handshake to complete.
+Pour réduire le temps nécessaire à l'établissement d'une nouvelle connexion, un
+client déjà connecté à un serveur peut mettre en cache certains paramètres de cette
+connexion et établir une connexion **0-RTT** avec le serveur. Cela permet au client
+d'envoyer des données immédiatement, sans attendre la fin d'un handshake.

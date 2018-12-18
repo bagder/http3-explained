@@ -1,31 +1,34 @@
 ## Remember HTTP/2?
 
-The HTTP/2 specification [RFC 7540](https://httpwg.org/specs/rfc7540.html) was
-published in May 2015 and the protocol has since then been implemented and
-deployed widely across the Internet and the world wide web.
+La spécification HTTP/2 [RFC 7540](https://httpwg.org/specs/rfc7540.html) a été
+publiée en mai 2015 et le protocole a depuis été mis en œuvre et déployé largement
+sur Internet et sur le World Wide Web.
 
-In early 2018, almost 40% of the top-1000 web sites run HTTP/2, around 70% of
-all HTTPS requests Firefox issues get HTTP/2 responses back and all major
-browsers, servers and proxies support it.
+Début 2018, près de 40% des 1 000 meilleurs sites Web utilisaient HTTP/2, environ
+70% de toutes les demandes HTTPS de Firefox recevaient des réponses HTTP/2 et tous
+les principaux navigateurs, serveurs et proxies le prenaient en charge.
 
-HTTP/2 addresses a whole slew of shortcomings in HTTP/1 and with the
-introduction of the second version of HTTP users can stop using a bunch of
-work-arounds. Some of which are pretty burdensome on web developers.
+HTTP/2 corrige toute une série de lacunes presentes dans HTTP/1 et avec
+l'introduction de la deuxième version de HTTP, les utilisateurs peuvent cesser
+d'utiliser toute une série de solutions de contournement. Certaines sont assez
+pénibles pour les développeurs Web.
 
-One of the primary features of HTTP/2 is that it makes use of multiplexing, so
-that many logical streams are sent over the same physical TCP connection. This
-makes a lot of things better and faster. It makes congestion control work much
-better, it lets users use TCP much better and thus properly saturate the
-bandwidth, makes the TCP connections more long-lived - which is good so that
-they get up to full speed more frequently than before. Header compression
-makes it use less bandwidth.
+L'une des principales caractéristiques de HTTP/2 est qu'il utilise le multiplexage,
+de sorte que de nombreux flux logiques soient envoyés sur la même connexion TCP
+physique. Cela rend beaucoup de choses meilleures et plus rapides. Le contrôle de
+congestion fonctionne bien mieux, il permet aux utilisateurs d’utiliser bien mieux
+le protocole TCP et ainsi de saturer correctement la bande passante, de rendre les
+connexions TCP plus durables - ce qui est bien pour qu’ils atteignent la vitesse
+maximale plus souvent qu’avant. La compression d'en-tête lui fait utiliser moins de
+bande passante.
 
-With HTTP/2, browsers typically use *one* TCP connection to each host instead
-of the previous *six*. In fact, connection coalescing and "desharding"
-techniques used with HTTP/2 may actually even reduce the number of connections
-much more than so.
+Avec HTTP/2, les navigateurs utilisent généralement *une* connexion TCP avec chaque
+hôte au lieu des précédents *six*. En fait, les techniques de fusion et de
+"désarchivage" des connexions utilisées avec HTTP/2 peuvent même réduire beaucoup
+plus que ça le nombre de connexions.
 
-HTTP/2 fixed the HTTP head of line blocking problem, where clients had to wait
-for the first request in line to finish before the next one could go out.
+HTTP/2 a corrigé le problème de blocage de tête de ligne HTTP, dans lequel les
+clients devaient attendre la fin de la première requête en ligne avant que la
+suivante ne puisse être envoyée.
 
 ![http2 man](../images/h2-man.jpg)

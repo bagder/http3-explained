@@ -1,44 +1,44 @@
-# QUIC streams and HTTP/3
+# Flux QUIC et HTTP/3
 
-HTTP/3 is made for QUIC so it takes full advantage of QUIC's streams, where
-HTTP/2 had to design its entire stream and multiplexing concept of its own on
-top of TCP.
+HTTP/3 étant conçu pour QUIC, il tire pleinement parti des flux de QUIC, où HTTP/2
+devait concevoir l'ensemble de son concept de flux et de multiplexage au-dessus de
+TCP.
 
-HTTP requests done over HTTP/3 use a specific set of streams.
+Les requêtes HTTP effectuées via HTTP/3 utilisent un ensemble spécifique de flux.
 
-## HTTP/3 frames
+## Trames HTTP/3
 
-HTTP/3 means setting up QUIC streams and sending over a set of frames to the
-other end. There's but a small fixed number (eight!) of known frames in
-HTTP/3. The most important ones are probably:
+HTTP/3 signifie la configuration de flux QUIC et l’envoi d’un ensemble de trames à
+l’autre extrémité. Il n'y a qu'un petit nombre fixe (huit!) de trames connues dans
+HTTP/3. Les plus importants sont probablement:
 
-- HEADERS, that sends compressed HTTP headers
-- DATA, sends binary data contents
-- GOAWAY, please shutdown this connection
+- HEADERS, qui envoie des en-têtes HTTP compressés
+- DATA, envoie le contenu des données binaires
+- GOAWAY, veuillez arrêter cette connexion
 
-## HTTP Request
+## Requête HTTP
 
-The client sends its HTTP request on a client-initiated *bidirectional* QUIC
-stream.
+Le client envoie sa requête HTTP sur un flux QUIC *bidirectionnel* initié par le
+client.
 
-A request consists of a single HEADERS frame and might optionally be followed
-by one or two other frames: a series of DATA frames and possibly a final
-HEADERS frame for trailers.
+Une requête consiste en une seule trame HEADERS et peut éventuellement être suivie
+d'une ou deux autres trames: une série de trames DATA et éventuellement d'une trame
+HEADERS finale pour terminer.
 
-After sending a request, a client closes the stream for sending.
+Après avoir envoyé une requête, un client ferme le flux pour l’envoyer.
 
-## HTTP Response
+## Réponse HTTP
 
-The server sends back its HTTP response on the bidirectional stream. A HEADERS
-frame, a series of DATA frames and possibly a trailing HEADERS frame.
+Le serveur renvoie sa réponse HTTP sur le flux bidirectionnel. Une trame HEADERS,
+une série de trames DATA et éventuellement une dernière trame HEADERS.
 
-## QPACK headers
+## En-têtes QPACK
 
-The HEADERS frames contain HTTP headers compressed using the QPACK algorithm.
-QPACK is similar in style to the HTTP/2 compression called HPACK ([RFC
-7541](https://httpwg.org/specs/rfc7541.html)), but modified to work with
-streams delivered out of order.
+Les trames HEADERS contiennent des en-têtes HTTP compressés à l'aide de
+l'algorithme QPACK, QPACK est styliquement similaire à celui de la compression
+HTTP/2 appelée HPACK ([RFC 7541](https://httpwg.org/specs/rfc7541.html)), mais
+modifiée pour fonctionner avec des flux livrés dans le désordre.
 
-QPACK itself uses two additional unidirectional QUIC streams between the two
-end-points. They are used to carry dynamic table information in either
-direction.
+QPACK lui-même utilise deux flux QUIC unidirectionnels supplémentaires entre les
+deux terminaisons. Ils sont utilisés pour transporter des informations de table
+dynamique dans les deux sens.

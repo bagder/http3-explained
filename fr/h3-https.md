@@ -1,30 +1,31 @@
-# HTTPS:// URLs
+# URLs HTTPS://
 
-HTTP/3 will be performed using `HTTPS://` URLs. The world is full of these
-URLs and it has been deemed impractical and downright unreasonable to
-introduce another URL scheme for the new protocol. Much like HTTP/2 did not
-need a new scheme, neither will HTTP/3.
+HTTP/3 sera exécuté en utilisant des URLs `HTTPS://`. Le monde est rempli de ces
+URLs et il a été jugé peu pratique et tout à fait déraisonnable d'introduire un
+autre schéma d'URL pour le nouveau protocole. Tout comme HTTP/2 n'a pas besoin d'un
+nouveau schéma, HTTP/3 non plus.
 
-The added complexity in the HTTP/3 situation is however that where HTTP/2 was
-a completely new way of transporting HTTP over the wire, it was still based on
-TLS and TCP like HTTP/1 was. The fact that HTTP/3 is done over QUIC changes
-things in a few important aspects.
+La complexité supplémentaire de la situation de HTTP/3 réside toutefois dans le fait
+que, lorsque HTTP/2 était un nouveau moyen de transporter HTTP sur le réseau, il
+était toujours basé sur TLS et TCP comme l'était HTTP/1. Le fait que HTTP/3 soit
+effectué sur QUIC change les choses en quelques aspects importants.
 
-Legacy, clear-text, `HTTP://` URLs will be left as-is and as we proceed
-further into a future with more secure transfers they will probably become
-less and less frequently used. Requests to such URLs will simply not be
-upgraded to use HTTP/3. In reality they rarely upgrade to HTTP/2 either, but
-for other reasons.
+Les anciennes, en texte clair, URLs `HTTP://`, seront laissées telles quelles et,
+au fur et à mesure que nous avançons dans le futur avec des transferts plus
+sécurisés, elles seront probablement de moins en moins utilisées. Les requêtes
+adressées à ces URLs ne seront tout simplement pas mises à niveau pour utiliser
+HTTP/3. En réalité, ils passent rarement à HTTP/2 non plus, mais pour d'autres
+raisons.
 
-## Initial connection
+## Connexion initiale
 
-The first connection to a fresh, not previously visited host for a
-HTTPS:// URL probably has to be done over TCP (possibly in addition to a
-parallel attempt to connect via QUIC). The host might be a legacy server without
-QUIC support or there might be a middle box in between setting up obstacles
-preventing a QUIC connection from succeeding.
+La première connexion à un hôte récent, non visité précédemment pour une URL
+HTTPS:// devra probablement être établie via TCP (éventuellement en plus d'une
+tentative parallèle de connexion via QUIC). L'hôte peut être un ancien serveur sans
+prise en charge de QUIC ou il peut y avoir une boîte intermédiaire entre les
+obstacles empêchant le succès d'une connexion QUIC.
 
-A modern client and server would presumably negotiate HTTP/2 in the first
-handshake. When the connection has been setup and the server responds to a
-client HTTP request, the server can tell the client about its support of and
-preference for HTTP/3.
+Un client et un serveur modernes négocieraient probablement HTTP/2 lors du premier
+handshake. Lorsque la connexion a été configurée et que le serveur répond à une
+requête HTTP du client, le serveur peut informer le client de sa prise en charge et
+de sa préférence pour HTTP/3.

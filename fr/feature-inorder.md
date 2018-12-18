@@ -1,18 +1,19 @@
-## ‎In order delivery
+## Livraison dans l'ordre
 
-QUIC guarantees in-order delivery of streams, but not between streams. This
-means that each stream will send data and maintain data order, but each stream
-may reach the destination in a different order than the application sent it!
+QUIC garantit la livraison des flux dans l'ordre, mais pas entre les flux. Cela
+signifie que chaque flux enverra des données et maintiendra l’ordre des données,
+mais chaque flux pourra atteindre la destination dans un ordre différent de celui
+que l’application a envoyé!
 
-For example: stream A and B are transferred from a server to a client. Stream
-A is started first and then stream B. In QUIC, a lost packet only affects
-the stream to which the lost packet belongs. If stream A loses a packet but
-stream B does not, stream B may continue its transfers and complete
-while stream A's lost packet is re-transmitted. This was not possible
-with HTTP/2.
+Par exemple: les flux A et B sont transférés d'un serveur à un client. Le flux A
+est démarré en premier, puis ensuite le flux B. Dans QUIC, un paquet perdu affecte
+uniquement le flux auquel appartient le paquet perdu. Si le flux A perd un paquet
+mais pas le flux B, le flux B peut poursuivre ses transferts et se terminer pendant
+que le paquet perdu du flux A est retransmis. Ce n'était pas possible avec HTTP/2.
 
-Illustrated here with one yellow and one blue stream sent between two QUIC
-end-points over a single connection. They are independent and may arrive in a
-different order, but each stream is reliably delivered to the application in order.
+Illustré ici avec un flux jaune et un flux bleu envoyés entre deux points de
+terminaison QUIC sur une seule connexion. Ils sont indépendants et peuvent arriver
+dans un ordre différent, mais chaque flux est livré de manière fiable, dans l'ordre,
+à l'application.
 
-![two QUIC streams between two computers](../images/quic-chain-streams.png)
+![deux flux QUIC entre deux ordinateurs](../images/quic-chain-streams.png)

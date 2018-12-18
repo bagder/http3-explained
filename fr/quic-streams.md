@@ -1,67 +1,75 @@
-# Streams
+# Flux
 
-Streams in QUIC provide a lightweight, ordered byte-stream abstraction.
+Les flux dans QUIC fournissent une abstraction légère, ordonnée et ordonnée.
 
-There are two basic types of stream in QUIC:
+Il existe deux types de flux de base dans QUIC:
 
- - Unidirectional streams carry data in one direction: from the initiator of the stream to its peer.
+  - Les flux unidirectionnels transportent des données dans un sens: de
+    l'initiateur du flux à son homologue.
 
- - Bidirectional streams allow for data to be sent in both directions.
+  - Les flux bidirectionnels permettent l'envoi de données dans les deux sens.
 
-Either type of stream can be created by either endpoint, can concurrently send
-data interleaved with other streams, and can be canceled.
+L'un ou l'autre type de flux peut être créé par l'un ou l'autre des points de
+terminaison, peut simultanément envoyer des données entrelacées à d'autres flux et
+peut être annulé.
 
-To send data over a QUIC connection, one or more streams are used.
+Pour envoyer des données via une connexion QUIC, un ou plusieurs flux sont utilisés.
 
-## Flow control
+## Contrôle de flux
 
 Streams are individually flow controlled, allowing an endpoint to limit memory
 commitment and to apply back pressure. The creation of streams is also flow
 controlled, with each peer declaring the maximum stream ID it is willing to
 accept at a given time.
 
-## Stream Identifiers
+Les flux sont contrôlés individuellement, ce qui permet à un point de terminaison
+de limiter l’engagement de la mémoire et d’appliquer une contre-pression. La
+création de flux est également contrôlée en flux, chaque pair déclarant l’ID de
+flux maximum qu’il est prêt à accepter à un moment donné.
 
-Streams are identified by an unsigned 62-bit integer, referred to as the
-Stream ID. The least significant two bits of the Stream ID are used to
-identify the type of stream (unidirectional or bidirectional) and the
-initiator of the stream.
+## Identificateurs de flux
 
-The least significant bit (0x1) of the Stream ID identifies the initiator of
-the stream. Clients initiate even-numbered streams (those with the least
-significant bit set to 0); servers initiate odd-numbered streams (with the bit
-set to 1).
+Les flux sont identifiés par un entier non signé de 62 bits, appelé ID de flux. Les
+deux bits les moins significatifs de l'ID de flux sont utilisés pour identifier le
+type de flux (unidirectionnel ou bidirectionnel) et l'initiateur du flux.
 
-The second least significant bit (0x2) of the Stream ID differentiates between
-unidirectional streams and bidirectional streams. Unidirectional streams
-always have this bit set to 1 and bidirectional streams have this bit set to
-0.
+Le bit le moins significatif (0x1) de l'ID de flux identifie l'initiateur du flux.
+Les clients initient des flux pairs (ceux dont le bit le moins significatif est
+défini sur 0); les serveurs lancent des flux impairs (avec le bit mis à 1).
 
-## Stream concurrency
+Le deuxième bit le moins significatif (0x2) de l'ID de flux différencie les flux
+unidirectionnels des flux bidirectionnels. Les flux unidirectionnels ont toujours
+ce bit défini sur 1 et les flux bidirectionnels ont ce bit défini sur 0.
 
-QUIC allows for an arbitrary number of streams to operate concurrently. An
-endpoint limits the number of concurrently active incoming streams by limiting
-the maximum stream ID.
+## Flux simultané
 
-The maximum stream ID is specific to each endpoint and applies only to the
-peer that receives the setting.
+QUIC permet à un nombre arbitraire de flux de fonctionner simultanément. Une
+terminaison limite le nombre de flux entrants actifs simultanément en limitant l'ID
+de flux maximal.
 
-## Sending and Receiving Data
+L'ID de flux maximal est spécifique à chaque terminaison et s'applique uniquement à
+l'homologue qui reçoit le paramètre.
 
-Endpoints use streams to send and receive data. That is after all their
-ultimate purpose. Streams are an ordered byte-stream abstraction. Separate
-streams are however not necessarily delivered in the original order.
+## Envoi et réception de données
 
-## Stream Prioritization
+Les terminaisons utilisent des flux pour envoyer et recevoir des données. C'est
+après tout leur but ultime. Les flux sont une abstraction ordonnée de flux
+d'octets. Les flux séparés ne sont toutefois pas nécessairement livrés dans l'ordre
+d'origine.
 
-Stream multiplexing has a significant effect on application performance if
-resources allocated to streams are correctly prioritized. Experience with
-other multiplexed protocols, such as HTTP/2, shows that effective
-prioritization strategies have a significant positive impact on performance.
+## Priorité des flux
 
-QUIC itself does not provide frames for exchanging prioritization information.
-Instead it relies on receiving priority information from the application that
-uses QUIC. Protocols that use QUIC are able to define any prioritization
-scheme that suits their application semantics.
+Le multiplexage de flux a un effet significatif sur les performances des
+applications si les ressources allouées aux flux sont correctement hiérarchisées.
+L'expérience acquise avec d'autres protocoles multiplexés, tels que HTTP/2, montre
+que des stratégies efficaces de hiérarchisation ont un impact positif significatif
+sur les performances.
 
-When HTTP/3 is used over QUIC, the prioritization is done in the HTTP layer.
+QUIC lui-même ne fournit pas de frames pour l'échange d'informations sur la
+priorisation. Au lieu de cela, il repose sur la réception d'informations de
+priorité de l'application qui utilise QUIC. Les protocoles qui utilisent QUIC
+peuvent définir n’importe quel schéma de priorisation adapté à la sémantique de
+leurs applications.
+
+Lorsque HTTP/3 est utilisé sur QUIC, la hiérarchisation est effectuée dans la
+couche HTTP.

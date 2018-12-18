@@ -1,5 +1,4 @@
-## Non-HTTP over QUIC
+## Non-HTTP sur QUIC
 
-The work on sending other protocols than HTTP over QUIC has been postponed to
-be worked on after QUIC version 1 has shipped.
-
+Les travaux d’envoi de protocoles autres que HTTP sur QUIC ont été reportés après
+la livraison de la version 1 de QUIC.
