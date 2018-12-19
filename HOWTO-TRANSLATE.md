@@ -45,7 +45,7 @@ and more.
   - [inductor](https://github.com/inductor)
 
 - fr(Français)
-  - [Nathanael Demacon](https://github.com/quantumsheep)
+  - [quantumsheep](https://github.com/quantumsheep)
 
 ## Commit messages
 
