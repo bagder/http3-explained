@@ -44,6 +44,9 @@ and more.
 - ja(日本語)
   - [inductor](https://github.com/inductor)
 
+- fr(Français)
+  - [Nathanael Demacon](https://github.com/quantumsheep)
+
 ## Commit messages
 
 When committing changes, we use the following commit message format
