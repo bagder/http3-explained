@@ -4,7 +4,7 @@ The internet is a network of networks. There is equipment set up on the
 Internet in many different places along the way to make sure this network of
 networks works as it is supposed to. These devices, the boxes that are
 distributed out in the network, are what we sometimes refer to as middle-boxes.
-Boxes that sit somewhere between the two end-points and are the primary parties
+Boxes that sit somewhere between the two end-points that are the primary parties
 involved in a traditional network data transfer.
 
 These boxes serve many different specific purposes but I think we can say that
