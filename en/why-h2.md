@@ -2,7 +2,7 @@
 
 The HTTP/2 specification [RFC 7540](https://httpwg.org/specs/rfc7540.html) was
 published in May 2015 and the protocol has since then been implemented and
-deployed widely across the Internet and the world wide web.
+deployed widely across the Internet and the World Wide Web.
 
 In early 2018, almost 40% of the top-1000 web sites run HTTP/2, around 70% of
 all HTTPS requests Firefox issues get HTTP/2 responses back and all major
@@ -14,7 +14,7 @@ work-arounds. Some of which are pretty burdensome on web developers.
 
 One of the primary features of HTTP/2 is that it makes use of multiplexing, so
 that many logical streams are sent over the same physical TCP connection. This
-makes a lot of things better and faster. It make congestion control work much
+makes a lot of things better and faster. It makes congestion control work much
 better, it lets users use TCP much better and thus properly saturate the
 bandwidth, makes the TCP connections more long-lived - which is good so that
 they get up to full speed more frequently than before. Header compression

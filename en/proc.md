@@ -20,4 +20,4 @@ of interest from many parties.
 
 In 2017, numbers quoted by QUIC engineers at Google mentioned that around 7%
 of *all* Internet traffic were already using this protocol. The Google version
-of the protocol that is.
+of the protocol.

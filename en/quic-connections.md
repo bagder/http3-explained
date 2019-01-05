@@ -19,16 +19,19 @@ addressing at lower protocol layers (UDP, IP, and below) do not cause packets
 for a QUIC connection to be delivered to the wrong endpoint. 
 
 By taking advantage of the connection ID, connections can thus migrate between
-IP addresses and network interfaces in ways TCP never could.
+IP addresses and network interfaces in ways TCP never could. For instance, 
+migration allows an in-progress download to move from a cellular network connection
+to a faster wifi connection when the user moves their device into a location 
+offering wifi. Similarly, the download can proceed over the cellular connection
+if wifi becomes unavailable.
 
 ## Port numbers
 
-QUIC is modeled on top of UDP so there is a 16 bit port number field to use to
-differentiate incoming connection attempts with.
+QUIC is built atop UDP, so a 16 bit port number field is used to differentiate
+incoming connections.
 
 ## Version negotiation
 
 An QUIC connection request originating from a client will tell the server
 which QUIC protocol version it wants to speak, and the server will respond
-with a list of supported versions for the client to select from when going
-forward.
+with a list of supported versions for the client to select from.

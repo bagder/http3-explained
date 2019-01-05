@@ -8,7 +8,7 @@ HTTP/3是针对QUIC设计的，所以它可以使用QUIC流的所有好处。而
 
 HTTP/3建立一些QUIC数据流，并且发送一系列帧给对方。其中有一些固定的（八种）数据帧种类。最关键的帧包括：
 
-- HEADERS：发送压缩的HTTP首部
+- HEADERS：发送压缩的HTTP头部
 - DATA：发送二进制数据
 - GOAWAY：请关闭连接
 

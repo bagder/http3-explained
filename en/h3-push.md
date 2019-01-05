@@ -16,10 +16,9 @@ hasn't asked for but ought to have anyway, it can send a `PUSH_PROMISE` frame
 (over the request stream) showing what the request looks like that the push is
 a response to, and then send that actual response over a new stream.
 
-But even when pushes have been said to be acceptable by the client
-before-hand, each individual pushed stream can still be canceled at any time
-if the client deems that suitable. It then sends a `CANCEL_PUSH` frame to the
-server.
+Even when pushes have been said to be acceptable by the client before-hand,
+each individual pushed stream can still be canceled at any time if the client
+deems that suitable. It then sends a `CANCEL_PUSH` frame to the server.
 
 ## Problematic
 
@@ -30,4 +29,4 @@ ways in order to get it to become useful.
 
 Pushing is never "free", since while it saves a half round-trip it still uses
 bandwidth. It is often hard or impossible for the server-side to actually know
-with a high level a certainty if a resource should be pushed or not.
+with a high level of certainty if a resource should be pushed or not.

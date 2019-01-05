@@ -11,15 +11,14 @@ target innocent victims.
 
 QUIC has built-in mitigation against amplification attacks by requiring that the
 initial packet must be at least 1200 bytes and by restriction in the protocol
-that says that a server MUST NOT send more than three times that in response
-without receiving a packet from the client in response.
+that says that a server MUST NOT send more than three times the size of the
+request in response without receiving a packet from the client in response.
 
 ## UDP is slow in kernels
 
 This seems to be the truth, at least today in 2018. We can of course not tell
 how this will develop and how much of this is simply the result of UDP
-transfer performance not having been in developers' focus very much for many
-years.
+transfer performance not having been in developers' focus for many years.
 
 For most clients, this "slowness" is probably never even noticeable.
 
@@ -29,8 +28,8 @@ Similar to the "UDP is slow" remark above, this is partly because the TCP and
 TLS usage of the world has had a longer time to mature, improve and get
 hardware assistance.
 
-There are reasons to expect this to improve over time. The question is by how
-much and how much this extra CPU usage will hurt deployers.
+There are reasons to expect this to improve over time. The question is how much
+this extra CPU usage will hurt deployers.
 
 ## This is just Google
 

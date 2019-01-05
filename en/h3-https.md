@@ -13,8 +13,8 @@ things in a few important aspects.
 Legacy, clear-text, `HTTP://` URLs will be left as-is and as we proceed
 further into a future with more secure transfers they will probably become
 less and less frequently used. Requests to such URLs will simply not be
-upgraded to use HTTP/3. In reality they very rarely upgrade to HTTP/2 either,
-but for other reasons.
+upgraded to use HTTP/3. In reality they rarely upgrade to HTTP/2 either, but
+for other reasons.
 
 ## Initial connection
 
@@ -27,4 +27,4 @@ preventing a QUIC connection from succeeding.
 A modern client and server would presumably negotiate HTTP/2 in the first
 handshake. When the connection has been setup and the server responds to a
 client HTTP request, the server can tell the client about its support of and
-preference for HTTP/3...
+preference for HTTP/3.

@@ -1,10 +1,13 @@
 ## Transfer protocol over UDP
 
-QUIC is a transfer protocol implemented in user-space on top of UDP. If you
-watch your network traffic casually, you will see QUIC appear as UDP packets.
+QUIC is a transfer protocol implemented on top of UDP. If you watch your network
+traffic casually, you will see QUIC appear as UDP packets.
 
 Based on UDP it also then uses UDP port numbers to identify specific servers
 on a given machine.
+
+All known QUIC implementations are currently in user-space, which allows for
+more rapid evolution than kernel-space implementations typically allow.
 
 ## Will it work?
 
@@ -23,5 +26,5 @@ single-digit percentages.
 Chances are that if QUIC proves to be a valuable addition to the Internet
 world, people will want to use it and they will want it to function in their
 networks and then companies may start to reconsider their obstacles. During
-the years the development of QUIC has progressed, the success rate across the
-Internet has increased.
+the years the development of QUIC has progressed, the success rate for
+establishing and using QUIC connections across the Internet has increased.
