@@ -26,7 +26,7 @@ None of the larger browser vendors have yet shipped any version, at any state,
 that can run the IETF version of QUIC or HTTP/3.
 
 Google Chrome has shipped with a working implementation of Google's own QUIC
-version since many years, but that does not interoperate with the official
+version since many years, but that does not interoperate with the IETF
 QUIC protocol and its HTTP implementation is different than HTTP/3.
 
 ## Implementation Obstacles
