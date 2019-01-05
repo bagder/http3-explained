@@ -1,17 +1,18 @@
 ## IETF
 
-为了标准化QUIC，IETF成立了QUIC工作组，最初工作组决定IETF标准化的QUIC协议应该支持除了HTTP以外的其他应用层协议。谷歌版的QUIC只支持HTTP————实践中，它被用来传输符合HTTP/2帧语义的片段。
+IETF为QUIC标准化成立的QUIC工作组很快就决定，IETF标准化的QUIC协议应该支持HTTP以外的其他应用层协议。Google版的QUIC只传输HTTP——在实践中，它则被用来传输符合HTTP/2帧语义的片段。
 
-另外，工作组最初也决定IETF-QUIC应该基于TLS 1.3进行加密与安全传输，而不使用谷歌版QUIC的私有协议。
+另外，工作组最初也决定IETF-QUIC应该基于TLS 1.3进行加密与安全传输，而不使用Google版QUIC定制的方法。
 
-为了实现HTTP以外的应用层协议传输，IETF QUIC的架构分成了两个独立的层：传输层QUIC和“QUIC上的HTTP”（HTTP over QUIC）层（有时候缩写为“hq”）。
+为满足不局限于HTTP的传输需求，IETF QUIC协议的架构被分为两个独立的层：传输层QUIC和“基于QUIC的HTTP”（HTTP over QUIC）层（有时候缩写为“hq”）。
 
-尽管这种分层结构看上去人畜无害，实际上，它造成IETF-QUIC和谷歌版QUIC诸多不同。
+尽管这种分层结构看似人畜无害，但这实质上造成IETF-QUIC与Google版QUIC有着诸多不同。
 
-工作组迅速发现了这一点，之后为了能按时交付第一版的QUIC，工作组的重心转移到了HTTP传输上，非HTTP的传输留待今后考虑。
+工作组很快发现了这一点，为保持适当关注和能按时交付第一版QUIC，工作组的重心转移到了HTTP传输，非HTTP传输将留待今后研究。
 
-2018年3月，当我们开始写这本书的时候，第一版QUIC最终的标准计划于2018年11月出炉。在这之后发布时间被推迟到了2019年7月。
+2018年3月，当我们开始写这本书的时候，第一版QUIC最终的规范计划于2018年11月发布。不过发布时间在这之后被推迟到了2019年7月。
 
-在IETF-QUIC进行的同时，谷歌团队缓慢的更新他们的协议版本，以期最终符合IETF定义的规范。尽管如此，谷歌仍然坚持在浏览器和服务器端使用它们的QUIC版本。
+在IETF-QUIC取得进展的同时，Google团队已经整合了IETF版本的细节并逐渐推进他们的协议版本，以期最终可能符合IETF定义的规范。尽管如此，Google在他们的浏览器和服务中继续使用自己的QUIC版本。
 
-其他的新的QUIC实现都将实现IETF版本，与谷歌版本互不兼容。
+[正在开发的大多数新实现](https://github.com/quicwg/base-drafts/wiki/Implementations)
+已经决定着眼于IETF版本，与Google版本并不兼容。
