@@ -3,8 +3,8 @@
 QUIC is a transfer protocol implemented on top of UDP. If you watch your network
 traffic casually, you will see QUIC appear as UDP packets.
 
-Based on UDP it also then uses UDP port numbers to identify specific servers
-on a given machine.
+Based on UDP it also then uses UDP port numbers to identify specific network
+services on a given IP address.
 
 All known QUIC implementations are currently in user-space, which allows for
 more rapid evolution than kernel-space implementations typically allow.
