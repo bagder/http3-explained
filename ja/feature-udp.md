@@ -5,7 +5,6 @@ QUIC は UDP のユーザー空間に実装された転送プロトコルです�
 あなたのネットワークトラフィックを軽く確認してみれば、QUIC は UDP パケットとして見えるでしょう。
 
 UDP 上に実装されている以上、QUIC もまた、UDP のポート番号を利用して、与えられたIPアドレス上にある特定のサービスを識別します。
-Based on UDP it also then uses UDP port numbers to identify specific network services on a given IP address.
 
 現在、既知の QUIC のすべては、ユーザー空間で動作するように実装されています。
 
