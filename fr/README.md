@@ -42,4 +42,4 @@ livre.
 ## Licence
 
 Ce document et tout son contenu sont sous licencés sous la [licence Creative Commons
-Attribution 4.0](https://creativecommons.org/licenses/by/4.0w/).
+Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).

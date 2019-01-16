@@ -26,4 +26,4 @@
 
 ## 许可协议
 
-本文档及其所有内容遵循[知识共享 署名 4.0 许可协议](https://creativecommons.org/licenses/by/4.0w/)授权。
+本文档及其所有内容遵循[知识共享 署名 4.0 许可协议](https://creativecommons.org/licenses/by/4.0/)授权。
