@@ -13,7 +13,7 @@
     * [UDP](feature-udp.md)
     * [Fiable](feature-reliable.md)
     * [Flux](feature-streams.md)
-    * [Dans l'odre](feature-inorder.md)
+    * [Dans l'ordre](feature-inorder.md)
     * [Handshakes rapides](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
     * [Transport et application](feature-trans-app.md)
