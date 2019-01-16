@@ -50,4 +50,4 @@ Daniel は20年以上にわたり HTTP やインターネットのプロトコ�
 
 ## License
 
-この文書およびすべてのコンテンツは、[Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0w/) のライセンスにて使用許諾されています。
+この文書およびすべてのコンテンツは、[Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/) のライセンスにて使用許諾されています。
