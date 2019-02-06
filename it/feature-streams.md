@@ -1,18 +1,21 @@
-## ‎Multiple streams within connections
+## Flussi multipli all'interno di una stessa connessione
 
-Similar to SCTP, SSH and HTTP/2, QUIC features separate logical streams within
-the physical connections. A number of parallel streams that can transfer data
-simultaneously over a single connection without affecting the other streams.
+Similmente a SCTP, SSH e HTTP/2, QUIC sfrutta flussi logicamente separati
+all'interno di una stessa connessione fisica. Un numero di stream paralleli
+può trasferire simultaneamente dati sulla stessa connessione senza influenzare
+gli altri flussi concorrenti.
 
-A connection is a negotiated setup between two end-points similar to how a TCP
-connection works. A QUIC connection is made to a UDP port and IP address, but
-once established the connection is associated by its "connection ID".
+Una connessione viene negoziata e messa in opera fra due punti remoti, in modo
+similare a quanto avviene per TCP. Una connessione QUIC è stabilita verso una
+porta e un indirizzo IP, tuttavia una volta stabilita la connessione viene
+identificata da un ID detto "ID di connessione".
 
-Over an established connection, either side can create streams and send data
-to the other end. Streams are delivered in-order and they are reliable, but
-different streams may be delivered out-of-order.
+All'interno di una connessione gia stabilita, ognuno dei due estremi può
+creare un flusso e spedire dei dati all'altro estremo. Un singolo flusso
+viene consegnato "in ordine" ed è ritenuto affifabile, mentre altri flussi
+paralleli potrebbero eventualmente essere ricevuti "fuori ordine".
 
-QUIC offers flow control on both connection and streams.
+QUIC offre un controllo di flusso a livello di connessione e di flusso.
 
-See further details in [connections](quic-connections.md) and
-[streams](quic-streams.md) sections
+Maggiori dettagli nelle sezioni [connessioni](quic-connections.md) e
+[streams](quic-streams.md).
