@@ -1,6 +1,5 @@
 # Why QUIC
 
-<<<<<<< HEAD
 QUIC is a name, not an acronym. It is pronounced exactly like the English word
 "quick".
 
@@ -16,18 +15,3 @@ and push that initially triggered the creation of this new transport protocol.
 So why create a new transport protocol and why do it on top of UDP?
 
 ![QUIC logo](../images/QUIC.png)
-=======
-QUIC è un nome, non un acronimo. Si pronuncia esattamente come il sostantivo
-inglese "quick" (veloce, NdR).
-
-QUIC è per molti aspetti quello che può essere visto come "HTTP/3", il passo
-successivo nell'evoluzione del trasporto web, non limitato al solo trasporto
-HTTP. Il desiderio di rendere più rapido il web e il flusso di dati verso 
-l'utente finale è probabilmente la ragione più impellente che ha fatto sì
-che lo sviluppo del protocollo avesse inizio.
-
-Dunque, perchè creare un nuovo protocollo di trasporto, e perche basarlo 
-proprio su UDP ?
-
-![logo quic](../images/QUIC.png)
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

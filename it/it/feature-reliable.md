@@ -6,8 +6,3 @@ control, pacing and the other features otherwise present in TCP.
 
 Data sent over QUIC from one end-point will appear in the other end sooner or
 later, as long as the connection is maintained.
-<<<<<<< HEAD
-=======
-
-(Insert discussion about unreliable streams.)
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

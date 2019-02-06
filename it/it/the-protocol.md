@@ -5,8 +5,4 @@ The QUIC protocol from a high level.
 Illustrated below is the HTTP/2 network stack on the left and the QUIC network
 stack on the right, when used as HTTP transport.
 
-<<<<<<< HEAD
 ![QUIC logo](../images/quic-stack.png)
-=======
-![quic logo](../images/quic-stack.png)
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

@@ -1,6 +1,5 @@
 ## Transfer protocol over UDP
 
-<<<<<<< HEAD
 QUIC is a transfer protocol implemented on top of UDP. If you watch your network
 traffic casually, you will see QUIC appear as UDP packets.
 
@@ -9,18 +8,11 @@ services on a given IP address.
 
 All known QUIC implementations are currently in user-space, which allows for
 more rapid evolution than kernel-space implementations typically allow.
-=======
-QUIC is a transfer protocol implemented in user-space on top of UDP. If you
-watch your network traffic casually, you will see QUIC appear as UDP packets.
-
-HTTP-over-QUIC will default to using UDP port 443.
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2
 
 ## Will it work?
 
 There are enterprises and other network setups that block UDP traffic on other
 ports than 53 (used for DNS). Others throttle such data in ways that makes
-<<<<<<< HEAD
 QUIC perform worse than TCP based protocols. There is no end to what some
 operators may do.
 
@@ -28,25 +20,11 @@ For the foreseeable future, all use of QUIC-based transports will probably
 have to be able to gracefully fall-back to another (TCP-based) alternative.
 Google engineers have previously mentioned measured failure rates in the low
 single-digit percentages.
-=======
-QUIC perform worse than TCP based protocols. There's no end to what some
-operators may do.
-
-For the foreseeable future, all use of QUIC-based transports will probably
-have to be able to gracefully fall-back to another (TCP-based)
-alternative. Google engineers have previously mentioned measured failure rates
-in the low single-digit percentages.
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2
 
 ## Will it improve?
 
 Chances are that if QUIC proves to be a valuable addition to the Internet
 world, people will want to use it and they will want it to function in their
 networks and then companies may start to reconsider their obstacles. During
-<<<<<<< HEAD
 the years the development of QUIC has progressed, the success rate for
 establishing and using QUIC connections across the Internet has increased.
-=======
-the years the development of QUIC has progressed, the success rate across the
-Internet has increased.
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

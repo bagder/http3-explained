@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## HTTP/3
 
 The HTTP layer does HTTP-style transports, including HTTP header compression
@@ -8,13 +7,3 @@ The HPACK algorithm depends on an *ordered* delivery of streams so it was not
 possible to reuse it for HTTP/3 without modifications since QUIC offers
 streams that can be delivered out of order. QPACK can be seen as the
 QUIC-adapted version of [HPACK](https://httpwg.org/specs/rfc7541.html).
-=======
-## HTTP over QUIC
-
-The HTTP layer does HTTP-style transports, including HTTP header compression
-using QPACK. The HTTP/2 compression algorithm depends on an ordered delivery
-of streams so it wasn't possible to reuse that for QUIC with a certain amount
-of modifications. QPACK can be seen as the QUIC-adapted version of
-[HPACK](http://httpwg.org/specs/rfc7541.html).
-
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2
