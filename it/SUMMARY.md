@@ -1,5 +1,4 @@
 * [Perchè QUIC](why-quic.md)
-<<<<<<< HEAD
     * [Ricordi HTTP/2 ?](why-h2.md)
     * [Blocco ad inizio linea, "TCP head of line blocking"](why-tcphol.md)
     * [TCP o UDP](why-tcpudp.md)
@@ -10,23 +9,10 @@
     * [IETF](proc-ietf.md)
     * [Esperienza da HTTP/2](proc-h2.md)
     * [Status](proc-status.md)
-=======
-    * [Ricordate HTTP/2 ?](why-h2.md)
-    * [Bloccaggio di inizio fila TCP](why-tcphol.md)
-    * [TCP o UDP](why-tcpudp.md)
-    * [Ossificazione](why-ossification.md)
-    * [Sicuro](why-secure.md)
-    * [Data anticipati](why-earlierdata.md)
-    * [User space](why-userspace.md)
-* [Storia](history.md)
-    * [IETF](history-ietf.md)
-    * [Esperienza derivante da HTTP/2](history-h2.md)
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2
 * [Caratteristiche del protocollo](the-protocol.md)
     * [UDP](feature-udp.md)
     * [Affidabile](feature-reliable.md)
     * [Streams](feature-streams.md)
-<<<<<<< HEAD
     * [Ordinato](feature-inorder.md)
     * [Negoziazioni veloci](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
@@ -51,32 +37,3 @@
 * [Critiche comuni](criticism.md)
 * [Le specifiche](specs.md)
 * [QUIC v2](quic-v2.md)
-=======
-    * [In Order](feature-inorder.md)
-    * [Rapide negoziazioni](feature-handshakes.md)
-    * [Early data](feature-earlydata.md)
-    * [TLS](feature-tls.md)
-    * [Trasporto e applicazione](feature-trans-app.md)
-    * [HTTP over QUIC](feature-http.md)
-    * [Non-HTTP over QUIC](feature-nonhttp.md)
-    * [Controllo di flusso](feature-congestion.md)
-* Come funziona QUIC
-    * Connessioni
-    * Streams
-    * ...
-* [HTTP over QUIC](hq.md)
-    * [HTTPS:// URLs](hq-https.md)
-    * [Alt-svc](hq-altsvc.md)
-    * Compressione degli Header
-    * Server push
-* Le specifiche
-    * Trasporto
-    * Recovery
-    * TLS
-    * HTTP
-* Supporto
-    * Servers
-    * Clients
-    * Kernels e CPU load
-* QUIC v2
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

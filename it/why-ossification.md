@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Ossificazione
 
 Internet è una rete fatta di reti. In diversi punti del mondo -sulla rotta fra
@@ -48,18 +47,3 @@ impossibile modificare tali assunzioni.
 La sola vera ed efficace strategia per il contrasto della "ossificazione" è
 utilizzare in maniera estensiva la cifratura, cosi da impedire ai box intermedi
 di desumere (distinguere) quale protocollo stia passando sotto il loro ponte.
-=======
-## Ossification
-
-Anche le modifiche al TCP soffrono dei problemi conseguenti alle middle-boxes
-dato che alcune delle nuove opzioni TCP sono interpretate e bloccate dato che
-sconosciute ai più. Questo condizione è detta "ossificazione del protocollo".
-Se viene loro permesso di ispezionare i dettagli di protocollo, il sistema
-impara a riconoscere il comportamento tipico di un protocollo e nel tempo 
-diventerà difficile se non appunto impossibile modificare tali assunzioni.
-
-La sola vera ed efficace strategia per il contrasto della "ossificazione" è
-utilizzare in maniera estensiva la cifratura, cosi da impedire ai box
-intermedi di desumere (distinguere) quale protocollo stia passando sotto il
-loro ponte.
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

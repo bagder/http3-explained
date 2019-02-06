@@ -1,6 +1,5 @@
 ## ‎In order delivery
 
-<<<<<<< HEAD
 QUIC guarantees in-order delivery of streams, but not between streams. This
 means that each stream will send data and maintain data order, but each stream
 may reach the destination in a different order than the application sent it!
@@ -17,16 +16,3 @@ end-points over a single connection. They are independent and may arrive in a
 different order, but each stream is reliably delivered to the application in order.
 
 ![two QUIC streams between two computers](../images/quic-chain-streams.png)
-=======
-QUIC guarantees in-order delivery of streams, but not between-streams. This
-means that each stream will send data and maintain data order, but each stream
-may reach the destination in a different order than what the application sent
-them at the sending side!
-
-For example: stream A and B are transferred from a server to a client. Stream
-A is started first and then stream B. In QUIC, a lost packet would only affect
-the stream(s) to which the lost packet belongs. If stream A gets a packet
-lost, and stream B does not, stream B may continue its transfers and complete
-while stream A is getting its lost packet re-transmitted. This was not possible
-with HTTP/2.
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

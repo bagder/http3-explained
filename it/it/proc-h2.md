@@ -1,14 +1,14 @@
-## Experience from HTTP/2
+## Esperienza da HTTP/2
 
-The HTTP/2 specification RFC 7540 was published in May 2015, just a month
-before QUIC was brought to IETF for the first time.
+La specifica HTTP/2 contenuta nella RFC 7540 è stata pubblicata nel Maggio
+2015, un mese prima che QUIC fosse presentato ad IETF per la prima volta.
 
-With HTTP/2, the foundation for changing HTTP over the wire was laid out and
-the working group that created HTTP/2 was already of the mindset that this
-would help iterating to new HTTP versions much faster than it had taken to go
-to version 2 from version 1 (about 16 years).
+Con HTTP/2, le fondamenta per modificare HTTP furono gettate; il gruppo di
+lavoro responsabile della creazione di HTTP/2 era gia dell'idea che tale
+processo di rinnovamento avrebbe aiutato a rilasciare versioni HTTP più
+rapidamente che in passato, dove il passaggio da v1 a v2 richiese 16 anni.
 
-With HTTP/2, users and software stacks got used to the idea that HTTP can no
-longer be assumed to be done with a text-based protocol in a serial manner.
+Nel contesto di HTTP/2 gli utenti ed i software realizzano come non sia più
+più d'attualita lavorare con un HTTP testuale, in maniera serializzata.
 
-HTTP-over-QUIC was renamed to HTTP/3 in November 2018.
+HTTP-over-QUIC fu rinominato HTTP/3 in Novembre 2018.

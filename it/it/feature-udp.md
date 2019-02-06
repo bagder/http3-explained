@@ -1,30 +1,32 @@
-## Transfer protocol over UDP
+## Protocollo di trasporto via UDP
 
-QUIC is a transfer protocol implemented on top of UDP. If you watch your network
-traffic casually, you will see QUIC appear as UDP packets.
+QUIC è un protocollo di trasporto implementato su UDP. Se si osserva il
+traffico di rete con un analizzatore di protocollo, il traffico QUIC appare
+composto di pacchetti UDP.
 
-Based on UDP it also then uses UDP port numbers to identify specific network
-services on a given IP address.
+Basato su UDP, utilizza anche i numeri di porta per identificare con precisione
+un determinato servizio di rete su uno specifico indirizzo IP.
 
-All known QUIC implementations are currently in user-space, which allows for
-more rapid evolution than kernel-space implementations typically allow.
+Tutte le implementazioni correnti e conosciute di QUIC sono sviluppate in
+"user-space" il che permette una evoluzione più rapida rispetto ad una tipica
+implementazione a livello di kernel-space.
 
-## Will it work?
+## Funzionerà?
 
-There are enterprises and other network setups that block UDP traffic on other
-ports than 53 (used for DNS). Others throttle such data in ways that makes
-QUIC perform worse than TCP based protocols. There is no end to what some
-operators may do.
+Ci sono aziende e altri setup di rete che bloccano il traffico UDP sulle porte
+diverse dalla 53 (DNS). Altri rallentanto i flussi in maniera da influenzare
+negativamente le prestazioni di QUIC, rendendolo piu lento che il TCP. Non vi
+è limite alle manipolazioni che gli operatori di rete possono applicare.
 
-For the foreseeable future, all use of QUIC-based transports will probably
-have to be able to gracefully fall-back to another (TCP-based) alternative.
-Google engineers have previously mentioned measured failure rates in the low
-single-digit percentages.
+Nel futuro prossimo, tutti gli impieghi di trasporto basato su QUIC dovranno
+prevedere una modalita di fall-back indolore verso una modalità di trasporto
+alternativa (basata su TCP). Gli ingegneri di Google hanno potuto misurare il
+tasso di fallimento in percentuali a cifra singola, fra 2 e 5%.
 
-## Will it improve?
+## Apporterà miglioramenti?
 
-Chances are that if QUIC proves to be a valuable addition to the Internet
-world, people will want to use it and they will want it to function in their
-networks and then companies may start to reconsider their obstacles. During
-the years the development of QUIC has progressed, the success rate for
-establishing and using QUIC connections across the Internet has increased.
+Ci sono grosse probabilità che QUIC sia di valido aiuto al mondo Internet,
+chiunque vorrà poterlo usare e ci si aspetterà di vederlo funzionare con
+grande efficacia, fino al punto in cui le aziende cominceranno a considerare
+il cambiamento. Negli anni e grazie agli sviluppi apportati a QUIC, il tasso
+di successo nello stabilire connessioni QUIC è nettamente aumentato.

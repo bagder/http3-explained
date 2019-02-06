@@ -1,6 +1,6 @@
-# Criticism
+# Critiche comuni
 
-## UDP will never work
+## UDP non funzionerà mai
 
 A lot of enterprises, operators and organizations block or rate-limit UDP
 traffic outside of port 53 (used for DNS) since it has in recent days mostly
@@ -14,7 +14,7 @@ initial packet must be at least 1200 bytes and by restriction in the protocol
 that says that a server MUST NOT send more than three times the size of the
 request in response without receiving a packet from the client in response.
 
-## UDP is slow in kernels
+## UDP è lento nel kernel
 
 This seems to be the truth, at least today in 2018. We can of course not tell
 how this will develop and how much of this is simply the result of UDP
@@ -22,7 +22,7 @@ transfer performance not having been in developers' focus for many years.
 
 For most clients, this "slowness" is probably never even noticeable.
 
-## QUIC takes too much CPU
+## QUIC prende troppa CPU
 
 Similar to the "UDP is slow" remark above, this is partly because the TCP and
 TLS usage of the world has had a longer time to mature, improve and get
@@ -31,7 +31,7 @@ hardware assistance.
 There are reasons to expect this to improve over time. The question is how much
 this extra CPU usage will hurt deployers.
 
-## This is just Google
+## C'è solo Google
 
 No it is not. Google brought the initial spec to the IETF after having proved,
 on a large Internet-wide scale, that deploying this style of protocol over UDP
@@ -45,7 +45,7 @@ companies that are interested in furthering the state of transport protocols
 on the Internet, including Mozilla, Fastly, Cloudflare, Akamai, Microsoft,
 Facebook and Apple.
 
-## This is too small of an improvement
+## Non rappresenta un gran miglioramento
 
 That is not really a critique but an opinion. Maybe it is, and maybe it is too
 little of an improvement so close in time since HTTP/2 was shipped.

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Fast handshakes
 
 QUIC offers both 0-RTT and 1-RTT connection setups, meaning that at best QUIC
@@ -13,11 +12,3 @@ QUIC allows a client to include data already in the 0-RTT handshake. This
 feature allows a client to deliver data to the peer as fast as it possibly
 can, and that then of course allows the server to respond and send data back
 even sooner.
-=======
-## Fast handshakes
-
-QUIC offers 0-RTT and 1-RTT connection setups, meaning that at best QUIC needs
-no extra round-trips at all when setting up a new connection. When there has
-been a previous connection established to a host, subsequent connections are
-fast.
->>>>>>> da5239ace40c6d6e8078738b48ae34a050d2d7f2

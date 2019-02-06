@@ -1,35 +1,36 @@
 # Status
 
-The QUIC working group has worked fiercely since late 2016 on specifying the
-protocols and the plan is now to have it done by July 2019.
+Il gruppo di lavoro QUIC ha lavorato alacremente a partire dal tardo 2016
+ad una specifica di protocollo e la sua volontà è di completare tale sforzo
+entro Luglio 2019.
 
-As of November 2018, there still has not been any larger interoperability
-tests with HTTP/3 - only with the existing two implementations and none of
-them are done by a browser or a popular open server software.
+A Novembre 2018, ancora non abbiamo notizia di test di interoperabilità
+estesi su HTTP/3 - solo fra le due implementazioni esistenti che tuttavia
+non sono guidate da un browser ne da un software opensource lato server.
 
-There are fifteen or so different [QUIC implementations
-listed](https://github.com/curl/curl/wiki/QUIC-implementation) in the QUIC
-working groups' wiki pages, but far from all of them can interoperate on the
-latest spec draft revisions.
+Esistono all'incirca quindici [Implementazioni di QUIC
+](https://github.com/curl/curl/wiki/QUIC-implementation) nella lista wiki
+del gruppo di lavoro, ma ovviamente non tutte possono operare allo stesso
+livello dell'ultima bozza delle specifiche.
 
-Implementing QUIC is not easy and the protocol has kept moving and changing
-even up to this date.
+Implementare QUIC non è affatto semplice, dato che è in continua evoluzione
+anche quando sembra stabilizzatosi.
 
 ## Servers
 
-There have been no public statement in terms of support for QUIC from Apache
-or nginx.
+Non vi è alcun comunicato pubblico rispetto al supporto di QUIC in Apache o
+nginx.
 
 ## Clients
 
-None of the larger browser vendors have yet shipped any version, at any state,
-that can run the IETF version of QUIC or HTTP/3.
+Nessun editore di browser ha rilasciato qualsivoglia versione -nemmeno in
+beta- che sia in grado di utilizzare la versione IETF di QUIC o HTTP/3.
 
-Google Chrome has shipped with a working implementation of Google's own QUIC
-version since many years, but that does not interoperate with the IETF
-QUIC protocol and its HTTP implementation is different than HTTP/3.
+Google Chrome contiene la sua propria implementazione di QUIC in salsa Google
+da svariati anni; tale versione Google non è compatibile con le bozze IETF
+e l'implementazione di HTTP differisce dalla versione HTTP/3 ufficiale.
 
-## Implementation Obstacles
+## Ostacoli all'implementazione
 
 QUIC decided to use TLS 1.3 as the foundation for the crypto and security
 layer to avoid inventing something new and instead lean on a trustworthy and
@@ -52,7 +53,7 @@ This will eventually also lead to deployment obstacles since QUIC stacks will
 need to either base themselves on other TLS libraries, use a separate patched
 OpenSSL build or require an update to a future OpenSSL version.
 
-## Kernels and CPU load
+## Kernel e carico sulla CPU
 
 Both Google and Facebook have mentioned that their wide scale deployments of
 QUIC require roughly twice the amount of CPU than the same traffic load does
