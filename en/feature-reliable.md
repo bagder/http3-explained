@@ -1,4 +1,4 @@
-## ‎Reliable data transfers
+## Reliable data transfers
 
 While UDP is not a reliable transport, QUIC adds a layer on top of UDP that
 introduces reliability. It offers re-transmissions of packets, congestion
