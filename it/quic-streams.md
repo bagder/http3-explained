@@ -1,4 +1,12 @@
-# Streams
+# Streams (flussi)
+
+I flussi QUIC permettono l'astrazione leggera e ordinata della sequenza di bytes.
+
+Esistono due tipi di flussi (streams) in QUIC:
+
+ - Flussi unidirezionali che trasportano dati in una sola direzione: dal produttore dello stream all'altro estremo, il destinario.
+
+ - Flussi bidirezionali che permettono di inviare dati in entrambe le direzioni.
 
 Streams in QUIC provide a lightweight, ordered byte-stream abstraction.
 

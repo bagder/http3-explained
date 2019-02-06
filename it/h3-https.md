@@ -1,30 +1,31 @@
-# HTTPS:// URLs
+# URLs HTTPS://
 
-HTTP/3 will be performed using `HTTPS://` URLs. The world is full of these
-URLs and it has been deemed impractical and downright unreasonable to
-introduce another URL scheme for the new protocol. Much like HTTP/2 did not
-need a new scheme, neither will HTTP/3.
+HTTP/3 si servirà di URLs del tipo `HTTPS://`. Il mondo è pieno di questo
+tipo di URL ed è stato osservato che sarebbe impraticabile ed illogico
+proporre un ulteriore schema di URL per il nuovo protocollo. Similmente a
+come HTTP/2 non avesse bisogno di un nuovo schema, cosi fu per HTTP/3.
 
-The added complexity in the HTTP/3 situation is however that where HTTP/2 was
-a completely new way of transporting HTTP over the wire, it was still based on
-TLS and TCP like HTTP/1 was. The fact that HTTP/3 is done over QUIC changes
-things in a few important aspects.
+La complessità aggiunta da HTTP/3 è evidente se guardiamo al fatto che
+HTTP/2 -seppur rivoluzionario nel trasporto di HTTP a livello di trama- era
+ancora basato su TLS e TCP come nel caso del predecessore HTTP/1. Il fatto
+che HTTP/3 lavori su QUIC fa vacillare un certo numero di assunzioni.
 
-Legacy, clear-text, `HTTP://` URLs will be left as-is and as we proceed
-further into a future with more secure transfers they will probably become
-less and less frequently used. Requests to such URLs will simply not be
-upgraded to use HTTP/3. In reality they rarely upgrade to HTTP/2 either, but
-for other reasons.
+Il caro vecchio URL "clear-text" `HTTP://` verrà lasciato intatto e sarà
+via via abbandonato nel momento in cui si passerà a modalità di trasporto
+più sicure. Richieste verso questo tipo di URL non riceveranno alcun
+upgrade a HTTP/3. Nella realtà dei fatti, ben poche di queste connessioni
+ricevono upgrade a HTTP/2, ma per altri motivi.
 
-## Initial connection
+## Connessione iniziale
 
-The first connection to a fresh, not previously visited host for a
-HTTPS:// URL probably has to be done over TCP (possibly in addition to a
-parallel attempt to connect via QUIC). The host might be a legacy server without
-QUIC support or there might be a middle box in between setting up obstacles
-preventing a QUIC connection from succeeding.
+La prima connessione ad una risorsa o host non ancora visitato via URL
+HTTPS:// sarà probabilmente stabilita via TCP (eventualmente in parallelo
+con un tentativo di connessione QUIC). L'host distante potrebbe essere un
+vecchio server che non fornisce supporto a QUIC, o potrebero esservi
+dispositivi sul percorso di rete che impediscono il successo della connessione
+via QUIC.
 
-A modern client and server would presumably negotiate HTTP/2 in the first
-handshake. When the connection has been setup and the server responds to a
-client HTTP request, the server can tell the client about its support of and
-preference for HTTP/3.
+Un client moderno negozierebbe probabilment HTTP/2 in prima istanza. Una
+volta che tale connessione fosse stata effettuata, e che il server avesse
+risposto ad una richiesta HTTP, il server potrebbe comunicare al client la
+disponibilità del supporto e la preferenza per HTTP/3.

@@ -1,16 +1,16 @@
-# HTTP/3 Prioritization
+# Prioritizzazione in HTTP/3
 
-One of the HTTP/3 stream frames is called `PRIORITY`. It is used to set
-priority and dependency on a stream in a way similar to how it works in
-HTTP/2.
+Uno dei frame facenti parte di ogni flusso HTTP/3 è il campo `PRIORITY`.
+E' usato per segnalare la priorità e l'ordine di dipendenza fra flussi
+diversi molto similmente a quanto gia avveniva in HTTP/2.
 
-The frame can set a specific stream to depend on another specific stream and
-it can set a "weight" on a given stream.
+Il frame può essere impostato in modo che un flusso dipenda da un altro e
+può definire un "peso specifico" su ogni determinato flusso.
 
-A dependent stream should only be allocated resources if either all of the
-streams that it depends on are closed or it is not possible to make progress
-on them.
+Un flusso dipendente avrà diritto ad allocare risorse solamente se tutti
+gli altri flussi dai quali esso dipende fossero gia in fase di chiusura,
+o non fosse possibile avanzare ulteriormente su tali suddetti flussi.
 
-A stream weight is value between 1 and 256 and it is specified that streams
-with the same parent **should** be allocated resources proportionally based on
-their weight.
+Uno stream assume un valore compreso fra 1 e 256. La regola vuole che
+un flusso con uno stesso antenato **dovrebbe** allocare risorse in maniera
+proporzionale basandosi sul peso specifico di ognuna.
