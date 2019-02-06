@@ -9,11 +9,11 @@ same order - eventually. (Or the connection breaks.)
 ![a TCP chain between two computers](../images/tcp-chain.png)
 
 With HTTP/2, typical browsers do tens or hundreds of parallel transfers over
-that single TCP connection.
+a single TCP connection.
 
 If a single packet is dropped, or lost in the network somewhere between two
 endpoints that speak HTTP/2, it means the entire TCP connection is brought to
-a halt while the lost packet needs to be re-transmitted and find its way to
+a halt while the lost packet is re-transmitted and finds its way to
 the destination. Since TCP is this "chain", it means that if one link is
 suddenly missing, everything that would come after the lost link needs to
 wait.
@@ -27,11 +27,11 @@ It becomes a TCP-based head of line block!
 
 As the packet loss rate increases, HTTP/2 performs less and less good. At 2%
 packet loss (which is a terrible network quality, mind you), tests have proven
-that HTTP/1 users are usually better off - because they typically have six TCP
-connections up to distribute the lost packet over so for each lost packet the
-other connections without loss can still continue.
+that HTTP/1 users are usually better off - because they typically have up to 
+six TCP connections to distribute lost packets over. This means for every lost 
+packet the other connections can still continue.
 
-Fixing this issue is not easy, if at all possible, to do with TCP.
+Fixing this issue is not easy, if at all possible, with TCP.
 
 ## Independent streams avoids the block
 
