@@ -1,5 +1,6 @@
-## Non-HTTP over QUIC
+## Non-HTTP via QUIC
 
-The work on sending other protocols than HTTP over QUIC has been postponed to
-be worked on after QUIC version 1 has shipped.
+Il lavoro sul tema dell'incapsulazione di protocolli non-HTTP dentro QUIC è
+stato posticipato: il tema sarà sviluppato in seguito alla consegna della
+prima versione ufficiale di QUIC.
 

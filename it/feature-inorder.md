@@ -1,18 +1,20 @@
-## ‎In order delivery
+## Consegna ordinata
 
-QUIC guarantees in-order delivery of streams, but not between streams. This
-means that each stream will send data and maintain data order, but each stream
-may reach the destination in a different order than the application sent it!
+QUIC garantisce una consegna ordinata dei flussi, ma non fra i flussi stessi.
+Questo significa che ogni flusso invierà dati e manterrà un ordine fra tali
+dati, ma ogni singolo flusso potrebbe raggiungere la destinazione in un ordine
+diverso da quello in cui l'applicazione lo avesse inizialmente spedito!
 
-For example: stream A and B are transferred from a server to a client. Stream
-A is started first and then stream B. In QUIC, a lost packet only affects
-the stream to which the lost packet belongs. If stream A loses a packet but
-stream B does not, stream B may continue its transfers and complete
-while stream A's lost packet is re-transmitted. This was not possible
-with HTTP/2.
+Per esempio: lo stream A e B sono trasferiti dal server al client. Il flusso A
+inizia per primom il B segue. In QUIC, la perdita di un pacchetto influenza
+solamente lo stream al quale tale pacchetto perso appartiene. Se uno stream A
+perdesse un pacchetto ma lo stream B no, il flusso B continuerebbe il proprio
+trasferimento mentre il pacchetto perso dallo stream A verrebbe ritrasmesso.
+Ciò non era possibile in HTTP/2.
 
-Illustrated here with one yellow and one blue stream sent between two QUIC
-end-points over a single connection. They are independent and may arrive in a
-different order, but each stream is reliably delivered to the application in order.
+Qui di seguito illustrati in giallo e blu due flussi inviati attraverso QUIC
+all'interno di una singola connessione. Essi sono indipendenti e potrebbero
+arrivare in un ordine diverso da quello inizialmente previsto, pur venendo
+entrambi consegnati correttamente a livello di applicazione, in ordine.
 
-![two QUIC streams between two computers](../images/quic-chain-streams.png)
+![due flussi QUIC tra due computer](../images/quic-chain-streams.png)

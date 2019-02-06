@@ -1,4 +1,4 @@
-## ‎In order delivery
+## In order delivery
 
 QUIC guarantees in-order delivery of streams, but not between streams. This
 means that each stream will send data and maintain data order, but each stream

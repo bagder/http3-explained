@@ -1,14 +1,14 @@
-# Fast handshakes
+# Negoziazioni veloci
 
-QUIC offers both 0-RTT and 1-RTT connection setups, meaning that at best QUIC
-needs no extra round-trips at all when setting up a new connection. The faster
-of those two, the 0-RTT handshake, only works if there has been a previous
-connection established to a host and a secret from that connection has been
-cached.
+QUIC offre entrambi i metodi di connessione 0-RTT e 1-RTT, nel senso che nel
+migliore dei casi QUIC non ha bisogno di round-trips aggiuntivi per iniziare
+una nuova connessione. Il più veloce dei due metodi, la negoziazione a 0-RTT,
+funziona solo se vi è gia stata una connessione fra i due host in question e
+solo se il "segreto" per tale connessione è stato aggiunto alla cache.
 
-## Early data
+## Dati in anticipo
 
-QUIC allows a client to include data already in the 0-RTT handshake. This
-feature allows a client to deliver data to the peer as fast as it possibly
-can, and that then of course allows the server to respond and send data back
-even sooner.
+QUIC permette ai client di aggiungere dati gia a partire dalla fase di
+negoziazione a 0-RTT. Questa caratteristica permette ad un client di spedire
+dati al proprio interlocutore il più veloce possibile; ciò permette al
+server di rispondere aggiungendo altri dati ancora più velocemente.
