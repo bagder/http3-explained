@@ -32,41 +32,44 @@ e l'implementazione di HTTP differisce dalla versione HTTP/3 ufficiale.
 
 ## Ostacoli all'implementazione
 
-QUIC decided to use TLS 1.3 as the foundation for the crypto and security
-layer to avoid inventing something new and instead lean on a trustworthy and
-existing protocol. However, while doing this, the working group also decided
-that to really streamline the use of TLS in QUIC, it should only use "TLS
-messages" and not "TLS records" for the protocol.
+QUIC ha deciso di utilizzare TLS 1.3 come fondazione per gli strati di
+sicurezza e di crittografia al fine di evitare di dover reinventare la ruota,
+e poter contare su standard "forti", ad alta credibilità. Tuttavia nel fare
+ciò il gruppo di lavoro ha infine riadattato l'utilizzo del protocollo TLS
+con QUIC, utilizzando solamente "messaggi TLS" e mai "records TLS".
 
-This might sound like an innocuous change, but this has actually caused a
-significant hurdle for many QUIC stack implementors. Existing TLS libraries
-that support TLS 1.3 simply do not have APIs enough to expose this
-functionality and allow QUIC to access it. While several QUIC implementors
-come from larger organizations who work on their own TLS stack in parallel,
-this is not true for everyone.
+Quello che potrebbe sembrare una innocente modifica, in realtà ha causato
+non pochi grattacapi a chi era in procinto di implementare uno stack QUIC.
+Le librerie TLS esistenti con supporto a TLS 1.3 non dispongono di un numero
+sufficiente di API per esporre tale funzionalità e permettere quindi a QUIC
+di accedervi. Se è vero che molti degli sviluppatori/implementatori di QUIC
+appartengono a grandi organizzazioni che in parallelo sviluppano il proprio
+stack TLS, ciò non è esattamente vero per tutti.
 
-The dominant open source heavyweight OpenSSL for example, does not have any
-API for this and has not expressed any desire to provide any such anytime soon
-(as of November 2018).
+Ad esemnpio OpenSSL -leader in campo opensource- non fornisce alcuna API per
+controllare tale funzione ed non ha espresso alcuna volontà di sviluppare
+un tale componente (almeno fino a Novembre 2018).
 
-This will eventually also lead to deployment obstacles since QUIC stacks will
-need to either base themselves on other TLS libraries, use a separate patched
-OpenSSL build or require an update to a future OpenSSL version.
+Questa situazione porterà ad incontrare ostacoli nella messa in campo della
+tecnologia QUIC, visto che i differenti stack dovranno basarsi su librerie
+TLS proprie o di terze parti, utilizzare versioni di OpenSSL modificate o
+necessitare di aggiornamenti varii.
 
 ## Kernel e carico sulla CPU
 
-Both Google and Facebook have mentioned that their wide scale deployments of
-QUIC require roughly twice the amount of CPU than the same traffic load does
-when serving HTTP/2 over TLS.
+Google e Facebook hanno entrambi affermato che le loro installazioni QUIC su
+larga scala consumano circa il doppio della CPU per servire la stessa quantità
+di contenuti rispetto ad una più classica connessione HTTP/2 su TLS e TCP.
 
-Some explanations for this include
+Spiegazioni plausibili a questo fenomeno includono:
 
-- the UDP parts in primarily Linux is not at all as optimized as the TCP stack
-  is, since it has not traditionally been used for high speed transfers like
-  this.
+- il fatto che la parte UDP nel kernel Linux non sia altrettanto ottimizzata
+  quanto lo stack TCP, dato che UDP non era finora mai stato utilizzato per
+  trasferimenti ad altissima velocità come questi
 
-- TCP and TLS offloading to hardware exist, but that is much rarer for UDP and 
-  basically non-existing for QUIC.
+- il fatto che per QUIC non esistano dispositivi di accelerazione hardware e
+  offloading come invece è il caso per TCP e TLS. Notiamo rarissime eccezioni
+  per dispositivi dedicati ad UDP.
 
-There are reasons to believe that performance and CPU requirements will
-improve over time.
+Non vi sono ragioni per non essere convinti che le performance aumenteranno
+ed i requisiti CPU si abbasseranno nel tempo.
