@@ -1,25 +1,25 @@
-# Spin Bit
+# Spin Bit (Bit rotante)
 
-One of the perhaps longest design discussions within the QUIC working group
-that has been the subject of several hundred mails and hours of discussions
-concerns a single bit: the Spin Bit.
+Una delle discussioni più estenuanti all'interno del gruppo di lavoro QUIC
+. oggetto di mille emails e ore di dispute verbali- è legata ad un singolo
+bit: il bit rotante (spin bit).
 
-The proponents of this bit insist that there is a need for operators and
-people on the path between two QUIC endpoints to be able to measure latency.
+I fautori dello spin-bit insistono nell'affermare quanto -per operatori ed
+amministratori di rete- sia fondamentale poter misurare la latenza fra due
+end-points QUIC.
 
-The opponents to this feature do not like the potential information leak.
+Gli opppositori dello spin-bit temono una potenziale fuga di informazioni.
 
-## Spinning a bit
+## Girare un bit
 
-Both endpoints, the client and the server, maintain a spin value, 0 or 1, for
-each QUIC connection, and they set the spin bit on packets it sends for that
-connection to the appropriate value.
+Entrambi gli estremi mantengono temporaneamente un valore di 0 o 1 per ogni
+singola connessione QUIC; client e server sono incaricati di impostare un
+valore all'interno di ciascun pacchetto spedito.
 
-Both sides then send out packets with that spin bit set to the same value
-for as long as one round trip lasts and then it toggles the value. The effect
-is then a pulse of ones and zeroes in that bitfield that observers can
-monitor.
+Entrambi gli estremi inviano il pacchetto impostando lo stesso valore per
+la durata di un solo round-trip, alchè invertono il valore. Il risultato è
+dunque una serie di pulsazioni di 0 e 1 utile al monitoraggio.
 
-This measuring only works when the sender is neither application nor flow
-control limited and packet reordering over the network can also make the data
-noisy.
+Questo tipo di misurazione è efficace solo se il peer che invia non è
+limitato a livello di applicazione o di controllo di flusso, in assenza di
+riordino di pacchetti (causato dalla rete stessa).

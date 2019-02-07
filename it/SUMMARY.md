@@ -33,7 +33,7 @@
     * [Gli streams QUIC e HTTP/3](h3-streams.md)
     * [Prioritizzazione](h3-prio.md)
     * [Server push](h3-push.md)
-    * [Raffronto con HTTP/2](h3-h2.md)
+    * [Paragone con HTTP/2](h3-h2.md)
 * [Critiche comuni](criticism.md)
 * [Le specifiche](specs.md)
 * [QUIC v2](quic-v2.md)

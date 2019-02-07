@@ -1,33 +1,35 @@
 # Alt-svc
 
-The alternate service (Alt-svc:) header and its corresponding `ALT-SVC` HTTP/2
-frame are not specifically created for QUIC or HTTP/3. They are part of an
-already designed and created mechanism for a server to tell a client: *"look,
-I run the same service on THIS HOST using THIS PROTOCOL on THIS PORT"*. See
-details in [RFC 7838](https://tools.ietf.org/html/rfc7838).
+L'intestazione di servizio alternativo (Alt-svc:) e il corrispettivo frame
+HTTP/2 `ALT-SVC` non sono specificamente creati per QUIC o HTTP/3.
+Tali header sono parte di un meccanismo gia ben rodato per cui un server può
+segnalare ad un client *"guarda, io erogo questo stesso servizio ANCHE su 
+QUESTO HOST, utilizzando QUESTO PROTOCOLLO, su QUESTA PORTA"*. Vedi i dettagli
+nella [RFC 7838](https://tools.ietf.org/html/rfc7838).
 
-A client that receives such an Alt-svc response is then advised to, if it
-supports and wants to, connect to that given other host in parallel in the
-background - using the specified protocol - and if it is successful switch its
-operations over to that instead of the initial connection.
+In caso lo supportasse e lo desiderasse, ad un client che ricevesse tale header
+Alt-Svc in una risposta verrebbe consigliato di connettersi in parallelo ed in
+background all'host suggerito -utilizzando il protocollo definito- ed in
+seguito completare il resto delle operazioni utilizzando questo nuovo canale,
+al posto della connessione iniziale. 
 
-If the initial connection uses HTTP/2 or even HTTP/1, the server can respond
-and tell the client that it can connect back and try HTTP/3. It could be to
-the same host or to another one that knows how to serve that origin. The
-information given in such an Alt-svc response has an expiry timer, making
-clients able to direct subsequent connections and requests directly to the
-alternative host using the suggested alternative protocol, for a certain
-period of time.
+In caso la connessione iniziale stesse utilizzando HTTP/2 o addirittura HTTP/1,
+il server può decidere di rispondere al client di riprovare tale connessione
+via HTTP/3. Tale connessione potrebbe essere diretta allo stesso host, o ad un
+altro host distante, capace di servire tale contenuto sul protocollo prescelto.
+L'informazione fornita all'interno dell'header Alt-Svc è dotata di una data di
+scadenza, che permette la redirezione dei clients verso host alternativi entro
+un certo lasso temporale.
 
-## Example
+## Esempio
 
-An HTTP server includes an `Alt-Svc:` header in its response:
+Un server HTTP include nella propria risposta un header di tipo `Alt-Svc:`:
 
     Alt-Svc: h3=":50781"
 
-This indicates that HTTP/3 is available on UDP port 50781 at the same host name
-that was used to get this response.
+Questo indica che HTTP/3 è disponibile via UDP sulla porta 50781, sullo stesso
+host utilizzato in prima istanza.
 
-A client can then attempt to setup a QUIC connection to that destination and
-if successful, continue communicating with the origin like that instead of the
-initial HTTP version.
+Un client può a quel punto tentare di stabilire una connessione QUIC verso la
+destinazione indicata, ed in caso di successo continuerebbe a comunicare con
+l'origine attraverso il nuovo canale, non attraverso l'originale in HTTP.

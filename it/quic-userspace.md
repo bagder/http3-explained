@@ -1,18 +1,18 @@
-## User-space
+## User-space (spazio-utente)
 
-Implementing a transport protocol in user-space helps enable quick 
-iteration of the protocol, as it is comparatively easy to evolve the 
-protocol without necessitating that clients and servers update their 
-operating system kernel to deploy new versions.
+Implementare un protocollo di trasporto all'interno dello user-space
+permette di poter manipolare/programmare il protocollo facilmente,
+senza necessita di aggiornare il kernel o il sistema operativo ad ogni
+evoluzione delle librerie client/server.
 
-Nothing inherent in QUIC prevents it from being implemented and offered
-by operating system kernels in the future, should someone find that a
-good idea.
+Non vi sono tuttavia ostacoli fattuali alla implementazione di QUIC
+all'interno del kernel; qualcuno in futuro se ne occuperà, se veramente
+ve ne sarà la necessità.
 
-### Many implementations
+### Molte implementazioni
 
-One obvious effect of implementing a new transport protocol in 
-user-space is that we can expect to see many independent implementations. 
+L'implementazione di un nuovo protocollo di trasporto all'interno dello
+user-space ha per effetto la nascita di molteplici implementazioni.
 
-Different applications are likely to include (or layer atop) different 
-HTTP/3 and QUIC implementations for the foreseeable future.
+In un futuro prossimo, è certo che le diverse applicazioni conterranno
+(o si baseranno) su implementazioni eterogenee di HTTP/3 e QUIC.
