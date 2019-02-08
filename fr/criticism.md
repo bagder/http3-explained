@@ -55,9 +55,6 @@ Ce n'est pas vraiment une critique mais une opinion. Peut-être est-ce le cas, e
 c’est peut-être une amélioration trop minime, trop proche dans le temps depuis
 la publication de HTTP/2.
 
-That is not really a critique but an opinion. Maybe it is, and maybe it is too
-little of an improvement so close in time since HTTP/2 was shipped.
-
 HTTP/3 fonctionnera probablement beaucoup mieux dans les réseaux saturés de
 pertes de paquets, il offre des handshakes plus rapide, ce qui améliore la
 latence réelle et perçue. Mais est-ce assez d'avantages pour motiver les gens à
