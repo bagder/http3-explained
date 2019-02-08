@@ -1,4 +1,4 @@
-## Remember HTTP/2?
+## Vous vous souvenez d'HTTP/2 ?
 
 La spécification HTTP/2 [RFC 7540](https://httpwg.org/specs/rfc7540.html) a été
 publiée en mai 2015 et le protocole a depuis été mis en œuvre et déployé largement
