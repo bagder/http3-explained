@@ -3,7 +3,6 @@
 
 If we can't fix head-of-line blocking within TCP, then in theory we should
 be able to make a new transport protocol next to UDP and TCP in the network
-stack. Or perhaps even use
 [SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol)
 which is a transport protocol standardized by the IETF in [RFC
 4960](https://tools.ietf.org/html/rfc4960) with several of the desired
@@ -27,18 +26,21 @@ are not widely deployed or used because they are not broadly supported.
 
 ## TCP 혹은 UDP
 
-TCP에서 head-of-line 블로킹을 해결할 수 없다면 이론상 네트워크 스택에서 UDP와 TCP 옆에
-새로운 전송 프로토콜을 만들 수 있어야 한다. 아니면
+TCP에서 head-of-line 블로킹을 해결할 수 없다면 이론적으로 네트워크 스택에서 UDP와 TCP 옆에
+새로운 전송 프로토콜을 만들 수 있다. 아니면
 [RFC 4960](https://tools.ietf.org/html/rfc4960)에서 IETF가 표준화하고 여러 가지
 원하는 특성이 있는 전송 프로토콜인
 [SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol)를
-사용할 수 있다. 또 다른 전송 프로토콜을 도입한 경우 UDP나 TCP가 아니면 박스가 이를 악의적이거나
-뭔가 잘못되었다고 판단하고 차단해 버리므로 연결의 N%가 실패한다.
-노력하기에 N% 실패율은 너무 크다.
+사용할 수도 있다.
 
-게다가 보통 네트워크 스택의 전송 프로토콜 계층에서 뭔가를 바꾼다는 것은 운영체제 커널에서 구현된
-프로토콜을 말한다. 새로운 운영체제 커널을 갱신하고 배포하는 것은 상당한 노력이 필요하고 느린 과정이다.
-IETF가 표준화한 수많은 TCP 개선사항도 광범위하게 지원되지 않아서 널리 배포되거나 사용되지 않았다.
+하지만, 최근 수년간 새로운 전송 프로토콜을 만들려는 노력은 인터넷에서 그것을 개발하는 어려움 때문에 완전히 멈춰 있다.
+새 프로토콜 개발은 그 프로토콜이 도달해야 하는 사용자와 서버 사이에 있는 방화벽, NAT, 라우터 등 미들박스가 TCP와 UDP만 
+허용하고 있기 때문에 불편을 겪고 있다. 또 다른 전송 프로토콜을 도입한 경우 UDP나 TCP가 아니면 박스가 이를 악의적이거나
+뭔가 잘못되었다고 판단하고 차단해 버리므로 연결의 N%가 실패한다. 노력을 기울이기에 N% 실패율은 너무 높다고 여겨진다.
+
+게다가 보통 네트워크 스택의 전송 프로토콜 계층에서 뭔가를 바꾼다는 것은 보통 운영체제 커널에서 구현한
+프로토콜을 말한다. 새로운 운영체제 커널을 갱신하고 배포하는 것은 상당한 노력이 필요한 느린 과정이다.
+IETF가 표준화한 수많은 TCP 개선사항도 광범위하게 지원되지 않아서 널리 배포되거나 사용되지 않고 있다. 
 
 <!--
 ## Why not SCTP-over-UDP
@@ -62,17 +64,18 @@ QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00).
 
 ## 왜 SCTP-over-UDP가 아닌가
 
-SCTP는 스트림을 가진 신뢰성 있는 전송 프로토콜이고 WebRTC에서는 UDP를 통해 기존 구현체를 사용한다.
+SCTP는 스트림을 가진 신뢰성 있는 전송 프로토콜이고 WebRTC처럼 UDP 위에서 이 프로토콜을 
+사용하는 기존의 구현체도 있다.
 
 다음의 몇 가지 이유로 QUIC의 대체재로 충분하지 않다고 생각했다.
 
- - SCTP는 스트림에 대해 head-of-line 블로킹 문제를 고치지 않는다
+ - SCTP는 스트림에 대해 head-of-line 블로킹 문제를 고치지 못한다
  - SCTP는 연결을 설정할 때 스트림의 수를 결정해야 한다
- - SCTP에는 확실한 TLS/보안 이야기가 없습니다
- - SCTP는 4웨이 핸드쉐이크를 가지고 QUIC는 0-RTT를 제공한다
+ - SCTP에는 견고한 TLS/보안에 대한 언급이 없다
+ - SCTP는 4웨이 핸드쉐이크를 사용하고 QUIC는 0-RTT를 제공한다
  - QUIC는 TCP 같은 바이트스트림(bytestream)이고 SCTP는 메시지 기반이다
  - QUIC 연결은 IP 주소 사이에서 마이그레이션을 할 수 있지만 SCTP는 할 수 없다
 
 자세한 차이점이 알고 싶다면
 [A Comparison between SCTP and QUIC](https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00)을
-참고해라.
+참고하라.
