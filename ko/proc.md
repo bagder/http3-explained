@@ -26,8 +26,8 @@ of the protocol.
 
 # 과정
 
-Google의 Jim Roskind가 초기 QUIC 프로토콜을 설계하고 2012년 처음 구현되었으며
-Google의 실험이 확대된 2013년 전 세계에 공개적으로 발표되었다.
+Google의 Jim Roskind가 초기 QUIC 프로토콜을 설계하고 2012년 처음 구현했으며
+Google의 실험을 확대한 2013년 전 세계에 공개적으로 발표했다.
 
 그 당시에는 QUIC이 "Quick UDP Internet Connections"의 약자라고 주장했었지만,
 이후에는 없어졌다.
