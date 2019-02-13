@@ -33,7 +33,7 @@ before risks ending up considered bad or illegal by such boxes. Such traffic
 may well just be dropped or delayed to the degree that users really do not
 want to use those features.
 
-That is called "protocol ossification".
+This is called "protocol ossification".
 
 Changes to TCP also suffer from ossification: some boxes between a client and
 the remote server will spot unknown new TCP options and block such connections
@@ -41,9 +41,9 @@ since they do not know what the options are. If allowed to detect protocol
 details, systems learn how protocols typically behave and over time it becomes
 impossible to change them.
 
-The only truly effective way to "combat" ossification, is to encrypt as much
-as possible of the communication to prevent middle-boxes from seeing much of the
-protocol passing through.
+The only truly effective way to "combat" ossification is to encrypt as much of
+the communication as possible in order to prevent middle-boxes from seeing much
+of the protocol passing through.
 -->
 
 # 경화(Ossification)
