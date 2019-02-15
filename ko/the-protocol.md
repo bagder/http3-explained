@@ -13,6 +13,6 @@ stack on the right, when used as HTTP transport.
 
 고수준에서 QUIC 프로토콜을 보자.
 
-아래 그림에서 HTTP 전송할 때 HTTP/2 네트워크 스택은 왼쪽에 QUIC 네트워크 스택은 오른쪽에 나와 있다.
+아래 그림은 HTTP를 전송할 때 HTTP/2 네트워크 스택을 왼쪽에 QUIC 네트워크 스택을 오른쪽에 보여준다.
 
 ![QUIC 스택](../images/quic-stack.png)
