@@ -29,8 +29,8 @@ host, în loc de cele *șase conexiuni* folosite în trecut. De fapt, tehnicile
 de contopire și "desharding" ale conexiunilor, folosite cu HTTP/2, pot reduce
 numărul de conexiuni și mai mult de atât.
 
-HTTP/2 a reparat și problema pe care protocolul o avea cu blocarea primei 
-poziții a stivei (head of line blocking), în urmă căreia clienții trebuia să
+HTTP/2 a reparat și problema pe care protocolul o avea cu blocarea vârfului 
+stivei (head of line blocking), în urmă căreia clienții trebuia să
 aștepte ca prima cerere din stivă să fie finalizată înainte ca următoarea 
 cerere să poată fi trimisă.
 
