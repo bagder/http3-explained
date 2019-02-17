@@ -17,7 +17,7 @@
     * [素早いハンドシェイク](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
     * [トランスポートとアプリケーションレベル](feature-trans-app.md)
-    * [HTTP over QUIC](feature-http.md)
+    * [HTTP/3 over QUIC](feature-http.md)
     * [Non-HTTP over QUIC](feature-nonhttp.md)
 * [QUIC の仕組み](quic.md)
     * [コネクション](quic-connections.md)

@@ -1,4 +1,4 @@
-## HTTP/3
+## HTTP/3 over QUIC
 
 HTTP レイヤーは HTTP に準拠したトランスポートを行います。HTTP ヘッダ圧縮では QPACK を利用しており、これは HTTP/2 における HPACK に似ています。
 
