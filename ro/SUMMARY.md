@@ -3,4 +3,5 @@
     * [Blocarea vârfului stivei în TCP](why-tcphol.md)
     * [TCP sau UDP](why-tcpudp.md)
     * [Osificarea](why-ossification.md)
+    * [Securitate](why-secure.md)
 
