@@ -5,4 +5,5 @@
     * [Osificarea](why-ossification.md)
     * [Securitate](why-secure.md)
     * [Timp de așteptare redus](why-latency.md)
+* [Procesul](proc.md)
 
