@@ -7,4 +7,5 @@
     * [Timp de așteptare redus](why-latency.md)
 * [Procesul](proc.md)
     * [IETF](proc-ietf.md)
+    * [Experiența acumulată cu HTTP/2](proc-h2.md)
 
