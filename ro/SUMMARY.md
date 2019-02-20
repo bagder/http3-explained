@@ -15,4 +15,5 @@
     * [Fluxuri](feature-streams.md)
     * [În aceeași ordine](feature-inorder.md)
     * [Handshakes rapide](feature-handshakes.md)
+    * [TLS 1.3](feature-tls.md)
 
