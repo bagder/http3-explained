@@ -20,3 +20,4 @@
     * [HTTP peste QUIC](feature-http.md)
     * [Non-HTTP peste QUIC](feature-nonhttp.md)
 * [Cum funcționează QUIC](quic.md)
+    * [Conexiuni](quic-connections.md)
