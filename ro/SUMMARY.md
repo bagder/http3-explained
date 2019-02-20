@@ -14,4 +14,5 @@
     * [Fiabilitate](feature-reliable.md)
     * [Fluxuri](feature-streams.md)
     * [În aceeași ordine](feature-inorder.md)
+    * [Handshakes rapide](feature-handshakes.md)
 
