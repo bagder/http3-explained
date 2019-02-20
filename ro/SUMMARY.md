@@ -16,4 +16,5 @@
     * [În aceeași ordine](feature-inorder.md)
     * [Handshakes rapide](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
+    * [Nivelurile de aplicație și de transfer](feature-trans-app.md)
 
