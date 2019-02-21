@@ -12,9 +12,9 @@ QUIC-adapted version of [HPACK](https://httpwg.org/specs/rfc7541.html).
 
 ## HTTP/3
 
-HTTP 계층은 QPACK으로 HTTP 헤더 압축을 포함해서 HTTP 형식의 전송을 수행한다.
-이는 HPACK이라 부르는 HTTP/2 헤더 압축과 비슷하다.
+HTTP 계층은 HTTP 형태의 전송을 한다. 그 중에는 HPACK이라 부르는 HTTP/2 헤더 압축과
+비슷한 QPACK을 사용한 HTTP 헤더 압축도 있다.
 
-HPACK 알고리즘은 *순서가 유지된* 스트림의 전달에 의존하는데 QUIC의 스트림은 순서가 바뀌어서
-전달될 수 있으므로 수정하지 않고는 HTTP/3에서 HPACK을 재사용할 수 없다. QPACK을 QUIC에 맞게
-수정된 [HPACK](https://httpwg.org/specs/rfc7541.html)이라고 볼 수 있다.
+HPACK 알고리즘은 *순차적인* 스트림 전달에 의존하는데 QUIC은 스트림을 순서 없이
+전달할 수 있으므로 HPACK을 수정하지 않고는 HTTP/3에서 재사용할 수 없다. [HPACK](https://httpwg.org/specs/rfc7541.html)을
+QUIC에 맞게 수정한 것을 QPACK이라 볼 수 있다.
