@@ -14,10 +14,10 @@ send-http/2-frames-over-udp protocol.
 
 ## 전송 계층과 애플리케이션 계층
 
-IETF QUIC 프로토콜은 전송 프로토콜로 다른 애플리케이션 프로토콜이 그 위에서 사용할 수 있다.
+IETF QUIC 프로토콜은 전송 프로토콜로써 다른 애플리케이션 프로토콜이 그 위에서 사용할 수 있다.
 초기 애플리케이션 계층 프로토콜은 HTTP/3(h3)다.
 
 전송 계층은 연결과 스트림을 지원한다.
 
-레거시 Google 버전은 QUIC은 전송과 HTTP가 하나로 합쳐져 있어서
-더 특수한 목적의 send-http/2-frames-over-udp 프로토콜이었다.
+레거시 Google 버전 QUIC은 전송과 HTTP가 하나로 합쳐져 있어서
+(Quic) 보다 더 특수한 목적의 send-http/2-frames-over-udp 프로토콜이었다.
