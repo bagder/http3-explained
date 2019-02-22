@@ -21,3 +21,5 @@
     * [Non-HTTP peste QUIC](feature-nonhttp.md)
 * [Cum funcționează QUIC](quic.md)
     * [Conexiuni](quic-connections.md)
+    * [Conexiunile folosesc TLS](quic-tls.md)
+    * [Fluxuri](quic-streams.md)
