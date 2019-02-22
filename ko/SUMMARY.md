@@ -33,7 +33,7 @@
     * [QUIC 스트림과 HTTP/3](h3-streams.md)
     * [우선순위 정하기](h3-prio.md)
     * [서버 푸시](h3-push.md)
-    * [Comparison with HTTP/2](h3-h2.md)
+    * [HTTP/3과 HTTP/2의 비교](h3-h2.md)
 * [일반적인 비판](criticism.md)
 * [명세](specs.md)
 * [QUIC v2](quic-v2.md)
