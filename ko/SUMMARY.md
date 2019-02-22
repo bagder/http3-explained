@@ -17,7 +17,7 @@
     * [빠른 핸드쉐이크](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
     * [전송 계층과 애플리케이션 계층](feature-trans-app.md)
-    * [QUIC을 통한 HTTP](feature-http.md)
+    * [QUIC을 통한 HTTP/3](feature-http.md)
     * [QUIC을 통한 HTTP가 아닌 프로토콜](feature-nonhttp.md)
 * [QUIC의 동작 방식](quic.md)
     * [연결](quic-connections.md)

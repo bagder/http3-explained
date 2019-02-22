@@ -33,6 +33,23 @@ six TCP connections to distribute lost packets over. This means for every lost
 packet the other connections can still continue.
 
 Fixing this issue is not easy, if at all possible, with TCP.
+
+## Independent streams avoids the block
+
+With QUIC there is still a connection setup between the two end-points that
+makes the connection secure and the data delivery reliable.
+
+![a QUIC chain between two computers](../images/tcp-chain.png)
+
+When setting up two different streams over this connection, they are treated
+independently so that if any link goes missing for one of the streams, only
+that stream, that particular chain, has to pause and wait for the missing link
+to get retransmitted.
+
+Illustrated here with one yellow and one blue stream sent between two
+end-points.
+
+![two QUIC streams between two computers](../images/quic-chain-streams.png)
 -->
 
 ## TCP HOL(head of line) 블로킹
@@ -62,25 +79,6 @@ HTTP/2로 통신하는 두 엔드포인트 사이 네트워크 어딘가에서 �
 배포하는데 6개의 TCP 연결을 갖고 있어서 손실된 패킷이 없는 다른 연결은 계속 사용할 수 있기 때문이다.
 
 TCP를 사용하는 한 이 이슈를 고치는 것은 (가능할 수도 있지만) 쉽지 않다.
-
-<!--
-## Independent streams avoids the block
-
-With QUIC there is still a connection setup between the two end-points that
-makes the connection secure and the data delivery reliable.
-
-![a QUIC chain between two computers](../images/tcp-chain.png)
-
-When setting up two different streams over this connection, they are treated
-independently so that if any link goes missing for one of the streams, only
-that stream, that particular chain, has to pause and wait for the missing link
-to get retransmitted.
-
-Illustrated here with one yellow and one blue stream sent between two
-end-points.
-
-![two QUIC streams between two computers](../images/quic-chain-streams.png)
--->
 
 ## 차단을 피하는 독립 스트림
 

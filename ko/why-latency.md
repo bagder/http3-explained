@@ -9,20 +9,7 @@ done to allow more data and it is used more easily than TCP Fast Open.
 
 With the stream concept, another logical connection to the same host can be
 done at once without having to wait for the existing one to end first.
--->
 
-# 더 이른 데이터
-
-QUIC는 0-RTT, 1-RTT 핸드쉐이크 둘 다 제공하는데 이는 새로운 연결을 협상하고 설정하는데
-걸리는 시간을 줄여준다. TCP의 3웨이 핸드쉐이크와 비교해 보면 된다.
-
-여기에 추가로 QUIC은 더 많은 데이터를 허용하는 "이른 데이터(early data)"를
-처음부터 지원하고 이는 TCP Fast Open보다 더 쉽게 사용할 수 있다.
-
-스트림 개념을 사용해서 기존에 존재하는 연결이 끝나기를 먼저 기다릴 필요 없이 같은 호스트로의
-또 다른 논리 연결도 동시에 처리될 수 있다.
-
-<!--
 ## TCP Fast Open is problematic
 
 TCP Fast Open was published as [RFC 7413](https://tools.ietf.org/html/rfc7413)
@@ -37,6 +24,17 @@ gracefully back down and deal when problems arise. Several networks have been
 identified to interfere with TFO traffic and they have thus actively ruined
 such TCP handshakes.
 -->
+
+# 더 이른 데이터
+
+QUIC는 0-RTT, 1-RTT 핸드쉐이크 둘 다 제공하는데 이는 새로운 연결을 협상하고 설정하는데
+걸리는 시간을 줄여준다. TCP의 3웨이 핸드쉐이크와 비교해 보면 된다.
+
+여기에 추가로 QUIC은 더 많은 데이터를 허용하는 "이른 데이터(early data)"를
+처음부터 지원하고 이는 TCP Fast Open보다 더 쉽게 사용할 수 있다.
+
+스트림 개념을 사용해서 기존에 존재하는 연결이 끝나기를 먼저 기다릴 필요 없이 같은 호스트로의
+또 다른 논리 연결도 동시에 처리될 수 있다.
 
 ## 문제가 있는 TCP Fast Open
 

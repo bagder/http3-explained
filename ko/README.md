@@ -7,16 +7,7 @@ implementations and more.
 
 The book is entirely free and is meant to be a collaborative effort
 involving anyone and everyone who wants to help out.
--->
 
-# HTTP/3 해설
-
-이 책은 2018년 3월에 작성하기 시작했다. HTTP/3와 그 기반 프로토콜인 QUIC이 어떻게 왜 동작하는 지와
-프로토콜의 상세내용, 그 구현체 등을 설명할 계획이다.
-
-이 책은 완전히 무료이므로 돕고자 하는 사람은 누구나 참여해서 같이 만들 수 있다.
-
-<!--
 ## Prerequisites
 
 A reader of this book is presumed to have a basic understanding of TCP/IP
@@ -32,22 +23,7 @@ of [curl](https://curl.haxx.se/), the world's most widely used HTTP client
 software. Daniel has worked with and on HTTP and internet protocols for over
 two decades and is the author of [http2
 explained](https://daniel.haxx.se/http2/).
--->
 
-## 사전 요구사항
-
-이 책의 독자는 TCP/IP 네트워크, HTTP의 기본, 웹을 어느 정도 이해하고 있다고 가정한다.
-HTTP/2에 대해서 더 알고 싶다면 [http2 explained](https://daniel.haxx.se/http2/)를
-읽어보기를 권장한다.
-
-## 저자
-
-이 책은 [Daniel Stenberg](https://daniel.haxx.se/)가 시작해서 만들어졌다. Daniel은
-세계에서 가장 널리 사용되는 HTTP 클라이언트 소프트웨어인 [curl](https://curl.haxx.se/)을
-만든 사람이자 curl의 리드 개발자다. Daniel은 20년 넘게 HTTP와 인터넷 프로토콜로 일했고
-[http2 explained](https://daniel.haxx.se/http2/)의 저자이기도 하다.
-
-<!--
 ## Home
 
 The home page for this book is found at
@@ -69,6 +45,26 @@ github page.
 This document and all its contents are licensed under the [Creative Commons
 Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 -->
+
+# HTTP/3 해설
+
+이 책은 2018년 3월에 작성하기 시작했다. HTTP/3와 그 기반 프로토콜인 QUIC이 어떻게 왜 동작하는 지와
+프로토콜의 상세내용, 그 구현체 등을 설명할 계획이다.
+
+이 책은 완전히 무료이므로 돕고자 하는 사람은 누구나 참여해서 같이 만들 수 있다.
+
+## 사전 요구사항
+
+이 책의 독자는 TCP/IP 네트워크, HTTP의 기본, 웹을 어느 정도 이해하고 있다고 가정한다.
+HTTP/2에 대해서 더 알고 싶다면 [http2 explained](https://daniel.haxx.se/http2/)를
+읽어보기를 권장한다.
+
+## 저자
+
+이 책은 [Daniel Stenberg](https://daniel.haxx.se/)가 시작해서 만들어졌다. Daniel은
+세계에서 가장 널리 사용되는 HTTP 클라이언트 소프트웨어인 [curl](https://curl.haxx.se/)을
+만든 사람이자 curl의 리드 개발자다. Daniel은 20년 넘게 HTTP와 인터넷 프로토콜로 일했고
+[http2 explained](https://daniel.haxx.se/http2/)의 저자이기도 하다.
 
 ## 홈페이지
 
