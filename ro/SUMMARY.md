@@ -24,3 +24,4 @@
     * [Conexiunile folosesc TLS](quic-tls.md)
     * [Fluxuri](quic-streams.md)
     * [0-RTT](quic-0rtt.md)
+    * [Spin Bit](quic-spinbit.md)
