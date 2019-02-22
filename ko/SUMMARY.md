@@ -34,6 +34,6 @@
     * [우선순위 정하기](h3-prio.md)
     * [서버 푸시](h3-push.md)
     * [Comparison with HTTP/2](h3-h2.md)
-* [Common criticism](criticism.md)
-* [The specifications](specs.md)
+* [일반적인 비판](criticism.md)
+* [명세](specs.md)
 * [QUIC v2](quic-v2.md)
