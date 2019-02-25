@@ -29,3 +29,4 @@
     * [API](quic-api.md)
 * [HTTP/3](h3.md)
     * [Adresele HTTPS://](h3-https.md)
+    * [Bootstrap cu Alt-svc](h3-altsvc.md)
