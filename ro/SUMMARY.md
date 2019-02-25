@@ -27,3 +27,4 @@
     * [Spin Bit](quic-spinbit.md)
     * [User space](quic-userspace.md)
     * [API](quic-api.md)
+* [HTTP/3](h3.md)
