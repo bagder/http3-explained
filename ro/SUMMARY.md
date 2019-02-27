@@ -32,3 +32,4 @@
     * [Bootstrap cu Alt-svc](h3-altsvc.md)
     * [Fluxurile QUIC și HTTP/3](h3-streams.md)
     * [Prioritizare](h3-prio.md)
+    * [Server push](h3-push.md)
