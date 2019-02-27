@@ -33,3 +33,4 @@
     * [Fluxurile QUIC și HTTP/3](h3-streams.md)
     * [Prioritizare](h3-prio.md)
     * [Server push](h3-push.md)
+    * [Comparația cu HTTP/2](h3-h2.md)
