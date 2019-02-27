@@ -34,3 +34,4 @@
     * [Prioritizare](h3-prio.md)
     * [Server push](h3-push.md)
     * [Comparația cu HTTP/2](h3-h2.md)
+* [Critici comune](criticism.md)
