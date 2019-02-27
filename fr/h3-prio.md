@@ -1,6 +1,6 @@
 # Priorisation de HTTP/3
 
-Une des trames de flux HTTP/3 s'appelle `PRIORITY`. Elle est utilisé pour définir
+Une des trames de flux HTTP/3 s'appelle `PRIORITY`. Elle est utilisée pour définir
 la priorité et la dépendance à un flux d'une manière similaire à celle de HTTP/2.
 
 La trame peut définir un flux spécifique pour dépendre d'un autre flux spécifique
