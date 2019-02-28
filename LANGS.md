@@ -4,3 +4,4 @@
 * [日本語](ja/)
 * [Italiano](it/)
 * [한국어](ko/)
+* [Română](ro/)
