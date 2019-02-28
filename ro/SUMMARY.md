@@ -17,7 +17,7 @@
     * [Handshakes rapide](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
     * [Nivelurile de aplicație și de transfer](feature-trans-app.md)
-    * [HTTP peste QUIC](feature-http.md)
+    * [HTTP/3 peste QUIC](feature-http.md)
     * [Non-HTTP peste QUIC](feature-nonhttp.md)
 * [Cum funcționează QUIC](quic.md)
     * [Conexiuni](quic-connections.md)

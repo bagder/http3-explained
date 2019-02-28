@@ -1,4 +1,4 @@
-## HTTP/3
+## HTTP/3 peste QUIC
 
 Layer-ul HTTP face transferuri tip-HTTP, inclusiv compresia headere-lor HTTP 
 folosind QPACK - similar cu compresia HTTP/2 numită HPACK.
