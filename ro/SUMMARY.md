@@ -36,3 +36,4 @@
     * [Comparația cu HTTP/2](h3-h2.md)
 * [Critici comune](criticism.md)
 * [Specificația](specs.md)
+* [QUIC v2](quic-v2.md)
