@@ -47,8 +47,8 @@ direction.
 
 # QUIC 스트림과 HTTP/3
 
-HTTP/3가 QUIC을 위해 만들어졌으므로 HTTP/2는 전체 스트림과 TCP 위에서 자체 멀티플랙싱 개념을
-설계해야 하는 QUIC 스트림의 이점을 최대한 활용한다.
+HTTP/2가 TCP를 기반으로 전체적인 stream 과 multiplexing 개념을 설계해야했던 반면
+HTTP/3는 QUIC을 위해 만들어졌으므로 QUIC 스트림이 가진 이점을 최대한 활용한다.
 
 HTTP/3를 통해 수행되는 HTTP 요청은 특정 스트림 세트를 사용한다.
 
