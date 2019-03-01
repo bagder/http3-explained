@@ -111,7 +111,7 @@ TLS 1.3을 지원하는 기존 TLS 라이브러리는 이 기능을 공개하거
 
 ## 커널과 CPU 부하
 
-Google과 Facebook은 QUIC을 대규모로 배포할 때 TLS에서 HTTP/2를 제공할 때보다
+Google과 Facebook은 QUIC의 대규모 배포가 TLS에서 HTTP/2로 서비스 할때보다
 같은 트래픽 기준으로 거의 2배의 CPU가 필요하다고 얘기했다.
 
 이는 다음과 같은 이유 때문이다.
