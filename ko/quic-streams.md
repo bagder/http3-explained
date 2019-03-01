@@ -70,7 +70,7 @@ When HTTP/3 is used over QUIC, the prioritization is done in the HTTP layer.
 
 # 스트림
 
-QUIC은 스트림은 경량이면서 순서가 있는 바이트 스트림 추상화를 제공한다.
+QUIC 스트림은 경량이면서 순서가 있는 바이트 스트림 추상화를 제공한다.
 
 QUIC에는 두가지 기본 스트림 타입이 있다.
 
