@@ -71,7 +71,7 @@ SCTP는 스트림을 가진 신뢰성 있는 전송 프로토콜이고 WebRTC처
  - SCTP는 스트림에 대해 head-of-line 블로킹 문제를 고치지 못한다
  - SCTP는 연결을 설정할 때 스트림의 수를 결정해야 한다
  - SCTP에는 견고한 TLS/보안에 대한 언급이 없다
- - SCTP는 4-way handshake 사용하고 QUIC는 0-RTT를 제공한다
+ - SCTP는 4단계 핸드쉐이크(4-way handshake)를 사용하고 QUIC은 0-RTT를 제공한다
  - QUIC는 TCP 같은 바이트스트림(bytestream)이고 SCTP는 메시지 기반이다
  - QUIC 연결은 IP 주소 사이에서 마이그레이션을 할 수 있지만 SCTP는 할 수 없다
 
