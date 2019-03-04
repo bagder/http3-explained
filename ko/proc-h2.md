@@ -17,7 +17,7 @@ HTTP-over-QUIC was renamed to HTTP/3 in November 2018.
 
 ## HTTP/2에서의 경험
 
-HTTP/2 명세 RFC 7540는 2015년 5월 발행되었는데 이는 QUIC가 처음으로 IETF에 들어오기
+HTTP/2 명세 RFC 7540는 2015년 5월 발행되었는데 이는 QUIC이 처음으로 IETF에 들어오기
 바로 한 달 전이다.
 
 HTTP/2에서 유선으로 HTTP를 통한 HTTP를 변경할 기반이 마련되었고 HTTP/2를 만든 워킹그룹이
@@ -27,4 +27,4 @@ HTTP/2에서 유선으로 HTTP를 통한 HTTP를 변경할 기반이 마련되�
 HTTP/2를 겪으면서 사용자와 소프트웨어 스택은 HTTP는 더는 텍스트 기반 프로토콜이라고만
 가정할 수 없다고 생각하게 되었다.
 
-HTTP-over-QUIC는 2018년 11월에 HTTP/3로 개명되었다.
+HTTP-over-QUIC은 2018년 11월에 HTTP/3로 개명되었다.
