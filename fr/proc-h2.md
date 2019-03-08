@@ -1,7 +1,7 @@
 ## Expérience depuis HTTP/2
 
-La spécification HTTP/2 RFC 7540 a été publiée en mai 2015, juste un mois avant que
-QUIC ne soit présenté pour la première fois à l'IETF.
+La spécification HTTP/2 RFC 7540 a été publiée en mai 2015, juste un mois avant
+que QUIC ne soit présenté pour la première fois à l'IETF.
 
 Avec HTTP/2, les bases de la modification de HTTP sur le réseau ont été aménagées
 et le groupe de travail qui a créé HTTP/2 était déjà convaincu que cela aiderait à
