@@ -17,7 +17,7 @@
     * [Handshakes rapides](feature-handshakes.md)
     * [TLS 1.3](feature-tls.md)
     * [Transport et application](feature-trans-app.md)
-    * [HTTP sur QUIC](feature-http.md)
+    * [HTTP/3 sur QUIC](feature-http.md)
     * [Non-HTTP sur QUIC](feature-nonhttp.md)
 * [Comment QUIC fonctionne](quic.md)
     * [Connexions](quic-connections.md)

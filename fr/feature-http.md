@@ -1,4 +1,4 @@
-## HTTP/3
+## HTTP/3 over QUIc
 
 La couche HTTP effectue des transports de style HTTP, y compris la compression
 d'en-tête HTTP à l'aide de QPACK - ce qui est similaire à la compression HTTP/2
