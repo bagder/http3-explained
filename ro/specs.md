@@ -9,20 +9,20 @@ componente ale QUIC și HTTP/3.
 
 ## Transfer
 
-[QUIC: Un transfer multiplexed și sigur bazat pe UDP](https://tools.ietf.org/html/draft-ietf-quic-transport-18)
+[QUIC: Un transfer multiplexed și sigur bazat pe UDP](https://tools.ietf.org/html/draft-ietf-quic-transport-19)
 
 ## Recuperare
 
-[Detectarea pierderilor și control congestiilor în QUIC](https://tools.ietf.org/html/draft-ietf-quic-recovery-18)
+[Detectarea pierderilor și control congestiilor în QUIC](https://tools.ietf.org/html/draft-ietf-quic-recovery-19)
 
 ## TLS
 
-[Folosirea TLS pentru a securiza QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-18)
+[Folosirea TLS pentru a securiza QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-19)
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-18)
+[Hypertext Transfer Protocol (HTTP) peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-19)
 
 ## QPACK
 
-[QPACK: Compresia headere-lor HTTP peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-06)
+[QPACK: Compresia headere-lor HTTP peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-07)
