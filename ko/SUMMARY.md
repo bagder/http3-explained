@@ -2,7 +2,7 @@
     * [HTTP/2를 기억하는가?](why-h2.md)
     * [TCP HOL(head of line) 블로킹](why-tcphol.md)
     * [TCP or UDP](why-tcpudp.md)
-    * [경화(Ossification)](why-ossification.md)
+    * [고착화(Ossification)](why-ossification.md)
     * [안전](why-secure.md)
     * [감소된 지연시간](why-latency.md)
 * [과정](proc.md)
