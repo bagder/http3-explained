@@ -5,24 +5,24 @@ composants de QUIC et de HTTP/3.
 
 ## Invariants
 
-[Version-Independent Properties of QUIC](https://tools.ietf.org/html/draft-ietf-quic-invariants-03)
+[Version-Independent Properties of QUIC](https://tools.ietf.org/html/draft-ietf-quic-invariants-04)
 
 ## Transport
 
-[QUIC: A UDP-Based Multiplexed and Secure Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-19)
+[QUIC: A UDP-Based Multiplexed and Secure Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-20)
 
 ## Récupération
 
-[QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-19)
+[QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-20)
 
 ## TLS
 
-[Using Transport Layer Security (TLS) to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-19)
+[Using Transport Layer Security (TLS) to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-20)
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-19)
+[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-20)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-07)
+[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-08)
