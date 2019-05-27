@@ -20,7 +20,7 @@ Die Website von diesem Buch kann hier gefunden werden: [daniel.haxx.se/http3-exp
 
 Solltest du Irrtümer, fehlende Details, Fehler oder offensichtliche Lügen in diesem Dokument finden, dann sende uns bitte eine ausgebesserte Version des betroffenen Paragrafen und wir werden diese als neue Version veröffentlichen. Natürlich führen wir alle an, die aushelfen. Ich hoffe, dass wir das Dokument im Laufe der Zeit verbessern können.
 
-Fehler sollten als [Issues](https://github.com/bagder/http3-explained/issues) oder als [Pull Requests](https://github.com/bagder/http3-explained/pulls) auf der Github Seite des Buches übermittelt werden.
+Fehler sollten als [Issues](https://github.com/bagder/http3-explained/issues) oder als [Pull Requests](https://github.com/bagder/http3-explained/pulls) auf der GitHub Seite des Buches übermittelt werden.
 
 ## Lizenz
 
