@@ -4,7 +4,7 @@
     * [TCP か UDP か](why-tcpudp.md)
     * [硬直化](why-ossification.md)
     * [セキュア](why-secure.md)
-    * [Reduced latency](why-latency.md)
+    * [レイテンシの軽減](why-latency.md)
 * [これまでの歩み](proc.md)
     * [IETF](proc-ietf.md)
     * [HTTP/2 からの経験](proc-h2.md)
