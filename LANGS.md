@@ -5,3 +5,4 @@
 * [Italiano](it/)
 * [한국어](ko/)
 * [Română](ro/)
+* [Deutsche](de/)
