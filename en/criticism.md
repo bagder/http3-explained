@@ -10,7 +10,7 @@ attacks where one attacker can make a huge amount of outgoing traffic to
 target innocent victims.
 
 QUIC has built-in mitigation against amplification attacks by requiring that the
-initial packet must be at least 1200 bytes and by restriction in the protocol
+initial packet MUST be at least 1200 bytes and by restriction in the protocol
 that says that a server MUST NOT send more than three times the size of the
 request in response without receiving a packet from the client in response.
 
