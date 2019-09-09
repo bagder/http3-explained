@@ -17,8 +17,11 @@ even up to this date.
 
 ## Servers
 
-There have been no public statement in terms of support for QUIC from Apache
-or nginx.
+NGINX support for QUIC and HTTP/3 is under development.
+It is planned to be released during
+[NGINX 1.17 development cycle](https://trac.nginx.org/nginx/milestone/nginx-1.17).
+
+There have been no public statement in terms of support for QUIC from Apache.
 
 ## Clients
 
@@ -28,6 +31,14 @@ that can run the IETF version of QUIC or HTTP/3.
 Google Chrome has shipped with a working implementation of Google's own QUIC
 version since many years, but that does not interoperate with the IETF
 QUIC protocol and its HTTP implementation is different than HTTP/3.
+
+Mozilla is developing [Neqo](https://github.com/mozilla/neqo/) -
+a QUIC and HTTP/3 implementation written in [Rust](https://www.rust-lang.org/).
+Neqo is [planned to be integrated](https://github.com/mozilla/neqo/issues/10)
+in [Necko](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Necko)
+(which is a network library used in many Mozilla-based client applications -
+including Firefox).
+
 
 ## Implementation Obstacles
 
