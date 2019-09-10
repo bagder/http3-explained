@@ -59,8 +59,9 @@ come from larger organizations who work on their own TLS stack in parallel,
 this is not true for everyone.
 
 The dominant open source heavyweight OpenSSL for example, does not have any
-API for this and has not expressed any desire to provide any such anytime soon
-(as of November 2018).
+API for this. The plan to address this seems to happn in their [PR
+8797](https://github.com/openssl/openssl/pull/8797) that aims to introduce an
+API that is very similar to the one of BoringSSL.
 
 This will eventually also lead to deployment obstacles since QUIC stacks will
 need to either base themselves on other TLS libraries, use a separate patched
