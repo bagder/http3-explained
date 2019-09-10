@@ -39,6 +39,9 @@ in [Necko](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Necko)
 (which is a network library used in many Mozilla-based client applications -
 including Firefox).
 
+curl shipped the first experimental HTTP/3 support (draft-22) in the 7.66.0
+release on September 11, 2019. curl uses either the Quiche library from
+Cloudflare or the ngtcp2 family of libraries to get the work done.
 
 ## Implementation Obstacles
 
