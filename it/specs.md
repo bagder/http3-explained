@@ -5,19 +5,19 @@ pezzi e componenti di QUIC e HTTP/3.
 
 ## Invarianti (Costanti)
 
-[Proprietà di QUIC indipendenti dalla versione](https://tools.ietf.org/html/draft-ietf-quic-invariants-06)
+[Proprietà di QUIC indipendenti dalla versione](https://tools.ietf.org/html/draft-ietf-quic-invariants-07)
 
 ## Trasporto
 
-[QUIC: un trasporto "multiplexato" e sicuro basato su UDP](https://tools.ietf.org/html/draft-ietf-quic-transport-22)
+[QUIC: un trasporto "multiplexato" e sicuro basato su UDP](https://tools.ietf.org/html/draft-ietf-quic-transport-23)
 
 ## Recupero ("recovery")
 
-[Rilevamento delle perdite e controllo della congestione in QUIC](https://tools.ietf.org/html/draft-ietf-quic-recovery-22)
+[Rilevamento delle perdite e controllo della congestione in QUIC](https://tools.ietf.org/html/draft-ietf-quic-recovery-23)
 
 ## TLS
 
-[Usare TLS (sicurezza a livello di trasporto) per securizzare QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-22)
+[Usare TLS (sicurezza a livello di trasporto) per securizzare QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
 
 ## HTTP
 
