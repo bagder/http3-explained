@@ -21,8 +21,8 @@ pezzi e componenti di QUIC e HTTP/3.
 
 ## HTTP
 
-[Protocollo di trasferimento di ipertesto (HTTP) via QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-22)
+[Protocollo di trasferimento di ipertesto (HTTP) via QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-23)
 
 ## QPACK
 
-[QPACK: Compressione degli Header per HTTP via QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-09)
+[QPACK: Compressione degli Header per HTTP via QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)

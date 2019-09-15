@@ -22,11 +22,11 @@ components of QUIC and HTTP/3.
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-22)
+[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-23)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-09)
+[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
 -->
 
 # 명세
@@ -51,8 +51,8 @@ components of QUIC and HTTP/3.
 
 ## HTTP
 
-[QUIC을 통한 Hypertext Transfer Protocol(HTTP)](https://tools.ietf.org/html/draft-ietf-quic-http-22)
+[QUIC을 통한 Hypertext Transfer Protocol(HTTP)](https://tools.ietf.org/html/draft-ietf-quic-http-23)
 
 ## QPACK
 
-[QPACK: QUIC을 통한 HTTP의 헤더 압축](https://tools.ietf.org/html/draft-ietf-quic-qpack-09)
+[QPACK: QUIC을 통한 HTTP의 헤더 압축](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)

@@ -21,8 +21,8 @@ componente ale QUIC și HTTP/3.
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-22)
+[Hypertext Transfer Protocol (HTTP) peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-23)
 
 ## QPACK
 
-[QPACK: Compresia headere-lor HTTP peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-09)
+[QPACK: Compresia headere-lor HTTP peste QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
