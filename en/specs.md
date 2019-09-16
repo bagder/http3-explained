@@ -17,12 +17,12 @@ components of QUIC and HTTP/3.
 
 ## TLS
 
-[Using Transport Layer Security (TLS) to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
+[Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-23)
+[Hypertext Transfer Protocol Version 3 (HTTP/3)](https://tools.ietf.org/html/draft-ietf-quic-http-23)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
+[QPACK: Header Compression for HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
