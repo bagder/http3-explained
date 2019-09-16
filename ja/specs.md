@@ -3,24 +3,24 @@
 
 ## Invariants (不変事項)
 
-[Version-Independent Properties of QUIC (バージョンに依存しない QUIC の要素)](https://tools.ietf.org/html/draft-ietf-quic-invariants-06)
+[Version-Independent Properties of QUIC (バージョンに依存しない QUIC の要素)](https://tools.ietf.org/html/draft-ietf-quic-invariants-07)
 
 ## Transport (トランスポート プロトコル)
 
-[QUIC: A UDP-Based Multiplexed and Secure Transport (QUIC: UDP をベースにした多重でセキュアなトランスポートプロトコル)](https://tools.ietf.org/html/draft-ietf-quic-transport-22)
+[QUIC: A UDP-Based Multiplexed and Secure Transport (QUIC: UDP をベースにした多重でセキュアなトランスポートプロトコル)](https://tools.ietf.org/html/draft-ietf-quic-transport-23)
 
 ## Recovery (パケットの修復)
 
-[QUIC Loss Detection and Congestion Control (QUIC のパケットロスの検知機能と輻輳制御)](https://tools.ietf.org/html/draft-ietf-quic-recovery-22)
+[QUIC Loss Detection and Congestion Control (QUIC のパケットロスの検知機能と輻輳制御)](https://tools.ietf.org/html/draft-ietf-quic-recovery-23)
 
 ## TLS
 
-[Using Transport Layer Security (TLS) to Secure QUIC (TLS を用いたセキュアな QUIC)](https://tools.ietf.org/html/draft-ietf-quic-tls-22)
+[Using Transport Layer Security (TLS) to Secure QUIC (TLS を用いたセキュアな QUIC)](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-22)
+[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-23)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP over QUIC (QPACK: HTTP over QUIC のためのヘッダー圧縮方法)](https://tools.ietf.org/html/draft-ietf-quic-qpack-09)
+[QPACK: Header Compression for HTTP over QUIC (QPACK: HTTP over QUIC のためのヘッダー圧縮方法)](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)

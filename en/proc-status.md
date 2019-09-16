@@ -17,8 +17,11 @@ even up to this date.
 
 ## Servers
 
-There have been no public statement in terms of support for QUIC from Apache
-or nginx.
+NGINX support for QUIC and HTTP/3 is under development.
+It is planned to be released during
+[NGINX 1.17 development cycle](https://trac.nginx.org/nginx/milestone/nginx-1.17).
+
+There have been no public statement in terms of support for QUIC from Apache.
 
 ## Clients
 
@@ -28,6 +31,17 @@ that can run the IETF version of QUIC or HTTP/3.
 Google Chrome has shipped with a working implementation of Google's own QUIC
 version since many years, but that does not interoperate with the IETF
 QUIC protocol and its HTTP implementation is different than HTTP/3.
+
+Mozilla is developing [Neqo](https://github.com/mozilla/neqo/) -
+a QUIC and HTTP/3 implementation written in [Rust](https://www.rust-lang.org/).
+Neqo is [planned to be integrated](https://github.com/mozilla/neqo/issues/10)
+in [Necko](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Necko)
+(which is a network library used in many Mozilla-based client applications -
+including Firefox).
+
+curl shipped the first experimental HTTP/3 support (draft-22) in the 7.66.0
+release on September 11, 2019. curl uses either the Quiche library from
+Cloudflare or the ngtcp2 family of libraries to get the work done.
 
 ## Implementation Obstacles
 
@@ -45,8 +59,9 @@ come from larger organizations who work on their own TLS stack in parallel,
 this is not true for everyone.
 
 The dominant open source heavyweight OpenSSL for example, does not have any
-API for this and has not expressed any desire to provide any such anytime soon
-(as of November 2018).
+API for this. The plan to address this seems to happn in their [PR
+8797](https://github.com/openssl/openssl/pull/8797) that aims to introduce an
+API that is very similar to the one of BoringSSL.
 
 This will eventually also lead to deployment obstacles since QUIC stacks will
 need to either base themselves on other TLS libraries, use a separate patched
