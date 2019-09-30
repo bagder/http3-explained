@@ -59,7 +59,7 @@ come from larger organizations who work on their own TLS stack in parallel,
 this is not true for everyone.
 
 The dominant open source heavyweight OpenSSL for example, does not have any
-API for this. The plan to address this seems to happn in their [PR
+API for this. The plan to address this seems to happen in their [PR
 8797](https://github.com/openssl/openssl/pull/8797) that aims to introduce an
 API that is very similar to the one of BoringSSL.
 
