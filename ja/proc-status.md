@@ -10,13 +10,17 @@ QUIC の実装は簡単ではなく、プロトコルは毎日のように変更
 
 ## サーバー
 
-Apache や nginx が QUIC をサポートしたという公式な発表はありません。
+NGINX による QUIC および HTTP/3 のサポートは現在開発中です。[NGINX 1.17 のマイルストーン](https://trac.nginx.org/nginx/milestone/nginx-1.17)に含まれており、リリースが予定されています。
+
+Apache が QUIC をサポートしたという公式な発表はありません。
 
 ## クライアント
 
 IETF バージョンの QUIC や HTTP/3 をサポートしたブラウザをリリースした大規模ベンダーはまだありません。
 
 Google Chrome には Google 版の QUIC を何年も前から組み込まれています。しかし、IETF QUIC プロトコルとの互換性はなく、使われている HTTP の実装も HTTP/3 とは異なります。
+
+Mozilla は [Rust](https://www.rust-lang.org/) による QUIC および HTTP/3 の実装として [Neqo](https://github.com/mozilla/neqo/) を開発中です。Neqo は [Necko](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Necko) (Firefox など Mozilla によるクライアントアプリケーションで使われているネットワークライブラリ)に[含まれる予定](https://github.com/mozilla/neqo/issues/10)です。
 
 ## 実装の障害
 
