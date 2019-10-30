@@ -15,12 +15,12 @@
 
 ## TLS
 
-[Using Transport Layer Security (TLS) to Secure QUIC (TLS を用いたセキュアな QUIC)](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
+[Using TLS to Secure QUIC (TLS を用いたセキュアな QUIC)](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-23)
+[Hypertext Transfer Protocol Version 3 (HTTP/3)](https://tools.ietf.org/html/draft-ietf-quic-http-23)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP over QUIC (QPACK: HTTP over QUIC のためのヘッダー圧縮方法)](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
+[QPACK: Header Compression for HTTP/3 (QPACK: HTTP/3 のためのヘッダー圧縮方法)](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
