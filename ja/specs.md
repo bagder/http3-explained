@@ -7,20 +7,20 @@
 
 ## Transport (トランスポート プロトコル)
 
-[QUIC: A UDP-Based Multiplexed and Secure Transport (QUIC: UDP をベースにした多重でセキュアなトランスポートプロトコル)](https://tools.ietf.org/html/draft-ietf-quic-transport-23)
+[QUIC: A UDP-Based Multiplexed and Secure Transport (QUIC: UDP をベースにした多重でセキュアなトランスポートプロトコル)](https://tools.ietf.org/html/draft-ietf-quic-transport-24)
 
 ## Recovery (パケットの修復)
 
-[QUIC Loss Detection and Congestion Control (QUIC のパケットロスの検知機能と輻輳制御)](https://tools.ietf.org/html/draft-ietf-quic-recovery-23)
+[QUIC Loss Detection and Congestion Control (QUIC のパケットロスの検知機能と輻輳制御)](https://tools.ietf.org/html/draft-ietf-quic-recovery-24)
 
 ## TLS
 
-[Using TLS to Secure QUIC (TLS を用いたセキュアな QUIC)](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
+[Using TLS to Secure QUIC (TLS を用いたセキュアな QUIC)](https://tools.ietf.org/html/draft-ietf-quic-tls-24)
 
 ## HTTP
 
-[Hypertext Transfer Protocol Version 3 (HTTP/3)](https://tools.ietf.org/html/draft-ietf-quic-http-23)
+[Hypertext Transfer Protocol Version 3 (HTTP/3)](https://tools.ietf.org/html/draft-ietf-quic-http-24)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP/3 (QPACK: HTTP/3 のためのヘッダー圧縮方法)](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
+[QPACK: Header Compression for HTTP/3 (QPACK: HTTP/3 のためのヘッダー圧縮方法)](https://tools.ietf.org/html/draft-ietf-quic-qpack-11)

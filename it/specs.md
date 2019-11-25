@@ -9,20 +9,20 @@ pezzi e componenti di QUIC e HTTP/3.
 
 ## Trasporto
 
-[QUIC: un trasporto "multiplexato" e sicuro basato su UDP](https://tools.ietf.org/html/draft-ietf-quic-transport-23)
+[QUIC: un trasporto "multiplexato" e sicuro basato su UDP](https://tools.ietf.org/html/draft-ietf-quic-transport-24)
 
 ## Recupero ("recovery")
 
-[Rilevamento delle perdite e controllo della congestione in QUIC](https://tools.ietf.org/html/draft-ietf-quic-recovery-23)
+[Rilevamento delle perdite e controllo della congestione in QUIC](https://tools.ietf.org/html/draft-ietf-quic-recovery-24)
 
 ## TLS
 
-[Usare TLS (sicurezza a livello di trasporto) per securizzare QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-23)
+[Usare TLS (sicurezza a livello di trasporto) per securizzare QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-24)
 
 ## HTTP
 
-[Protocollo di trasferimento di ipertesto (HTTP) via QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-23)
+[Protocollo di trasferimento di ipertesto (HTTP) via QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-24)
 
 ## QPACK
 
-[QPACK: Compressione degli Header per HTTP via QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-10)
+[QPACK: Compressione degli Header per HTTP via QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-11)
