@@ -1,11 +1,11 @@
 # HTTP/3 explained
 
-This book effort was started in March 2018. The plan is to document HTTP/3 and
-its underlying protocol: QUIC. Why, how they work, protocol details, the
+This book effort was [started](https://github.com/bagder/http3-explained/commit/c08380ca06106945c281a59d4c6afd608d3e2b93) in March 2018. The plan is to document HTTP/3 and
+its underlying protocol: [QUIC](https://quicwg.org/). Why, how they work, protocol details, the
 implementations and more.
 
-The book is entirely free and is meant to be a collaborative effort
-involving anyone and everyone who wants to help out.
+The book is entirely free and is meant to be a [collaborative effort](https://github.com/bagder/http3-explained) involving 
+anyone and everyone who wants to help out.
 
 ## Prerequisites
 
@@ -16,11 +16,10 @@ explained](https://daniel.haxx.se/http2/).
 
 ## Author
 
-This book is created and the work is started by [Daniel
-Stenberg](https://daniel.haxx.se/). Daniel is the founder and lead developer
-of [curl](https://curl.haxx.se/), the world's most widely used HTTP client
-software. Daniel has worked with and on HTTP and internet protocols for over
-two decades and is the author of [http2
+This book was started by [Daniel Stenberg](https://daniel.haxx.se/). Daniel 
+is the founder and lead developer of [curl](https://curl.haxx.se/), the world's 
+most widely used HTTP client software. Daniel has worked with and on HTTP and 
+internet protocols for over two decades and is the author of [http2
 explained](https://daniel.haxx.se/http2/).
 
 ## Home
@@ -30,12 +29,12 @@ The home page for this book is found at
 
 ## Help out
 
-If you find mistakes, omissions, errors or blatant lies in this document,
-please send us a refreshed version of the affected paragraph and we will make
-amended versions. We will give proper credits to everyone who helps out. I
-hope to make this document better over time.
+If you find mistakes, omissions, errors or blatant lies - please send us a 
+refreshed version of the affected paragraph and we will make amended versions. 
+We will give proper credits to everyone who helps out. I hope to make this d
+ocument better over time.
 
-Preferably, you submit [errors](https://github.com/bagder/http3-explained/issues)
+Preferably, submit [errors](https://github.com/bagder/http3-explained/issues)
 or [pull requests](https://github.com/bagder/http3-explained/pulls) on the book's
 github page.
 
