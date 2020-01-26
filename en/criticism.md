@@ -2,38 +2,51 @@
 
 ## UDP will never work
 
-A lot of enterprises, operators and organizations block or rate-limit UDP
-traffic outside of port 53 (used for DNS) since it has in recent days mostly
-been abused for attacks. In particular, some of the existing UDP protocols and
-popular server implementations for them have been vulnerable for amplification
-attacks where one attacker can make a huge amount of outgoing traffic to
-target innocent victims.
+To avoid common [attacks](https://en.wikipedia.org/wiki/UDP_flood_attack) many enterprises, operators and organizations block or 
+rate-limit UDP traffic, outside of port 53 (used for DNS). Existing UDP protocols 
+and popular server implementations have been vulnerable to [amplification attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack#Amplification) 
+where an attacker generates a large amount of outgoing traffic targeting innocent 
+victims.
 
-QUIC has built-in mitigation against amplification attacks by requiring that the
-initial packet must be at least 1200 bytes and by restriction in the protocol
-that says that a server must not send more than three times the size of the
-request in response without receiving a packet from the client in response.
+QUIC has built-in mitigation against amplification attacks by requiring the initial 
+packet be at least 1200 bytes and by restriction in the protocol constraining
+the server from sending a response more than three times the size of the initial 
+request without receiving a packet from the client in response.
 
 ## UDP is slow in kernels
 
-This seems to be the truth, at least today in 2018. We can of course not tell
-how this will develop and how much of this is simply the result of UDP
-transfer performance not having been in developers' focus for many years.
+UDP is often default configured in popular kernels for low latency rather then for 
+high speed data transfers. Additionally, UDP has not received the same level of analysis 
+as TCP in terms of performance optimisation. 
 
-For most clients, this "slowness" is probably never even noticeable.
+We can of course not predict how this might change going into the future with QUIC, 
+though arguably UDP being implemented in userspace theoretically makes it 'easier' 
+to affect performance changes (though there will be some who say userspace will 
+always be slower).
+
+Differences in performance can be offset by gains using QUIC itself and for most
+clients probably negligible but there will be lots of work to do for the 'untuned'
+cases. 
 
 ## QUIC takes too much CPU
 
-Similar to the "UDP is slow" remark above, this is partly because the TCP and
-TLS usage of the world has had a longer time to mature, improve and get
-hardware assistance.
+Similar to the "UDP is slow" remark above, TCP and TLS cpu usage have been analyzed 
+over a much longer period of time with the luxury of benefiting from such techniques 
+as hardware assisted optimisation.
 
-There are reasons to expect this to improve over time. The question is how much
-this extra CPU usage will hurt deployers.
+It has been observed in some instances that QUIC can utilize up to twice the amount 
+(or more) of CPU then other protocols (ex. HTTP/2). From a cost point of view it 
+maybe weakly argued that CPU is cheaper then other resources - this is little comfort 
+for operators and developers considering changing to a new network protocol that 
+has unknown or different performance characteristics.
+
+In the short term, mitigations such as choosing a different cipher suite (ex. 
+[CHA-CHA](https://blog.cloudflare.com/it-takes-two-to-chacha-poly/)) or optimising 
+UDP network configuration may help. 
 
 ## This is just Google
 
-No it is not. Google brought the initial spec to the IETF after having proved,
+No it is not. [Google](https://blog.chromium.org/2013/06/experimenting-with-quic.html) brought the initial spec to the IETF after having proved,
 on a large Internet-wide scale, that deploying this style of protocol over UDP
 actually works and performs well.
 
@@ -48,7 +61,7 @@ Facebook and Apple.
 ## This is too small of an improvement
 
 That is not really a critique but an opinion. Maybe it is, and maybe it is too
-little of an improvement so close in time since HTTP/2 was shipped.
+little of an improvement so soon after HTTP/2 shipped.
 
 HTTP/3 is likely to perform much better in packet loss-ridden networks, it
 offers faster handshakes so it will improve latency both as perceived and
