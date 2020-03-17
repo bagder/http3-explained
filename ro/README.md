@@ -37,7 +37,7 @@ ajută. Sper să pot îmbunătăți cu timpul acest document.
 Este de preferat să trimiteți 
 [problemele](https://github.com/bagder/http3-explained/issues)
 sau [pull requests](https://github.com/bagder/http3-explained/pulls) pe pagina
-de github a cărții.
+de GitHub a cărții.
 
 ## Licență
 
