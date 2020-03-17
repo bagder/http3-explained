@@ -76,7 +76,7 @@ HTTP/2에 대해서 더 알고 싶다면 [http2 explained](https://daniel.haxx.s
 이 문서에서 실수, 누락, 오류, 속 보이는 거짓말 등을 발견한다면 해당 문단의 수정 버전과 함께 보내주면
 수정하고 도움 준 사람에게 적절한 크레딧을 줄 예정이다. 이 문서가 점점 나아지기를 기대한다.
 
-가능하면 이 책의 github 페이지에
+가능하면 이 책의 GitHub 페이지에
 [이슈를 생성](https://github.com/bagder/http3-explained/issues)하거나
 [풀 리퀘스트](https://github.com/bagder/http3-explained/pulls)를 제출해주기 바란다.
 
