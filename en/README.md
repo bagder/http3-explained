@@ -37,7 +37,7 @@ hope to make this document better over time.
 
 Preferably, you submit [errors](https://github.com/bagder/http3-explained/issues)
 or [pull requests](https://github.com/bagder/http3-explained/pulls) on the book's
-github page.
+GitHub page.
 
 ## License
 
