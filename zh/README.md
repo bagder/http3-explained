@@ -22,7 +22,7 @@
 
 如果您发现了本书中的任何纰漏、遗漏、错误或公然的谎言，欢迎您将受影响章节的修正版本传给我们，我们将酌情修改。我们将为提供帮助的每个人给予适当的表彰。我们希望随着时间推移，这份文档越来越好。
 
-提交[问题](https://github.com/bagder/http3-explained/issues)或者[拉取请求](https://github.com/bagder/http3-explained/pulls)到本书的Github页面是最好的反馈方式。
+提交[问题](https://github.com/bagder/http3-explained/issues)或者[拉取请求](https://github.com/bagder/http3-explained/pulls)到本书的GitHub页面是最好的反馈方式。
 
 ## 许可协议
 
