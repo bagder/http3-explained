@@ -36,7 +36,7 @@ appropriés à tous ceux qui aident. J'espère améliorer ce document avec le te
 
 De préférence, vous soumettez [des
 erreurs](https://github.com/bagder/http3-explained/issues) ou des [demandes de
-tirage](https://github.com/bagder/http3-explained/pulls) sur la page github du
+tirage](https://github.com/bagder/http3-explained/pulls) sur la page GitHub du
 livre.
 
 ## Licence
