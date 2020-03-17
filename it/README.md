@@ -36,7 +36,7 @@ Spero di continuare a migliorare questo libro nel corso del tempo.
 
 Preferibilmente, segnalare [errori](https://github.com/bagder/http3-explained/issues)
 o [richieste pull](https://github.com/bagder/http3-explained/pulls) sulla pagina
-github del progetto.
+GitHub del progetto.
 
 ## Licenze
 
