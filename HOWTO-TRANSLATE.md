@@ -20,8 +20,8 @@ over time. Keep that in mind when working on the translation.
 
 All translated contents live in sub-directories named after the specific
 language. "en" for English, "fr" for French etc. If you make a new
-translation, create a new directory and add your language to LANGS.md in the
-root dir.
+translation, create a new directory and add your languages' sections to
+SUMMARY.md in the root dir.
 
 ## Keeping it up to date
 
