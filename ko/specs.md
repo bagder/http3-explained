@@ -10,23 +10,23 @@ components of QUIC and HTTP/3.
 
 ## Transport
 
-[QUIC: A UDP-Based Multiplexed and Secure Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-24)
+[QUIC: A UDP-Based Multiplexed and Secure Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-27)
 
 ## Recovery
 
-[QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-24)
+[QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery-27)
 
 ## TLS
 
-[Using Transport Layer Security (TLS) to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-24)
+[Using Transport Layer Security (TLS) to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-27)
 
 ## HTTP
 
-[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-24)
+[Hypertext Transfer Protocol (HTTP) over QUIC](https://tools.ietf.org/html/draft-ietf-quic-http-27)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-11)
+[QPACK: Header Compression for HTTP over QUIC](https://tools.ietf.org/html/draft-ietf-quic-qpack-14)
 -->
 
 # 명세
@@ -39,20 +39,20 @@ components of QUIC and HTTP/3.
 
 ## 전송
 
-[QUIC: UDP에 기반을 둔 멀티플랙싱 보안 전송](https://tools.ietf.org/html/draft-ietf-quic-transport-24)
+[QUIC: UDP에 기반을 둔 멀티플랙싱 보안 전송](https://tools.ietf.org/html/draft-ietf-quic-transport-27)
 
 ## 복구
 
-[QUIC 손실 탐지와 혼잡 제어](https://tools.ietf.org/html/draft-ietf-quic-recovery-24)
+[QUIC 손실 탐지와 혼잡 제어](https://tools.ietf.org/html/draft-ietf-quic-recovery-27)
 
 ## TLS
 
-[Transport Layer Security(TLS)를 사용해서 QUIC 안전하게 하기](https://tools.ietf.org/html/draft-ietf-quic-tls-24)
+[Transport Layer Security(TLS)를 사용해서 QUIC 안전하게 하기](https://tools.ietf.org/html/draft-ietf-quic-tls-27)
 
 ## HTTP
 
-[QUIC을 통한 Hypertext Transfer Protocol(HTTP)](https://tools.ietf.org/html/draft-ietf-quic-http-24)
+[QUIC을 통한 Hypertext Transfer Protocol(HTTP)](https://tools.ietf.org/html/draft-ietf-quic-http-27)
 
 ## QPACK
 
-[QPACK: QUIC을 통한 HTTP의 헤더 압축](https://tools.ietf.org/html/draft-ietf-quic-qpack-11)
+[QPACK: QUIC을 통한 HTTP의 헤더 압축](https://tools.ietf.org/html/draft-ietf-quic-qpack-14)
