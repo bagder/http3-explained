@@ -10,7 +10,7 @@ Um ihren Pflichten gerecht zu werden, müssen diese Boxen Networking und jene Pr
 
 Auch wenn sie wie Klebstoff das Internet zusammenhalten, halten sie oft nicht mit der neuesten Technologie mit. Die Mitte eines Netzwerks verändert sich nicht so schnell wie die Enden, wie die Clients und Server dieser Welt. 
 
-Die Netzwerkprotokolle, die diese Boxen inspizieren wollen und kennen, haben dann folgendes Problem: die Boxen wurden vor einiger Zeit ausgeliefert, als die Protokolle gewissen Features hatten. Neue Features oder Veränderungen in der Verhaltensweise riskieren, dass Boxen diese als schlecht oder illegal interpretieren. Solcher Traffic könnte fallen gelassen oder verzögert werden - bis hin zu einem Ausmaß, dass User diese Features nicht nutzen wollen.
+Die Netzwerkprotokolle, die diese Boxen inspizieren wollen und kennen, haben dann folgendes Problem: die Boxen wurden vor einiger Zeit ausgeliefert, als die Protokolle gewisse Features hatten. Neue Features oder Veränderungen in der Verhaltensweise riskieren, dass Boxen diese als schlecht oder illegal interpretieren. Solcher Traffic könnte fallen gelassen oder verzögert werden - bis hin zu einem Ausmaß, dass User diese Features nicht nutzen wollen.
 
 Das wird "Protokoll-Ossifikation" genannt.
 
