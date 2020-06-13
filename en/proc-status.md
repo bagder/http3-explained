@@ -1,25 +1,23 @@
 # Status
 
 The QUIC working group has worked fiercely since late 2016 on specifying the
-protocols and the plan is now to have it done by July 2019.
+protocols and is approaching final stages at the time of writing (June 2020).
 
-As of November 2018, there still has not been any larger interoperability
-tests with HTTP/3 - only with the existing two implementations and none of
-them are done by a browser or a popular open server software.
+During 2019 and 2020 there has been an increasing number of (interoperability
+tests with HTTP/3)[https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg/edit#gid=1268516408]
+and CDNs and Browsers have started launching initial support - though often
+behind flags.
 
-There are fifteen or so different [QUIC implementations
-listed](https://github.com/curl/curl/wiki/QUIC-implementation) in the QUIC
-working groups' wiki pages, but far from all of them can interoperate on the
-latest spec draft revisions.
+There are a number different [QUIC implementations
+listed](https://github.com/quicwg/base-drafts/wiki/Implementations)
+in the QUIC working groups' wiki pages.
 
 Implementing QUIC is not easy and the protocol has kept moving and changing
 even up to this date.
 
 ## Servers
 
-NGINX support for QUIC and HTTP/3 is under development.
-It is planned to be released during
-[NGINX 1.17 development cycle](https://trac.nginx.org/nginx/milestone/nginx-1.17).
+NGINX support for QUIC and HTTP/3 is under development and a [preview version has been announced](https://www.nginx.com/blog/introducing-technology-preview-nginx-support-for-quic-http-3/).
 
 There have been no public statement in terms of support for QUIC from Apache.
 
@@ -29,15 +27,7 @@ None of the larger browser vendors have yet shipped any version, at any state,
 that can run the IETF version of QUIC or HTTP/3.
 
 Google Chrome has shipped with a working implementation of Google's own QUIC
-version since many years, but that does not interoperate with the IETF
-QUIC protocol and its HTTP implementation is different than HTTP/3.
-
-Mozilla is developing [Neqo](https://github.com/mozilla/neqo/) -
-a QUIC and HTTP/3 implementation written in [Rust](https://www.rust-lang.org/).
-Neqo is [planned to be integrated](https://github.com/mozilla/neqo/issues/10)
-in [Necko](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Necko)
-(which is a network library used in many Mozilla-based client applications -
-including Firefox).
+version since many years and has recently started supporting the IETF version behind a flag. Firefox similarly supports this behind a flag.
 
 curl shipped the first experimental HTTP/3 support (draft-22) in the 7.66.0
 release on September 11, 2019. curl uses either the Quiche library from
