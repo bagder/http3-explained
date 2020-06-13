@@ -16,7 +16,7 @@ request in response without receiving a packet from the client in response.
 
 ## UDP is slow in kernels
 
-This seems to be the truth, at least today in 2018. We can of course not tell
+This seems to be the truth, at least initially. We can of course not tell
 how this will develop and how much of this is simply the result of UDP
 transfer performance not having been in developers' focus for many years.
 
@@ -28,8 +28,9 @@ Similar to the "UDP is slow" remark above, this is partly because the TCP and
 TLS usage of the world has had a longer time to mature, improve and get
 hardware assistance.
 
-There are reasons to expect this to improve over time. The question is how much
-this extra CPU usage will hurt deployers.
+There are reasons to expect this to improve over time, and already [we are seeing
+some improvements in this space](https://www.fastly.com/blog/measuring-quic-vs-tcp-computational-efficiency).
+The question is how much this extra CPU usage will hurt deployers.
 
 ## This is just Google
 

@@ -1,16 +1,21 @@
 # HTTP/3 Prioritization
 
-One of the HTTP/3 stream frames is called `PRIORITY`. It is used to set
-priority and dependency on a stream in a way similar to how it works in
-HTTP/2.
+As mentioned previously, priorisation between streams has been removed from the
+main HTTP/3 specification to be worked on separately.
 
-The frame can set a specific stream to depend on another specific stream and
-it can set a "weight" on a given stream.
+This was due learnings from the HTTP/2 prioritisation model and it's
+implementation (or lack there of) in the real world.
 
-A dependent stream should only be allocated resources if either all of the
-streams that it depends on are closed or it is not possible to make progress
-on them.
+A [simpler prioritisation model than HTTP/2 has been proposed](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
+using HTTP header fields with a limited number of priority settings. This is a
+key change from the Dependency and Weight flags in the HTTP/2 Header frames and
+allows better understanding at the application layer.
 
-A stream weight is value between 1 and 256 and it is specified that streams
-with the same parent **should** be allocated resources proportionally based on
-their weight.
+Reprioritisation, and whether to support this, is still being discussed. HTTP/2
+had Prioritisation frames to handle this but the true independent streams in QUIC
+and HTTP/3 makes this more complicated so the benefits versus the complexity are
+still being debated.
+
+When (or if!) a better prioritisation model is agreed for HTTP/3 it is hoped to
+be able to backport this to HTTP/2 too, to address the complexity and
+implementation concerns there.

@@ -64,4 +64,7 @@ Instead it relies on receiving priority information from the application that
 uses QUIC. Protocols that use QUIC are able to define any prioritization
 scheme that suits their application semantics.
 
-When HTTP/3 is used over QUIC, the prioritization is done in the HTTP layer.
+There have been criticisms of the HTTP/2 prioritisation model, and concerns it
+is overly complex and not used and implemented by many HTTP/2 servers. For now
+prioritisation in HTTP/3 has been removed from the main HTTP/3 specification
+and is being worked on as a [separate specifiction](https://tools.ietf.org/html/draft-ietf-httpbis-priority).
