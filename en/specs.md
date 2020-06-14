@@ -17,7 +17,7 @@ components of QUIC and HTTP/3.
 
 ## TLS
 
-[Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls-27)
+[Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls)
 
 ## HTTP
 
