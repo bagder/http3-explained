@@ -67,4 +67,4 @@ scheme that suits their application semantics.
 There have been criticisms of the HTTP/2 prioritisation model, and concerns it
 is overly complex and not used and implemented by many HTTP/2 servers. For now
 prioritisation in HTTP/3 has been removed from the main HTTP/3 specification
-and is being worked on as a [separate specifiction](https://tools.ietf.org/html/draft-ietf-httpbis-priority).
+and is being worked on as a [separate specification](https://tools.ietf.org/html/draft-ietf-httpbis-priority).
