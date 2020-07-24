@@ -1,16 +1,18 @@
 # 現在の状況
 
-QUIC ワーキンググループは2016年後半からプロトコルの策定のために活発に活動し、現在2019年7月までにリリースする予定で動いています。
+QUIC ワーキンググループは2016年後半からプロトコルの策定のために活発に活動し、現在(2020年6月)はリリースのための最終段階に近づいています。
 
 2018年の11月現在では、いまだ HTTP/3 の大規模な相互運用テストは実施されていません。2つの実装が存在し、いずれについても、ブラウザや主要なサーバーソフトウェアにも実装が行われていません。
 
-QUIC ワーキンググループの wiki ページには15個ほどの [QUIC 実装リスト](https://github.com/curl/curl/wiki/QUIC-implementation) が掲載されていますが、いずれの実装も最新版の仕様との互換性はまだありません。
+2019年から2020年にかけて [HTTP/3 の相互運用性テスト](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg)の数は増え、CDNとブラウザは、しばしばオプションのフラグが必要ですが、初期サポートを開始し始めてました。
+
+QUIC ワーキンググループの wiki ページには多くの [QUIC 実装リスト](https://github.com/curl/curl/wiki/QUIC-implementation) が掲載されています。
 
 QUIC の実装は簡単ではなく、プロトコルは毎日のように変更され続けています。
 
 ## サーバー
 
-NGINX による QUIC および HTTP/3 のサポートは現在開発中です。[NGINX 1.17 のマイルストーン](https://trac.nginx.org/nginx/milestone/nginx-1.17)に含まれており、リリースが予定されています。
+NGINX による QUIC および HTTP/3 のサポートは現在開発中で、[プレビュー版はすでに告知されています](https://www.nginx.com/blog/introducing-technology-preview-nginx-support-for-quic-http-3/)。
 
 Apache が QUIC をサポートしたという公式な発表はありません。
 
@@ -18,9 +20,7 @@ Apache が QUIC をサポートしたという公式な発表はありません�
 
 IETF バージョンの QUIC や HTTP/3 をサポートしたブラウザをリリースした大規模ベンダーはまだありません。
 
-Google Chrome には Google 版の QUIC を何年も前から組み込まれています。しかし、IETF QUIC プロトコルとの互換性はなく、使われている HTTP の実装も HTTP/3 とは異なります。
-
-Mozilla は [Rust](https://www.rust-lang.org/) による QUIC および HTTP/3 の実装として [Neqo](https://github.com/mozilla/neqo/) を開発中です。Neqo は [Necko](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Necko) (Firefox など Mozilla によるクライアントアプリケーションで使われているネットワークライブラリ)に[含まれる予定](https://github.com/mozilla/neqo/issues/10)です。
+Google Chrome には Google 版の QUIC が何年も前から組み込まれており、最近はオプションで IETF 版のサポートを開始しました。Firefox も同じようにオプションでサポートを開始しました。
 
 ## 実装の障害
 
