@@ -3,8 +3,8 @@
 The QUIC working group has worked fiercely since late 2016 on specifying the
 protocols and is approaching final stages at the time of writing (June 2020).
 
-During 2019 and 2020 there has been an increasing number of (interoperability
-tests with HTTP/3)[https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg/edit#gid=1268516408]
+During 2019 and 2020 there has been an increasing number of [interoperability
+tests with HTTP/3](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg)
 and CDNs and Browsers have started launching initial support - though often
 behind flags.
 
