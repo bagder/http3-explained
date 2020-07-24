@@ -22,6 +22,8 @@ Google Chrome には Google 版の QUIC を何年も前から組み込まれて�
 
 Mozilla は [Rust](https://www.rust-lang.org/) による QUIC および HTTP/3 の実装として [Neqo](https://github.com/mozilla/neqo/) を開発中です。Neqo は [Necko](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Necko) (Firefox など Mozilla によるクライアントアプリケーションで使われているネットワークライブラリ)に[含まれる予定](https://github.com/mozilla/neqo/issues/10)です。
 
+curl は最初の実験的な HTTP/3 サポート (draft-22) を2019年9月11日リリースのバージョン 7.66.0 で対応しました。curl は Cloudflare の Quiche ライブラリ と ngtcp2 ファミリのライブラリを用いてこれを成し遂げました。
+
 ## 実装の障害
 
 QUIC は TLS 1.3 を暗号化とセキュリティのために採用することにしました。これは車輪の再発明を避け、信頼できる既存のプロトコルを利用するためです。しかしながら、これと並行して、QUIC での TLS の利用を本当に効率化することにしました。QUIC では "TLS messages" のみを利用し "TLS records" は利用しないことにしました。
