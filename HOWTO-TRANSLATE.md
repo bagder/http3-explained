@@ -47,6 +47,9 @@ and more.
 - fr(Français)
   - [quantumsheep](https://github.com/quantumsheep)
 
+- zh-TW(繁體中文)
+  - [Wei Jhih Lian](https://github.com/ByronLian)
+
 ## Commit messages
 
 When committing changes, we use the following commit message format
