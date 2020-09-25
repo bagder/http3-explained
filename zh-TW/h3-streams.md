@@ -6,7 +6,7 @@ HTTP/3 是為 QUIC 設計的，因此它能利用 QUIC 的好處，而 HTTP/2 �
 
 ## HTTP/3 frames
 
-HTTP/3 代表著建立 QUIC 串流，並將一系列 frame 發送給對方。 HTTP/3 中的數據 frame 種類不多且固定（截至2018年12月18日有九種）。其中最重要的 frame 是：
+HTTP/3 代表著建立 QUIC 串流，並將一系列 frame 發送給對方。 HTTP/3 中的數據 frame 種類不多且固定（ 截至 2018 年 12 月 18 日有九種）。其中最重要的 frame 是：
 
 - HEADERS, 發送壓縮的 HTTP 標頭
 - DATA, 發送二進制資料內容

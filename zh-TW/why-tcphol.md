@@ -1,7 +1,7 @@
-## TCP 隊頭阻塞 (head of line blocking)
+## TCP 隊頭阻塞（ head of line blocking ）
 
 HTTP/2 是基於 TCP 實作的。對比早期的 HTTP 版本，HTTP/2 使用的 TCP 連接數少了很多。
-TCP 是一個可靠的通訊協定，基本上，你可以將它視為在兩台機器間建立的一個虛擬鏈，由其中一端放置於網路上的內容，最終總會以相同的順序出現在另一端。（或者遭遇連接中斷）
+TCP 是一個可靠的通訊協定，基本上，你可以將它視為在兩台機器間建立的一個虛擬鏈，由其中一端放置於網路上的內容，最終總會以相同的順序出現在另一端。（ 或者遭遇連接中斷 ）
 
 ![a TCP chain between two computers](../images/tcp-chain.png)
 
@@ -14,9 +14,9 @@ TCP 是一個可靠的通訊協定，基本上，你可以將它視為在兩台�
 
 ![the chain showing links in different colors](../images/tcp-chain-streams.png)
 
-這種單一封包造成的阻塞，就是所謂 TCP 上的對頭阻塞（head of line blocking）!
+這種單一封包造成的阻塞，就是所謂 TCP 上的對頭阻塞（ head of line blocking ）!
 
-隨著封包遺失機率的增加，HTTP/2 的表現將越來越差。在2%的封包丟失率下（一個很差的網路環境），測試結果顯示 HTTP/1 用戶的性能更好，因為 HTTP/1 一般有六個TCP連接能夠分配處理丟失的封包，就算其中一個連接阻塞了，其他連接仍然可以繼續進行傳輸。
+隨著封包遺失機率的增加，HTTP/2 的表現將越來越差。在2%的封包丟失率下（ 一個很差的網路環境 ），測試結果顯示 HTTP/1 用戶的性能更好，因為 HTTP/1 一般有六個TCP連接能夠分配處理丟失的封包，就算其中一個連接阻塞了，其他連接仍然可以繼續進行傳輸。
 
 即使有可能，使用TCP修復此問題也並非想像中容易。
 
