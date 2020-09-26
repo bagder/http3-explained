@@ -1,6 +1,6 @@
-# Alt-svc (alternate service)
+# Alt-svc ( alternate service )
 
-替代服務（alternative service, Alt-svc:）標頭和它相對應的 `ALT-SVC` HTTP/2 frame 並不是特別為 QUIC 和 HTTP/3 所設計的。
+替代服務（ alternative service, Alt-svc: ）標頭和它相對應的 `ALT-SVC` HTTP/2 frame 並不是特別為 QUIC 和 HTTP/3 所設計的。
 它是為了讓伺服器端能告訴客戶端 *"看，我在這個主機的這個端口用此協定提供相同的服務"* 。
 詳見[RFC 7838](https://tools.ietf.org/html/rfc7838)。
 
