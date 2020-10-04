@@ -1,4 +1,5 @@
 <div dir="rtl">
+
 ## TCP یا UDP
 
 اگر نتوانیم مشکلِ مسدودکننده‌ سرِ صف را در TCP حل کنیم، در اصول نظری باید قادر به تولید یک لایه‌ انتقال جدید در کنار UDP و TCP در پُشته‌ی شبکه باشیم. و یا حتی از [SCTP](https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol) استفاده کنیم که یک پروتکل انتقالِ استاندارد شده توسط IEEE در [RFC 4960](https://tools.ietf.org/html/rfc4960) و دارای چندی از مشخصات مورد نیاز است.
