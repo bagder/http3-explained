@@ -8,7 +8,7 @@ tests with HTTP/3](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0
 and CDNs and Browsers have started launching initial support - though often
 behind flags.
 
-There are a number different [QUIC implementations
+There are a number of different [QUIC implementations
 listed](https://github.com/quicwg/base-drafts/wiki/Implementations)
 in the QUIC working groups' wiki pages.
 
