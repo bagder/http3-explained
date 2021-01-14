@@ -3,7 +3,7 @@
 As mentioned previously, priorisation between streams has been removed from the
 main HTTP/3 specification to be worked on separately.
 
-This was due learnings from the HTTP/2 prioritisation model and it's
+This was due to learnings from the HTTP/2 prioritisation model and its
 implementation (or lack there of) in the real world.
 
 A [simpler prioritisation model than HTTP/2 has been proposed](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
