@@ -1,11 +1,11 @@
 ## 连接中的多个数据流
 
-类似SCTP、SSH和HTTP/2，QUIC在同一物理连接上可以有多个独立的逻辑数据流。这些数据流并行在同一个连接上传输，不影响其他流。
+类似 SCTP、SSH 和 HTTP/2，QUIC 在同一物理连接上可以有多个独立的逻辑数据流。这些数据流并行在同一个连接上传输，不影响其他流。
 
-连接在两个端点之间经过类似TCP连接的方式协商建立。QUIC连接基于UDP端口和IP地址建立，而一旦建立，连接通过其“连接ID”（connection ID）关联。
+连接在两个端点之间经过类似 TCP 连接的方式协商建立。QUIC 连接基于 UDP 端口和 IP 地址建立，而一旦建立，连接通过其“连接 ID”（connection ID）关联。
 
 在已建立的连接上，双方均可以建立传输给对方的数据流。单一数据流的传输是可靠、有序的，但不同的数据流间可能无序传送。
 
-QUIC可对连接和数据流分别进行流量控制（flow control）。
+QUIC 可对连接和数据流分别进行流量控制（flow control）。
 
-进一步细节参见[连接](quic-connections.md)和[数据流](quic-streams.md)。
+进一步细节参见 [连接](quic-connections.md) 和 [数据流](quic-streams.md)。
