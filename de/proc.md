@@ -1,6 +1,6 @@
 # Prozess
 
-Das ursprüngliche QUIC Protokoll wurde von Jim Roskind bei Google entworfen, im Jahr 2012 erstmals implementiert und der Welt 2013 vorgestellt, als Google's Experiment erweitert wurde.
+Das ursprüngliche QUIC Protokoll wurde von Jim Roskind bei Google entworfen, im Jahr 2012 erstmals implementiert und der Welt 2013 vorgestellt, als Googles Experiment erweitert wurde.
 
 Damals galt QUIC noch als Akronym für "Quick UDP Internet Connections", aber das wurde seitdem eingestellt.
 
