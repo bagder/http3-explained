@@ -1,7 +1,7 @@
 # HTTP/3 spiegato
 
 Lo slancio per scrivere questo libro è partito in Marzo 2018. Il piano consiste
-nel documentare HTTP/3 e il protocollo sottostante, ossia QUIC. Perchè sono
+nel documentare HTTP/3 e il protocollo sottostante, ossia QUIC. Perché sono
 stati concepiti, come funzionano, dettagli sul protocollo, implementazioni, etc.
 
 Questo libro è inteso per essere libero, gratuito; consta dello sforzo condiviso

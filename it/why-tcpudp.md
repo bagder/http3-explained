@@ -15,7 +15,7 @@ firewalls, NATs, routers e altri dispositivi di rete che si iterpongono fra l'ut
 e il server sono semplicemente troppi, e sono a conoscenza dei soli UDP o TCP.
 Introdurre un altro protocollo di trasporto fa si che un determinato tasso di
 connessioni N% fallisca, in quanto bloccato dalle suddette middle-boxes che
-identificherebbero tale proto come malevolo, malformato, nè TCP nè UDP. Un tasso di
+identificherebbero tale proto come malevolo, malformato, né TCP né UDP. Un tasso di
 fallimento N% in ambito internet rappresenta spesso una buona ragione per non
 intraprendere alcuno sforzo.
 
@@ -26,7 +26,7 @@ In anni recenti, abbiamo visto features di TCP diventare standard IETF senza che
 sia stata corrispondenza -ad anni di distanza- con il tasso di distribuzione degli
 stessi, per via della mancanza di utilizzo o di supporto universale.
 
-## Perchè no, SCTP-over-UDP
+## Perché no, SCTP-over-UDP
 
 SCTP è un protocollo di trasporto di flussi affidabile, ed esistono persino alcune
 implementazioni in ambito WebRTC che utilizzano SCTP via UDP.

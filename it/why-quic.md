@@ -1,4 +1,4 @@
-# Perchè QUIC
+# Perché QUIC
 
 QUIC è un nome, non un acronimo. Si pronuncia esattamente come la parola
 Inglese "quick" (veloce).
@@ -13,6 +13,6 @@ la distribuzione dei contenuti sempre più veloce agli occhi degli utenti è
 probabilmente la ragione principale ad aver stimolato la creazione di questo
 nuovo protocollo di trasporto.
 
-Perchè creare un nuovo protocollo di trasporto e perchè mai basarlo su UDP ?
+Perché creare un nuovo protocollo di trasporto e perché mai basarlo su UDP ?
 
 ![Logo di QUIC](../images/QUIC.png)

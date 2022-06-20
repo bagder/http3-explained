@@ -32,7 +32,7 @@ ottengano risultati di gran lunga migliori, stimando che un tasso di perdita
 del 2% distribuito su sei connessioni abbia meno influenza che su una sola,
 permettendo così alle rimanenti connessioni di proseguire senza intralcio.
 
-Porre rimedio a tale empasse non sarà semplice -se non impossibile- finchè si
+Porre rimedio a tale empasse non sarà semplice -se non impossibile- finché si
 continuerà ad usare il TCP..
 
 ## L'impiego di flussi indipendenti evita il blocco
