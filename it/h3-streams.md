@@ -36,7 +36,7 @@ frame HEADERS, una serie di DATA ed eventualmente un frame HEADERS di coda.
 
 I frames HEADERS contengono le intestazioni HTTP compresse con l'algoritmo
 QPACK. QPACK risulta simile al vecchio HPACK utilizzato in HTTP/2 ([RFC 7541
-](https://httpwg.org/specs/rfc7541.html)), benchè modificato per consegnare
+](https://httpwg.org/specs/rfc7541.html)), benché modificato per consegnare
 i differenti flussi in modalità "disordinata" (out-of-order).
 
 QPACK si avvale di due streams QUIC unidirezionali fra i due estremi della

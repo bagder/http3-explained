@@ -31,7 +31,7 @@ Questa caratteristica è stata messa in discussione, criticata e rigirata sin
 dal primo momento, sia durante lo sviluppo di HTTP/2 sia dopo la sua
 pubblicazione e impiego su larga scala, tentando di renderla utilizzabile.
 
-Un invio in "push" non è mai gratis, benchè utilizzi solo metà del tempo di
-round-trip, occupa banda passante. E' spesso difficile -impossibile- dal
+Un invio in "push" non è mai gratis, benché utilizzi solo metà del tempo di
+round-trip, occupa banda passante. È spesso difficile -impossibile- dal
 punto di vista del server stabilire con certezza se una determinata risorsa
 possa necessitare (beneficiare) del "push" o meno.

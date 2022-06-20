@@ -1,7 +1,7 @@
 # Prioritizzazione in HTTP/3
 
 Uno dei frame facenti parte di ogni flusso HTTP/3 è il campo `PRIORITY`.
-E' usato per segnalare la priorità e l'ordine di dipendenza fra flussi
+È usato per segnalare la priorità e l'ordine di dipendenza fra flussi
 diversi molto similmente a quanto gia avveniva in HTTP/2.
 
 Il frame può essere impostato in modo che un flusso dipenda da un altro e

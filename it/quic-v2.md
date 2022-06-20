@@ -36,7 +36,7 @@ il multipath, così come il TCP più moderno.
 
 ## Dati inaffidabili
 
-E' stato proposto di offrire streams "non-affidabili" come opzione, il che
+È stato proposto di offrire streams "non-affidabili" come opzione, il che
 permetterebbe a QUIC di rimpiazzare qualsiasi applicazione che utilizzi UDP.
 
 ## Adattamenti che non riguardano HTTP

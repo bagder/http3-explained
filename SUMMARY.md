@@ -155,7 +155,7 @@
 
 
 * [Italiano](it/README.md)
-    * [Perchè QUIC](it/why-quic.md)
+    * [Perché QUIC](it/why-quic.md)
         * [Ricordi HTTP/2 ?](it/why-h2.md)
         * [Blocco ad inizio linea, "TCP head of line blocking"](it/why-tcphol.md)
         * [TCP o UDP](it/why-tcpudp.md)
