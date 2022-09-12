@@ -2,11 +2,11 @@
 
 Die Arbeit an diesem Buch wurde im März 2018 gestartet. Es dient der Dokumentation von HTTP/3 und dessen zugrundeliegendem Protokoll: QUIC. Warum, wie sie funktionieren, Protokolldetails, die Implementierung und mehr.
 
-Dieses Buch ist zur Gänze frei zugänglich und wird als kollaborative Angstrengung von jedem getragen, der aushelfen will. 
+Dieses Buch ist zur Gänze frei zugänglich und wird als kollaborative Anstrengung von jedem getragen, der aushelfen will. 
 
 ## Voraussetzungen
 
-Einer Leserin oder Leser wird ein Grundverständnis von TCP/IP, den Grundlagen von HTTP und dem Web vorausgesetzt. Für weitere Einblicke und Details über HTTP/2 empfehlen wir: [http2 explained](https://daniel.haxx.se/http2/).
+Einer Leserin oder einem Leser wird ein Grundverständnis von TCP/IP, den Grundlagen von HTTP und dem Web vorausgesetzt. Für weitere Einblicke und Details über HTTP/2 empfehlen wir: [http2 explained](https://daniel.haxx.se/http2/).
 
 ## Autor
 
