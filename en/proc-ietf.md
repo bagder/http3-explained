@@ -21,7 +21,8 @@ and ability to deliver QUIC version 1 on time, it would focus on delivering
 HTTP, leaving non-HTTP transports to later work.
 
 In March 2018 when we started working on this book, the plan was to ship the
-final specification for QUIC version 1 in November 2018 but this has been postponed a number of times and, at the time of writing (June 2020), is entering final stages.
+final specification for QUIC version 1 in November 2018 but this has been postponed a number of times.
+The IETF QUIC protocol was standardized and published in May 2021 as [RFC 9000](https://www.rfc-editor.org/rfc/rfc9000.html).
 
 While the work on IETF-QUIC has progressed, the Google team has incorporated
 details from the IETF version and has started to slowly progress their version
