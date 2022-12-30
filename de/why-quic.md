@@ -1,4 +1,4 @@
-# Warum QUIC
+# Warum QUIC?
 
 QUIC ist ein Name, kein Akronym. Es wird genauso wie das englische Wort "quick" ausgesprochen. 
 
