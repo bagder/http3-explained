@@ -39,6 +39,7 @@
     * [The specifications](en/specs.md)
     * [QUIC v2](en/quic-v2.md)
 
+
 * [Español](es/README.md)
     * [Por qué QUIC](es/why-quic.md)
         * [¿Te acuerdas de HTTP/2?](es/why-h2.md)
@@ -80,6 +81,7 @@
     * [Especificaciones](es/specs.md)
     * [QUIC v2](es/quic-v2.md)
 
+
 * [Deutsch](de/README.md)
     * [Warum QUIC](de/why-quic.md)
         * [Erinnerst du dich an HTTP/2?](de/why-h2.md)
@@ -110,6 +112,7 @@
         * [Spin Bit](de/quic-spinbit.md)
         * [User-space](de/quic-userspace.md)
         * [API](de/quic-api.md)
+
 
 * [فارسی](fa/README.md)
     * [چرا QUIC](fa/why-quic.md)
@@ -405,6 +408,7 @@
     * [技术标准](zh/specs.md)
     * [QUIC v2](zh/quic-v2.md)
 
+
 * [繁體中文](zh-TW/README.md)
     * [導言](zh-TW/README.md)
     * [為什麼是QUIC](zh-TW/why-quic.md)
@@ -446,3 +450,45 @@
     * [常見的錯誤批評](zh-TW/criticism.md)
     * [技術標準](zh-TW/specs.md)
     * [QUIC v2](zh-TW/quic-v2.md)
+
+
+* [Русский](ru/README.md)
+    * [Почему QUIC?](ru/why-quic.md)
+        * [Помните HTTP/2?](ru/why-h2.md)
+        * [TCP и head-of-line блокировка](ru/why-tcphol.md)
+        * [TCP или UDP?](ru/why-tcpudp.md)
+        * [Оссификация](ru/why-ossification.md)
+        * [Безопасность](ru/why-secure.md)
+        * [Уменьшенная задержка](ru/why-latency.md)
+    * [Процесс](ru/proc.md)
+        * [IETF](ru/proc-ietf.md)
+        * [Опыт с HTTP/2](ru/proc-h2.md)
+        * [Статус](ru/proc-status.md)
+    * [Особенности](ru/the-protocol.md)
+        * [Передача по UDP](ru/feature-udp.md)
+        * [Надёжность](ru/feature-reliable.md)
+        * [Мультиплексирование](ru/feature-streams.md)
+        * [Порядок доставки](ru/feature-inorder.md)
+        * [Быстрое рукопожатие](ru/feature-handshakes.md)
+        * [TLS 1.3](ru/feature-tls.md)
+        * [Уровень приложения](ru/feature-trans-app.md)
+        * [HTTP/3 поверх QUIC](ru/feature-http.md)
+        * [Не-HTTP поверх QUIC](ru/feature-nonhttp.md)
+    * [Как QUIC работает](ru/quic.md)
+        * [Соединения](ru/quic-connections.md)
+        * [TLS](ru/quic-tls.md)
+        * [Потоки](ru/quic-streams.md)
+        * [0-RTT](ru/quic-0rtt.md)
+        * [Бит вращения](ru/quic-spinbit.md)
+        * [Пользовательское пространство](ru/quic-userspace.md)
+        * [API](ru/quic-api.md)
+    * [HTTP/3](ru/h3.md)
+        * [HTTPS URL-адреса](ru/h3-https.md)
+        * [Заголовок аlt-svc](ru/h3-altsvc.md)
+        * [Потоки QUIC и HTTP/3](ru/h3-streams.md)
+        * [Приоритизация](ru/h3-prio.md)
+        * [Сервер-push](ru/h3-push.md)
+        * [Сравнение с HTTP/2](ru/h3-h2.md)
+    * [Критика](ru/criticism.md)
+    * [Спецификации](ru/specs.md)
+    * [QUIC v2](ru/quic-v2.md)
