@@ -59,12 +59,12 @@ resources allocated to streams are correctly prioritized. Experience with
 other multiplexed protocols, such as HTTP/2, shows that effective
 prioritization strategies have a significant positive impact on performance.
 
-QUIC itself does not provide frames for exchanging prioritization information.
+QUIC itself does not provide signals for exchanging prioritization information.
 Instead it relies on receiving priority information from the application that
 uses QUIC. Protocols that use QUIC are able to define any prioritization
 scheme that suits their application semantics.
 
-There have been criticisms of the HTTP/2 prioritisation model, and concerns it
-is overly complex and not used and implemented by many HTTP/2 servers. For now
-prioritisation in HTTP/3 has been removed from the main HTTP/3 specification
-and is being worked on as a [separate specification](https://tools.ietf.org/html/draft-ietf-httpbis-priority).
+The Extensible Prioritization Scheme for HTTP ([RFC
+9218](https://www.rfc-editor.org/rfc/rfc9218.html)) can be used for HTTP/3. It
+defines signals and provides scheduling guidance. This scheme is simpler than
+the original one defined for HTTP/2.

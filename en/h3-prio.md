@@ -1,21 +1,16 @@
 # HTTP/3 Prioritization
 
-As mentioned previously, priorisation between streams has been removed from the
-main HTTP/3 specification to be worked on separately.
+The base HTTP/3 specification doesn't define prioritization itself. The HTTP/2
+approach to prioritization has been deemed too complicated and is deprecated by
+the latest revision of the HTTP/2 specification [RFC
+9113](https://www.rfc-editor.org/rfc/rfc9113.html). A simpler alternative, the
+Extensible Prioritization Scheme for HTTP ([RFC
+9218](https://www.rfc-editor.org/rfc/rfc9218.html)), has been published
+separately, which can be used in both HTTP/2 and HTTP/3.
 
-This was due to learnings from the HTTP/2 prioritisation model and its
-implementation (or lack there of) in the real world.
-
-A [simpler prioritisation model than HTTP/2 has been proposed](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
-using HTTP header fields with a limited number of priority settings. This is a
-key change from the Dependency and Weight flags in the HTTP/2 Header frames and
-allows better understanding at the application layer.
-
-Reprioritisation, and whether to support this, is still being discussed. HTTP/2
-had Prioritisation frames to handle this but the true independent streams in QUIC
-and HTTP/3 makes this more complicated so the benefits versus the complexity are
-still being debated.
-
-When (or if!) a better prioritisation model is agreed for HTTP/3 it is hoped to
-be able to backport this to HTTP/2 too, to address the complexity and
-implementation concerns there.
+In HTTP/3, priority signals are sent in the form of the Priority header field
+and/or the PRIORITY_UPDATE frame sent on the HTTP/3 Control Stream. Servers can
+act on these signals to schedule sending of HTTP response content.
+[RFC
+9218](https://www.rfc-editor.org/rfc/rfc9218.html) provides scheduling guidance
+that is intended to improve client web application performance.
