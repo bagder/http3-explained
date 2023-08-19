@@ -37,7 +37,7 @@
         * [Comparison with HTTP/2](en/h3-h2.md)
     * [Common criticism](en/criticism.md)
     * [The specifications](en/specs.md)
-    * [QUIC v2](en/quic-v2.md)
+    * [QUIC future](en/quic-future.md)
 
 * [Español](es/README.md)
     * [Por qué QUIC](es/why-quic.md)
