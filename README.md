@@ -2,7 +2,7 @@
 QUIC protocols. Join in and help!
 
 Get the Web or PDF versions on
-[gitbook.com](https://http3-explained.haxx.se/).
+[http3-explained.haxx.se](https://http3-explained.haxx.se/).
 
 The contents get updated automatically on every commit to this git repository.
 
