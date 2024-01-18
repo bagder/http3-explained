@@ -3,9 +3,9 @@
 Here is a collection of the RFCs for the various parts and
 components of QUIC and HTTP/3.
 
-## Invariants
+## Version Negotiation
 
-[Version-Independent Properties of QUIC](https://datatracker.ietf.org/doc/html/rfc8999)
+[Compatible Version Negotiation for QUIC](https://datatracker.ietf.org/doc/html/rfc9368)
 
 ## Transport
 
