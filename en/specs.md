@@ -1,28 +1,28 @@
 # The specifications
 
-Here is a collection of the latest official drafts for the various parts and
+Here is a collection of the RFCs for the various parts and
 components of QUIC and HTTP/3.
 
 ## Invariants
 
-[Version-Independent Properties of QUIC](https://tools.ietf.org/html/draft-ietf-quic-invariants)
+[Version-Independent Properties of QUIC](https://datatracker.ietf.org/doc/html/rfc8999)
 
 ## Transport
 
-[QUIC: A UDP-Based Multiplexed and Secure Transport](https://tools.ietf.org/html/draft-ietf-quic-transport)
+[QUIC: A UDP-Based Multiplexed and Secure Transport](https://datatracker.ietf.org/doc/html/rfc9000)
 
 ## Recovery
 
-[QUIC Loss Detection and Congestion Control](https://tools.ietf.org/html/draft-ietf-quic-recovery)
+[QUIC Loss Detection and Congestion Control](https://datatracker.ietf.org/doc/html/rfc9002)
 
 ## TLS
 
-[Using TLS to Secure QUIC](https://tools.ietf.org/html/draft-ietf-quic-tls)
+[Using TLS to Secure QUIC](https://datatracker.ietf.org/doc/html/rfc9001)
 
 ## HTTP
 
-[Hypertext Transfer Protocol Version 3 (HTTP/3)](https://tools.ietf.org/html/draft-ietf-quic-http)
+[Hypertext Transfer Protocol Version 3 (HTTP/3)](https://datatracker.ietf.org/doc/html/rfc9114)
 
 ## QPACK
 
-[QPACK: Header Compression for HTTP/3](https://tools.ietf.org/html/draft-ietf-quic-qpack)
+[QPACK: Header Compression for HTTP/3](https://datatracker.ietf.org/doc/html/rfc9204)
