@@ -1,6 +1,6 @@
 ## Sécurisé
 
-QUIC est toujours sécurisé. Il n'y a pas de version en texte clair clair du
+QUIC est toujours sécurisé. Il n'y a pas de version en texte clair du
 protocole, donc négocier une connexion QUIC signifie faire de la cryptographie et
 de la sécurité avec TLS 1.3. Comme mentionné ci-dessus, cela empêche l'ossification
 ainsi que d'autres types de blocages et traitements spéciaux, et garantit que QUIC

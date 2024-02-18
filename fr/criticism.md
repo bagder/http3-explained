@@ -13,7 +13,8 @@ sortant afin de cibler des victimes innocentes.
 QUIC dispose d’une atténuation intégrée contre les attaques d’amplification en
 exigeant que le paquet initial soit au minimum de 1200 octets et par une
 restriction dans le protocole qui stipule qu’un serveur NE DOIT PAS envoyer
-plus de trois fois ça en réponse sans recevoir un paquet du client en réponse.
+plus de trois fois la taille de la requête en réponse sans recevoir un paquet
+du client en réponse.
 
 ## UDP est lent dans les noyaux
 
