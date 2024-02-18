@@ -7,5 +7,5 @@ est HTTP/3 (h3).
 La couche de transport prend en charge les connexions et les flux.
 
 L'ancienne version de QUIC de Google regroupait le transport et le protocole HTTP
-dans un même fait-tout et constituait un protocole send-http/2-frames-over-udp plus
+dans un même ensemble et constituait un protocole send-http/2-frames-over-udp plus
 spécifique.
