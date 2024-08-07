@@ -1,6 +1,6 @@
 # QUIC future
 
-In order to get the most possibly focus on the core QUIC protocol and be able
+In order to get the most focus possible on the core QUIC protocol and be able
 to ship it on time, several features that were originally planned to be part
 of the core protocol have been postponed and are now planned to instead get
 done in a subsequent QUIC version.
