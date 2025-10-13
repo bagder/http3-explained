@@ -17,9 +17,13 @@ even up to this date.
 
 ## Servers
 
-NGINX support for QUIC and HTTP/3 is under development and a [preview version has been announced](https://www.nginx.com/blog/introducing-technology-preview-nginx-support-for-quic-http-3/).
+NGINX supports with module [`ngx_http_v3_module`](https://nginx.org/en/docs/http/ngx_http_v3_module.html) (nginx version 1.25.0) experimental support for HTTP/3.
 
 There have been no public statement in terms of support for QUIC from Apache.
+
+[caddyserver v2](https://caddyserver.com/) supports HTTP/3.
+
+[ferronweb v2](https://v2.ferronweb.org/) have experimental support for HTTP/3.
 
 ## Clients
 
